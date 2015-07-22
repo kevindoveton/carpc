@@ -14,6 +14,7 @@
 #include <iomanip>								// IOMainIP - time
 #include <ctime>								// C-Time - time
 #include <chrono>								// Chrono - STD :: chrono
+#include <vector>
 
 
 // GUI
@@ -92,7 +93,6 @@ private slots:
 private:
 	Ui::MainWindow *ui;
 
-
 	void setButtonPlayPauseText(int playStatus);
 	// set the text according to current playing ness
 
@@ -105,7 +105,7 @@ private:
 	// hide all the selected labels for the tab bar
 };
 
-
+void getAllArtists(QStandardItemModel* model);
 
 int playNewSong(std::string songName, HSTREAM& audioChannel, BOOL restart);
 // play a new song
@@ -117,9 +117,11 @@ std::string getCurrentTime();
 
 bool getPlaylist(std::string path);
 
-void getArtist(std::string path, QStringList& stringlist);
-void getAlbums(std::string path, QStringList& stringlist, std::string artist);
-void getSongs(std::string path, QStringList& stringlist, std::string album);
+void getArtist(QStandardItemModel& model);
+void getAlbums(QStandardItemModel* model, int artistID);
+void getSongPath(int songID, SongData& currentSong);
+
+void getSongs(QStandardItemModel* model, int albumID);
 
 
 #endif // MAINWINDOW_H

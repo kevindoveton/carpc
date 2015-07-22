@@ -6,9 +6,24 @@ HSTREAM audioChannel;
 std::string musicLibrary = "musicLibrary.sqlite3";
 QStringList artists;
 std::vector<SongData> musicDB;
+
 std::vector<SongData> currentPlaylist;
 int currentView = 1;
 song nowPlaying;
+SongData currentSong;
+QStandardItemModel* model;
+std::string DBPATH = "musicLibrary.sqlite3";
+
+
+int artistIDCur;
+int albumIDCur;
+int songIDCur;
+
+std::vector<int> artistIDs;
+std::vector<int> albumIDs;
+std::vector<int> songIDs;
+
+
 
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent),
@@ -31,11 +46,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	setSongTags("", "", "");
 	ui->labelTime->setText(getCurrentTime().c_str());
 
-	getPlaylist("musicLibrary.sqlite3");
+//	getPlaylist("musicLibrary.sqlite3");
 
 	// get artists
 
-	getArtist("musicLibrary.sqlite3", artists);
+
 
 	artistsModel = new QStringListModel(this);
 	artistsModel->setStringList(artists);
@@ -43,23 +58,13 @@ MainWindow::MainWindow(QWidget *parent) :
 	albumModel = new QStringListModel(this);
 	songModel = new QStringListModel(this);
 
-	QStandardItemModel* model;
+
 	model = new QStandardItemModel;
-	model->setRowCount(4);
-	model->setColumnCount(1);
-	model->setData(model->index(0,0), QPixmap("resources/testpiccies/mayer.png"), Qt::DecorationRole);
-	model->setData(model->index(0,0), "John Mayer");
-	model->setData(model->index(1,0), QPixmap("resources/testpiccies/hendrix.png"), Qt::DecorationRole);
-	model->setData(model->index(1,0), "Jimmi Hendrix");
-	model->setData(model->index(2,0), QPixmap("resources/testpiccies/coldplay.png"), Qt::DecorationRole);
-	model->setData(model->index(2,0), "Coldplay");
-	model->setData(model->index(3,0), QPixmap("resources/testpiccies/rudimental.png"), Qt::DecorationRole);
-	model->setData(model->index(3,0), "Rudimental");
-
-
+	getAllArtists(model); // set artist
 	ui->listviewMusic->setModel(model);
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
 //	ui->listviewMusic->setAlternatingRowColors(true);
+
 
 
 	QMainWindow::showFullScreen();
@@ -187,26 +192,26 @@ void MainWindow::on_buttonVolumeUp_released()
 
 void song :: getSongTags(std::string path, std::string& title, std::string& album, std::string& artist)
 {
-	// initialise variables
-	std::stringstream sstr;
-	sstr.str("");
+//	// initialise variables
+//	std::stringstream sstr;
+//	sstr.str("");
 
-	// set path to file
-	TagLib::FileRef f(path.c_str());
+//	// set path to file
+//	TagLib::FileRef f(path.c_str());
 
-	// artist
-	sstr << f.tag()->artist();
-	artist = sstr.str();
+//	// artist
+//	sstr << f.tag()->artist();
+//	artist = sstr.str();
 
-	// album
-	sstr.str("");
-	sstr << f.tag()->album();
-	album = sstr.str();
+//	// album
+//	sstr.str("");
+//	sstr << f.tag()->album();
+//	album = sstr.str();
 
-	// title
-	sstr.str("");
-	sstr << f.tag()->title();
-	title = sstr.str();
+//	// title
+//	sstr.str("");
+//	sstr << f.tag()->title();
+//	title = sstr.str();
 }
 
 void MainWindow::on_buttonMusicPlayPause_released()
@@ -273,7 +278,7 @@ bool getPlaylist(std::string path)
 	{
 		SQLite::Database db(path);
 
-		SQLite::Statement query(db, "SELECT * FROM music");
+		SQLite::Statement query(db, "SELECT * FROM artists");
 
 		while (query.executeStep())
 		{
@@ -285,7 +290,7 @@ bool getPlaylist(std::string path)
 
 	catch (std::exception& e)
 	{
-		std::cout << "exception: " << e.what() << std::endl;
+		std::cout << "getPlaylist - exception: " << e.what() << std::endl;
 		return false;
 
 	}
@@ -300,7 +305,7 @@ void getArtist(std::string path, QStringList& stringlist)
 	{
 		SQLite::Database db(path);
 
-		SQLite::Statement query(db, "SELECT DISTINCT artist FROM music");
+		SQLite::Statement query(db, "SELECT artist FROM music");
 
 		while (query.executeStep())
 		{
@@ -312,36 +317,46 @@ void getArtist(std::string path, QStringList& stringlist)
 
 	catch (std::exception& e)
 	{
-		std::cout << "exception: " << e.what() << std::endl;
+		std::cout << "4exception: " << e.what() << std::endl;
 
 	}
 }
 
 void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 {
+
 	switch (currentView)
 	{
 		case 1:
 
-			getAlbums(musicLibrary, artists, artists[index.row()].toStdString());
-			albumModel->setStringList(artists);
-			ui->listviewMusic->setModel(albumModel);
+			// going to album view now
+
+			artistIDCur = index.sibling(index.row(), 1).data().toInt();
+
+
+//			test = (model->data(model->index(0,0), Qt::DisplayRole).toString().toStdString());
+			model->clear();
+//			std::cout << test;
+			getAlbums(model, artistIDCur);
+
 			break;
 
 		case 2:
+			// going to the song view now
+			albumIDCur = index.sibling(index.row(), 1).data().toInt();
+			std::cout << albumIDCur << std::endl;
+			model->clear();
 
-
-			getSongs(musicLibrary, artists, artists[index.row()].toStdString());
-			songModel->setStringList(artists);
-
-			ui->listviewMusic->setModel(songModel);
+			getSongs(model, albumIDCur);
 			break;
 
 		case 3:
-			std::cout << musicDB[0].getPath();
-			playNewSong(currentPlaylist[index.row()].getPath(), audioChannel, TRUE);
+			// selected a song
+			songIDCur = index.sibling(index.row(), 1).data().toInt();
+			getSongPath(songIDCur, currentSong);
+			playNewSong(currentSong.getPath(), audioChannel, true);
 			setButtonPlayPauseText(1);
-			setSongTags(currentPlaylist[index.row()].getSong(), currentPlaylist[index.row()].getAlbum(), currentPlaylist[index.row()].getArtist());
+//			setSongTags(currentPlaylist[index.row()].getSong(), currentPlaylist[index.row()].getAlbum(), currentPlaylist[index.row()].getArtist());
 			currentView--;
 
 		default:
@@ -351,62 +366,85 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 	currentView++;
 }
 
-void getAlbums(std::string path, QStringList& stringlist, std::string artist)
+void getAlbums(QStandardItemModel* model, int artistID)
 {
-	std::stringstream hello;
-	artists.clear();
+	// TO DO
+	// Set background pictures from db
+
+
+	int indexCount = 0;
+	model->setColumnCount(2);
 	try
 	{
-		SQLite::Database db(path);
+		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT DISTINCT album FROM music WHERE artist = ?");
-		query.bind(1, artist);
+		SQLite::Statement query(db, "SELECT albumName, albumID FROM albums WHERE artistID == ?");
+		query.bind(1, artistID);
 
 		while (query.executeStep())
 		{
-			hello.str("");
-			hello << query.getColumn(0);
-			stringlist << hello.str().c_str();
+//			albumIDCur = query.getColumn(1);
+			indexCount++;
+			model->setRowCount(indexCount);
+			std::string column0 = query.getColumn(0);
+			int column1 = query.getColumn(1);
+
+			model->setData(model->index((indexCount-1), 1), (column1));
+
+			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+
 		}
+
 	}
+
+
 
 	catch (std::exception& e)
 	{
-		std::cout << "exception: " << e.what() << std::endl;
+		std::cout << "getAlbums - Exception: " << e.what() << std::endl;
 
 	}
-
 }
 
 
 
-void getSongs(std::string path, QStringList& stringlist, std::string album)
+void getSongs(QStandardItemModel* model, int albumID)
 {
-	std::stringstream hello;
-	artists.clear();
+	// TO DO
+	// Set background pictures from db
+
+
+	int indexCount = 0;
+	model->setColumnCount(2);
 	try
 	{
-		SQLite::Database db(path);
+		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT * FROM music where album = ?");
-		query.bind(1, album);
+		SQLite::Statement query(db, "SELECT songName, songID FROM songs WHERE albumID == ?");
+		query.bind(1, albumID);
 
 		while (query.executeStep())
 		{
-			hello.str("");
-			hello << query.getColumn(3);
-			stringlist << hello.str().c_str();
-			SongData temp;
-			temp.set(query.getColumn(0), query.getColumn(1), query.getColumn(2), query.getColumn(3), query.getColumn(4), query.getColumn(5), query.getColumn(6), query.getColumn(7), query.getColumn(8), query.getColumn(9), query.getColumn(10), query.getColumn(11), query.getColumn(12));
-			currentPlaylist.push_back(temp);
+//			songIDCur = query.getColumn(1);
+			indexCount++;
+			model->setRowCount(indexCount);
+			std::string column0 = query.getColumn(0);
+			int column1 = query.getColumn(1);
+
+			model->setData(model->index((indexCount-1), 1), (column1));
+			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+
 		}
 	}
 
-	catch (std::exception& e)
-	{
-		std::cout << "exception: " << e.what() << std::endl;
+		catch (std::exception& e)
+		{
+			std::cout << "getSongs - Exception: " << e.what() << std::endl;
 
-	}
+		}
+
 }
 
 void MainWindow :: hideAllTabSelected()
@@ -416,4 +454,93 @@ void MainWindow :: hideAllTabSelected()
 	ui->labelSelected2->hide();
 	ui->labelSelected3->hide();
 
+}
+
+void getAllArtists(QStandardItemModel* model)
+{
+	// TO DO
+	// Set background pictures from db
+
+
+	int indexCount = 0;
+	model->setColumnCount(2);
+	try
+	{
+		SQLite::Database db(DBPATH);
+
+		SQLite::Statement query(db, "SELECT artistName, artistID FROM artists");
+
+
+		while (query.executeStep())
+		{
+//			artistIDCur = query.getColumn(1);
+
+
+			indexCount++;
+			model->setRowCount(indexCount);
+			std::string column0 = query.getColumn(0);
+			int column1 = query.getColumn(1);
+
+
+			model->setData(model->index((indexCount-1), 1), (column1));
+
+			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+
+		}
+
+	}
+
+
+
+	catch (std::exception& e)
+	{
+		std::cout << "getAllArtists - Exception: " << e.what() << std::endl;
+
+	}
+}
+
+void getSongPath(int songID, SongData& currentSong)
+{
+	try
+	{
+		SQLite::Database db(DBPATH);
+
+		SQLite::Statement query(db, "SELECT * FROM library WHERE songID == ?");
+		query.bind(1, songID);
+
+		while (query.executeStep())
+		{
+\
+			std::string album = "";
+			std::string artist = "";
+			int bitRate = query.getColumn(5);
+			int ID = query.getColumn(0);
+			std::string kind = "";
+			std::string lastPlayed = "";
+			int length = query.getColumn(9);
+			std::string path = query.getColumn(1);
+			int playCount = query.getColumn(4);
+			int rating = query.getColumn(2);
+			int sampleRate = 0;
+			int skipCount = query.getColumn(3);
+			std::string song;
+
+
+			currentSong.set(ID, artist, album, song, path, rating, playCount, skipCount, kind, bitRate, lastPlayed, sampleRate, length);
+			std::cout << currentSong.dump();
+		}
+
+	}
+
+
+
+	catch (std::exception& e)
+	{
+		std::cout << "getAllArtists - Exception: " << e.what() << std::endl;
+
+	}
+
+
+	return ;
 }

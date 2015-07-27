@@ -1,18 +1,20 @@
 #include "mainwindow.h"
 
 
-HSTREAM audioChannel;
+HSTREAM audioChannel; // bass handle
 
-std::string musicLibrary = "musicLibrary.sqlite3";
 QStringList artists;
 std::vector<SongData> musicDB;
 
 std::vector<SongData> currentPlaylist;
-int currentView = 1;
+int currentView = 1; // start up in artist mode
 song nowPlaying;
 SongData currentSong;
 QStandardItemModel* model;
 std::string DBPATH = "musicLibrary.sqlite3";
+
+int currentBassStatus; // used in run loop
+int oldBassStatus; // used in run loop
 
 
 int artistIDCur;
@@ -66,6 +68,13 @@ MainWindow::MainWindow(QWidget *parent) :
 //	ui->listviewMusic->setAlternatingRowColors(true);
 
 
+	// run loop
+	// this loop will run once every second
+	QTimer* runLoopTimer = new QTimer(this);
+	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
+	runLoopTimer->start(1000);
+
+
 
 	QMainWindow::showFullScreen();
 
@@ -76,6 +85,32 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
 	delete ui;
+}
+
+void MainWindow::runLoop()
+{
+//	std::cout << "runLoop timed out " << std::endl;
+
+
+	// TIME SECTION
+	ui->labelTime->setText(getCurrentTime().c_str()); // set the time
+
+
+
+	// MUSIC SECTION
+	// check if song has finished played
+	// probably not the best way.. this will play a song as soon as you push the stop button
+	// could possibly add a stopped variable? not that we even have a stop button
+	currentBassStatus = BASS_ChannelIsActive(audioChannel);
+	if ((currentBassStatus == 0) && (oldBassStatus == 1)) // song was playing and is now stopped
+	{
+		// play the next song
+		// put the new song into previously played list
+	}
+	oldBassStatus = currentBassStatus; // update oldBassSTatus, bad things happen if we dont do this
+
+
+
 }
 
 
@@ -192,26 +227,26 @@ void MainWindow::on_buttonVolumeUp_released()
 
 void song :: getSongTags(std::string path, std::string& title, std::string& album, std::string& artist)
 {
-//	// initialise variables
-//	std::stringstream sstr;
-//	sstr.str("");
+	// initialise variables
+	std::stringstream sstr;
+	sstr.str("");
 
-//	// set path to file
-//	TagLib::FileRef f(path.c_str());
+	// set path to file
+	TagLib::FileRef f(path.c_str());
 
-//	// artist
-//	sstr << f.tag()->artist();
-//	artist = sstr.str();
+	// artist
+	sstr << f.tag()->artist();
+	artist = sstr.str();
 
-//	// album
-//	sstr.str("");
-//	sstr << f.tag()->album();
-//	album = sstr.str();
+	// album
+	sstr.str("");
+	sstr << f.tag()->album();
+	album = sstr.str();
 
-//	// title
-//	sstr.str("");
-//	sstr << f.tag()->title();
-//	title = sstr.str();
+	// title
+	sstr.str("");
+	sstr << f.tag()->title();
+	title = sstr.str();
 }
 
 void MainWindow::on_buttonMusicPlayPause_released()
@@ -317,7 +352,7 @@ void getArtist(std::string path, QStringList& stringlist)
 
 	catch (std::exception& e)
 	{
-		std::cout << "4exception: " << e.what() << std::endl;
+		std::cout << "Get Artist - Exception: " << e.what() << std::endl;
 
 	}
 }
@@ -332,11 +367,7 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			// going to album view now
 
 			artistIDCur = index.sibling(index.row(), 1).data().toInt();
-
-
-//			test = (model->data(model->index(0,0), Qt::DisplayRole).toString().toStdString());
 			model->clear();
-//			std::cout << test;
 			getAlbums(model, artistIDCur);
 
 			break;
@@ -356,7 +387,7 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			getSongPath(songIDCur, currentSong);
 			playNewSong(currentSong.getPath(), audioChannel, true);
 			setButtonPlayPauseText(1);
-//			setSongTags(currentPlaylist[index.row()].getSong(), currentPlaylist[index.row()].getAlbum(), currentPlaylist[index.row()].getArtist());
+			setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 			currentView--;
 
 		default:
@@ -401,6 +432,8 @@ void getAlbums(QStandardItemModel* model, int artistID)
 
 
 	catch (std::exception& e)
+
+			//			test = (model->data(model->index(0,0), Qt::DisplayRole).toString().toStdString());
 	{
 		std::cout << "getAlbums - Exception: " << e.what() << std::endl;
 

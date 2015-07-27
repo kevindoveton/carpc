@@ -5,6 +5,7 @@
 #include <QtCore>
 #include <QtGui>
 #include <QMainWindow>
+#include <QTimer>
 
 
 // General
@@ -89,6 +90,9 @@ private slots:
 
 	// frameMusic
 	void on_listviewMusic_clicked(const QModelIndex &index);
+
+
+	void runLoop();
 
 private:
 	Ui::MainWindow *ui;

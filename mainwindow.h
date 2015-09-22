@@ -14,6 +14,7 @@
 #include <iomanip>								// IOMainIP - time
 #include <ctime>								// C-Time - time
 #include <chrono>								// Chrono - STD :: chrono
+#include <set>
 
 
 // GUI
@@ -92,7 +93,6 @@ private slots:
 private:
 	Ui::MainWindow *ui;
 
-
 	void setButtonPlayPauseText(int playStatus);
 	// set the text according to current playing ness
 
@@ -105,7 +105,7 @@ private:
 	// hide all the selected labels for the tab bar
 };
 
-
+void getAllArtists();
 
 int playNewSong(std::string songName, HSTREAM& audioChannel, BOOL restart);
 // play a new song

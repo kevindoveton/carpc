@@ -6,6 +6,7 @@ HSTREAM audioChannel;
 std::string musicLibrary = "musicLibrary.sqlite3";
 QStringList artists;
 std::vector<SongData> musicDB;
+std::set<std::string> artistsDB;
 std::vector<SongData> currentPlaylist;
 int currentView = 1;
 song nowPlaying;
@@ -47,8 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	model = new QStandardItemModel;
 	model->setRowCount(4);
 	model->setColumnCount(1);
-	model->setData(model->index(0,0), QPixmap("resources/testpiccies/mayer.png"), Qt::DecorationRole);
-	model->setData(model->index(0,0), "John Mayer");
+	model->setData(model->index(0,0), QPixmap("resources/testpiccies/mcmahon.jpg"), Qt::DecorationRole);
+	model->setData(model->index(0,0), " Mayer");
 	model->setData(model->index(1,0), QPixmap("resources/testpiccies/hendrix.png"), Qt::DecorationRole);
 	model->setData(model->index(1,0), "Jimmi Hendrix");
 	model->setData(model->index(2,0), QPixmap("resources/testpiccies/coldplay.png"), Qt::DecorationRole);
@@ -61,6 +62,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
 //	ui->listviewMusic->setAlternatingRowColors(true);
 
+	getAllArtists();
 
 	QMainWindow::showFullScreen();
 
@@ -415,5 +417,12 @@ void MainWindow :: hideAllTabSelected()
 	ui->labelSelected1->hide();
 	ui->labelSelected2->hide();
 	ui->labelSelected3->hide();
+
+}
+
+void getAllArtists()
+{
+	std::cout << musicDB.size();
+	std::sort(musicDB.begin(), musicDB.
 
 }

@@ -55,5 +55,5 @@ OUTPUT +=Console
 unix: CONFIG += link_pkgconfig
 unix: PKGCONFIG += alsa
 unix: PKGCONFIG += taglib
-unix: PKGCONFIG += tinyxml
+#unix: PKGCONFIG += tinyxml
 unix: PKGCONFIG += sqlite3

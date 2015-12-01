@@ -5,11 +5,7 @@ HSTREAM audioChannel; // bass handle
 
 QStringList artists;
 std::vector<SongData> musicDB;
-<<<<<<< HEAD
-std::set<std::string> artistsDB;
-=======
 
->>>>>>> cf9148480b03b7352918acb32e93f3d23b87a954
 std::vector<SongData> currentPlaylist;
 int currentView = 1; // start up in artist mode
 song nowPlaying;
@@ -64,22 +60,6 @@ MainWindow::MainWindow(QWidget *parent) :
 	albumModel = new QStringListModel(this);
 	songModel = new QStringListModel(this);
 
-<<<<<<< HEAD
-	QStandardItemModel* model;
-	model = new QStandardItemModel;
-	model->setRowCount(4);
-	model->setColumnCount(1);
-	model->setData(model->index(0,0), QPixmap("resources/testpiccies/mcmahon.jpg"), Qt::DecorationRole);
-	model->setData(model->index(0,0), " Mayer");
-	model->setData(model->index(1,0), QPixmap("resources/testpiccies/hendrix.png"), Qt::DecorationRole);
-	model->setData(model->index(1,0), "Jimmi Hendrix");
-	model->setData(model->index(2,0), QPixmap("resources/testpiccies/coldplay.png"), Qt::DecorationRole);
-	model->setData(model->index(2,0), "Coldplay");
-	model->setData(model->index(3,0), QPixmap("resources/testpiccies/rudimental.png"), Qt::DecorationRole);
-	model->setData(model->index(3,0), "Rudimental");
-
-=======
->>>>>>> cf9148480b03b7352918acb32e93f3d23b87a954
 
 	model = new QStandardItemModel;
 	getAllArtists(model); // set artist
@@ -87,7 +67,6 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
 //	ui->listviewMusic->setAlternatingRowColors(true);
 
-	getAllArtists();
 
 	// run loop
 	// this loop will run once every second
@@ -510,13 +489,6 @@ void MainWindow :: hideAllTabSelected()
 
 }
 
-<<<<<<< HEAD
-void getAllArtists()
-{
-	std::cout << musicDB.size();
-	std::sort(musicDB.begin(), musicDB.
-
-=======
 void getAllArtists(QStandardItemModel* model)
 {
 	// TO DO
@@ -604,5 +576,4 @@ void getSongPath(int songID, SongData& currentSong)
 
 
 	return ;
->>>>>>> cf9148480b03b7352918acb32e93f3d23b87a954
 }

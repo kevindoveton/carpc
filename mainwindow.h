@@ -15,11 +15,7 @@
 #include <iomanip>								// IOMainIP - time
 #include <ctime>								// C-Time - time
 #include <chrono>								// Chrono - STD :: chrono
-<<<<<<< HEAD
-#include <set>
-=======
 #include <vector>
->>>>>>> cf9148480b03b7352918acb32e93f3d23b87a954
 
 
 // GUI
@@ -113,11 +109,7 @@ private:
 	// hide all the selected labels for the tab bar
 };
 
-<<<<<<< HEAD
-void getAllArtists();
-=======
 void getAllArtists(QStandardItemModel* model);
->>>>>>> cf9148480b03b7352918acb32e93f3d23b87a954
 
 int playNewSong(std::string songName, HSTREAM& audioChannel, BOOL restart);
 // play a new song

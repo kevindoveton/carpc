@@ -21,9 +21,9 @@ int artistIDCur;
 int albumIDCur;
 int songIDCur;
 
-std::vector<int> artistIDs;
-std::vector<int> albumIDs;
-std::vector<int> songIDs;
+// std::vector<int> artistIDs;
+// std::vector<int> albumIDs;
+// std::vector<int> songIDs;
 
 
 
@@ -40,8 +40,7 @@ MainWindow::MainWindow(QWidget *parent) :
     hideMusicButtons();
 
 	// hide all selected tab labels then select home
-	hideAllTabSelected();
-	ui->labelSelected0->show();
+	selectedButton(0);
 
 	nowPlaying.playing = false;
 

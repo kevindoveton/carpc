@@ -1,11 +1,10 @@
 //
-//  xmldata.hpp
-//  xmlTest
+//  ClassMusic.cpp
+//  Class Music
 //
 //  Created by Kevin Doveton on 16/07/2015.
 //  Copyright © 2015 Kevin Doveton. All rights reserved.
 //
-
 
 #include "ClassMusic.h"
 
@@ -19,7 +18,6 @@ int SongData :: getID()
 	return id;
 }
 
-
 void SongData :: setArtist(std::string ARTIST)
 {
 	artist = ARTIST;
@@ -29,7 +27,6 @@ std::string SongData :: getArtist()
 {
 	return artist;
 }
-
 
 void SongData :: setAlbum(std::string ALBUM)
 {
@@ -41,7 +38,6 @@ std::string SongData :: getAlbum()
 	return album;
 }
 
-
 void SongData :: setSong(std::string SONG)
 {
 	song = SONG;
@@ -51,7 +47,6 @@ std::string SongData :: getSong()
 {
 	return song;
 }
-
 
 void SongData :: setPath(std::string PATH)
 {
@@ -63,7 +58,6 @@ std::string SongData :: getPath()
 	return path;
 }
 
-
 void SongData :: setRating(int RATING)
 {
 	rating = RATING;
@@ -73,7 +67,6 @@ int SongData :: getRating()
 {
 	return rating;
 }
-
 
 void SongData :: setPlayCount(int PLAYCOUNT)
 {
@@ -85,7 +78,6 @@ int SongData :: getPlayCount()
 	return playCount;
 }
 
-
 void SongData :: setSkipCount(int SKIPCOUNT)
 {
 	skipCount = SKIPCOUNT;
@@ -95,7 +87,6 @@ int SongData :: getSkipCount()
 {
 	return skipCount;
 }
-
 
 void SongData :: setKind(std::string KIND)
 {
@@ -116,7 +107,6 @@ int SongData :: getBitRate()
 {
 	return bitRate;
 }
-
 
 void SongData :: setLastPlayed(std::string LASTPLAYED)
 {

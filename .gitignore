@@ -1,1 +1,13 @@
 *.pro.user*
+
+// Music Files
+*.mp3
+*.mp4
+*.aac
+
+
+// Databases
+*.db
+
+// Ignored
+ignored/

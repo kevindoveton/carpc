@@ -35,6 +35,7 @@
 
 // Clases
 #include "ClassMusic.h"							// Song Data
+#include "ClassSong.h"							
 #include "listviewmusicdelegate.h"				// listviewMusic Delegate
 
 
@@ -42,19 +43,6 @@
 namespace Ui {
 class MainWindow;
 }
-
-class song
-{
-public:
-	std::string title;
-	std::string artist;
-	std::string album;
-	std::string path;
-	bool playing;
-
-
-	void getSongTags(std::string path, std::string& title, std::string& album, std::string& artist);
-};
 
 class MainWindow : public QMainWindow
 {

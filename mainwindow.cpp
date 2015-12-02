@@ -21,11 +21,6 @@ int artistIDCur;
 int albumIDCur;
 int songIDCur;
 
-// std::vector<int> artistIDs;
-// std::vector<int> albumIDs;
-// std::vector<int> songIDs;
-
-
 
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent),
@@ -206,30 +201,6 @@ void MainWindow::on_buttonVolumeUp_released()
 	// increase the volume by a percentage
     std :: cout << "Volume Up"
                 << std :: endl;
-}
-
-void song :: getSongTags(std::string path, std::string& title, std::string& album, std::string& artist)
-{
-	// initialise variables
-	std::stringstream sstr;
-	sstr.str("");
-
-	// set path to file
-	TagLib::FileRef f(path.c_str());
-
-	// artist
-    sstr << f.tag()->artist();
-	artist = sstr.str();
-
-	// album
-	sstr.str("");
-	sstr << f.tag()->album();
-	album = sstr.str();
-
-	// title
-	sstr.str("");
-	sstr << f.tag()->title();
-	title = sstr.str();
 }
 
 void MainWindow::on_buttonMusicPlayPause_released()

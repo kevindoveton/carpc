@@ -110,6 +110,14 @@ private:
 	void hideAllCentreFrames();
 	// hide all the frames in the centre
 
+	void hideAllMenuButtons();
+	// hide standard menu buttons
+
+	int selectedButton(int selected = -1);
+	// Set selected label on bottom tab bar
+	// if set blank or incorrectly will return the 
+	// currently selected button
+
 
 	void hideAllTabSelected();
 	// hide all the selected labels for the tab bar

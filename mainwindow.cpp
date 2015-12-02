@@ -498,13 +498,70 @@ void getSongs(QStandardItemModel* model, int albumID)
 
 }
 
+// Hide All Tab Selected
+// Hide all Selected Labels
 void MainWindow :: hideAllTabSelected()
 {
 	ui->labelSelected0->hide();
 	ui->labelSelected1->hide();
 	ui->labelSelected2->hide();
 	ui->labelSelected3->hide();
+}
 
+void MainWindow :: hideAllMenuButtons()
+{
+	ui->buttonHome->hide();
+	ui->buttonMusic->hide();
+	ui->buttonMaps->hide();
+	ui->buttonPhone->hide();
+}
+
+int MainWindow :: selectedButton(int selected = -1)
+{
+	switch (selected)
+	{
+		case 0:
+			ui->labelSelected0->show();
+			ui->labelSelected1->hide();
+			ui->labelSelected2->hide();
+			ui->labelSelected3->hide();
+			break;
+
+		case 1:
+			ui->labelSelected0->hide();
+			ui->labelSelected1->show();
+			ui->labelSelected2->hide();
+			ui->labelSelected3->hide();
+			break;
+
+		case 2:
+			ui->labelSelected0->hide();
+			ui->labelSelected1->hide();
+			ui->labelSelected2->show();
+			ui->labelSelected3->hide();
+			break;
+
+		case 3:
+			ui->labelSelected0->hide();
+			ui->labelSelected1->hide();
+			ui->labelSelected2->hide();
+			ui->labelSelected3->show();
+			break;
+
+		default:
+			if (ui->labelSelected0->isVisible())
+				selected = 0;
+			else if (ui->labelSelected1->isVisible())
+				selected = 1;
+			else if (ui->labelSelected2->isVisible())
+				selected = 2;
+			else if (ui->labelSelected3->isVisible())
+				selected = 3;
+			
+			break;
+	}
+
+	return selected;
 }
 
 void getAllArtists(QStandardItemModel* model)

@@ -26,6 +26,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    // Main Window
 	QWidget *centralWidget;
 	QFrame *frameBottomBar;
 	QPushButton *buttonMusic;
@@ -56,6 +57,11 @@ public:
 	QPushButton *buttonVolumeUp;
 	QPushButton *buttonVolumeDown;
 	QPushButton *buttonMusicPrevious;
+
+    QPushButton *buttonBack;
+    QPushButton *buttonArtist;
+    QPushButton *buttonAlbum;
+    QPushButton *buttonSong;
 
 	void setupUi(QMainWindow *MainWindow)
 	{

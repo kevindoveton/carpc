@@ -38,10 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	hideAllCentreFrames();
 	ui->frameHome->show();
 
-	ui->buttonBack->hide();
-	ui->buttonArtist->hide();
-	ui->buttonAlbum->hide();
-    ui->buttonSong->hide();
+    hideMusicButtons();
 
 	// hide all selected tab labels then select home
 	hideAllTabSelected();
@@ -53,19 +50,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	setSongTags("", "", "");
 	ui->labelTime->setText(getCurrentTime().c_str());
 
-//	getPlaylist("musicLibrary.sqlite3");
-
-	// get artists
-
-
-
-	artistsModel = new QStringListModel(this);
-	artistsModel->setStringList(artists);
-
-	albumModel = new QStringListModel(this);
-	songModel = new QStringListModel(this);
-
-
+    // Create Song Model
 	model = new QStandardItemModel;
 	getAllArtists(model); // set artist
 	ui->listviewMusic->setModel(model);
@@ -73,7 +58,7 @@ MainWindow::MainWindow(QWidget *parent) :
 //	ui->listviewMusic->setAlternatingRowColors(true);
 
 
-	// run loop
+    // Run Loop
 	// this loop will run once every second
 	QTimer* runLoopTimer = new QTimer(this);
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
@@ -223,11 +208,15 @@ void MainWindow::on_buttonMaps_released()
 void MainWindow::on_buttonVolumeDown_released()
 {
 	// lower the volume by a percentage..
+    std :: cout << "Volume Down"
+                << std :: endl;
 }
 
 void MainWindow::on_buttonVolumeUp_released()
 {
 	// increase the volume by a percentage
+    std :: cout << "Volume Up"
+                << std :: endl;
 }
 
 void song :: getSongTags(std::string path, std::string& title, std::string& album, std::string& artist)
@@ -438,8 +427,6 @@ void getAlbums(QStandardItemModel* model, int artistID)
 
 
 	catch (std::exception& e)
-
-			//			test = (model->data(model->index(0,0), Qt::DisplayRole).toString().toStdString());
 	{
 		std::cout << "getAlbums - Exception: " << e.what() << std::endl;
 

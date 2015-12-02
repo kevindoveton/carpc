@@ -174,8 +174,9 @@ void MainWindow::on_buttonHome_released()
 	ui->frameHome->show();
 
 	// selected tab bar label
-	hideAllTabSelected();
-	ui->labelSelected0->show();
+	/*hideAllTabSelected();
+	ui->labelSelected0->show();*/
+	selectedButton(0);
 }
 
 
@@ -193,15 +194,7 @@ void MainWindow::on_buttonMusic_released()
 	MainWindow::hideAllCentreFrames();
 	ui->frameMusic->show();
 
-	ui->buttonMusic->hide();
-	ui->buttonHome->hide();
-	ui->buttonPhone->hide();
-	ui->buttonMaps->hide();
 
-	ui->buttonBack->show();
-    ui->buttonArtist->show();
-	ui->buttonAlbum->show();
-	ui->buttonSong->show();
 
 
 
@@ -217,8 +210,9 @@ void MainWindow::on_buttonPhone_released()
 	ui->framePhone->show();
 
 	// selected tab bar label
-	hideAllTabSelected();
-	ui->labelSelected2->show();
+	/*hideAllTabSelected();
+	ui->labelSelected2->show();*/
+	selectedButton(2);
 }
 
 void MainWindow::on_buttonMaps_released()
@@ -508,12 +502,37 @@ void MainWindow :: hideAllTabSelected()
 	ui->labelSelected3->hide();
 }
 
-void MainWindow :: hideAllMenuButtons()
+void MainWindow :: hideMenuButtons()
 {
 	ui->buttonHome->hide();
 	ui->buttonMusic->hide();
 	ui->buttonMaps->hide();
 	ui->buttonPhone->hide();
+}
+
+void MainWindow :: showMenuButtons()
+{
+	ui->buttonHome->show();
+	ui->buttonMusic->show();
+	ui->buttonMaps->show();
+	ui->buttonPhone->show();
+}
+
+
+void MainWindow :: showMusicButtons();
+{
+	ui->buttonBack->show();
+	ui->buttonArtist->show();
+	ui->buttonAlbum->show();
+	ui->buttonSong->show();
+}
+
+void MainWindow :: hideMusicButtons()
+{
+	ui->buttonBack->hide();
+	ui->buttonArtist->hide();
+	ui->buttonAlbum->hide();
+	ui->buttonSong->hide();
 }
 
 int MainWindow :: selectedButton(int selected = -1)
@@ -528,10 +547,12 @@ int MainWindow :: selectedButton(int selected = -1)
 			break;
 
 		case 1:
-			ui->labelSelected0->hide();
+			/*ui->labelSelected0->hide();
 			ui->labelSelected1->show();
 			ui->labelSelected2->hide();
-			ui->labelSelected3->hide();
+			ui->labelSelected3->hide();*/
+			hideAllMenuButtons();
+			showMusicButtons();
 			break;
 
 		case 2:
@@ -655,15 +676,8 @@ void getSongPath(int songID, SongData& currentSong)
 
 void MainWindow::on_buttonBack_released()
 {
-    ui->buttonMusic->show();
-    ui->buttonHome->show();
-    ui->buttonPhone->show();
-    ui->buttonMaps->show();
-
-    ui->buttonBack->hide();
-    ui->buttonArtist->hide();
-    ui->buttonAlbum->hide();
-    ui->buttonSong->hide();
+    hideMusicButtons();
+    showMenuButtons();
 }
 
 void MainWindow::on_buttonArtist_released()

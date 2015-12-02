@@ -194,13 +194,7 @@ void MainWindow::on_buttonMusic_released()
 	MainWindow::hideAllCentreFrames();
 	ui->frameMusic->show();
 
-
-
-
-
-	// selected tab bar label
-	hideAllTabSelected();
-	ui->labelSelected1->show();
+    selectedButton(1);
 }
 
 void MainWindow::on_buttonPhone_released()
@@ -519,7 +513,7 @@ void MainWindow :: showMenuButtons()
 }
 
 
-void MainWindow :: showMusicButtons();
+void MainWindow :: showMusicButtons()
 {
 	ui->buttonBack->show();
 	ui->buttonArtist->show();
@@ -535,7 +529,7 @@ void MainWindow :: hideMusicButtons()
 	ui->buttonSong->hide();
 }
 
-int MainWindow :: selectedButton(int selected = -1)
+int MainWindow :: selectedButton(int selected)
 {
 	switch (selected)
 	{
@@ -547,11 +541,11 @@ int MainWindow :: selectedButton(int selected = -1)
 			break;
 
 		case 1:
-			/*ui->labelSelected0->hide();
+            ui->labelSelected0->hide();
 			ui->labelSelected1->show();
 			ui->labelSelected2->hide();
-			ui->labelSelected3->hide();*/
-			hideAllMenuButtons();
+            ui->labelSelected3->hide();
+            hideMenuButtons();
 			showMusicButtons();
 			break;
 
@@ -676,6 +670,8 @@ void getSongPath(int songID, SongData& currentSong)
 
 void MainWindow::on_buttonBack_released()
 {
+    hideAllTabSelected();
+    ui->labelSelected1->show();
     hideMusicButtons();
     showMenuButtons();
 }

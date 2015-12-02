@@ -8,5 +8,5 @@
 class MusicDB
 {
 	public:
-	
+
 };

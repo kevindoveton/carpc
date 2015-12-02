@@ -10,7 +10,7 @@ void song :: getSongTags(std::string path, std::string& title, std::string& albu
 	TagLib::FileRef f(path.c_str());
 
 	// artist
-    sstr << f.tag()->artist();
+	sstr << f.tag()->artist();
 	artist = sstr.str();
 
 	// album

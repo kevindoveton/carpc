@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	//  Set home frame for start up
 	selectedFrame(0);
 
-    hideMusicButtons();
+	hideMusicButtons();
 
 	// hide all selected tab labels then select home
 	selectedButton(0);
@@ -43,15 +43,15 @@ MainWindow::MainWindow(QWidget *parent) :
 	setSongTags("", "", "");
 	ui->labelTime->setText(getCurrentTime().c_str());
 
-    // Create Song Model
+	// Create Song Model
 	model = new QStandardItemModel;
 	getAllArtists(model); // set artist
 	ui->listviewMusic->setModel(model);
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
-//	ui->listviewMusic->setAlternatingRowColors(true);
+	//	ui->listviewMusic->setAlternatingRowColors(true);
 
 
-    // Run Loop
+	// Run Loop
 	// this loop will run once every second
 	QTimer* runLoopTimer = new QTimer(this);
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
@@ -61,7 +61,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	// Set window to full screens
 	QMainWindow::showFullScreen();
 
-	std :: cout << "started" 
+	std :: cout << "started"
 				<< std :: endl;
 }
 
@@ -72,11 +72,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::runLoop()
 {
-//	std::cout << "runLoop timed out " << std::endl;
+	//	std::cout << "runLoop timed out " << std::endl;
 
 
 	// TIME SECTION
-    ui->labelTime->setText(getCurrentTime().c_str()); // set the time
+	ui->labelTime->setText(getCurrentTime().c_str()); // set the time
 
 
 
@@ -166,7 +166,7 @@ void MainWindow::on_buttonMusic_released()
 	// frames
 	selectedFrame(1);
 
-    selectedButton(1);
+	selectedButton(1);
 }
 
 void MainWindow::on_buttonPhone_released()
@@ -190,15 +190,15 @@ void MainWindow::on_buttonMaps_released()
 void MainWindow::on_buttonVolumeDown_released()
 {
 	// lower the volume by a percentage..
-    std :: cout << "Volume Down"
-                << std :: endl;
+	std :: cout << "Volume Down"
+				<< std :: endl;
 }
 
 void MainWindow::on_buttonVolumeUp_released()
 {
 	// increase the volume by a percentage
-    std :: cout << "Volume Up"
-                << std :: endl;
+	std :: cout << "Volume Up"
+				<< std :: endl;
 }
 
 void MainWindow::on_buttonMusicPlayPause_released()
@@ -320,8 +320,8 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			artistIDCur = index.sibling(index.row(), 1).data().toInt();
 			model->clear();
 			getAlbums(model, artistIDCur);
-            hideAllTabSelected();
-            ui->labelSelected2->show();
+			hideAllTabSelected();
+			ui->labelSelected2->show();
 			break;
 
 		case 2:
@@ -330,8 +330,8 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			std::cout << albumIDCur << std::endl;
 			model->clear();
 			getSongs(model, albumIDCur);
-            hideAllTabSelected();
-            ui->labelSelected3->show();
+			hideAllTabSelected();
+			ui->labelSelected3->show();
 			break;
 
 		case 3:
@@ -367,7 +367,7 @@ void getAlbums(QStandardItemModel* model, int artistID)
 
 		while (query.executeStep())
 		{
-//			albumIDCur = query.getColumn(1);
+			//			albumIDCur = query.getColumn(1);
 			indexCount++;
 			model->setRowCount(indexCount);
 			std::string column0 = query.getColumn(0);
@@ -376,7 +376,7 @@ void getAlbums(QStandardItemModel* model, int artistID)
 			model->setData(model->index((indexCount-1), 1), (column1));
 
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 
 		}
 
@@ -410,7 +410,7 @@ void getSongs(QStandardItemModel* model, int albumID)
 
 		while (query.executeStep())
 		{
-//			songIDCur = query.getColumn(1);
+			//			songIDCur = query.getColumn(1);
 			indexCount++;
 			model->setRowCount(indexCount);
 			std::string column0 = query.getColumn(0);
@@ -418,16 +418,16 @@ void getSongs(QStandardItemModel* model, int albumID)
 
 			model->setData(model->index((indexCount-1), 1), (column1));
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 
 		}
 	}
 
-		catch (std::exception& e)
-		{
-			std::cout << "getSongs - Exception: " << e.what() << std::endl;
+	catch (std::exception& e)
+	{
+		std::cout << "getSongs - Exception: " << e.what() << std::endl;
 
-		}
+	}
 
 }
 
@@ -486,11 +486,11 @@ int MainWindow :: selectedButton(int selected)
 			break;
 
 		case 1:
-            ui->labelSelected0->hide();
+			ui->labelSelected0->hide();
 			ui->labelSelected1->show();
 			ui->labelSelected2->hide();
-            ui->labelSelected3->hide();
-            hideMenuButtons();
+			ui->labelSelected3->hide();
+			hideMenuButtons();
 			showMusicButtons();
 			break;
 
@@ -556,7 +556,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->show();
 			break;
 
-		default: 
+		default:
 			break;
 
 	}
@@ -579,7 +579,7 @@ void getAllArtists(QStandardItemModel* model)
 
 		while (query.executeStep())
 		{
-//			artistIDCur = query.getColumn(1);
+			//			artistIDCur = query.getColumn(1);
 
 
 			indexCount++;
@@ -591,7 +591,7 @@ void getAllArtists(QStandardItemModel* model)
 			model->setData(model->index((indexCount-1), 1), (column1));
 
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 
 		}
 
@@ -617,7 +617,7 @@ void getSongPath(int songID, SongData& currentSong)
 
 		while (query.executeStep())
 		{
-\
+			\
 			std::string album = "";
 			std::string artist = "";
 			int bitRate = query.getColumn(5);
@@ -653,10 +653,10 @@ void getSongPath(int songID, SongData& currentSong)
 
 void MainWindow::on_buttonBack_released()
 {
-    hideAllTabSelected();
-    ui->labelSelected1->show();
-    hideMusicButtons();
-    showMenuButtons();
+	hideAllTabSelected();
+	ui->labelSelected1->show();
+	hideMusicButtons();
+	showMenuButtons();
 }
 
 void MainWindow::on_buttonArtist_released()

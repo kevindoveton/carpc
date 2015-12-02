@@ -7,13 +7,13 @@
 
 class song
 {
-public:
-	std::string title;
-	std::string artist;
-	std::string album;
-	std::string path;
-	bool playing;
+	public:
+		std::string title;
+		std::string artist;
+		std::string album;
+		std::string path;
+		bool playing;
 
 
-	void getSongTags(std::string path, std::string& title, std::string& album, std::string& artist);
+		void getSongTags(std::string path, std::string& title, std::string& album, std::string& artist);
 };

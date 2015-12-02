@@ -122,6 +122,12 @@ private:
 	void hideMusicButtons();
 	// hide music specific buttons
 
+	int selectedFrame(int selected = -1);
+	// set selected frame
+	// 0 = home, 1 = music, 2 = phone, 3 = maps
+	// if set blank or incorrectly will return the
+	// currently selected frame
+
 	int selectedButton(int selected = -1);
 	// Set selected label on bottom tab bar
 	// if set blank or incorrectly will return the 

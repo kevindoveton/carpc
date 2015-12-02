@@ -34,9 +34,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 
-	//  hide all centre frames then show the home one for startup
-	hideAllCentreFrames();
-	ui->frameHome->show();
+	//  Set home frame for start up
+	selectedFrame(0);
 
     hideMusicButtons();
 
@@ -62,14 +61,14 @@ MainWindow::MainWindow(QWidget *parent) :
 	// this loop will run once every second
 	QTimer* runLoopTimer = new QTimer(this);
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
-	runLoopTimer->start(1000);
+	runLoopTimer->start(1000); // 1000ms = 1 seconds
 
 
-
+	// Set window to full screens
 	QMainWindow::showFullScreen();
 
-	std::cout << "started" << std::endl;
-
+	std :: cout << "started" 
+				<< std :: endl;
 }
 
 MainWindow::~MainWindow()
@@ -155,12 +154,9 @@ std::string getCurrentTime() {
 void MainWindow::on_buttonHome_released()
 {
 	// frames
-	MainWindow::hideAllCentreFrames();
-	ui->frameHome->show();
+	selectedFrame(0);
 
 	// selected tab bar label
-	/*hideAllTabSelected();
-	ui->labelSelected0->show();*/
 	selectedButton(0);
 }
 
@@ -176,8 +172,7 @@ void MainWindow::hideAllCentreFrames()
 void MainWindow::on_buttonMusic_released()
 {
 	// frames
-	MainWindow::hideAllCentreFrames();
-	ui->frameMusic->show();
+	selectedFrame(1);
 
     selectedButton(1);
 }
@@ -185,24 +180,19 @@ void MainWindow::on_buttonMusic_released()
 void MainWindow::on_buttonPhone_released()
 {
 	// frames
-	MainWindow::hideAllCentreFrames();
-	ui->framePhone->show();
+	selectedFrame(2);
 
 	// selected tab bar label
-	/*hideAllTabSelected();
-	ui->labelSelected2->show();*/
 	selectedButton(2);
 }
 
 void MainWindow::on_buttonMaps_released()
 {
 	// frames
-	MainWindow::hideAllCentreFrames();
-	ui->frameMaps->show();
+	selectedFrame(3);
 
 	// selected tab bar label
-	hideAllTabSelected();
-	ui->labelSelected3->show();
+	selectedButton(3);
 }
 
 void MainWindow::on_buttonVolumeDown_released()
@@ -564,6 +554,44 @@ int MainWindow :: selectedButton(int selected)
 	}
 
 	return selected;
+}
+
+int MainWindow :: selectedFrame(selected)
+{
+	switch (selected)
+	{
+		case 0:
+			ui->frameHome->show();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			break;
+
+		case 1:
+			ui->frameHome->hide();
+			ui->frameMusic->show();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			break;
+
+		case 2:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->show();
+			ui->frameMaps->hide();
+			break;
+
+		case 3:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->show();
+			break;
+
+		default: 
+			break;
+
+	}
 }
 
 void getAllArtists(QStandardItemModel* model)

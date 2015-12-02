@@ -556,7 +556,7 @@ int MainWindow :: selectedButton(int selected)
 	return selected;
 }
 
-int MainWindow :: selectedFrame(selected)
+int MainWindow :: selectedFrame(int selected)
 {
 	switch (selected)
 	{

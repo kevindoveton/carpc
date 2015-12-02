@@ -10,10 +10,6 @@
 #define ClassMusic_cpp
 
 #include "ClassMusic.h"
-#include <stdio.h>
-#include <chrono>
-#include <sstream>
-
 class SongData
 {
 

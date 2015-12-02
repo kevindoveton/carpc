@@ -14,6 +14,7 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     mainwindow.cpp \
+    ClassMusic.cpp \
     libraries/SQLiteCpp/Column.cpp \
     libraries/SQLiteCpp/Database.cpp \
     libraries/SQLiteCpp/Statement.cpp \

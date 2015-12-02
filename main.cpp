@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	// initialise bass
 	BASS_Init(-1,44100,0,0,0);
 
-
+	// Main Window
 	MainWindow w;
 	w.show();
 

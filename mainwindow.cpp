@@ -91,9 +91,7 @@ void MainWindow::runLoop()
 		// put the new song into previously played list
 	}
 	oldBassStatus = currentBassStatus; // update oldBassSTatus, bad things happen if we dont do this
-
-
-
+	
 }
 
 

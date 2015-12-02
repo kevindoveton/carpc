@@ -68,7 +68,7 @@ public:
 		MainWindow->setMinimumSize(QSize(1280, 720));
 		MainWindow->setMaximumSize(QSize(9999, 9999));
 		MainWindow->setStyleSheet(QLatin1String("#MainWindow {\n"
-												"background-image: url(./backgroundImage.png);\n"
+                                                "background-image: url(./resources/backgrounds/backgroundImage.png);\n"
 												"background-repeat: no-repeat;\n"
 												"}\n"
 												"\n"

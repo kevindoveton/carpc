@@ -93,7 +93,7 @@ void MainWindow::runLoop()
 
 
 	// TIME SECTION
-	ui->labelTime->setText(getCurrentTime().c_str()); // set the time
+    ui->labelTime->setText(getCurrentTime().c_str()); // set the time
 
 
 

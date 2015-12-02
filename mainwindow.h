@@ -84,6 +84,12 @@ private slots:
 	void on_buttonMusic_released();
 	void on_buttonPhone_released();
 	void on_buttonMaps_released();
+    //music
+    void on_buttonBack_released();
+    void on_buttonArtist_released();
+    void on_buttonAlbum_released();
+    void on_buttonSong_released();
+
 
 	// frameHome
 	void on_buttonQuit_released();

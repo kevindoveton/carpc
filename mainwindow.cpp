@@ -41,7 +41,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->buttonBack->hide();
 	ui->buttonArtist->hide();
 	ui->buttonAlbum->hide();
-	ui->buttonSong->hide();
+    ui->buttonSong->hide();
 
 	// hide all selected tab labels then select home
 	hideAllTabSelected();
@@ -199,7 +199,7 @@ void MainWindow::on_buttonMusic_released()
 	ui->buttonMaps->hide();
 
 	ui->buttonBack->show();
-	ui->buttonArtist->show();
+    ui->buttonArtist->show();
 	ui->buttonAlbum->show();
 	ui->buttonSong->show();
 
@@ -252,7 +252,7 @@ void song :: getSongTags(std::string path, std::string& title, std::string& albu
 	TagLib::FileRef f(path.c_str());
 
 	// artist
-	sstr << f.tag()->artist();
+    sstr << f.tag()->artist();
 	artist = sstr.str();
 
 	// album
@@ -382,11 +382,11 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 		case 1:
 
 			// going to album view now
-
 			artistIDCur = index.sibling(index.row(), 1).data().toInt();
 			model->clear();
 			getAlbums(model, artistIDCur);
-
+            hideAllTabSelected();
+            ui->labelSelected2->show();
 			break;
 
 		case 2:
@@ -394,8 +394,9 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			albumIDCur = index.sibling(index.row(), 1).data().toInt();
 			std::cout << albumIDCur << std::endl;
 			model->clear();
-
 			getSongs(model, albumIDCur);
+            hideAllTabSelected();
+            ui->labelSelected3->show();
 			break;
 
 		case 3:
@@ -593,4 +594,32 @@ void getSongPath(int songID, SongData& currentSong)
 
 
 	return ;
+}
+
+void MainWindow::on_buttonBack_released()
+{
+    ui->buttonMusic->show();
+    ui->buttonHome->show();
+    ui->buttonPhone->show();
+    ui->buttonMaps->show();
+
+    ui->buttonBack->hide();
+    ui->buttonArtist->hide();
+    ui->buttonAlbum->hide();
+    ui->buttonSong->hide();
+}
+
+void MainWindow::on_buttonArtist_released()
+{
+
+}
+
+void MainWindow::on_buttonAlbum_released()
+{
+
+}
+
+void MainWindow::on_buttonSong_released()
+{
+
 }

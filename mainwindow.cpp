@@ -557,9 +557,19 @@ int MainWindow :: selectedFrame(int selected)
 			break;
 
 		default:
+			if (ui->frameHome->isVisible())
+				selected = 0;
+			else if (ui->frameMusic->isVisible())
+				selected = 1;
+			else if (ui->framePhone->isVisible())
+				selected = 2;
+			else if (ui->frameMaps->isVisible())
+				selected = 3;
+
 			break;
 
 	}
+	return selected;
 }
 
 void getAllArtists(QStandardItemModel* model)

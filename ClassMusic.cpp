@@ -6,12 +6,10 @@
 //  Copyright © 2015 Kevin Doveton. All rights reserved.
 //
 
-#ifndef ClassMusic_cpp
-#define ClassMusic_cpp
 
 #include "ClassMusic.h"
 
-void Song Data :: setID(int ID)
+void SongData :: setID(int ID)
 {
 	id = ID;
 }
@@ -22,135 +20,135 @@ int SongData :: getID()
 }
 
 
-void Song Data :: setArtist(std::string ARTIST)
+void SongData :: setArtist(std::string ARTIST)
 {
 	artist = ARTIST;
 }
 
-std::string Song Data :: getArtist()
+std::string SongData :: getArtist()
 {
 	return artist;
 }
 
 
-void Song Data :: setAlbum(std::string ALBUM)
+void SongData :: setAlbum(std::string ALBUM)
 {
 	album = ALBUM;
 }
 
-std::string Song Data :: getAlbum()
+std::string SongData :: getAlbum()
 {
 	return album;
 }
 
 
-void Song Data :: setSong(std::string SONG)
+void SongData :: setSong(std::string SONG)
 {
 	song = SONG;
 }
 
-std::string Song Data :: getSong()
+std::string SongData :: getSong()
 {
 	return song;
 }
 
 
-void Song Data :: setPath(std::string PATH)
+void SongData :: setPath(std::string PATH)
 {
 	path = PATH;
 }
 
-std::string Song Data :: getPath()
+std::string SongData :: getPath()
 {
 	return path;
 }
 
 
-void Song Data :: setRating(int RATING)
+void SongData :: setRating(int RATING)
 {
 	rating = RATING;
 }
 
-int Song Data :: getRating()
+int SongData :: getRating()
 {
 	return rating;
 }
 
 
-void Song Data :: setPlayCount(int PLAYCOUNT)
+void SongData :: setPlayCount(int PLAYCOUNT)
 {
 	playCount = PLAYCOUNT;
 }
 
-int Song Data :: getPlayCount()
+int SongData :: getPlayCount()
 {
 	return playCount;
 }
 
 
-void Song Data :: setSkipCount(int SKIPCOUNT)
+void SongData :: setSkipCount(int SKIPCOUNT)
 {
 	skipCount = SKIPCOUNT;
 }
 
-int Song Data :: getSkipCount()
+int SongData :: getSkipCount()
 {
 	return skipCount;
 }
 
 
-void Song Data :: setKind(std::string KIND)
+void SongData :: setKind(std::string KIND)
 {
 	kind = KIND;
 }
 
-std::string Song Data :: getKind()
+std::string SongData :: getKind()
 {
 	return kind;
 }
 
-void Song Data :: setBitRate(int BITRATE)
+void SongData :: setBitRate(int BITRATE)
 {
 	bitRate = BITRATE;
 }
 
-int Song Data :: getBitRate()
+int SongData :: getBitRate()
 {
 	return bitRate;
 }
 
 
-void Song Data :: setLastPlayed(std::string LASTPLAYED)
+void SongData :: setLastPlayed(std::string LASTPLAYED)
 {
 	lastPlayed = LASTPLAYED;
 }
 
-std::string Song Data :: getLastPlayed()
+std::string SongData :: getLastPlayed()
 {
 	return lastPlayed;
 }
 
-void Song Data :: setSampleRate(int SAMPLERATE)
+void SongData :: setSampleRate(int SAMPLERATE)
 {
 	sampleRate = SAMPLERATE;
 }
 
-int Song Data :: getSampleRate()
+int SongData :: getSampleRate()
 {
 	return sampleRate;
 }
 
-void Song Data :: setLength(int LENGTH)
+void SongData :: setLength(int LENGTH)
 {
 	length = LENGTH;
 }
 
-int Song Data :: getLength()
+int SongData :: getLength()
 {
 	return length;
 }
 
-void Song Data :: get(int& ID, std::string& ARTIST, std::string& ALBUM, std::string& SONG, std::string& PATH, int& RATING, int& PLAYCOUNT, int& SKIPCOUNT, std::string& KIND, int& BITRATE, std::string& LASTPLAYED, int& SAMPLERATE, int& LENGTH)
+void SongData :: get(int& ID, std::string& ARTIST, std::string& ALBUM, std::string& SONG, std::string& PATH, int& RATING, int& PLAYCOUNT, int& SKIPCOUNT, std::string& KIND, int& BITRATE, std::string& LASTPLAYED, int& SAMPLERATE, int& LENGTH)
 {
 	// get the object
 	ID = id;
@@ -168,7 +166,7 @@ void Song Data :: get(int& ID, std::string& ARTIST, std::string& ALBUM, std::str
 	LENGTH = length;
 }
 
-void Song Data :: set(int ID, std::string ARTIST, std::string ALBUM, std::string SONG, std::string PATH, int RATING, int PLAYCOUNT, int SKIPCOUNT, std::string KIND, int BITRATE, std::string LASTPLAYED, int SAMPLERATE, int LENGTH)
+void SongData :: set(int ID, std::string ARTIST, std::string ALBUM, std::string SONG, std::string PATH, int RATING, int PLAYCOUNT, int SKIPCOUNT, std::string KIND, int BITRATE, std::string LASTPLAYED, int SAMPLERATE, int LENGTH)
 {
 	// set the object
 	id = ID;
@@ -186,7 +184,7 @@ void Song Data :: set(int ID, std::string ARTIST, std::string ALBUM, std::string
 	length = LENGTH;
 }
 
-std::string Song Data :: dump(std::string info = "all")
+std::string SongData :: dump(std::string info)
 {
 	std::stringstream returnValue;
 	returnValue.str("");

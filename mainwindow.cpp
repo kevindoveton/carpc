@@ -38,6 +38,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	hideAllCentreFrames();
 	ui->frameHome->show();
 
+	ui->buttonBack->hide();
+	ui->buttonArtist->hide();
+	ui->buttonAlbum->hide();
+	ui->buttonSong->hide();
+
 	// hide all selected tab labels then select home
 	hideAllTabSelected();
 	ui->labelSelected0->show();
@@ -187,6 +192,18 @@ void MainWindow::on_buttonMusic_released()
 	// frames
 	MainWindow::hideAllCentreFrames();
 	ui->frameMusic->show();
+
+	ui->buttonMusic->hide();
+	ui->buttonHome->hide();
+	ui->buttonPhone->hide();
+	ui->buttonMaps->hide();
+
+	ui->buttonBack->show();
+	ui->buttonArtist->show();
+	ui->buttonAlbum->show();
+	ui->buttonSong->show();
+
+
 
 	// selected tab bar label
 	hideAllTabSelected();

@@ -433,6 +433,8 @@ public:
 		labelSelected1->raise();
 
 
+
+
 		// buttonMusic
 		buttonMusic = new QPushButton(frameBottomBar);
 		buttonMusic->setObjectName(QStringLiteral("buttonMusic"));
@@ -487,6 +489,46 @@ public:
 												"background-position: center;"));
 
 
+
+		// buttonBack
+		buttonHome = new QPushButton(frameBottomBar);
+		buttonHome->setObjectName(QStringLiteral("buttonBack"));
+		buttonHome->setGeometry(QRect(58, 0, 230, 111));
+		buttonHome->setFlat(true);
+		buttonHome->raise();
+		buttonHome->setStyleSheet(QLatin1String("background-image: url(./resources/icons/back.png);\n"
+												"background-repeat: no-repeat;\n"
+												"background-position: center;"));
+
+		// buttonArtist
+		buttonMusic = new QPushButton(frameBottomBar);
+		buttonMusic->setObjectName(QStringLiteral("buttonArtist"));
+		buttonMusic->setGeometry(QRect(368, 0, 230, 111));
+		buttonMusic->setFlat(true);
+		buttonMusic->raise();
+		buttonMusic->setStyleSheet(QLatin1String("background-image: url(./resources/icons/artist.png);\n"
+												 "background-repeat: no-repeat;\n"
+												 "background-position: center;"));
+
+		// buttonAlbum
+		buttonPhone = new QPushButton(frameBottomBar);
+		buttonPhone->setObjectName(QStringLiteral("buttonAlbum"));
+		buttonPhone->setGeometry(QRect(678, 0, 230, 111));
+		buttonPhone->setFlat(true);
+		buttonPhone->raise();
+		buttonPhone->setStyleSheet(QLatin1String("background-image: url(./resources/icons/album.png);\n"
+												 "background-repeat: no-repeat;\n"
+												 "background-position: center;"));
+
+		// buttonSong
+		buttonMaps = new QPushButton(frameBottomBar);
+		buttonMaps->setObjectName(QStringLiteral("buttonSong"));
+		buttonMaps->setGeometry(QRect(989, 0, 230, 111));
+		buttonMaps->setFlat(true);
+		buttonMaps->raise();
+		buttonMaps->setStyleSheet(QLatin1String("background-image: url(./resources/icons/song.png);\n"
+												"background-repeat: no-repeat;\n"
+												"background-position: center;"));
 
 
 

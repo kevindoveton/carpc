@@ -16,6 +16,7 @@ std::string DBPATH = "resources/music/musicLibrary.sqlite3";
 int currentBassStatus; // used in run loop
 int oldBassStatus; // used in run loop
 
+MusicDB musicDB;
 
 int artistIDCur;
 int albumIDCur;
@@ -45,7 +46,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	// Create Song Model
 	model = new QStandardItemModel;
-	getAllArtists(model); // set artist
+	musicDB.getAllArtists(model); // set artist
 	ui->listviewMusic->setModel(model);
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
 	//	ui->listviewMusic->setAlternatingRowColors(true);
@@ -96,40 +97,7 @@ void MainWindow::runLoop()
 
 
 
-int playNewSong(std::string songName, HSTREAM& handle, BOOL restart) {
-	std::cout << BASS_ChannelIsActive(handle) << std::endl;
 
-	if (restart == FALSE) {
-		// nothing is playing
-		if (BASS_ChannelIsActive(handle) == 0)
-		{
-			handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
-			BASS_ChannelPlay(handle, FALSE);
-		}
-
-		// currently playing
-		else if (BASS_ChannelIsActive(handle) == 1)
-		{
-			BASS_ChannelPause(handle);
-		}
-
-		// currently paused
-		else if (BASS_ChannelIsActive(handle) == 3)
-		{
-			BASS_ChannelPlay(handle, FALSE);
-		}
-	}
-	else
-	{
-		BASS_ChannelStop(handle);
-		handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
-		BASS_ChannelPlay(handle, TRUE);
-	}
-
-	nowPlaying.getSongTags(songName, nowPlaying.title, nowPlaying.album, nowPlaying.artist);
-
-	return BASS_ChannelIsActive(handle);
-}
 
 
 
@@ -143,7 +111,7 @@ std::string getCurrentTime() {
 	return strstream.str();
 }
 
-void MainWindow::on_buttonHome_released()
+void MainWindow :: on_buttonHome_released()
 {
 	// frames
 	selectedFrame(0);
@@ -153,7 +121,7 @@ void MainWindow::on_buttonHome_released()
 }
 
 
-void MainWindow::hideAllCentreFrames()
+void MainWindow :: hideAllCentreFrames()
 {
 	ui->frameHome->hide();
 	ui->frameMusic->hide();
@@ -161,7 +129,7 @@ void MainWindow::hideAllCentreFrames()
 	ui->frameMaps->hide();
 }
 
-void MainWindow::on_buttonMusic_released()
+void MainWindow :: on_buttonMusic_released()
 {
 	// frames
 	selectedFrame(1);
@@ -169,7 +137,7 @@ void MainWindow::on_buttonMusic_released()
 	selectedButton(1);
 }
 
-void MainWindow::on_buttonPhone_released()
+void MainWindow :: on_buttonPhone_released()
 {
 	// frames
 	selectedFrame(2);
@@ -178,7 +146,7 @@ void MainWindow::on_buttonPhone_released()
 	selectedButton(2);
 }
 
-void MainWindow::on_buttonMaps_released()
+void MainWindow :: on_buttonMaps_released()
 {
 	// frames
 	selectedFrame(3);
@@ -187,28 +155,28 @@ void MainWindow::on_buttonMaps_released()
 	selectedButton(3);
 }
 
-void MainWindow::on_buttonVolumeDown_released()
+void MainWindow :: on_buttonVolumeDown_released()
 {
 	// lower the volume by a percentage..
 	std :: cout << "Volume Down"
 				<< std :: endl;
 }
 
-void MainWindow::on_buttonVolumeUp_released()
+void MainWindow :: on_buttonVolumeUp_released()
 {
 	// increase the volume by a percentage
 	std :: cout << "Volume Up"
 				<< std :: endl;
 }
 
-void MainWindow::on_buttonMusicPlayPause_released()
+void MainWindow :: on_buttonMusicPlayPause_released()
 {
 	int playStatus = playNewSong("file.mp3", audioChannel, FALSE);
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.artist, nowPlaying.album, nowPlaying.artist);
 }
 
-void MainWindow::on_buttonMusicNext_released()
+void MainWindow :: on_buttonMusicNext_released()
 {
 	currentPlaylist.erase(currentPlaylist.begin());
 	int playStatus = playNewSong(currentPlaylist[0].getPath(), audioChannel, TRUE);
@@ -216,7 +184,7 @@ void MainWindow::on_buttonMusicNext_released()
 	setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 }
 
-void MainWindow::setButtonPlayPauseText(int playStatus)
+void MainWindow :: setButtonPlayPauseText(int playStatus)
 {
 	switch (playStatus)
 	{
@@ -259,57 +227,7 @@ void MainWindow::on_buttonQuit_released()
 	quick_exit(0);
 }
 
-bool getPlaylist(std::string path)
-{
-	try
-	{
-		SQLite::Database db(path);
-
-		SQLite::Statement query(db, "SELECT * FROM artists");
-
-		while (query.executeStep())
-		{
-			SongData temp;
-			temp.set(query.getColumn(0), query.getColumn(1), query.getColumn(2), query.getColumn(3), query.getColumn(4), query.getColumn(5), query.getColumn(6), query.getColumn(7), query.getColumn(8), query.getColumn(9), query.getColumn(10), query.getColumn(11), query.getColumn(12));
-			musicDB.push_back(temp);
-		}\
-	}
-
-	catch (std::exception& e)
-	{
-		std::cout << "getPlaylist - exception: " << e.what() << std::endl;
-		return false;
-
-	}
-	return true;
-}
-
-void getArtist(std::string path, QStringList& stringlist)
-{
-	artists.clear();
-	std::stringstream hello;
-	try
-	{
-		SQLite::Database db(path);
-
-		SQLite::Statement query(db, "SELECT artist FROM music");
-
-		while (query.executeStep())
-		{
-			hello.str("");
-			hello << query.getColumn(0);
-			stringlist << hello.str().c_str();
-		}
-	}
-
-	catch (std::exception& e)
-	{
-		std::cout << "Get Artist - Exception: " << e.what() << std::endl;
-
-	}
-}
-
-void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
+void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 {
 
 	switch (currentView)
@@ -319,7 +237,7 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			// going to album view now
 			artistIDCur = index.sibling(index.row(), 1).data().toInt();
 			model->clear();
-			getAlbums(model, artistIDCur);
+			musicDB.getAlbums(model, artistIDCur);
 			hideAllTabSelected();
 			ui->labelSelected2->show();
 			break;
@@ -329,7 +247,7 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 			albumIDCur = index.sibling(index.row(), 1).data().toInt();
 			std::cout << albumIDCur << std::endl;
 			model->clear();
-			getSongs(model, albumIDCur);
+			musicDB.getSongs(model, albumIDCur);
 			hideAllTabSelected();
 			ui->labelSelected3->show();
 			break;
@@ -337,7 +255,7 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 		case 3:
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
-			getSongPath(songIDCur, currentSong);
+			musicDB.getSongPath(songIDCur, currentSong);
 			playNewSong(currentSong.getPath(), audioChannel, true);
 			setButtonPlayPauseText(1);
 			setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
@@ -350,86 +268,11 @@ void MainWindow::on_listviewMusic_clicked(const QModelIndex &index)
 	currentView++;
 }
 
-void getAlbums(QStandardItemModel* model, int artistID)
-{
-	// TO DO
-	// Set background pictures from db
-
-
-	int indexCount = 0;
-	model->setColumnCount(2);
-	try
-	{
-		SQLite::Database db(DBPATH);
-
-		SQLite::Statement query(db, "SELECT albumName, albumID FROM albums WHERE artistID == ?");
-		query.bind(1, artistID);
-
-		while (query.executeStep())
-		{
-			//			albumIDCur = query.getColumn(1);
-			indexCount++;
-			model->setRowCount(indexCount);
-			std::string column0 = query.getColumn(0);
-			int column1 = query.getColumn(1);
-
-			model->setData(model->index((indexCount-1), 1), (column1));
-
-			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
-
-		}
-
-	}
 
 
 
-	catch (std::exception& e)
-	{
-		std::cout << "getAlbums - Exception: " << e.what() << std::endl;
-
-	}
-}
 
 
-
-void getSongs(QStandardItemModel* model, int albumID)
-{
-	// TO DO
-	// Set background pictures from db
-
-
-	int indexCount = 0;
-	model->setColumnCount(2);
-	try
-	{
-		SQLite::Database db(DBPATH);
-
-		SQLite::Statement query(db, "SELECT songName, songID FROM songs WHERE albumID == ?");
-		query.bind(1, albumID);
-
-		while (query.executeStep())
-		{
-			//			songIDCur = query.getColumn(1);
-			indexCount++;
-			model->setRowCount(indexCount);
-			std::string column0 = query.getColumn(0);
-			int column1 = query.getColumn(1);
-
-			model->setData(model->index((indexCount-1), 1), (column1));
-			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
-
-		}
-	}
-
-	catch (std::exception& e)
-	{
-		std::cout << "getSongs - Exception: " << e.what() << std::endl;
-
-	}
-
-}
 
 // Hide All Tab Selected
 // Hide all Selected Labels
@@ -572,94 +415,7 @@ int MainWindow :: selectedFrame(int selected)
 	return selected;
 }
 
-void getAllArtists(QStandardItemModel* model)
-{
-	// TO DO
-	// Set background pictures from db
 
-
-	int indexCount = 0;
-	model->setColumnCount(2);
-	try
-	{
-		SQLite::Database db(DBPATH);
-
-		SQLite::Statement query(db, "SELECT artistName, artistID FROM artists");
-
-
-		while (query.executeStep())
-		{
-			//			artistIDCur = query.getColumn(1);
-
-
-			indexCount++;
-			model->setRowCount(indexCount);
-			std::string column0 = query.getColumn(0);
-			int column1 = query.getColumn(1);
-
-
-			model->setData(model->index((indexCount-1), 1), (column1));
-
-			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
-
-		}
-
-	}
-
-
-
-	catch (std::exception& e)
-	{
-		std::cout << "getAllArtists - Exception: " << e.what() << std::endl;
-
-	}
-}
-
-void getSongPath(int songID, SongData& currentSong)
-{
-	try
-	{
-		SQLite::Database db(DBPATH);
-
-		SQLite::Statement query(db, "SELECT * FROM library WHERE songID == ?");
-		query.bind(1, songID);
-
-		while (query.executeStep())
-		{
-			\
-			std::string album = "";
-			std::string artist = "";
-			int bitRate = query.getColumn(5);
-			int ID = query.getColumn(0);
-			std::string kind = "";
-			std::string lastPlayed = "";
-			int length = query.getColumn(9);
-			std::string path = query.getColumn(1);
-			int playCount = query.getColumn(4);
-			int rating = query.getColumn(2);
-			int sampleRate = 0;
-			int skipCount = query.getColumn(3);
-			std::string song;
-
-
-			currentSong.set(ID, artist, album, song, path, rating, playCount, skipCount, kind, bitRate, lastPlayed, sampleRate, length);
-			std::cout << currentSong.dump();
-		}
-
-	}
-
-
-
-	catch (std::exception& e)
-	{
-		std::cout << "getAllArtists - Exception: " << e.what() << std::endl;
-
-	}
-
-
-	return ;
-}
 
 void MainWindow::on_buttonBack_released()
 {
@@ -682,4 +438,39 @@ void MainWindow::on_buttonAlbum_released()
 void MainWindow::on_buttonSong_released()
 {
 
+}
+
+int playNewSong(std::string songName, HSTREAM& handle, BOOL restart) {
+	std::cout << BASS_ChannelIsActive(handle) << std::endl;
+
+	if (restart == FALSE) {
+		// nothing is playing
+		if (BASS_ChannelIsActive(handle) == 0)
+		{
+			handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
+			BASS_ChannelPlay(handle, FALSE);
+		}
+
+		// currently playing
+		else if (BASS_ChannelIsActive(handle) == 1)
+		{
+			BASS_ChannelPause(handle);
+		}
+
+		// currently paused
+		else if (BASS_ChannelIsActive(handle) == 3)
+		{
+			BASS_ChannelPlay(handle, FALSE);
+		}
+	}
+	else
+	{
+		BASS_ChannelStop(handle);
+		handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
+		BASS_ChannelPlay(handle, TRUE);
+	}
+
+	nowPlaying.getSongTags(songName, nowPlaying.title, nowPlaying.album, nowPlaying.artist);
+
+	return BASS_ChannelIsActive(handle);
 }

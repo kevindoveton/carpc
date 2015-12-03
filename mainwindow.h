@@ -36,6 +36,7 @@
 // Clases
 #include "ClassMusic.h"							// Song Data
 #include "ClassSong.h"							
+#include "ClassMusicDB.h"
 #include "listviewmusicdelegate.h"				// listviewMusic Delegate
 
 
@@ -52,12 +53,11 @@ class MainWindow : public QMainWindow
 		explicit MainWindow(QWidget *parent = 0);
 		~MainWindow();
 
-		void setSongTags(std::string title, std::string album, std::string artist);
-		// set the song labels
+		
 
-		QStringListModel* artistsModel;
-		QStringListModel* albumModel;
-		QStringListModel* songModel;
+		//QStringListModel* artistsModel;
+		//QStringListModel* albumModel;
+		//QStringListModel* songModel;
 
 	private slots:
 
@@ -90,6 +90,9 @@ class MainWindow : public QMainWindow
 
 	private:
 		Ui::MainWindow *ui;
+
+		void setSongTags(std::string title, std::string album, std::string artist);
+		// set the song labels
 
 		void setButtonPlayPauseText(int playStatus);
 		// set the text according to current playing ness
@@ -126,23 +129,12 @@ class MainWindow : public QMainWindow
 		// hide all the selected labels for the tab bar
 };
 
-void getAllArtists(QStandardItemModel* model);
+std::string getCurrentTime();
+// return current time as string
 
 int playNewSong(std::string songName, HSTREAM& audioChannel, BOOL restart);
 // play a new song
 // requires path to song including extension
 // returns current status
-
-std::string getCurrentTime();
-// return current time as string
-
-bool getPlaylist(std::string path);
-
-void getArtist(QStandardItemModel& model);
-void getAlbums(QStandardItemModel* model, int artistID);
-void getSongPath(int songID, SongData& currentSong);
-
-void getSongs(QStandardItemModel* model, int albumID);
-
 
 #endif // MAINWINDOW_H

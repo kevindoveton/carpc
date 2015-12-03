@@ -36,7 +36,8 @@ HEADERS  += mainwindow.h \
     ui_mainwindow.h \
     listviewmusicdelegate.h \
     ClassMusicDB.h \
-    ClassSong.h
+    ClassSong.h \
+    Constants.h
 
 
 #FORMS    += mainwindow.ui

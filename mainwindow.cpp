@@ -11,7 +11,6 @@ int currentView = 1; // start up in artist mode
 song nowPlaying;
 SongData currentSong;
 QStandardItemModel* model;
-std::string DBPATH = "resources/music/musicLibrary.sqlite3";
 
 int currentBassStatus; // used in run loop
 int oldBassStatus; // used in run loop

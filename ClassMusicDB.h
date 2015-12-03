@@ -1,3 +1,6 @@
+// Constants
+#include "Constants.h"
+
 // QT
 #include <QtCore>
 #include <QtGui>

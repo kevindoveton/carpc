@@ -1,6 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+// Constants
+#include "Constants.h"
+
 // QT
 #include <QtCore>
 #include <QtGui>

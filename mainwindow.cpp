@@ -4,7 +4,7 @@
 HSTREAM audioChannel; // bass handle
 
 QStringList artists;
-std::vector<SongData> musicDB;
+//std::vector<SongData> musicDB;
 
 std::vector<SongData> currentPlaylist;
 int currentView = 1; // start up in artist mode

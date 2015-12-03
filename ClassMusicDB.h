@@ -1,6 +1,6 @@
 // QT
 #include <QtCore>
-//#include <QtGui>
+#include <QtGui>
 //#include <QMainWindow>
 //#include <QTimer>
 

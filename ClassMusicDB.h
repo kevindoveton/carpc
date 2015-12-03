@@ -31,6 +31,8 @@
 //#include <taglib/fileref.h>						// Taglib
 #include <sqlite3.h>							// SQLite (Data Storage)
 #include "libraries/SQLiteCpp/SQLiteCpp.h"		// SQLiteCPP (SQLite API)
+
+#include "ClsasMusic.h"
 class MusicDB
 {
 	public:

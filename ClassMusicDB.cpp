@@ -168,7 +168,7 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 	}
 }
 
-void MusicDB :: getArtist(std::string path, QStringList& stringlist)
+/*void MusicDB :: getAllArtist(std::string path, QStringList& stringlist)
 {
 	artists.clear();
 	std::stringstream hello;
@@ -191,7 +191,7 @@ void MusicDB :: getArtist(std::string path, QStringList& stringlist)
 		std::cout << "Get Artist - Exception: " << e.what() << std::endl;
 
 	}
-}
+}*/
 
 bool MusicDB :: getPlaylist(std::string path)
 {
@@ -205,8 +205,8 @@ bool MusicDB :: getPlaylist(std::string path)
 		{
 			SongData temp;
 			temp.set(query.getColumn(0), query.getColumn(1), query.getColumn(2), query.getColumn(3), query.getColumn(4), query.getColumn(5), query.getColumn(6), query.getColumn(7), query.getColumn(8), query.getColumn(9), query.getColumn(10), query.getColumn(11), query.getColumn(12));
-			musicDB.push_back(temp);
-		}\
+//			musicDB.push_back(temp);
+		}
 	}
 
 	catch (std::exception& e)

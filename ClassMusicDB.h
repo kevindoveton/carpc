@@ -32,7 +32,8 @@
 #include <sqlite3.h>							// SQLite (Data Storage)
 #include "libraries/SQLiteCpp/SQLiteCpp.h"		// SQLiteCPP (SQLite API)
 
-#include "ClsasMusic.h"
+#include "ClassMusic.h"
+
 class MusicDB
 {
 	public:
@@ -47,5 +48,8 @@ class MusicDB
 		void getSongPath(int songID, SongData& currentSong);
 
 		void getSongs(QStandardItemModel* model, int albumID);
+
+	private:
+		std::string DBPATH = "resources/music/musicLibrary.sqlite3";
 
 };

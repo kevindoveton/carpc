@@ -178,12 +178,14 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 
 	switch (musicPlayer.currentBassStatus())
 	{
-		case 3:
-			musicPlayer.resume();
-			break;
 		case 1:
 			musicPlayer.pause();
 			break;
+			
+		case 3:
+			musicPlayer.resume();
+			break;
+
 		default:
 			break;
 		

@@ -287,12 +287,6 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 	currentView++;
 }
 
-
-
-
-
-
-
 // Hide All Tab Selected
 // Hide all Selected Labels
 void MainWindow :: hideAllTabSelected()
@@ -446,17 +440,28 @@ void MainWindow::on_buttonBack_released()
 
 void MainWindow::on_buttonArtist_released()
 {
-
+	model->clear();
+	musicDB.getAllArtists(model); // set artist
+	hideAllTabSelected();
+	ui->labelSelected1->show();
 }
 
 void MainWindow::on_buttonAlbum_released()
 {
-
+	model->clear();
+	musicDB.getAlbums(model, artistIDCur);
+	hideAllTabSelected();
+	ui->labelSelected2->show();
+	
 }
 
 void MainWindow::on_buttonSong_released()
 {
-
+	std::cout << albumIDCur << std::endl;
+	model->clear();
+	musicDB.getSongs(model, albumIDCur);
+	hideAllTabSelected();
+	ui->labelSelected3->show();
 }
 
 

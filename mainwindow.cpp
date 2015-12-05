@@ -175,12 +175,21 @@ void MainWindow :: on_buttonVolumeUp_released()
 
 void MainWindow :: on_buttonMusicPlayPause_released()
 {
-	if (musicPlayer.currentBassStatus() == 3)
+
+	switch (musicPlayer.currentBassStatus())
 	{
-		musicPlayer.resume();
+		case 3:
+			musicPlayer.resume();
+			break;
+		case 1:
+			musicPlayer.pause();
+			break;
+		default:
+			break;
+		
 	}
-	
-	setButtonPlayPauseText(playStatus);
+
+	setButtonPlayPauseText(musicPlayer.currentBassStatus());
 	setSongTags(nowPlaying.artist, nowPlaying.album, nowPlaying.artist);
 }
 

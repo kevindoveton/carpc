@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "ClassMusicPlayer.h"
+
 // Constants
 #include "Constants.h"
 
@@ -41,7 +41,7 @@
 #include "ClassSong.h"							
 #include "ClassMusicDB.h"
 #include "listviewmusicdelegate.h"				// listviewMusic Delegate
-
+#include "ClassMusicPlayer.h"
 
 
 namespace Ui {

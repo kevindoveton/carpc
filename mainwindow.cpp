@@ -175,7 +175,11 @@ void MainWindow :: on_buttonVolumeUp_released()
 
 void MainWindow :: on_buttonMusicPlayPause_released()
 {
-	int playStatus = musicPlayer.playNewSong("file.mp3", FALSE);
+	if (musicPlayer.currentBassStatus() == 3)
+	{
+		musicPlayer.resume();
+	}
+	
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.artist, nowPlaying.album, nowPlaying.artist);
 }

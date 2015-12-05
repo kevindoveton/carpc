@@ -47,7 +47,7 @@ int MusicPlayer :: pause()
 
 int MusicPlayer :: resume()
 {
-
+	BASS_ChannelPlay(defaultAudioChannel, FALSE);
 }
 
 int MusicPlayer :: currentBassStatus()

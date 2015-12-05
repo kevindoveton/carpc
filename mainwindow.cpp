@@ -1,20 +1,26 @@
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
+
 #include "mainwindow.h"
 
 
-HSTREAM audioChannel; // bass handle
 
 QStringList artists;
-//std::vector<SongData> musicDB;
 
-std::vector<SongData> currentPlaylist;
+std::vector<SongData> upNext;
+std::vector<SongData> recentlyPlayed;
+
 int currentView = 1; // start up in artist mode
 song nowPlaying;
 SongData currentSong;
 QStandardItemModel* model;
 
-int currentBassStatus; // used in run loop
-int oldBassStatus; // used in run loop
 
+
+// Music Player
+MusicPlayer musicPlayer;
 MusicDB musicDB;
 
 int artistIDCur;
@@ -170,7 +176,7 @@ void MainWindow :: on_buttonVolumeUp_released()
 
 void MainWindow :: on_buttonMusicPlayPause_released()
 {
-	int playStatus = playNewSong("file.mp3", audioChannel, FALSE);
+	int playStatus = musicPlayer.playNewSong("file.mp3", audioChannel, FALSE);
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.artist, nowPlaying.album, nowPlaying.artist);
 }
@@ -178,7 +184,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 void MainWindow :: on_buttonMusicNext_released()
 {
 	currentPlaylist.erase(currentPlaylist.begin());
-	int playStatus = playNewSong(currentPlaylist[0].getPath(), audioChannel, TRUE);
+	int playStatus = musicPlayer.playNewSong(currentPlaylist[0].getPath(), audioChannel, TRUE);
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 }
@@ -255,7 +261,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
 			musicDB.getSongPath(songIDCur, currentSong);
-			playNewSong(currentSong.getPath(), audioChannel, true);
+			musicPlayer.playNewSong(currentSong.getPath(), audioChannel, true);
 			setButtonPlayPauseText(1);
 			setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 			currentView--;
@@ -439,37 +445,4 @@ void MainWindow::on_buttonSong_released()
 
 }
 
-int playNewSong(std::string songName, HSTREAM& handle, BOOL restart) {
-	std::cout << BASS_ChannelIsActive(handle) << std::endl;
 
-	if (restart == FALSE) {
-		// nothing is playing
-		if (BASS_ChannelIsActive(handle) == 0)
-		{
-			handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
-			BASS_ChannelPlay(handle, FALSE);
-		}
-
-		// currently playing
-		else if (BASS_ChannelIsActive(handle) == 1)
-		{
-			BASS_ChannelPause(handle);
-		}
-
-		// currently paused
-		else if (BASS_ChannelIsActive(handle) == 3)
-		{
-			BASS_ChannelPlay(handle, FALSE);
-		}
-	}
-	else
-	{
-		BASS_ChannelStop(handle);
-		handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
-		BASS_ChannelPlay(handle, TRUE);
-	}
-
-	nowPlaying.getSongTags(songName, nowPlaying.title, nowPlaying.album, nowPlaying.artist);
-
-	return BASS_ChannelIsActive(handle);
-}

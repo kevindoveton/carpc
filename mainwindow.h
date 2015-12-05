@@ -135,9 +135,6 @@ class MainWindow : public QMainWindow
 std::string getCurrentTime();
 // return current time as string
 
-int playNewSong(std::string songName, HSTREAM& audioChannel, BOOL restart);
-// play a new song
-// requires path to song including extension
-// returns current status
+
 
 #endif // MAINWINDOW_H

@@ -1,3 +1,8 @@
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
+
 #include "ClassMusicDB.h"
 
 void MusicDB :: getAllArtists(QStandardItemModel* model)
@@ -167,31 +172,6 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 
 	}
 }
-
-/*void MusicDB :: getAllArtist(std::string path, QStringList& stringlist)
-{
-	artists.clear();
-	std::stringstream hello;
-	try
-	{
-		SQLite::Database db(path);
-
-		SQLite::Statement query(db, "SELECT artist FROM music");
-
-		while (query.executeStep())
-		{
-			hello.str("");
-			hello << query.getColumn(0);
-			stringlist << hello.str().c_str();
-		}
-	}
-
-	catch (std::exception& e)
-	{
-		std::cout << "Get Artist - Exception: " << e.what() << std::endl;
-
-	}
-}*/
 
 bool MusicDB :: getPlaylist(std::string path)
 {

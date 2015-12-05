@@ -18,20 +18,20 @@ int MusicPlayer :: pause()
 {
 	BASS_ChannelPause(defaultAudioChannel);
 	std::cout << "Pause";
-	return currentBassStatus;
+	return currentBassStatus();
 }
 
 int MusicPlayer :: resume()
 {
 	BASS_ChannelPlay(defaultAudioChannel, FALSE);
 	std::cout << "Play";
-	return currentBassStatus;
+	return currentBassStatus();
 }
 
 int MusicPlayer :: stop()
 {
 	BASS_ChannelStop(defaultAudioChannel);
-	return currentBassStatus;
+	return currentBassStatus();
 }
 
 int MusicPlayer :: currentBassStatus()

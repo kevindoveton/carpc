@@ -181,7 +181,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 		case 1:
 			musicPlayer.pause();
 			break;
-			
+
 		case 3:
 			musicPlayer.resume();
 			break;
@@ -198,7 +198,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 void MainWindow :: on_buttonMusicNext_released()
 {
 	upNext.erase(upNext.begin());
-	int playStatus = musicPlayer.playNewSong(upNext[0].getPath(), TRUE);
+	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 }
@@ -275,7 +275,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
 			musicDB.getSongPath(songIDCur, currentSong);
-			musicPlayer.playNewSong(currentSong.getPath(), true);
+			musicPlayer.playNewSong(currentSong.getPath());
 			setButtonPlayPauseText(1);
 			setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 			currentView--;

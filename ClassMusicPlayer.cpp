@@ -5,71 +5,65 @@
 
 #include "ClassMusicPlayer.h"
 
-int playNewSong(std::string songName, HSTREAM& handle, BOOL restart) {
-	std::cout << BASS_ChannelIsActive(handle) << std::endl;
+int MusicPlayer :: playNewSong(std::string songName, BOOL restart) {
+	std::cout << BASS_ChannelIsActive(defaultAudioChannel) << std::endl;
 
 	if (restart == FALSE) {
 		// nothing is playing
-		if (BASS_ChannelIsActive(handle) == 0)
+		if (BASS_ChannelIsActive(defaultAudioChannel) == 0)
 		{
-			handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
-			BASS_ChannelPlay(handle, FALSE);
+			defaultAudioChannel = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
+			BASS_ChannelPlay(defaultAudioChannel, FALSE);
 		}
 
 		// currently playing
-		else if (BASS_ChannelIsActive(handle) == 1)
+		else if (BASS_ChannelIsActive(defaultAudioChannel) == 1)
 		{
-			BASS_ChannelPause(handle);
+			BASS_ChannelPause(defaultAudioChannel);
 		}
 
 		// currently paused
-		else if (BASS_ChannelIsActive(handle) == 3)
+		else if (BASS_ChannelIsActive(defaultAudioChannel) == 3)
 		{
-			BASS_ChannelPlay(handle, FALSE);
+			BASS_ChannelPlay(defaultAudioChannel, FALSE);
 		}
 	}
 	else
 	{
-		BASS_ChannelStop(handle);
-		handle = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
-		BASS_ChannelPlay(handle, TRUE);
+		BASS_ChannelStop(defaultAudioChannel);
+		defaultAudioChannel = BASS_StreamCreateFile(FALSE, songName.c_str(), 0, 0, 0);
+		BASS_ChannelPlay(defaultAudioChannel, TRUE);
 	}
 
-	nowPlaying.getSongTags(songName, nowPlaying.title, nowPlaying.album, nowPlaying.artist);
+	//nowPlaying.getSongTags(songName, nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 
-	return BASS_ChannelIsActive(handle);
+	return BASS_ChannelIsActive(defaultAudioChannel);
 }
 
-int pause(HSTREAM& audioChannel = defaultAudioChannel)
+int MusicPlayer :: pause()
 {
-	BASS_ChannelPause(audioChannel);
+	BASS_ChannelPause(defaultAudioChannel);
 }
 
-int resume(HSTREAM& audioChannel = defaultAudioChannel)
+int MusicPlayer :: resume()
 {
 
 }
 
-int getCurrentBassStatus()
+int MusicPlayer :: currentBassStatus()
 {
-	return currentBassStatus;
+	BASS_ChannelIsActive(defaultAudioChannel);
 }
 
-int setCurrentBassStatus(int status)
+int MusicPlayer :: getOldBassStatus()
 {
-	currentBassStatus = status;
-	return currentBassStatus;
+	return varOldBassStatus;
 }
 
-int getOldBassStatus()
+int MusicPlayer :: setOldBassStatus(int status)
 {
-	return oldBassStatus;
-}
-
-int setOldBassStatus(int status)
-{
-	oldBassStatus = status;
-	return oldBassStatus;
+	varOldBassStatus = status;
+	return varOldBassStatus;
 }
 
 

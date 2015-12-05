@@ -90,13 +90,12 @@ void MainWindow::runLoop()
 	// check if song has finished played
 	// probably not the best way.. this will play a song as soon as you push the stop button
 	// could possibly add a stopped variable? not that we even have a stop button
-	currentBassStatus = BASS_ChannelIsActive(audioChannel);
-	if ((currentBassStatus == 0) && (oldBassStatus == 1)) // song was playing and is now stopped
+	if ((musicPlayer.currentBassStatus() == 0) && (musicPlayer.getOldBassStatus() == 1)) // song was playing and is now stopped
 	{
 		// play the next song
 		// put the new song into previously played list
 	}
-	oldBassStatus = currentBassStatus; // update oldBassSTatus, bad things happen if we dont do this
+	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassSTatus, bad things happen if we dont do this
 	
 }
 
@@ -176,15 +175,15 @@ void MainWindow :: on_buttonVolumeUp_released()
 
 void MainWindow :: on_buttonMusicPlayPause_released()
 {
-	int playStatus = musicPlayer.playNewSong("file.mp3", audioChannel, FALSE);
+	int playStatus = musicPlayer.playNewSong("file.mp3", FALSE);
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.artist, nowPlaying.album, nowPlaying.artist);
 }
 
 void MainWindow :: on_buttonMusicNext_released()
 {
-	currentPlaylist.erase(currentPlaylist.begin());
-	int playStatus = musicPlayer.playNewSong(currentPlaylist[0].getPath(), audioChannel, TRUE);
+	upNext.erase(upNext.begin());
+	int playStatus = musicPlayer.playNewSong(upNext[0].getPath(), TRUE);
 	setButtonPlayPauseText(playStatus);
 	setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 }
@@ -261,7 +260,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
 			musicDB.getSongPath(songIDCur, currentSong);
-			musicPlayer.playNewSong(currentSong.getPath(), audioChannel, true);
+			musicPlayer.playNewSong(currentSong.getPath(), true);
 			setButtonPlayPauseText(1);
 			setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
 			currentView--;

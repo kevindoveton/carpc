@@ -1,3 +1,8 @@
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
+
 #include "mainwindow.h"
 #include <QApplication>
 #include <iostream>

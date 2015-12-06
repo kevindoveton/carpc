@@ -1,10 +1,7 @@
-//
-//  xmldata.hpp
-//  xmlTest
-//
-//  Created by Kevin Doveton on 16/07/2015.
-//  Copyright © 2015 Kevin Doveton. All rights reserved.
-//
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
 
 #ifndef ClassMusic_cpp
 #define ClassMusic_cpp

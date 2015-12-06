@@ -202,7 +202,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 
 		default:
 			break;
-		
+
 	}
 
 	setButtonPlayPauseText(musicPlayer.currentBassStatus());
@@ -211,17 +211,17 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 
 void MainWindow :: on_buttonMusicNext_released()
 {
-	recentlyPlayed.push_back(SongData, upNext.begin());
+	recentlyPlayed.push_back(upNext[0]);
 	upNext.erase(upNext.begin());
 	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
 	setButtonPlayPauseText(playStatus);
 	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 }
 
-void MainWindow :: on_buttonMusicPlayPause_released()
+void MainWindow :: on_buttonMusicPrevious_released()
 {
-	upNext.insert(upNext.begin(), recentlyPlayed.end());
-	upNext.pop_back();
+	upNext.insert(upNext.begin(), recentlyPlayed.back());
+	recentlyPlayed.pop_back();
 	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
 	setButtonPlayPauseText(playStatus);
 	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());

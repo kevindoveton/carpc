@@ -1,3 +1,8 @@
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 

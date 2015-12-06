@@ -1,3 +1,8 @@
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
+
 #include "ClassSong.h"
 
 void song :: getSongTags(std::string path, std::string& title, std::string& album, std::string& artist)

@@ -1,3 +1,8 @@
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
+
 #ifndef LISTVIEWMUSICDELEGATE_H
 #define LISTVIEWMUSICDELEGATE_H
 #include <QListView>

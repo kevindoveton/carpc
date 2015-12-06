@@ -1,10 +1,7 @@
-//
-//  ClassMusic.cpp
-//  Class Music
-//
-//  Created by Kevin Doveton on 16/07/2015.
-//  Copyright © 2015 Kevin Doveton. All rights reserved.
-//
+// --------------------------
+// Kevin Doveton
+// Copyright 2015
+// --------------------------
 
 #include "ClassMusic.h"
 

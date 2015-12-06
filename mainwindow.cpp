@@ -274,6 +274,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 		case 3:
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
+			upNext.assign(0,0);
 			musicDB.getSongPath(songIDCur, upNext[0]);
 			musicPlayer.playNewSong(upNext[0].getPath());
 

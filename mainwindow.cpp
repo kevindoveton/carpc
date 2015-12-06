@@ -137,8 +137,22 @@ void MainWindow :: on_buttonMusic_released()
 {
 	// frames
 	selectedFrame(1);
-
-	selectedButton(1);
+	hideMenuButtons();
+	showMusicButtons();
+	switch (currentView)
+	{
+		case 1:
+			selectedButton(1);
+			break;
+		case 2:
+			selectedButton(2);
+			break;
+		case 3:
+			selectedButton(3);
+			break;
+		default:
+			break;
+	}
 }
 
 void MainWindow :: on_buttonPhone_released()
@@ -248,7 +262,7 @@ void MainWindow::on_buttonQuit_released()
 
 void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 {
-
+	SongData temp;
 	switch (currentView)
 	{
 		case 1:
@@ -274,13 +288,15 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 		case 3:
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
-			upNext.assign(0,0);
+
+			upNext.push_back(temp);
 			musicDB.getSongPath(songIDCur, upNext[0]);
 			musicPlayer.playNewSong(upNext[0].getPath());
 
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 			currentView--;
+			break;
 
 		default:
 			break;
@@ -442,6 +458,7 @@ void MainWindow::on_buttonBack_released()
 
 void MainWindow::on_buttonArtist_released()
 {
+	currentView = 1;
 	model->clear();
 	musicDB.getAllArtists(model); // set artist
 	hideAllTabSelected();
@@ -450,6 +467,7 @@ void MainWindow::on_buttonArtist_released()
 
 void MainWindow::on_buttonAlbum_released()
 {
+	currentView = 2;
 	model->clear();
 	musicDB.getAlbums(model, artistIDCur);
 	hideAllTabSelected();
@@ -459,6 +477,7 @@ void MainWindow::on_buttonAlbum_released()
 
 void MainWindow::on_buttonSong_released()
 {
+	currentView = 3;
 	std::cout << albumIDCur << std::endl;
 	model->clear();
 	musicDB.getSongs(model, albumIDCur);

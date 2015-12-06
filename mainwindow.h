@@ -68,6 +68,7 @@ class MainWindow : public QMainWindow
 		void on_buttonVolumeUp_released();
 		void on_buttonMusicPlayPause_released();
 		void on_buttonMusicNext_released();
+		void on_buttonMusicPrevious_released();
 		void on_buttonVolumeDown_released();
 
 		// frameTabBar

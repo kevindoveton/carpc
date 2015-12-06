@@ -218,6 +218,15 @@ void MainWindow :: on_buttonMusicNext_released()
 	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 }
 
+void MainWindow :: on_buttonMusicPlayPause_released()
+{
+	upNext.insert(upNext.begin(), recentlyPlayed.end());
+	upNext.pop_back();
+	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
+	setButtonPlayPauseText(playStatus);
+	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+}
+
 void MainWindow :: setButtonPlayPauseText(int playStatus)
 {
 	switch (playStatus)

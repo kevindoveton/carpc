@@ -302,6 +302,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			SongData temp;
 
 			musicDB.getSongPath(songIDCur, temp);
+			upNext.erase();
 			upNext.push_back(temp);
 			musicPlayer.playNewSong(upNext[0].getPath());
 

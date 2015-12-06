@@ -262,17 +262,16 @@ void MainWindow::on_buttonQuit_released()
 
 void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 {
-	SongData temp;
 	switch (currentView)
 	{
 		case 1:
-
 			// going to album view now
 			artistIDCur = index.sibling(index.row(), 1).data().toInt();
 			model->clear();
 			musicDB.getAlbums(model, artistIDCur);
 			hideAllTabSelected();
 			ui->labelSelected2->show();
+			currentView = 2;
 			break;
 
 		case 2:
@@ -283,26 +282,27 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			musicDB.getSongs(model, albumIDCur);
 			hideAllTabSelected();
 			ui->labelSelected3->show();
+			currentView = 3;
 			break;
 
 		case 3:
+		{
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
-
+			SongData temp;
 			upNext.push_back(temp);
 			musicDB.getSongPath(songIDCur, upNext[0]);
 			musicPlayer.playNewSong(upNext[0].getPath());
 
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
-			currentView--;
 			break;
+		}
 
 		default:
 			break;
 
 	}
-	currentView++;
 }
 
 // Hide All Tab Selected

@@ -55,12 +55,19 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 	{
 		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT * FROM library WHERE songID == ?");
+		SQLite::Statement query(db, "SELECT artistName FROM library
+									INNER JOIN songs
+									ON library.songID = songs.songID
+									INNER JOIN albums
+									ON songs.albumID = albums.albumID
+									INNER JOIN artists
+									ON artists.artistID = albums.artistID
+									WHERE songs.songID == ?");
 		query.bind(1, songID);
 
 		while (query.executeStep())
 		{
-			\
+
 			std::string album = "";
 			std::string artist = "";
 			int bitRate = query.getColumn(5);
@@ -73,7 +80,7 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 			int rating = query.getColumn(2);
 			int sampleRate = 0;
 			int skipCount = query.getColumn(3);
-			std::string song;
+			std::string song = query.get(13);
 
 
 			currentSong.set(ID, artist, album, song, path, rating, playCount, skipCount, kind, bitRate, lastPlayed, sampleRate, length);
@@ -197,4 +204,3 @@ bool MusicDB :: getPlaylist(std::string path)
 	}
 	return true;
 }
-

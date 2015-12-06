@@ -290,12 +290,14 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
 			SongData temp;
+
+			musicDB.getSongPath(songIDCur, temp);
 			upNext.push_back(temp);
-			musicDB.getSongPath(songIDCur, upNext[0]);
 			musicPlayer.playNewSong(upNext[0].getPath());
 
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+			std::cout << upNext[0].getTitle() << std::endl;
 			break;
 		}
 

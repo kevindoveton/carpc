@@ -51,40 +51,36 @@ void MusicDB :: getAllArtists(QStandardItemModel* model)
 
 void MusicDB :: getSongPath(int songID, SongData& currentSong)
 {
+	std::cout << songID << std::endl;
 	try
 	{
 		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT artistName FROM library
-									INNER JOIN songs
-									ON library.songID = songs.songID
-									INNER JOIN albums
-									ON songs.albumID = albums.albumID
-									INNER JOIN artists
-									ON artists.artistID = albums.artistID
-									WHERE songs.songID == ?");
+		SQLite::Statement query(db, "SELECT * FROM library INNER JOIN songs\
+									ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE songs.songID == ?");
 		query.bind(1, songID);
 
 		while (query.executeStep())
 		{
 
-			std::string album = "";
-			std::string artist = "";
+			std::string album = query.getColumn(15);
+			std::string artist = query.getColumn(19);
 			int bitRate = query.getColumn(5);
 			int ID = query.getColumn(0);
-			std::string kind = "";
+			std::string kind = query.getColumn(7);
 			std::string lastPlayed = "";
 			int length = query.getColumn(9);
 			std::string path = query.getColumn(1);
 			int playCount = query.getColumn(4);
 			int rating = query.getColumn(2);
-			int sampleRate = 0;
+			int sampleRate = query.getColumn(6);
 			int skipCount = query.getColumn(3);
-			std::string song = query.get(13);
-
+			std::string song = query.getColumn(12);
+			/*for (int i = 0; i < 20; i++)
+				std::cout << "Column " << i << " " << query.getColumn(i) << std::endl*/;
 
 			currentSong.set(ID, artist, album, song, path, rating, playCount, skipCount, kind, bitRate, lastPlayed, sampleRate, length);
-			std::cout << currentSong.dump();
+			std::cout << currentSong.dump() << std::endl;
 		}
 
 	}

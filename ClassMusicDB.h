@@ -26,16 +26,31 @@ class MusicDB
 {
 	public:
 		void getAllArtists(QStandardItemModel* model);
+		// Get all artists from DB
+		// Place into QStandardItemModel
 
 		bool getPlaylist(std::string path);
+		// --------------------------------------
+		// TODO
 
 		void getArtist(QStandardItemModel& model);
+		// --------------------------------------
+		// TODO
 
 		void getAlbums(QStandardItemModel* model, int artistID);
+		// Converts artistID to list of albums in the form of a 
+		// model
+		// Requires artistID, QStandardItemModel
 		
 		void getSongPath(int songID, SongData& currentSong);
+		// Convert songID to a SongData containing all info 
+		// about a song
+		// Requires songID, SongData
 
 		void getSongs(QStandardItemModel* model, int albumID);
+		// Coverts albumID to list of songs in the form of a
+		// model
+		// Requires albumID, QStandardItemModel
 
 	private:
 		std::string DBPATH = "resources/music/musicLibrary.sqlite3";

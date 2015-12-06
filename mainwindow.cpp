@@ -192,7 +192,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 	}
 
 	setButtonPlayPauseText(musicPlayer.currentBassStatus());
-	setSongTags(nowPlaying.artist, nowPlaying.album, nowPlaying.artist);
+	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 }
 
 void MainWindow :: on_buttonMusicNext_released()

@@ -29,9 +29,9 @@ class SongData
 
 		std::string getAlbum();
 
-		void setSong(std::string SONG);
+		void setTitle(std::string SONG);
 
-		std::string getSong();
+		std::string getTitle();
 
 		void setPath(std::string PATH);
 

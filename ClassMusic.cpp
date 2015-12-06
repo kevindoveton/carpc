@@ -38,12 +38,12 @@ std::string SongData :: getAlbum()
 	return album;
 }
 
-void SongData :: setSong(std::string SONG)
+void SongData :: setTitle(std::string SONG)
 {
 	song = SONG;
 }
 
-std::string SongData :: getSong()
+std::string SongData :: getTitle()
 {
 	return song;
 }

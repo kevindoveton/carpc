@@ -274,10 +274,11 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 		case 3:
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
-			musicDB.getSongPath(songIDCur, currentSong);
-			musicPlayer.playNewSong(currentSong.getPath());
+			musicDB.getSongPath(songIDCur, upNext[0]);
+			musicPlayer.playNewSong(upNext[0].getPath());
+
 			setButtonPlayPauseText(1);
-			setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
+			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 			currentView--;
 
 		default:

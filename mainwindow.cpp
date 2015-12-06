@@ -211,10 +211,11 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 
 void MainWindow :: on_buttonMusicNext_released()
 {
+	recentlyPlayed.push_back(SongData, upNext.begin());
 	upNext.erase(upNext.begin());
 	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
 	setButtonPlayPauseText(playStatus);
-	setSongTags(nowPlaying.title, nowPlaying.album, nowPlaying.artist);
+	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 }
 
 void MainWindow :: setButtonPlayPauseText(int playStatus)

@@ -20,7 +20,7 @@ SOURCES += main.cpp\
     libraries/SQLiteCpp/Statement.cpp \
     libraries/SQLiteCpp/Transaction.cpp \
     ClassMusicDB.cpp \
-    ClassSong.cpp \
+#   ClassSong.cpp \
     ClassMusicPlayer.cpp
 
 
@@ -37,7 +37,7 @@ HEADERS  += mainwindow.h \
     ui_mainwindow.h \
     listviewmusicdelegate.h \
     ClassMusicDB.h \
-    ClassSong.h \
+#   ClassSong.h \
     Constants.h \
     ClassMusicPlayer.h
 

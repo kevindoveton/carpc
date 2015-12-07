@@ -43,7 +43,7 @@
 
 // Clases
 #include "ClassMusic.h"							// Song Data
-#include "ClassSong.h"							
+//#include "ClassSong.h"							
 #include "ClassMusicDB.h"
 #include "listviewmusicdelegate.h"				// listviewMusic Delegate
 #include "ClassMusicPlayer.h"

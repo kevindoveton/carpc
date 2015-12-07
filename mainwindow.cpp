@@ -20,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	// hide all selected tab labels then select home
 	selectedButton(0);
 
-	nowPlaying.playing = false;
+	
 
 	// labels
 	setSongTags("", "", "");

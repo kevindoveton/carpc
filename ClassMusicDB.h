@@ -53,7 +53,7 @@ class MusicDB
 
 		void getAllAlbums(QStandardItemModel* model);
 
-		void getAllSongs(QStandardItemModel* model)
+		void getAllSongs(QStandardItemModel* model);
 
 
 	private:

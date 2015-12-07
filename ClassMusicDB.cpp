@@ -11,7 +11,7 @@ void MusicDB :: getArtists(QStandardItemModel* model)
 	// Set background pictures from db
 
 
-	int indexCount = 0;
+	int indexCount = 1;
 	model->setColumnCount(2);
 
 	// All Albums -> In Artist View
@@ -150,7 +150,7 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 	int indexCount = 1;
 	model->setColumnCount(2);
 
-	// All Artists
+	// Artists
 	model->setRowCount(indexCount);
 	model->setData(model->index((indexCount-1), 0), QString::fromStdString("All Songs"));
 	model->setData(model->index((indexCount-1), 1), (-1));

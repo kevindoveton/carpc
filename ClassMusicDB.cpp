@@ -256,18 +256,19 @@ void MusicDB :: getAllAlbums(QStandardItemModel* model)
 	try
 	{
 		SQLite::Database db(DBPATH);
-		SQLite::Statement query(db, "SELECT albums.albumName FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID");
+		SQLite::Statement query(db, "SELECT DISTINCT albums.albumName, albums.albumID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID");
 
 		while (query.executeStep())
 		{
 			indexCount++;
-				model->setRowCount(indexCount);
-				std::string column0 = query.getColumn(0);
-				int column1 = query.getColumn(1);
+			model->setRowCount(indexCount);
+			std::string column0 = query.getColumn(0);
+			std::cout << column0 << std::endl;
+			int column1 = query.getColumn(1);
 
-				model->setData(model->index((indexCount-1), 1), (column1));
-				model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-				// model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			model->setData(model->index((indexCount-1), 1), (column1));
+			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+			// model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 		}
 
 	}
@@ -280,7 +281,7 @@ void MusicDB :: getAllAlbums(QStandardItemModel* model)
 
 
 
-void MusicDB :: getAllSongs(QStandardItemModel* model, int albumID);
+void MusicDB :: getAllSongs(QStandardItemModel* model, int artistID)
 {
 	int indexCount = 0;
 	model->setColumnCount(2);
@@ -288,10 +289,10 @@ void MusicDB :: getAllSongs(QStandardItemModel* model, int albumID);
 	try
 	{
 		SQLite::Database db(DBPATH);
-		if (albumID != -1)
+		if (artistID != -1)
 		{
-			SQLite::Statement query(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE albums.albumsID == ?");
-			query.bind(1, albumID);
+			SQLite::Statement query(db, "SELECT DISTINCT songs.songName, songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE artists.artistID == ?");
+			query.bind(1, artistID);
 
 			while (query.executeStep())
 			{
@@ -308,7 +309,7 @@ void MusicDB :: getAllSongs(QStandardItemModel* model, int albumID);
 		
 		else
 		{
-			SQLite::Statement query(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID");
+			SQLite::Statement query(db, "SELECT DISTINCT songs.songName, songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID");
 
 			while (query.executeStep())
 			{

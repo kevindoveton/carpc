@@ -164,6 +164,20 @@ void MainWindow :: on_buttonVolumeDown_released()
 	// lower the volume by a percentage..
 	std :: cout << "Volume Down"
 				<< std :: endl;
+
+	if (systemVolume.getCurrentVolume() >= 5)
+	{
+		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() - 5);
+	}
+	else
+	{
+		systemVolume.setMasterVolume(0);
+
+	}
+
+	std::cout	<< "Current Volume: "
+				<< systemVolume.getCurrentVolume()
+				<< std::endl;
 }
 
 void MainWindow :: on_buttonVolumeUp_released()
@@ -171,6 +185,15 @@ void MainWindow :: on_buttonVolumeUp_released()
 	// increase the volume by a percentage
 	std :: cout << "Volume Up"
 				<< std :: endl;
+	if (systemVolume.getCurrentVolume() <= 95)
+		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() + 5);
+	else
+		systemVolume.setMasterVolume(100);
+
+	std::cout	<< "Current Volume: "
+				<< systemVolume.getCurrentVolume()
+				<< std::endl;
+
 }
 
 void MainWindow :: on_buttonMusicPlayPause_released()
@@ -283,7 +306,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			if (albumIDCur != -1)
 				musicDB.getSongs(model, albumIDCur);
 			else
-				musicDB.getAllSongs(model, albumID)
+				musicDB.getAllSongs(model, artistIDCur);
 			hideAllTabSelected();
 			ui->labelSelected3->show();
 			currentView = 3;

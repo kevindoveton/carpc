@@ -43,7 +43,7 @@
 
 // Clases
 #include "ClassMusic.h"							// Song Data
-//#include "ClassSong.h"							
+#include "ClassSystemVolume.h"
 #include "ClassMusicDB.h"
 #include "listviewmusicdelegate.h"				// listviewMusic Delegate
 #include "ClassMusicPlayer.h"
@@ -233,6 +233,7 @@ class MainWindow : public QMainWindow
 		// Objects
 		MusicPlayer musicPlayer;
 		MusicDB musicDB;
+		SystemVolume systemVolume;
 };
 
 std::string getCurrentTime();

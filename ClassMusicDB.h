@@ -55,7 +55,7 @@ class MusicDB
 		// Returns a model containing all albums in library
 		// Requires QStandardItemModel
 
-		void getAllSongs(QStandardItemModel* model, int albumID);
+		void getAllSongs(QStandardItemModel* model, int artistID);
 		// Returns a model containing all songs from paticular artist
 		// if artistID is set to -1, returns all songs in library
 		// Requires artistID, QStandardItemModel

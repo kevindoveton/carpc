@@ -39,7 +39,7 @@ class MusicDB
 
 		void getAlbums(QStandardItemModel* model, int artistID);
 		// Converts artistID to list of albums in the form of a 
-		// model
+		// model sa
 		// Requires artistID, QStandardItemModel
 		
 		void getSongPath(int songID, SongData& currentSong);

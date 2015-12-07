@@ -218,6 +218,23 @@ class MainWindow : public QMainWindow
 
 		void hideAllTabSelected();
 		// hide all the selected labels for the tab bar
+
+		int artistIDCur;
+		int albumIDCur;
+		int songIDCur;
+		QStringList artists;
+
+		std::vector<SongData> upNext;
+		std::vector<SongData> recentlyPlayed;
+
+		int currentView = 1; // start up in artist mode
+		song nowPlaying;
+		SongData currentSong;
+		QStandardItemModel* model;
+
+		// Music Player
+		MusicPlayer musicPlayer;
+		MusicDB musicDB;
 };
 
 std::string getCurrentTime();

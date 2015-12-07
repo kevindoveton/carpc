@@ -5,29 +5,6 @@
 
 #include "mainwindow.h"
 
-
-
-QStringList artists;
-
-std::vector<SongData> upNext;
-std::vector<SongData> recentlyPlayed;
-
-int currentView = 1; // start up in artist mode
-song nowPlaying;
-SongData currentSong;
-QStandardItemModel* model;
-
-
-
-// Music Player
-MusicPlayer musicPlayer;
-MusicDB musicDB;
-
-int artistIDCur;
-int albumIDCur;
-int songIDCur;
-
-
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent),
 	ui(new Ui::MainWindow)
@@ -78,7 +55,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::runLoop()
 {
-	//	std::cout << "runLoop timed out " << std::endl;
+	/*	std::cout 	<< "runLoop timed out " 
+					<< std::endl;
+	*/
 
 
 	// TIME SECTION
@@ -142,17 +121,21 @@ void MainWindow :: on_buttonMusic_released()
 	selectedFrame(1);
 	hideMenuButtons();
 	showMusicButtons();
+
 	switch (currentView)
 	{
 		case 1:
 			selectedButton(1);
 			break;
+
 		case 2:
 			selectedButton(2);
 			break;
+
 		case 3:
 			selectedButton(3);
 			break;
+
 		default:
 			break;
 	}
@@ -290,7 +273,8 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 		case 2:
 			// going to the song view now
 			albumIDCur = index.sibling(index.row(), 1).data().toInt();
-			std::cout << albumIDCur << std::endl;
+			std::cout 	<< albumIDCur 
+						<< std::endl;
 			model->clear();
 			musicDB.getSongs(model, albumIDCur);
 			hideAllTabSelected();
@@ -311,7 +295,8 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			musicDB.shuffleAlbum(songIDCur, upNext);
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
-			std::cout << upNext[0].getTitle() << std::endl;
+			std::cout 	<< upNext[0].getTitle() 
+						<< std::endl;
 			break;
 		}
 
@@ -494,7 +479,8 @@ void MainWindow::on_buttonAlbum_released()
 void MainWindow::on_buttonSong_released()
 {
 	currentView = 3;
-	std::cout << albumIDCur << std::endl;
+	std::cout 	<< albumIDCur 
+				<< std::endl;
 	model->clear();
 	musicDB.getSongs(model, albumIDCur);
 	hideAllTabSelected();

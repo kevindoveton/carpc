@@ -125,6 +125,7 @@ void MusicDB :: getSongs(QStandardItemModel* model, int albumID)
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
 			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 
+		}
 	}
 
 	catch (std::exception& e)

@@ -175,7 +175,7 @@ void MainWindow :: on_buttonVolumeDown_released()
 
 	}
 
-	std::cout	<< "Current Volume: "
+	std::cout	<< "Current Volume: "q
 				<< systemVolume.getCurrentVolume()
 				<< std::endl;
 }

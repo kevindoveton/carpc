@@ -92,8 +92,11 @@ void MainWindow::runLoop()
 	// could possibly add a stopped variable? not that we even have a stop button
 	if ((musicPlayer.currentBassStatus() == 0) && (musicPlayer.getOldBassStatus() == 1)) // song was playing and is now stopped
 	{
-		// play the next song
-		// put the new song into previously played list
+		recentlyPlayed.push_back(upNext[0]);
+		upNext.erase(upNext.begin());
+		int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
+		setButtonPlayPauseText(playStatus);
+		setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 	}
 	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassSTatus, bad things happen if we dont do this
 	

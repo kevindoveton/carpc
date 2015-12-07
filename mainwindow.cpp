@@ -264,7 +264,11 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			// going to album view now
 			artistIDCur = index.sibling(index.row(), 1).data().toInt();
 			model->clear();
-			musicDB.getAlbums(model, artistIDCur);
+			if (artistIDCur != -1)
+				musicDB.getAlbums(model, artistIDCur);
+			else
+				musicDB.getAllAlbums(model);
+
 			hideAllTabSelected();
 			ui->labelSelected2->show();
 			currentView = 2;
@@ -276,7 +280,10 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			std::cout 	<< albumIDCur 
 						<< std::endl;
 			model->clear();
-			musicDB.getSongs(model, albumIDCur);
+			if (albumIDCur != -1)
+				musicDB.getSongs(model, albumIDCur);
+			else
+				musicDB.getAllSongs(model, albumID)
 			hideAllTabSelected();
 			ui->labelSelected3->show();
 			currentView = 3;

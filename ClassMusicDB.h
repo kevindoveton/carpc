@@ -52,8 +52,13 @@ class MusicDB
 		// Populate a vector with a playlist of songs
 
 		void getAllAlbums(QStandardItemModel* model);
+		// Returns a model containing all albums in library
+		// Requires QStandardItemModel
 
-		void getAllSongs(QStandardItemModel* model);
+		void getAllSongs(QStandardItemModel* model, int albumID);
+		// Returns a model containing all songs from paticular artist
+		// if artistID is set to -1, returns all songs in library
+		// Requires artistID, QStandardItemModel
 
 
 	private:

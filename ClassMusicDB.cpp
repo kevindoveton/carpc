@@ -246,3 +246,89 @@ void MusicDB :: shuffleAlbum(int currentSongID, std::vector<SongData>& playlist)
 		std::cout << "shuffleAlbum - exception: " << e.what() << std::endl;
 	}
 }
+
+
+void MusicDB :: getAllAlbums(QStandardItemModel* model)
+{
+	int indexCount = 0;
+	model->setColumnCount(2);
+
+	try
+	{
+		SQLite::Database db(DBPATH);
+		SQLite::Statement query(db, "SELECT albums.albumName FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID");
+
+		while (query.executeStep())
+		{
+			indexCount++;
+				model->setRowCount(indexCount);
+				std::string column0 = query.getColumn(0);
+				int column1 = query.getColumn(1);
+
+				model->setData(model->index((indexCount-1), 1), (column1));
+				model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+				// model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+		}
+
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "getAllAlbums - exception: " << e.what() << std::endl;
+	}
+}
+
+
+
+void MusicDB :: getAllSongs(QStandardItemModel* model, int albumID);
+{
+	int indexCount = 0;
+	model->setColumnCount(2);
+
+	try
+	{
+		SQLite::Database db(DBPATH);
+		if (albumID != -1)
+		{
+			SQLite::Statement query(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE albums.albumsID == ?");
+			query.bind(1, albumID);
+
+			while (query.executeStep())
+			{
+				indexCount++;
+				model->setRowCount(indexCount);
+				std::string column0 = query.getColumn(0);
+				int column1 = query.getColumn(1);
+
+				model->setData(model->index((indexCount-1), 1), (column1));
+				model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+				// model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			}
+		}
+		
+		else
+		{
+			SQLite::Statement query(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID");
+
+			while (query.executeStep())
+			{
+				indexCount++;
+				model->setRowCount(indexCount);
+				std::string column0 = query.getColumn(0);
+				int column1 = query.getColumn(1);
+
+				model->setData(model->index((indexCount-1), 1), (column1));
+				model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
+				// model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			}
+		}
+		
+		
+
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "getAllSongs - exception: " << e.what() << std::endl;
+	}
+}

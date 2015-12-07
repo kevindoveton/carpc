@@ -25,15 +25,11 @@
 class MusicDB
 {
 	public:
-		void getAllArtists(QStandardItemModel* model);
+		void getArtists(QStandardItemModel* model);
 		// Get all artists from DB
 		// Place into QStandardItemModel
 
 		bool getPlaylist(std::string path);
-		// --------------------------------------
-		// TODO
-
-		void getArtist(QStandardItemModel& model);
 		// --------------------------------------
 		// TODO
 
@@ -54,6 +50,11 @@ class MusicDB
 
 		void shuffleAlbum(int currentSongID, std::vector<SongData>& playlist);
 		// Populate a vector with a playlist of songs
+
+		void getAllAlbums(QStandardItemModel* model);
+
+		void getAllSongs(QStandardItemModel* model)
+
 
 	private:
 		std::string DBPATH = "resources/music/musicLibrary.sqlite3";

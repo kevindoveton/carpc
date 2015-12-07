@@ -5,7 +5,7 @@
 
 #include "ClassMusicDB.h"
 
-void MusicDB :: getAllArtists(QStandardItemModel* model)
+void MusicDB :: getArtists(QStandardItemModel* model)
 {
 	// TO DO
 	// Set background pictures from db
@@ -13,6 +13,11 @@ void MusicDB :: getAllArtists(QStandardItemModel* model)
 
 	int indexCount = 0;
 	model->setColumnCount(2);
+
+	// All Albums -> In Artist View
+	model->setRowCount(indexCount);
+	model->setData(model->index((indexCount-1), 0), QString::fromStdString("All Albums"));
+	model->setData(model->index((indexCount-1), 1), (-1));
 	try
 	{
 		SQLite::Database db(DBPATH);
@@ -44,7 +49,7 @@ void MusicDB :: getAllArtists(QStandardItemModel* model)
 
 	catch (std::exception& e)
 	{
-		std::cout << "getAllArtists - Exception: " << e.what() << std::endl;
+		std::cout << "getArtists - Exception: " << e.what() << std::endl;
 
 	}
 }
@@ -89,7 +94,7 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 
 	catch (std::exception& e)
 	{
-		std::cout << "getAllArtists - Exception: " << e.what() << std::endl;
+		std::cout << "getSongPath - Exception: " << e.what() << std::endl;
 
 	}
 
@@ -142,8 +147,14 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 	// Set background pictures from db
 
 
-	int indexCount = 0;
+	int indexCount = 1;
 	model->setColumnCount(2);
+
+	// All Artists
+	model->setRowCount(indexCount);
+	model->setData(model->index((indexCount-1), 0), QString::fromStdString("All Songs"));
+	model->setData(model->index((indexCount-1), 1), (-1));
+
 	try
 	{
 		SQLite::Database db(DBPATH);
@@ -165,10 +176,6 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 
 		}
-
-		model->setRowCount(indexCount+1);
-		model->setData(model->index((indexCount), 0), QString::fromStdString("All Albums"));
-		model->setData(model->index((indexCount), 1), (-1));
 	}
 
 

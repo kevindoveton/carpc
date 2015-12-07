@@ -28,7 +28,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	// Create Song Model
 	model = new QStandardItemModel;
-	musicDB.getAllArtists(model); // set artist
+	musicDB.getArtists(model); // set artist
 	ui->listviewMusic->setModel(model);
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
 	//	ui->listviewMusic->setAlternatingRowColors(true);
@@ -461,7 +461,7 @@ void MainWindow::on_buttonArtist_released()
 {
 	currentView = 1;
 	model->clear();
-	musicDB.getAllArtists(model); // set artist
+	musicDB.getArtists(model); // set artist
 	hideAllTabSelected();
 	ui->labelSelected1->show();
 }

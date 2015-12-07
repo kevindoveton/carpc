@@ -228,7 +228,7 @@ class MainWindow : public QMainWindow
 		std::vector<SongData> recentlyPlayed;
 
 		int currentView = 1; // start up in artist mode
-		song nowPlaying;
+		
 		SongData currentSong;
 		QStandardItemModel* model;
 

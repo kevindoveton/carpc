@@ -11,3 +11,4 @@
 
 // Ignored
 ignored/
+*.DS_Store*

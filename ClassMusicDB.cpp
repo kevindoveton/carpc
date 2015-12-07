@@ -200,3 +200,34 @@ bool MusicDB :: getPlaylist(std::string path)
 	}
 	return true;
 }
+
+void shuffleAlbum(int currentSongID, std::vector<SongData>& playlist)
+{
+	int albumIDCur;
+	try
+	{
+		SQLite::Database db(path);
+		SQLite::Statement query(db, "SELECT albumID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE songs.songID == ?");
+		query.bind(1, currentSongID);
+
+		while (query.executeStep())
+		{
+			albumIDCur = query.getColumn(0);
+		}
+
+		SQLite::Statement songQuery(db, "SELECT songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE albums.albumID == ? ORDER BY NEWID()");
+		songQuery.bind(1, currentSongID);
+
+		while (songQuery.executeStep())
+		{
+			SongData temp
+			getSongPath(songQuery.getColumn(0), temp)
+			playlist.push_back(temp);
+		}
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "shuffleAlbum - exception: " << e.what() << std::endl;
+	}
+}

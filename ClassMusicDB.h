@@ -52,6 +52,9 @@ class MusicDB
 		// model
 		// Requires albumID, QStandardItemModel
 
+		void shuffleAlbum(int currentSongID, std::vector<SongData>& playlist);
+		// Populate a vector with a playlist of songs
+
 	private:
 		std::string DBPATH = "resources/music/musicLibrary.sqlite3";
 

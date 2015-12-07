@@ -219,20 +219,18 @@ class MainWindow : public QMainWindow
 		void hideAllTabSelected();
 		// hide all the selected labels for the tab bar
 
+		
+
+		// Music
+		int currentView = 1; // start up in artist mode
+		QStandardItemModel* model; // used for music
+		std::vector<SongData> upNext;
+		std::vector<SongData> recentlyPlayed;
 		int artistIDCur;
 		int albumIDCur;
 		int songIDCur;
-		QStringList artists;
 
-		std::vector<SongData> upNext;
-		std::vector<SongData> recentlyPlayed;
-
-		int currentView = 1; // start up in artist mode
-		
-		SongData currentSong;
-		QStandardItemModel* model;
-
-		// Music Player
+		// Objects
 		MusicPlayer musicPlayer;
 		MusicDB musicDB;
 };

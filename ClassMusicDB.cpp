@@ -105,6 +105,7 @@ void MusicDB :: getSongs(QStandardItemModel* model, int albumID)
 
 	int indexCount = 0;
 	model->setColumnCount(2);
+	
 	try
 	{
 		SQLite::Database db(DBPATH);
@@ -124,7 +125,6 @@ void MusicDB :: getSongs(QStandardItemModel* model, int albumID)
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
 			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
 
-		}
 	}
 
 	catch (std::exception& e)
@@ -165,6 +165,9 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 
 		}
 
+		model->setRowCount(indexCount+1);
+		model->setData(model->index((indexCount), 0), QString::fromStdString("All Albums"));
+		model->setData(model->index((indexCount), 1), (-1));
 	}
 
 

@@ -71,11 +71,14 @@ void MainWindow::runLoop()
 	// could possibly add a stopped variable? not that we even have a stop button
 	if ((musicPlayer.currentBassStatus() == 0) && (musicPlayer.getOldBassStatus() == 1)) // song was playing and is now stopped
 	{
-		recentlyPlayed.push_back(upNext[0]);
-		upNext.erase(upNext.begin());
-		int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
-		setButtonPlayPauseText(playStatus);
-		setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+		if (musicPlayer.playing())
+		{
+			recentlyPlayed.push_back(upNext[0]);
+			upNext.erase(upNext.begin());
+			int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
+			setButtonPlayPauseText(playStatus);
+			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+		}
 	}
 	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassSTatus, bad things happen if we dont do this
 	
@@ -201,6 +204,11 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 
 	switch (musicPlayer.currentBassStatus())
 	{
+		case 0:
+			musicDB.shuffleAll(-1, upNext);
+			musicPlayer.playNewSong(upNext[0].getPath());
+			break;
+
 		case 1:
 			musicPlayer.pause();
 			break;
@@ -220,11 +228,33 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 
 void MainWindow :: on_buttonMusicNext_released()
 {
-	recentlyPlayed.push_back(upNext[0]);
-	upNext.erase(upNext.begin());
-	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
-	setButtonPlayPauseText(playStatus);
-	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+
+	if (musicPlayer.currentBassStatus() == 0)
+	{
+		musicDB.shuffleAll(-1, upNext);
+		musicPlayer.playNewSong(upNext[0].getPath());
+	}
+	else
+	{
+		if (!upNext.empty())
+		{
+			recentlyPlayed.push_back(upNext[0]);
+			upNext.erase(upNext.begin());
+				if (!upNext.empty())
+				{
+					musicPlayer.playNewSong(upNext[0].getPath());
+					setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+				}
+				else
+				{
+					musicPlayer.stop();
+					setSongTags("","","");
+				}
+		}
+	}
+
+	setButtonPlayPauseText(musicPlayer.currentBassStatus());
+
 }
 
 void MainWindow :: on_buttonMusicPrevious_released()
@@ -322,6 +352,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			upNext.clear();
 			upNext.push_back(temp);
 			musicPlayer.playNewSong(upNext[0].getPath());
+
 			// Picked artist
 			// Chose all songs
 			if ((artistIDCur == -1) && (albumIDCur == -1))

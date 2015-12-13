@@ -47,9 +47,13 @@ class MusicPlayer
 		int setOldBassStatus(int status);
 		// Sets varOldBassStatus
 
+		bool playing();
+		// check if song is active
+
 	private:
 		HSTREAM defaultAudioChannel; // bass handle
 		int varCurrentBassStatus; // used in run loop
 		int varOldBassStatus; // used in run loop
+		bool _playing = false;
 
 };

@@ -51,6 +51,9 @@ class MusicDB
 		void shuffleAlbum(int currentSongID, std::vector<SongData>& playlist);
 		// Populate a vector with a playlist of songs
 
+		void shuffleArtist(int currentSongID std::vector<SongData>& playlist);
+		// Populate a vector with a playlist from one artist
+
 		void getAllAlbums(QStandardItemModel* model);
 		// Returns a model containing all albums in library
 		// Requires QStandardItemModel

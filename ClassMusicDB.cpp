@@ -247,6 +247,41 @@ void MusicDB :: shuffleAlbum(int currentSongID, std::vector<SongData>& playlist)
 	}
 }
 
+void shuffleArtist(int currentSongID std::vector<SongData>& playlist)
+{
+	int artistIDCur;
+	try
+	{
+		SQLite::Database db(DBPATH);
+		SQLite::Statement query(db, "SELECT artists.artistID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE songs.songID == ?");
+		query.bind(1, currentSongID);
+
+		while (query.executeStep())
+		{
+			albumIDCur = query.getColumn(0);
+		}
+
+		SQLite::Statement songQuery(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE artists.artistID == ? ORDER BY RANDOM()");
+		songQuery.bind(1, albumIDCur);
+
+		while (songQuery.executeStep())
+		{
+			int curQuery = songQuery.getColumn(0);
+			if (curQuery != currentSongID)
+			{
+				SongData temp;
+				getSongPath(curQuery, temp);
+				playlist.push_back(temp);
+			}
+		}
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "shuffleAlbum - exception: " << e.what() << std::endl;
+	}
+}
+
 
 void MusicDB :: getAllAlbums(QStandardItemModel* model)
 {

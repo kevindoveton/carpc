@@ -322,7 +322,11 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			upNext.clear();
 			upNext.push_back(temp);
 			musicPlayer.playNewSong(upNext[0].getPath());
-			musicDB.shuffleAlbum(songIDCur, upNext);
+			if ((artistIDCur == -1) && (albumIDCur == -1))
+				musicDB.shuffleArtist(songIDCur, upNext);
+			else
+				musicDB.shuffleAlbum(songIDCur, upNext);
+
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 			std::cout 	<< upNext[0].getTitle() 

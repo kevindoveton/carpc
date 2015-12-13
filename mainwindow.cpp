@@ -175,7 +175,7 @@ void MainWindow :: on_buttonVolumeDown_released()
 
 	}
 
-	std::cout	<< "Current Volume: "q
+	std::cout	<< "Current Volume: "
 				<< systemVolume.getCurrentVolume()
 				<< std::endl;
 }
@@ -322,8 +322,17 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			upNext.clear();
 			upNext.push_back(temp);
 			musicPlayer.playNewSong(upNext[0].getPath());
+			// Picked artist
+			// Chose all songs
 			if ((artistIDCur == -1) && (albumIDCur == -1))
-				musicDB.shuffleArtist(songIDCur, upNext);
+				musicDB.shuffleAll(songIDCur, upNext);
+
+			// Picked all albums
+			// chose all songs
+			else if (albumIDCur == -1)
+					musicDB.shuffleArtist(songIDCur, upNext);
+
+			// chose album
 			else
 				musicDB.shuffleAlbum(songIDCur, upNext);
 

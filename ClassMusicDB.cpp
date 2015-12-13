@@ -247,7 +247,33 @@ void MusicDB :: shuffleAlbum(int currentSongID, std::vector<SongData>& playlist)
 	}
 }
 
-void shuffleArtist(int currentSongID std::vector<SongData>& playlist)
+void MusicDB :: shuffleAll(int currentSongID, std::vector<SongData>& playlist)
+{
+	try
+	{
+		SQLite::Database db(DBPATH);
+
+		SQLite::Statement songQuery(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID ORDER BY RANDOM()");
+
+		while (songQuery.executeStep())
+		{
+			int curQuery = songQuery.getColumn(0);
+			if (curQuery != currentSongID)
+			{
+				SongData temp;
+				getSongPath(curQuery, temp);
+				playlist.push_back(temp);
+			}
+		}
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "shuffleAlbum - exception: " << e.what() << std::endl;
+	}
+}
+
+void MusicDB :: shuffleArtist(int currentSongID, std::vector<SongData>& playlist)
 {
 	int artistIDCur;
 	try
@@ -258,11 +284,11 @@ void shuffleArtist(int currentSongID std::vector<SongData>& playlist)
 
 		while (query.executeStep())
 		{
-			albumIDCur = query.getColumn(0);
+			artistIDCur = query.getColumn(0);
 		}
 
 		SQLite::Statement songQuery(db, "SELECT songs.songID FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE artists.artistID == ? ORDER BY RANDOM()");
-		songQuery.bind(1, albumIDCur);
+		songQuery.bind(1,artistIDCur);
 
 		while (songQuery.executeStep())
 		{
@@ -285,8 +311,12 @@ void shuffleArtist(int currentSongID std::vector<SongData>& playlist)
 
 void MusicDB :: getAllAlbums(QStandardItemModel* model)
 {
-	int indexCount = 0;
+	int indexCount = 1;
 	model->setColumnCount(2);
+
+	model->setRowCount(indexCount);
+	model->setData(model->index((indexCount-1), 0), QString::fromStdString("All Songs"));
+	model->setData(model->index((indexCount-1), 1), (-1));
 
 	try
 	{

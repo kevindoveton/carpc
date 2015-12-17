@@ -220,6 +220,7 @@ class MainWindow : public QMainWindow
 		// hide all the selected labels for the tab bar
 
 		
+		
 
 		// Music
 		int currentView = 1; // start up in artist mode

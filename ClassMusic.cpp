@@ -55,12 +55,12 @@ std::string SongData :: getPath()
 	return path;
 }
 
-void SongData :: setRating(int RATING)
+void SongData :: setRating(float RATING)
 {
 	rating = RATING;
 }
 
-int SongData :: getRating()
+float SongData :: getRating()
 {
 	return rating;
 }

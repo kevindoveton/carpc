@@ -8,6 +8,8 @@ class SystemVolume
 	public:
 		void setMasterVolume(long volume);
 		long getCurrentVolume();
+
+		const float VOLUMECHANGE
 };
 
 #endif // CLASSSYSTEMVOLUME_H

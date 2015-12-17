@@ -34,9 +34,9 @@ class SongData
 
 		std::string getPath();
 
-		void setRating(int RATING);
+		void setRating(float RATING);
 
-		int getRating();
+		float getRating();
 
 		void setPlayCount(int PLAYCOUNT);
 
@@ -78,7 +78,7 @@ class SongData
 		std::string album;
 		std::string song;
 		std::string path;
-		int rating;
+		float rating;
 		int playCount;
 		int skipCount;
 		std::string kind;

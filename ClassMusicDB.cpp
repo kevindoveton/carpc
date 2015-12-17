@@ -398,3 +398,65 @@ void MusicDB :: getAllSongs(QStandardItemModel* model, int artistID)
 		std::cout << "getAllSongs - exception: " << e.what() << std::endl;
 	}
 }
+
+
+void updatePlayCount(int playCount, int songID)
+{
+	try
+	{
+		SQLite::Database db(DBPATH);
+		SQLite::Statement query(db, "UPDATE library SET library.playCount = ? FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE library.songID = ?");
+		query.bind(1, playCount);
+		query.bind(2, songID);
+		while (query.executeStep())
+		{
+		}
+
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "updatePlayCount - exception: " << e.what() << std::endl;
+	}
+}
+
+void updateSkipCount(int skipCount, int songID)
+{
+	try
+	{
+		SQLite::Database db(DBPATH);
+		SQLite::Statement query(db, "UPDATE library SET library.skipCount = ? FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE library.songID = ?");
+		query.bind(1, skipCount);
+		query.bind(2, songID);
+		while (query.executeStep())
+		{
+		}
+
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "updateSkipCount - exception: " << e.what() << std::endl;
+	}
+}
+
+void updateRating(float rating, int songID)
+{
+	try
+	{
+		SQLite::Database db(DBPATH);
+		SQLite::Statement query(db, "UPDATE library SET library.rating = ? FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE library.songID = ?");
+		query.bind(1, rating);
+		query.bind(2, songID);
+		while (query.executeStep())
+		{
+		}
+
+	}
+
+	catch (std::exception& e)
+	{
+		std::cout << "updateRating - exception: " << e.what() << std::endl;
+	}
+}
+

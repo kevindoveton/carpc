@@ -66,11 +66,11 @@ class MusicDB
 		// if artistID is set to -1, returns all songs in library
 		// Requires artistID, QStandardItemModel
 
-		void updatePlayCount(int playCount, int songID);
+		void setPlayCount(int playCount, int songID);
 
-		void updateSkipCount(int skipCount, int songID);
+		void setSkipCount(int skipCount, int songID);
 
-		void updateRating(float rating, int songID);
+		void setRating(float rating, int songID);
 
 
 	private:

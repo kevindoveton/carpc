@@ -400,18 +400,19 @@ void MusicDB :: getAllSongs(QStandardItemModel* model, int artistID)
 }
 
 
-void updatePlayCount(int playCount, int songID)
+void MusicDB :: setPlayCount(int playCount, int songID)
 {
 	try
 	{
-		SQLite::Database db(DBPATH);
-		SQLite::Statement query(db, "UPDATE library SET library.playCount = ? FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE library.songID = ?");
+		SQLite::Database db(DBPATH, SQLITE_OPEN_READWRITE);
+		SQLite::Transaction transaction(db);
+		SQLite::Statement query(db, "UPDATE library SET playCount = ? WHERE songID = ?");
+
 		query.bind(1, playCount);
 		query.bind(2, songID);
-		while (query.executeStep())
-		{
-		}
+		query.exec();
 
+		transaction.commit();
 	}
 
 	catch (std::exception& e)
@@ -420,18 +421,19 @@ void updatePlayCount(int playCount, int songID)
 	}
 }
 
-void updateSkipCount(int skipCount, int songID)
+void MusicDB :: setSkipCount(int skipCount, int songID)
 {
 	try
 	{
-		SQLite::Database db(DBPATH);
-		SQLite::Statement query(db, "UPDATE library SET library.skipCount = ? FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE library.songID = ?");
+		SQLite::Database db(DBPATH, SQLITE_OPEN_READWRITE);
+		SQLite::Transaction transaction(db);
+		SQLite::Statement query(db, "UPDATE library SET skipCount = ? WHERE songID = ?");
+
 		query.bind(1, skipCount);
 		query.bind(2, songID);
-		while (query.executeStep())
-		{
-		}
+		query.exec();
 
+		transaction.commit();
 	}
 
 	catch (std::exception& e)
@@ -440,18 +442,19 @@ void updateSkipCount(int skipCount, int songID)
 	}
 }
 
-void updateRating(float rating, int songID)
+void MusicDB :: setRating(float rating, int songID)
 {
 	try
 	{
-		SQLite::Database db(DBPATH);
-		SQLite::Statement query(db, "UPDATE library SET library.rating = ? FROM library INNER JOIN songs ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE library.songID = ?");
+		SQLite::Database db(DBPATH, SQLITE_OPEN_READWRITE);
+		SQLite::Transaction transaction(db);
+		SQLite::Statement query(db, "UPDATE library SET rating = ? WHERE songID = ?");
+
 		query.bind(1, rating);
 		query.bind(2, songID);
-		while (query.executeStep())
-		{
-		}
+		query.exec();
 
+		transaction.commit();
 	}
 
 	catch (std::exception& e)

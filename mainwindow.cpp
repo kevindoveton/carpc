@@ -74,8 +74,8 @@ void MainWindow::runLoop()
 		if (musicPlayer.playing())
 		{
 			// update playcount
-			upNext[0].setPlayCount(upNext[0].getPlayCount + 1);
-			musicDB.setPlayCount(upNext[0].getPlayCount(), upNext[0].getSongID());
+			upNext[0].setPlayCount(upNext[0].getPlayCount() + 1);
+			musicDB.setPlayCount(upNext[0].getPlayCount(), upNext[0].getID());
 
 			// Push to previously played and remove from upNext
 			recentlyPlayed.push_back(upNext[0]);
@@ -175,9 +175,9 @@ void MainWindow :: on_buttonVolumeDown_released()
 	std :: cout << "Volume Down"
 				<< std :: endl;
 
-	if (systemVolume.getCurrentVolume() >= 0 + systemVolume.volumeChange)
+	if (systemVolume.getCurrentVolume() >= 0 + systemVolume.VOLUMECHANGE)
 	{
-		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() - systemVolume.volumeChange);
+		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() - systemVolume.VOLUMECHANGE);
 	}
 	else
 	{
@@ -195,8 +195,8 @@ void MainWindow :: on_buttonVolumeUp_released()
 	// increase the volume by a percentage
 	std :: cout << "Volume Up"
 				<< std :: endl;
-	if (systemVolume.getCurrentVolume() <= 100 - systemVolume.volumeChange)
-		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() + systemVolume.volumeChange);
+	if (systemVolume.getCurrentVolume() <= 100 - systemVolume.VOLUMECHANGE)
+		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() + systemVolume.VOLUMECHANGE);
 	else
 		systemVolume.setMasterVolume(100);
 
@@ -236,8 +236,9 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 void MainWindow :: on_buttonMusicNext_released()
 {
 	// Update skipcount
-	upNext[0].setSkipCount(upNext[0].getSkipCount + 1);
-	musicDB.updateSkipCount(upNext[0].getSkipCount, upNext[0].getSongID);
+	std::cout << "SkipCount: " << upNext[0].getSkipCount() << std::endl;
+	upNext[0].setSkipCount(upNext[0].getSkipCount() + 1);
+	musicDB.setSkipCount(upNext[0].getSkipCount(), upNext[0].getID());
 
 	if (musicPlayer.currentBassStatus() == 0)
 	{

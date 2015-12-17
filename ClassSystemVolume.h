@@ -9,7 +9,7 @@ class SystemVolume
 		void setMasterVolume(long volume);
 		long getCurrentVolume();
 
-		const float VOLUMECHANGE
+		const float VOLUMECHANGE = 5;
 };
 
 #endif // CLASSSYSTEMVOLUME_H

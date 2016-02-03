@@ -12,6 +12,10 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 
+
+
+
+
 	//  Set home frame for start up
 	selectedFrame(0);
 
@@ -50,6 +54,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
+
 	delete ui;
 }
 

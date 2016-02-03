@@ -235,6 +235,9 @@ class MainWindow : public QMainWindow
 		MusicPlayer musicPlayer;
 		MusicDB musicDB;
 		SystemVolume systemVolume;
+
+		// Maps
+
 };
 
 std::string getCurrentTime();

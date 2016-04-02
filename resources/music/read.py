@@ -18,16 +18,45 @@ con = lite.connect('musicLibrary.sqlite3')
 with con:
 	cur = con.cursor()
 	#albums
-	cur.execute('CREATE TABLE IF NOT EXISTS "albums"("albumGenre" Text, "albumID" Integer NOT NULL PRIMARY KEY AUTOINCREMENT, "albumName" Text, "albumYear" Text, "artistID" Integer, CONSTRAINT "lnk_albums_artists2" FOREIGN KEY ( "artistID" ) REFERENCES "artists"( "artistID" ))')
+	cur.execute('''CREATE TABLE IF NOT EXISTS "albums" (
+			"albumGenre" Text, 
+			"albumID" Integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+			"albumName" Text, 
+			"albumYear" Text, 
+			"albumImagePath" Text,
+			"artistID" Integer, 
+			CONSTRAINT "lnk_albums_artists2" FOREIGN KEY ( "artistID" ) REFERENCES "artists"( "artistID" )
+		)''')
 	
 	#artists
-	cur.execute('CREATE TABLE IF NOT EXISTS "artists"( "artistID" Integer NOT NULL PRIMARY KEY AUTOINCREMENT, "artistName" Text )')
+	cur.execute('''CREATE TABLE IF NOT EXISTS "artists" (
+			"artistID" Integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+			"artistName" Text,
+			"artistImagePath" Text
+		)''')
 	
 	#songs
-	cur.execute('CREATE TABLE IF NOT EXISTS "songs"("albumID"  Integer, "songID"   Integer NOT NULL PRIMARY KEY AUTOINCREMENT, "songName" Text, CONSTRAINT "albumID" FOREIGN KEY ( "albumID" ) REFERENCES "albums"( "albumID" ))')
+	cur.execute('''CREATE TABLE IF NOT EXISTS "songs" (
+			"albumID"  Integer, 
+			"songID" Integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+			"songName" Text, 
+			CONSTRAINT "albumID" FOREIGN KEY ( "albumID" ) REFERENCES "albums"( "albumID" )
+		)''')
 
 	#library
-	cur.execute('CREATE TABLE IF NOT EXISTS "library"("songID" Integer, "path" Text, "rating" Integer, "skipCount" Integer, "playCount" Integer, "bitRate" Integer, "sampleRate" Integer,"kind" Text, "lastPlayed" DateTime, "length" Integer, CONSTRAINT "songID-library" FOREIGN KEY ("songID") REFERENCES "songs"("songID"))')
+	cur.execute('''CREATE TABLE IF NOT EXISTS "library" (
+			"songID" Integer, 
+			"path" Text, 
+			"rating" Integer, 
+			"skipCount" Integer, 
+			"playCount" Integer, 
+			"bitRate" Integer, 
+			"sampleRate" Integer,
+			"kind" Text, 
+			"lastPlayed" DateTime, 
+			"length" Integer, 
+			CONSTRAINT "songID-library" FOREIGN KEY ("songID") REFERENCES "songs"("songID")
+		)''')
 	
 
 

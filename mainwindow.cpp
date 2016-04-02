@@ -18,8 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	//  Set home frame for start up
 	selectedFrame(0);
-
-	hideMusicButtons();
+	hideMusicButtons(); // this is the tab bar at the bottom in the music frame
 
 	// hide all selected tab labels then select home
 	selectedButton(0);
@@ -92,7 +91,7 @@ void MainWindow::runLoop()
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
 		}
 	}
-	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassSTatus, bad things happen if we dont do this
+	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassStatus, bad things happen if we dont do this
 	
 }
 

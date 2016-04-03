@@ -16,12 +16,15 @@ def artistSearch(artistName, download=False):
 		'q' : artistName,
 		'type' : 'artist'
 	}
-	outName = cache+str(uuid.uuid4())+'-'+artistName
-	url = requests.get(search, params=payload).json()['artists']['items'][0]['images'][0]['url']
-	if download == False:
-		return url
-	else:
-		return downloadImage(url, outName+'.jpg')
+	outName = cache+str(uuid.uuid4())+'-'+str(artistName)
+	try:
+		url = requests.get(search, params=payload).json()['artists']['items'][0]['images'][0]['url']
+		if download == False:
+			return url
+		else:
+			return downloadImage(url, outName+'.jpg')
+	except Exception:
+		return ''
 
 
 def albumSearch(albumName, year="", artist="", download=False):
@@ -30,7 +33,7 @@ def albumSearch(albumName, year="", artist="", download=False):
 
 	# get us a base query, we'll make this more specific
 	query = 'album:'+str(albumName)
-	outName = cache+str(uuid.uuid4())+'-'+albumName
+	outName = cache+str(uuid.uuid4())+'-'+str(albumName)
 	# if an artist was included
 	if str(artist) != "":
 		query += ' artist:'+str(artist)
@@ -47,11 +50,14 @@ def albumSearch(albumName, year="", artist="", download=False):
 		'type' : 'album',
 		'limit' : '1'
 	}
-	url = requests.get(search, params=payload).json()['albums']['items'][0]['images'][0]['url']
-	if download == False:
-		return url
-	else:
-		return downloadImage(url, outName+'.jpg')
+	try:
+		url = requests.get(search, params=payload).json()['albums']['items'][0]['images'][0]['url']
+		if download == False:
+			return url
+		else:
+			return downloadImage(url, outName+'.jpg')
+	except Exception:
+		return ''
 
 def downloadImage(url, outName):
 	imageRequest = requests.get(url, stream=True)

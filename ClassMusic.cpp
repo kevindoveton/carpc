@@ -76,7 +76,7 @@ void SongData :: setPlayCount(int PLAYCOUNT)
 
 int SongData :: getPlayCount()
 {
-	if (playcount == NULL)
+	if (playCount == NULL)
 		return float(0);
 	else
 		return playCount;

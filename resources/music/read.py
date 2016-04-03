@@ -90,7 +90,7 @@ with con:
 				cur.execute('INSERT INTO albums (albumName, artistID) VALUES (?,?)', (f.tags["ALBUM"][0], ArtistID[0],))
 				cur.execute('SELECT albumID FROM albums WHERE albums.albumName == ?AND albums.artistID == ?', (f.tags["ALBUM"][0], ArtistID[0],))
 				AlbumID = cur.fetchone()
-				art.albumSearch((f.tags["ALBUM"][0], ArtistID[0],), download=True)
+				art.albumSearch((f.tags["ALBUM"][0]), download=True)
 
 
 

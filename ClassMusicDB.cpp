@@ -402,12 +402,16 @@ void MusicDB :: getAllSongs(QStandardItemModel* model, int artistID)
 
 void MusicDB :: setPlayCount(int playCount, int songID)
 {
+	if (playCount == NULL)
+	{
+		playCount = 0;
+	}
+
 	try
 	{
 		SQLite::Database db(DBPATH, SQLITE_OPEN_READWRITE);
 		SQLite::Transaction transaction(db);
 		SQLite::Statement query(db, "UPDATE library SET playCount = ? WHERE songID = ?");
-
 		query.bind(1, playCount);
 		query.bind(2, songID);
 		query.exec();
@@ -423,6 +427,11 @@ void MusicDB :: setPlayCount(int playCount, int songID)
 
 void MusicDB :: setSkipCount(int skipCount, int songID)
 {
+	if (skipCount == NULL)
+	{
+		skipCount = 0;
+	}
+
 	try
 	{
 		SQLite::Database db(DBPATH, SQLITE_OPEN_READWRITE);
@@ -444,6 +453,10 @@ void MusicDB :: setSkipCount(int skipCount, int songID)
 
 void MusicDB :: setRating(float rating, int songID)
 {
+	if (rating == NULL)
+	{
+		rating = 0;
+	}
 	try
 	{
 		SQLite::Database db(DBPATH, SQLITE_OPEN_READWRITE);

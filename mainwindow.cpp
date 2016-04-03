@@ -11,11 +11,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 	ui->setupUi(this);
 
-
-
-
-
-
 	//  Set home frame for start up
 	selectedFrame(0);
 	hideMusicButtons(); // this is the tab bar at the bottom in the music frame
@@ -23,22 +18,23 @@ MainWindow::MainWindow(QWidget *parent) :
 	// hide all selected tab labels then select home
 	selectedButton(0);
 
-	
 
 	// labels
 	setSongTags("", "", "");
 	ui->labelTime->setText(getCurrentTime().c_str());
+
 
 	// Create Song Model
 	model = new QStandardItemModel;
 	musicDB.getArtists(model); // set artist
 	ui->listviewMusic->setModel(model);
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
-	//	ui->listviewMusic->setAlternatingRowColors(true);
 
 
 	// Run Loop
-	// this loop will run once every second
+	// this timer will call
+	// MainWindow::runLoop()
+	// once every second
 	QTimer* runLoopTimer = new QTimer(this);
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
 	runLoopTimer->start(1000); // 1000ms = 1 seconds
@@ -53,7 +49,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-
 	delete ui;
 }
 
@@ -102,7 +97,7 @@ void MainWindow::runLoop()
 
 
 std::string getCurrentTime() {
-	std::stringstream strstream;\
+	std::stringstream strstream;
 	strstream.str() = "";
 	// set time
 	auto t = std::time(nullptr);
@@ -113,11 +108,8 @@ std::string getCurrentTime() {
 
 void MainWindow :: on_buttonHome_released()
 {
-	// frames
-	selectedFrame(0);
-
-	// selected tab bar label
-	selectedButton(0);
+	selectedFrame(0); 	// 	frames
+	selectedButton(0); 	// 	selected tab bar label
 }
 
 
@@ -166,11 +158,8 @@ void MainWindow :: on_buttonPhone_released()
 
 void MainWindow :: on_buttonMaps_released()
 {
-	// frames
-	selectedFrame(3);
-
-	// selected tab bar label
-	selectedButton(3);
+	selectedFrame(3); // frames
+	selectedButton(3); // selected tab bar label
 }
 
 void MainWindow :: on_buttonVolumeDown_released()
@@ -179,15 +168,10 @@ void MainWindow :: on_buttonVolumeDown_released()
 	std :: cout << "Volume Down"
 				<< std :: endl;
 
-	if (systemVolume.getCurrentVolume() >= 0 + systemVolume.VOLUMECHANGE)
-	{
+	if (systemVolume.getCurrentVolume() >= 0 + systemVolume.VOLUMECHANGE) // check that we won't go below minimum volume
 		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() - systemVolume.VOLUMECHANGE);
-	}
 	else
-	{
 		systemVolume.setMasterVolume(0);
-
-	}
 
 	std::cout	<< "Current Volume: "
 				<< systemVolume.getCurrentVolume()
@@ -199,7 +183,7 @@ void MainWindow :: on_buttonVolumeUp_released()
 	// increase the volume by a percentage
 	std :: cout << "Volume Up"
 				<< std :: endl;
-	if (systemVolume.getCurrentVolume() <= 100 - systemVolume.VOLUMECHANGE)
+	if (systemVolume.getCurrentVolume() <= 100 - systemVolume.VOLUMECHANGE) // check that we don't go above the max volume
 		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() + systemVolume.VOLUMECHANGE);
 	else
 		systemVolume.setMasterVolume(100);

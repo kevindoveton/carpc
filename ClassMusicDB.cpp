@@ -429,7 +429,7 @@ void MusicDB :: setSkipCount(int skipCount, int songID)
 {
 	if (skipCount == NULL)
 	{
-		skipCount = 0;
+		skipCount = 0; // 
 	}
 
 	try

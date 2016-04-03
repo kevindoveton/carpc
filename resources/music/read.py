@@ -78,7 +78,7 @@ with con:
 				cur.execute('INSERT INTO artists (artistName) VALUES (?)', (f.tags["ARTIST"][0],))
 				cur.execute('SELECT artistID FROM artists WHERE artists.artistName == ?', (f.tags["ARTIST"][0],))
 				ArtistID = cur.fetchone()
-				art.artistSearch((f.tags["ARTIST"][0],) download=True)
+				art.artistSearch((f.tags["ARTIST"][0],), download=True)
 
 			
 

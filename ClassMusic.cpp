@@ -62,7 +62,11 @@ void SongData :: setRating(float RATING)
 
 float SongData :: getRating()
 {
-	return rating;
+	if (rating == NULL)
+		return float(0);
+
+	else
+		return rating;
 }
 
 void SongData :: setPlayCount(int PLAYCOUNT)
@@ -72,7 +76,10 @@ void SongData :: setPlayCount(int PLAYCOUNT)
 
 int SongData :: getPlayCount()
 {
-	return playCount;
+	if (playcount == NULL)
+		return float(0);
+	else
+		return playCount;
 }
 
 void SongData :: setSkipCount(int SKIPCOUNT)
@@ -82,7 +89,10 @@ void SongData :: setSkipCount(int SKIPCOUNT)
 
 int SongData :: getSkipCount()
 {
-	return skipCount;
+	if (skipCount == NULL)
+		return float(0);
+	else
+		return skipCount;
 }
 
 void SongData :: setKind(std::string KIND)

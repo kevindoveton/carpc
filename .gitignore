@@ -9,6 +9,9 @@
 // Databases
 *.db
 
+// Python compiled
+*.pyc
+
 // Ignored
 ignored/
 *.DS_Store*

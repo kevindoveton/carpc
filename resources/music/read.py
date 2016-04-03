@@ -75,7 +75,7 @@ with con:
 			ArtistID = cur.fetchone()
 			
 			if ArtistID is None:
-				cur.execute('INSERT INTO artists (artistName, artistImagePath) VALUES (?,?)', f.tags["ARTIST"][0], art.artistSearch((f.tags["ARTIST"][0],), download=True))
+				cur.execute('INSERT INTO artists (artistName, artistImagePath) VALUES (?,?)', (f.tags["ARTIST"][0], art.artistSearch((f.tags["ARTIST"][0],), download=True)))
 				cur.execute('SELECT artistID FROM artists WHERE artists.artistName == ?', (f.tags["ARTIST"][0],))
 				ArtistID = cur.fetchone()
 				

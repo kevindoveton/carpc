@@ -75,10 +75,10 @@ with con:
 			ArtistID = cur.fetchone()
 			
 			if ArtistID is None:
-				cur.execute('INSERT INTO artists (artistName) VALUES (?)', (f.tags["ARTIST"][0],))
+				cur.execute('INSERT INTO artists (artistName, artistImagePath) VALUES (?,?)', f.tags["ARTIST"][0], art.artistSearch((f.tags["ARTIST"][0],), download=True))
 				cur.execute('SELECT artistID FROM artists WHERE artists.artistName == ?', (f.tags["ARTIST"][0],))
 				ArtistID = cur.fetchone()
-				art.artistSearch((f.tags["ARTIST"][0],), download=True)
+				
 
 			
 
@@ -87,10 +87,10 @@ with con:
 			AlbumID = cur.fetchone()
 
 			if AlbumID is None:
-				cur.execute('INSERT INTO albums (albumName, artistID) VALUES (?,?)', (f.tags["ALBUM"][0], ArtistID[0],))
+				cur.execute('INSERT INTO albums (albumName, artistID, albumImagePath) VALUES (?,?,?)', (f.tags["ALBUM"][0], ArtistID[0], art.albumSearch((f.tags["ALBUM"][0]), download=True)))
 				cur.execute('SELECT albumID FROM albums WHERE albums.albumName == ?AND albums.artistID == ?', (f.tags["ALBUM"][0], ArtistID[0],))
 				AlbumID = cur.fetchone()
-				art.albumSearch((f.tags["ALBUM"][0]), download=True)
+				
 
 
 

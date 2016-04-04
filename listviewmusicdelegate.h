@@ -28,8 +28,9 @@ class listViewMusicDelegate : public QAbstractItemDelegate
 			if(option.state & QStyle::State_Selected){
 				painter->fillRect(option.rect, option.palette.color(QPalette::Highlight));
 			}
-			;
+
 			QIcon ic = QIcon(qvariant_cast<QPixmap>(index.data(Qt::DecorationRole)));
+
 			QString txt = index.data(Qt::DisplayRole).toString();
 			QRect r = option.rect.adjusted(10, -5, 0, 5);
 			//		 14, 5, 168, 168

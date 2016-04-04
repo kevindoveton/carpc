@@ -35,11 +35,13 @@ void MusicDB :: getArtists(QStandardItemModel* model)
 			std::string column0 = query.getColumn(0);
 			int column1 = query.getColumn(1);
 			std::string imageColumn = query.getColumn(2);
-
+//			std::cout << imageColumn << std::endl;
+			QPixmap artistImage;
+			artistImage.load(QString::fromStdString(imageColumn));
 			model->setData(model->index((indexCount-1), 1), (column1));
-
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-			model.setData(model.index(indexCount, 0), QPixmap(imageColumn)), Qt::DecorationRole);
+			model->setData(model->index((indexCount-1), 0), artistImage, Qt::DecorationRole);
+
 
 		}
 
@@ -159,7 +161,7 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 	{
 		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT albumName, albumID FROM albums WHERE artistID == ?");
+		SQLite::Statement query(db, "SELECT albumName, albumID, albumImagePath FROM albums WHERE artistID == ?");
 		query.bind(1, artistID);
 
 		while (query.executeStep())
@@ -169,11 +171,15 @@ void MusicDB :: getAlbums(QStandardItemModel* model, int artistID)
 			model->setRowCount(indexCount);
 			std::string column0 = query.getColumn(0);
 			int column1 = query.getColumn(1);
+			std::string imageColumn = query.getColumn(2);
+//			std::cout << imageColumn << std::endl;
+			QPixmap albumImage;
+			albumImage.load(QString::fromStdString(imageColumn));
 
 			model->setData(model->index((indexCount-1), 1), (column1));
-
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			model->setData(model->index((indexCount-1), 0), albumImage, Qt::DecorationRole);
+
 
 		}
 	}

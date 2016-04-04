@@ -22,7 +22,7 @@ void MusicDB :: getArtists(QStandardItemModel* model)
 	{
 		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT artistName, artistID FROM artists");
+		SQLite::Statement query(db, "SELECT artistName, artistID, artistImagePath FROM artists");
 
 
 		while (query.executeStep())
@@ -34,12 +34,12 @@ void MusicDB :: getArtists(QStandardItemModel* model)
 			model->setRowCount(indexCount);
 			std::string column0 = query.getColumn(0);
 			int column1 = query.getColumn(1);
-
+			std::string imageColumn = query.getColumn(2);
 
 			model->setData(model->index((indexCount-1), 1), (column1));
 
 			model->setData(model->index((indexCount-1), 0), QString::fromStdString(column0));
-			//			model.setData(model.index(indexCount, 0), QPixmap(query.getColumn(1)), Qt::DecorationRole);
+			model.setData(model.index(indexCount, 0), QPixmap(imageColumn)), Qt::DecorationRole);
 
 		}
 

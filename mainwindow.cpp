@@ -183,6 +183,7 @@ void MainWindow :: on_buttonVolumeUp_released()
 	// increase the volume by a percentage
 	std :: cout << "Volume Up"
 				<< std :: endl;
+
 	if (systemVolume.getCurrentVolume() <= 100 - systemVolume.VOLUMECHANGE) // check that we don't go above the max volume
 		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() + systemVolume.VOLUMECHANGE);
 	else
@@ -253,7 +254,6 @@ void MainWindow :: on_buttonMusicNext_released()
 	}
 
 	setButtonPlayPauseText(musicPlayer.currentBassStatus());
-
 }
 
 void MainWindow :: on_buttonMusicPrevious_released()
@@ -310,6 +310,7 @@ void MainWindow::on_buttonQuit_released()
 
 void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 {
+	ui->listviewMusic->viewMode(QListView::IconMode);
 	switch (currentView)
 	{
 		case 1:
@@ -338,6 +339,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 				musicDB.getAllSongs(model, artistIDCur);
 			hideAllTabSelected();
 			ui->labelSelected3->show();
+			ui->listviewMusic->viewMode(QListView::ListMode);
 			currentView = 3;
 			break;
 

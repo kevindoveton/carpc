@@ -47,6 +47,11 @@
 				color: #fff;
 			}
 
+			QListView {
+				font-family: sanFrancisco;
+				color: #fff;
+			}
+
 			#labelCurrentTrack {
 				font-size: 37pt;
 			}

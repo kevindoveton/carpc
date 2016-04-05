@@ -63,26 +63,34 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 	{
 		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT * FROM library INNER JOIN songs\
-									ON library.songID = songs.songID INNER JOIN albums ON songs.albumID = albums.albumID INNER JOIN artists ON artists.artistID = albums.artistID WHERE songs.songID == ?");
+		SQLite::Statement query(db, "SELECT songs.songID, songs.songName, albums.albumName, \
+			artists.artistName, library.bitRate, library.kind, library.lastPlayed, library.length, \
+			library.path, library.playCount, library.rating, library.sampleRate, library.skipCount \
+			FROM `library` \
+			INNER JOIN songs ON library.songID = songs.songID \
+			INNER JOIN albums ON songs.albumID = albums.albumID \
+			INNER JOIN artists ON artists.artistID = albums.artistID \
+			WHERE songs.songID == 1");
 		query.bind(1, songID);
 
 		while (query.executeStep())
 		{
+			int ID = query.getColumn(0); // songs.songID
+			std::string song = query.getColumn(1); // songs.songName
+			
+			std::string album = query.getColumn(2); // albums.albumName
+			std::string artist = query.getColumn(3); // artists.artistName
 
-			std::string album = query.getColumn(15);
-			std::string artist = query.getColumn(19);
-			int bitRate = query.getColumn(5);
-			int ID = query.getColumn(0);
-			std::string kind = query.getColumn(7);
-			std::string lastPlayed = "";
-			int length = query.getColumn(9);
-			std::string path = query.getColumn(1);
-			int playCount = query.getColumn(4);
-			int rating = query.getColumn(2);
-			int sampleRate = query.getColumn(6);
-			int skipCount = query.getColumn(3);
-			std::string song = query.getColumn(12);
+			int bitRate = query.getColumn(4); // library.bitRate
+			std::string kind = query.getColumn(5); // library.kind
+			std::string lastPlayed = query.getColumn(6); // library.lastPlayed
+			int length = query.getColumn(7); // library.length
+			std::string path = query.getColumn(8); // library.path
+			int playCount = query.getColumn(9); // library.playCount
+			int rating = query.getColumn(10); // library.rating
+			int sampleRate = query.getColumn(11); // library.sampleRate
+			int skipCount = query.getColumn(12); // library.skipCount
+			
 			/*for (int i = 0; i < 20; i++)
 				std::cout << "Column " << i << " " << query.getColumn(i) << std::endl*/;
 

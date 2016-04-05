@@ -1,595 +1,598 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>1280</width>
-    <height>720</height>
-   </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>1280</width>
-    <height>720</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>9999</width>
-    <height>9999</height>
-   </size>
-  </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
-  <property name="toolTip">
-   <string/>
-  </property>
-  <property name="statusTip">
-   <string/>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">#MainWindow {
-background-image: url(./backgroundImage.png);
-background-repeat: no-repeat;
-}
+	<class>MainWindow</class>
+	<widget class="QMainWindow" name="MainWindow">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>1280</width>
+				<height>720</height>
+			</rect>
+		</property>
+		<property name="minimumSize">
+			<size>
+				<width>1280</width>
+				<height>720</height>
+			</size>
+		</property>
+		<property name="maximumSize">
+			<size>
+				<width>9999</width>
+				<height>9999</height>
+			</size>
+		</property>
+		<property name="windowTitle">
+			<string>MainWindow</string>
+		</property>
+		<property name="toolTip">
+			<string />
+		</property>
+		<property name="statusTip">
+			<string />
+		</property>
+		<property name="styleSheet">
+			<string notr="true">#MainWindow {
+				background-image: url(./backgroundImage.png);
+				background-repeat: no-repeat;
+			}
 
-@font-face {
-	font-family: sanFrancisco;
-	src: url(./resources/fonts/sanFrancisco/sanFranciscoUltralight.ttf);
-}
+			@font-face {
+				font-family: sanFrancisco;
+				src: url(./resources/fonts/sanFrancisco/sanFranciscoUltralight.ttf);
+			}
 
-QLabel {
-	font-family: sanFrancisco;
-	color: #fff;
-}
+			QLabel {
+				font-family: sanFrancisco;
+				color: #fff;
+			}
 
-#labelCurrentTrack {
-	font-size: 37pt;
-}
+			#labelCurrentTrack {
+				font-size: 37pt;
+			}
 
-#labelCurrentArtistAlbum {
-	font-size: 20pt;
-}
+			#labelCurrentArtistAlbum {
+				font-size: 20pt;
+			}
 
-#labelTime {
-	font-size: 20pt;
-}
+			#labelTime {
+				font-size: 20pt;
+			}
 
-#labelSelected0, #labelSelected1, #labelSelected2, #labelSelected3 {
-	background: url(./resources/icons/selected.png);
-}
+			#labelSelected0, #labelSelected1, #labelSelected2, #labelSelected3 {
+				background: url(./resources/icons/selected.png);
+			}
 
 
-QPushButton {
-	border: none;
-	outline: none;
-}</string>
-  </property>
-  <property name="animated">
-   <bool>false</bool>
-  </property>
-  <widget class="QWidget" name="centralWidget">
-   <widget class="QFrame" name="frameBottomBar">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>610</y>
-      <width>1281</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QPushButton" name="buttonMusic">
-     <property name="geometry">
-      <rect>
-       <x>368</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/music.png);
-background-repeat: no-repeat;
-background-position: center;</string>
-     </property>
-     <property name="text">
-      <string>Music</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonPhone">
-     <property name="geometry">
-      <rect>
-       <x>678</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/phone.png);
-background-repeat: no-repeat;
-background-position: center;</string>
-     </property>
-     <property name="text">
-      <string>Phone</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonMaps">
-     <property name="geometry">
-      <rect>
-       <x>989</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/maps.png);
+			QPushButton {
+				border: none;
+				outline: none;
+			}</string>
+		</property>
+		<property name="animated">
+			<bool>false</bool>
+		</property>
+		<widget class="QWidget" name="centralWidget">
+			<widget class="QFrame" name="frameBottomBar">
+				<property name="geometry">
+					<rect>
+						<x>0</x>
+						<y>610</y>
+						<width>1281</width>
+						<height>111</height>
+					</rect>
+				</property>
+				<property name="styleSheet">
+					<string notr="true" />
+				</property>
+				<property name="frameShape">
+					<enum>QFrame::StyledPanel</enum>
+				</property>
+				<property name="frameShadow">
+					<enum>QFrame::Plain</enum>
+				</property>
+				<widget class="QPushButton" name="buttonMusic">
+					<property name="geometry">
+						<rect>
+							<x>368</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">
+							
+							background-image: url(./resources/icons/music.png);
+							background-repeat: no-repeat;
+							background-position: center;
+						</string>
+					</property>
+					<property name="text">
+						<string>Music</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonPhone">
+					<property name="geometry">
+						<rect>
+							<x>678</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/phone.png);
 background-repeat: no-repeat;
 background-position: center;</string>
-     </property>
-     <property name="text">
-      <string>Maps</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonHome">
-     <property name="geometry">
-      <rect>
-       <x>58</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/home.png);
+					</property>
+					<property name="text">
+						<string>Phone</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonMaps">
+					<property name="geometry">
+						<rect>
+							<x>989</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/maps.png);
 background-repeat: no-repeat;
 background-position: center;</string>
-     </property>
-     <property name="text">
-      <string>Home</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelSelected0">
-     <property name="geometry">
-      <rect>
-       <x>58</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelSelected0</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelSelected1">
-     <property name="geometry">
-      <rect>
-       <x>368</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelSelected1</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelSelected2">
-     <property name="geometry">
-      <rect>
-       <x>678</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelSelected2</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelSelected3">
-     <property name="geometry">
-      <rect>
-       <x>989</x>
-       <y>0</y>
-       <width>230</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelSelected3</string>
-     </property>
-    </widget>
-    <zorder>labelSelected3</zorder>
-    <zorder>labelSelected2</zorder>
-    <zorder>labelSelected1</zorder>
-    <zorder>labelSelected0</zorder>
-    <zorder>buttonMusic</zorder>
-    <zorder>buttonPhone</zorder>
-    <zorder>buttonMaps</zorder>
-    <zorder>buttonHome</zorder>
-   </widget>
-   <widget class="QFrame" name="frameHome">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>110</y>
-      <width>301</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QLabel" name="labelHome">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>40</y>
-       <width>67</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>home</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonQuit">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>170</y>
-       <width>95</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>quit</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelTime">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>50</y>
-       <width>141</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelTime</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="frameMusic">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>-1</x>
-      <y>110</y>
-      <width>1281</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>40</y>
-       <width>67</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>music</string>
-     </property>
-    </widget>
-    <widget class="QListView" name="listviewMusic">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>1</y>
-       <width>1281</width>
-       <height>481</height>
-      </rect>
-     </property>
-     <property name="editTriggers">
-      <set>QAbstractItemView::NoEditTriggers</set>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>0</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="horizontalScrollMode">
-      <enum>QAbstractItemView::ScrollPerItem</enum>
-     </property>
-     <property name="movement">
-      <enum>QListView::Free</enum>
-     </property>
-     <property name="gridSize">
-      <size>
-       <width>420</width>
-       <height>270</height>
-      </size>
-     </property>
-     <property name="viewMode">
-      <enum>QListView::IconMode</enum>
-     </property>
-     <property name="selectionRectVisible">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="framePhone">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>109</y>
-      <width>371</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>67</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>phone</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="frameMaps">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>949</x>
-      <y>110</y>
-      <width>331</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>30</y>
-       <width>67</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>maps</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="frameTopBar">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>-10</y>
-      <width>1281</width>
-      <height>105</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QLabel" name="labelCurrentTrack">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>10</y>
-       <width>681</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelCurrentTrack</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelCurrentArtistAlbum">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>60</y>
-       <width>681</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>labelCurrentArtistAlbum</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonMusicPlayPause">
-     <property name="geometry">
-      <rect>
-       <x>950</x>
-       <y>30</y>
-       <width>65</width>
-       <height>65</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/play.png);
+					</property>
+					<property name="text">
+						<string>Maps</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonHome">
+					<property name="geometry">
+						<rect>
+							<x>58</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/home.png);
+background-repeat: no-repeat;
+background-position: center;</string>
+					</property>
+					<property name="text">
+						<string>Home</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QLabel" name="labelSelected0">
+					<property name="geometry">
+						<rect>
+							<x>58</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelSelected0</string>
+					</property>
+				</widget>
+				<widget class="QLabel" name="labelSelected1">
+					<property name="geometry">
+						<rect>
+							<x>368</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelSelected1</string>
+					</property>
+				</widget>
+				<widget class="QLabel" name="labelSelected2">
+					<property name="geometry">
+						<rect>
+							<x>678</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelSelected2</string>
+					</property>
+				</widget>
+				<widget class="QLabel" name="labelSelected3">
+					<property name="geometry">
+						<rect>
+							<x>989</x>
+							<y>0</y>
+							<width>230</width>
+							<height>111</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelSelected3</string>
+					</property>
+				</widget>
+				<zorder>labelSelected3</zorder>
+				<zorder>labelSelected2</zorder>
+				<zorder>labelSelected1</zorder>
+				<zorder>labelSelected0</zorder>
+				<zorder>buttonMusic</zorder>
+				<zorder>buttonPhone</zorder>
+				<zorder>buttonMaps</zorder>
+				<zorder>buttonHome</zorder>
+			</widget>
+			<widget class="QFrame" name="frameHome">
+				<property name="enabled">
+					<bool>true</bool>
+				</property>
+				<property name="geometry">
+					<rect>
+						<x>0</x>
+						<y>110</y>
+						<width>301</width>
+						<height>481</height>
+					</rect>
+				</property>
+				<property name="autoFillBackground">
+					<bool>false</bool>
+				</property>
+				<property name="frameShape">
+					<enum>QFrame::StyledPanel</enum>
+				</property>
+				<property name="frameShadow">
+					<enum>QFrame::Plain</enum>
+				</property>
+				<widget class="QLabel" name="labelHome">
+					<property name="geometry">
+						<rect>
+							<x>10</x>
+							<y>40</y>
+							<width>67</width>
+							<height>21</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>home</string>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonQuit">
+					<property name="geometry">
+						<rect>
+							<x>110</x>
+							<y>170</y>
+							<width>95</width>
+							<height>31</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>quit</string>
+					</property>
+				</widget>
+				<widget class="QLabel" name="labelTime">
+					<property name="geometry">
+						<rect>
+							<x>80</x>
+							<y>50</y>
+							<width>141</width>
+							<height>51</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelTime</string>
+					</property>
+				</widget>
+			</widget>
+			<widget class="QFrame" name="frameMusic">
+				<property name="enabled">
+					<bool>true</bool>
+				</property>
+				<property name="geometry">
+					<rect>
+						<x>-1</x>
+						<y>110</y>
+						<width>1281</width>
+						<height>481</height>
+					</rect>
+				</property>
+				<property name="autoFillBackground">
+					<bool>false</bool>
+				</property>
+				<property name="frameShape">
+					<enum>QFrame::StyledPanel</enum>
+				</property>
+				<property name="frameShadow">
+					<enum>QFrame::Plain</enum>
+				</property>
+				<widget class="QLabel" name="label_3">
+					<property name="geometry">
+						<rect>
+							<x>30</x>
+							<y>40</y>
+							<width>67</width>
+							<height>21</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>music</string>
+					</property>
+				</widget>
+				<widget class="QListView" name="listviewMusic">
+					<property name="geometry">
+						<rect>
+							<x>0</x>
+							<y>1</y>
+							<width>1281</width>
+							<height>481</height>
+						</rect>
+					</property>
+					<property name="editTriggers">
+						<set>QAbstractItemView::NoEditTriggers</set>
+					</property>
+					<property name="iconSize">
+						<size>
+							<width>0</width>
+							<height>0</height>
+						</size>
+					</property>
+					<property name="horizontalScrollMode">
+						<enum>QAbstractItemView::ScrollPerItem</enum>
+					</property>
+					<property name="movement">
+						<enum>QListView::Free</enum>
+					</property>
+					<property name="gridSize">
+						<size>
+							<width>420</width>
+							<height>270</height>
+						</size>
+					</property>
+					<property name="viewMode">
+						<enum>QListView::IconMode</enum>
+					</property>
+					<property name="selectionRectVisible">
+						<bool>false</bool>
+					</property>
+				</widget>
+			</widget>
+			<widget class="QFrame" name="framePhone">
+				<property name="enabled">
+					<bool>true</bool>
+				</property>
+				<property name="geometry">
+					<rect>
+						<x>570</x>
+						<y>109</y>
+						<width>371</width>
+						<height>481</height>
+					</rect>
+				</property>
+				<property name="autoFillBackground">
+					<bool>false</bool>
+				</property>
+				<property name="frameShape">
+					<enum>QFrame::StyledPanel</enum>
+				</property>
+				<property name="frameShadow">
+					<enum>QFrame::Plain</enum>
+				</property>
+				<widget class="QLabel" name="label_4">
+					<property name="geometry">
+						<rect>
+							<x>20</x>
+							<y>30</y>
+							<width>67</width>
+							<height>21</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>phone</string>
+					</property>
+				</widget>
+			</widget>
+			<widget class="QFrame" name="frameMaps">
+				<property name="enabled">
+					<bool>true</bool>
+				</property>
+				<property name="geometry">
+					<rect>
+						<x>949</x>
+						<y>110</y>
+						<width>331</width>
+						<height>481</height>
+					</rect>
+				</property>
+				<property name="autoFillBackground">
+					<bool>false</bool>
+				</property>
+				<property name="frameShape">
+					<enum>QFrame::StyledPanel</enum>
+				</property>
+				<property name="frameShadow">
+					<enum>QFrame::Plain</enum>
+				</property>
+				<widget class="QLabel" name="label_5">
+					<property name="geometry">
+						<rect>
+							<x>30</x>
+							<y>30</y>
+							<width>67</width>
+							<height>21</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>maps</string>
+					</property>
+				</widget>
+			</widget>
+			<widget class="QFrame" name="frameTopBar">
+				<property name="geometry">
+					<rect>
+						<x>0</x>
+						<y>-10</y>
+						<width>1281</width>
+						<height>105</height>
+					</rect>
+				</property>
+				<property name="frameShape">
+					<enum>QFrame::StyledPanel</enum>
+				</property>
+				<property name="frameShadow">
+					<enum>QFrame::Plain</enum>
+				</property>
+				<widget class="QLabel" name="labelCurrentTrack">
+					<property name="geometry">
+						<rect>
+							<x>0</x>
+							<y>10</y>
+							<width>681</width>
+							<height>51</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelCurrentTrack</string>
+					</property>
+					<property name="alignment">
+						<set>Qt::AlignCenter</set>
+					</property>
+				</widget>
+				<widget class="QLabel" name="labelCurrentArtistAlbum">
+					<property name="geometry">
+						<rect>
+							<x>0</x>
+							<y>60</y>
+							<width>681</width>
+							<height>41</height>
+						</rect>
+					</property>
+					<property name="text">
+						<string>labelCurrentArtistAlbum</string>
+					</property>
+					<property name="alignment">
+						<set>Qt::AlignCenter</set>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonMusicPlayPause">
+					<property name="geometry">
+						<rect>
+							<x>950</x>
+							<y>30</y>
+							<width>65</width>
+							<height>65</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/play.png);
 background-repeat: no-repeat;</string>
-     </property>
-     <property name="text">
-      <string>Play/Pause</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonMusicNext">
-     <property name="geometry">
-      <rect>
-       <x>1070</x>
-       <y>30</y>
-       <width>65</width>
-       <height>65</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/next.png);
+					</property>
+					<property name="text">
+						<string>Play/Pause</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonMusicNext">
+					<property name="geometry">
+						<rect>
+							<x>1070</x>
+							<y>30</y>
+							<width>65</width>
+							<height>65</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/next.png);
 background-repeat: no-repeat;</string>
-     </property>
-     <property name="text">
-      <string>Next</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonVolumeUp">
-     <property name="geometry">
-      <rect>
-       <x>1190</x>
-       <y>30</y>
-       <width>65</width>
-       <height>65</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/volUp.png);
+					</property>
+					<property name="text">
+						<string>Next</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonVolumeUp">
+					<property name="geometry">
+						<rect>
+							<x>1190</x>
+							<y>30</y>
+							<width>65</width>
+							<height>65</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/volUp.png);
 background-repeat: no-repeat;</string>
-     </property>
-     <property name="text">
-      <string>Volume Up</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonVolumeDown">
-     <property name="geometry">
-      <rect>
-       <x>710</x>
-       <y>30</y>
-       <width>65</width>
-       <height>65</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/volDown.png);
+					</property>
+					<property name="text">
+						<string>Volume Up</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonVolumeDown">
+					<property name="geometry">
+						<rect>
+							<x>710</x>
+							<y>30</y>
+							<width>65</width>
+							<height>65</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/volDown.png);
 background-repeat: no-repeat;</string>
-     </property>
-     <property name="text">
-      <string>Volume Down</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="buttonMusicPrevious">
-     <property name="geometry">
-      <rect>
-       <x>830</x>
-       <y>30</y>
-       <width>65</width>
-       <height>65</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-image: url(./resources/icons/previous.png);
+					</property>
+					<property name="text">
+						<string>Volume Down</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+				<widget class="QPushButton" name="buttonMusicPrevious">
+					<property name="geometry">
+						<rect>
+							<x>830</x>
+							<y>30</y>
+							<width>65</width>
+							<height>65</height>
+						</rect>
+					</property>
+					<property name="styleSheet">
+						<string notr="true">background-image: url(./resources/icons/previous.png);
 background-repeat: no-repeat;</string>
-     </property>
-     <property name="text">
-      <string>Previous</string>
-     </property>
-     <property name="flat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </widget>
-  </widget>
- </widget>
- <layoutdefault spacing="6" margin="11"/>
- <resources/>
- <connections/>
+					</property>
+					<property name="text">
+						<string>Previous</string>
+					</property>
+					<property name="flat">
+						<bool>true</bool>
+					</property>
+				</widget>
+			</widget>
+		</widget>
+	</widget>
+	<layoutdefault spacing="6" margin="11" />
+	<resources />
+	<connections />
 </ui>

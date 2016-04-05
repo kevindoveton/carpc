@@ -310,7 +310,7 @@ void MainWindow::on_buttonQuit_released()
 
 void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 {
-	ui->listviewMusic->viewMode(QListView::IconMode);
+	ui->listviewMusic->setViewMode(QListView::IconMode);
 	switch (currentView)
 	{
 		case 1:
@@ -339,12 +339,13 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 				musicDB.getAllSongs(model, artistIDCur);
 			hideAllTabSelected();
 			ui->labelSelected3->show();
-			ui->listviewMusic->viewMode(QListView::ListMode);
+			ui->listviewMusic->setViewMode(QListView::ListMode);
 			currentView = 3;
 			break;
 
 		case 3:
 		{
+			ui->listviewMusic->setViewMode(QListView::ListMode);
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
 			SongData temp;
@@ -370,7 +371,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
-			std::cout 	<< upNext[0].getTitle() 
+			std::cout 	<< upNext[0].getArtist()
 						<< std::endl;
 			break;
 		}

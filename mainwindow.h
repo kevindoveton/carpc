@@ -146,7 +146,7 @@ class MainWindow : public QMainWindow
 		void on_buttonSong_released();
 		// Switches to song view for last selected artist
 		// Selected label to song
-
+		void on_buttonRBNowPlaying_released();
 		// --------------------------------------
 		// frameHome
 		// --------------------------------------

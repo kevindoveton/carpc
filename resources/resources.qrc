@@ -11,5 +11,8 @@
         <file>icons/maps.png</file>
         <file>icons/messages.png</file>
         <file>icons/phone.png</file>
+        <file>icons/back.png</file>
+        <file>icons/home.png</file>
+        <file>icons/nowPlaying.png</file>
     </qresource>
 </RCC>

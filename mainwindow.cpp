@@ -116,6 +116,7 @@ void MainWindow :: hideAllCentreFrames()
 	ui->frameMusic->hide();
 	ui->framePhone->hide();
 	ui->frameMaps->hide();
+	ui->frameNowPlaying->hide();
 }
 
 void MainWindow :: on_buttonMusic_released()
@@ -389,6 +390,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMusic->hide();
 			ui->framePhone->hide();
 			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
 			break;
 
 		case 1:
@@ -396,6 +398,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMusic->show();
 			ui->framePhone->hide();
 			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
 			break;
 
 		case 2:
@@ -403,6 +406,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMusic->hide();
 			ui->framePhone->show();
 			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
 			break;
 
 		case 3:
@@ -410,6 +414,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMusic->hide();
 			ui->framePhone->hide();
 			ui->frameMaps->show();
+			ui->frameNowPlaying->hide();
 			break;
 
 		default:
@@ -459,4 +464,8 @@ void MainWindow::on_buttonSong_released()
 	musicDB.getSongs(model, albumIDCur);
 }
 
-
+void MainWindow::on_buttonRBNowPlaying_released()
+{
+	hideAllCentreFrames();
+	ui->frameNowPlaying->show();
+}

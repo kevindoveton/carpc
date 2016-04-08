@@ -14,36 +14,42 @@
 
 class listViewMusicDelegate : public QAbstractItemDelegate
 {
-
-		//		QFile fontFile("resources/fonts/sanFrancisco/sanFranciscoUltralight.ttf");
-		//		fontFile.open(QFile::ReadOnly);
-		//		int appFontID = QFontDatabase::addApplicationFontFromData(fontFile.readAll());
-
-		//		QFont sanFrancisco(".SFNSDisplay-Ultralight");
-
-		//		painter->setFont(sanFrancisco);
 	public:
 		listViewMusicDelegate(QObject *parent=0) : QAbstractItemDelegate(parent){}
-		void paint ( QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index ) const{
-			if(option.state & QStyle::State_Selected){
-				painter->fillRect(option.rect, option.palette.color(QPalette::Highlight));
-			}
+		void paint ( QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index ) const
+		{
+			// this added a blue highlight when clicked
+//			if(option.state & QStyle::State_Selected){
+//				painter->fillRect(option.rect, option.palette.color(QPalette::Highlight));
+//			}
 
-			QIcon ic = QIcon(qvariant_cast<QPixmap>(index.data(Qt::DecorationRole)));
+			// this created a nice little icon
+//			QIcon ic = QIcon(qvariant_cast<QPixmap>(index.data(Qt::DecorationRole)));
+			QPixmap ic = qvariant_cast<QPixmap>(index.data(Qt::DecorationRole));
+			ic = ic.scaled(option.rect.width(), option.rect.height(), Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation);
 
 			QString txt = index.data(Qt::DisplayRole).toString();
-			QRect r = option.rect.adjusted(10, -5, 0, 5);
-			//		 14, 5, 168, 168
 
-			//		painter->setFont(sanFrancisco);
-			ic.paint(painter, r, Qt::AlignVCenter|Qt::AlignLeft);
-			r = r.adjusted(r.height()+20, 0, 0, 0);
 
-			painter->drawText(r.left(), r.top(), r.width(), r.height(), Qt::AlignVCenter|Qt::AlignLeft|Qt::TextWordWrap, txt, &r);
+//			QRect r = option.rect.adjusted(10, -5, 0, 5);
+
+			// this paints the image as a full scale.. need to vcenter still
+			// fillRect(x, y, aspect ratio, transformation)
+			painter->fillRect(option.rect, ic);
+
+
+			// this created a nice little icon
+//			ic.paint(painter, r, Qt::AlignVCenter|Qt::AlignRight);
+
+			QRect r = option.rect.adjusted(0, 0, 0, -10); // add a little padding to the bottom of the image
+			QPen textPen(QColor("#FFFFFF"));
+			painter->setPen(textPen);
+			painter->drawText(r, Qt::AlignBottom|Qt::AlignLeft|Qt::TextWordWrap, txt, &r);
 		}
 
-		QSize sizeHint ( const QStyleOptionViewItem & option, const QModelIndex & index ) const{
-			return QSize(420, 170); // need to implement spacing?
+		QSize sizeHint ( const QStyleOptionViewItem & option, const QModelIndex & index ) const
+		{
+			return QSize(200, 200); // need to implement spacing?
 			// will then be 410 && 165
 		}
 };

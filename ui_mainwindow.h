@@ -117,9 +117,9 @@ class Ui_MainWindow
 			QString family = QFontDatabase::applicationFontFamilies(id).at(0);
 			QFont avenirLight(family);
 
-			int screenWidth = QApplication::desktop()->geometry().width();
-			int screenHeight = QApplication::desktop()->geometry().height();
-//			int screenWidth = 800, screenHeight = 480; // test values
+//			int screenWidth = QApplication::desktop()->geometry().width();
+//			int screenHeight = QApplication::desktop()->geometry().height();
+			int screenWidth = 800, screenHeight = 480; // test values
 			// -------------------------------------------------------------------------------------------------------------
 			// main container window
 			// -------------------------------------------------------------------------------------------------------------
@@ -226,7 +226,7 @@ class Ui_MainWindow
 			// Right Bar Line
 			frameRightBarLine = new QFrame(centralWidget);
 			frameRightBarLine->setObjectName(QStringLiteral("frameRightBarLine"));
-			frameRightBarLine->setGeometry(QRect(0.946875*screenWidth, 0.15*screenHeight, 3, 0.75*screenHeight));
+			frameRightBarLine->setGeometry(QRect(0.946875*screenWidth, 0.15*screenHeight, 2, 0.75*screenHeight));
 			frameRightBarLine->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
 
 			// buttonMusic
@@ -266,7 +266,8 @@ class Ui_MainWindow
 			// -------------------------------------------------------------------------------------------------------------
 			// Home Page
 			// -------------------------------------------------------------------------------------------------------------
-
+			int lineHeight = 1;
+			QString lineStyles = "background: rgba(255,255,255,70)";
 			// frameHome
 			frameHome = new QFrame(centralWidget);
 			frameHome->setObjectName(QStringLiteral("frameHome"));
@@ -289,8 +290,8 @@ class Ui_MainWindow
 
 			lineMusic = new QFrame(frameHome);
 			lineMusic->setObjectName(QStringLiteral("lineMusic"));
-			lineMusic->setGeometry(QRect(0.132*screenWidth, 0.382*screenHeight, 0.121*screenWidth, 3));
-			lineMusic->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+			lineMusic->setGeometry(QRect(0.132*screenWidth, 0.382*screenHeight, 0.121*screenWidth, lineHeight));
+			lineMusic->setStyleSheet(lineStyles);
 
 			labelMusic = new QLabel(frameHome);
 			labelMusic->setObjectName(QStringLiteral("labelMusic"));
@@ -315,8 +316,8 @@ class Ui_MainWindow
 
 			lineMaps = new QFrame(frameHome);
 			lineMaps->setObjectName(QStringLiteral("lineMaps"));
-			lineMaps->setGeometry(QRect(0.425*screenWidth, 0.382*screenHeight, 0.121*screenWidth, 3));
-			lineMaps->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+			lineMaps->setGeometry(QRect(0.425*screenWidth, 0.382*screenHeight, 0.121*screenWidth, lineHeight));
+			lineMaps->setStyleSheet(lineStyles);
 
 			labelMaps = new QLabel(frameHome);
 			labelMaps->setObjectName(QStringLiteral("labelMaps"));
@@ -342,8 +343,8 @@ class Ui_MainWindow
 
 			lineContacts = new QFrame(frameHome);
 			lineContacts->setObjectName(QStringLiteral("lineContacts"));
-			lineContacts->setGeometry(QRect(0.715*screenWidth, 0.382*screenHeight, 0.121*screenWidth, 3));
-			lineContacts->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+			lineContacts->setGeometry(QRect(0.715*screenWidth, 0.382*screenHeight, 0.121*screenWidth, lineHeight));
+			lineContacts->setStyleSheet(lineStyles);
 
 			labelContacts = new QLabel(frameHome);
 			labelContacts->setObjectName(QStringLiteral("labelContacts"));
@@ -368,8 +369,8 @@ class Ui_MainWindow
 
 			lineCamera = new QFrame(frameHome);
 			lineCamera->setObjectName(QStringLiteral("lineMaps"));
-			lineCamera->setGeometry(QRect(0.132*screenWidth, 0.774*screenHeight, 0.121*screenWidth, 3));
-			lineCamera->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+			lineCamera->setGeometry(QRect(0.132*screenWidth, 0.774*screenHeight, 0.121*screenWidth, lineHeight));
+			lineCamera->setStyleSheet(lineStyles);
 
 			labelCamera = new QLabel(frameHome);
 			labelCamera->setObjectName(QStringLiteral("labelCamera"));
@@ -393,8 +394,8 @@ class Ui_MainWindow
 
 			linePhone = new QFrame(frameHome);
 			linePhone->setObjectName(QStringLiteral("linePhone"));
-			linePhone->setGeometry(QRect(0.425*screenWidth, 0.774*screenHeight, 0.121*screenWidth, 3));
-			linePhone->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+			linePhone->setGeometry(QRect(0.425*screenWidth, 0.774*screenHeight, 0.121*screenWidth, lineHeight));
+			linePhone->setStyleSheet(lineStyles);
 
 			labelPhone = new QLabel(frameHome);
 			labelPhone->setObjectName(QStringLiteral("labelPhone"));
@@ -419,8 +420,8 @@ class Ui_MainWindow
 
 			lineMessages = new QFrame(frameHome);
 			lineMessages->setObjectName(QStringLiteral("lineMessages"));
-			lineMessages->setGeometry(QRect(0.715*screenWidth, 0.774*screenHeight, 0.121*screenWidth, 3));
-			lineMessages->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+			lineMessages->setGeometry(QRect(0.715*screenWidth, 0.774*screenHeight, 0.121*screenWidth, lineHeight));
+			lineMessages->setStyleSheet(lineStyles);
 
 			labelMessages = new QLabel(frameHome);
 			labelMessages->setObjectName(QStringLiteral("labelMessages"));

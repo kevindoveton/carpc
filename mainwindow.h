@@ -109,7 +109,7 @@ class MainWindow : public QMainWindow
 		// frameTabBar
 		// --------------------------------------
 
-		void on_buttonHome_released();
+		void on_buttonRBHome_released();
 		// Switches to home frame
 		// switches selected label to home
 
@@ -189,9 +189,6 @@ class MainWindow : public QMainWindow
 		void hideAllCentreFrames();
 		// hide all the frames in the centre
 
-		void hideMenuButtons();
-		// hide standard menu buttons
-
 		void showMenuButtons();
 		// show standard menu buttons
 
@@ -206,11 +203,6 @@ class MainWindow : public QMainWindow
 		// 0 = home, 1 = music, 2 = phone, 3 = maps
 		// if set blank or incorrectly will return the
 		// currently selected frame
-
-		int selectedButton(int selected = -1);
-		// Set selected label on bottom tab bar
-		// if set blank or incorrectly will return the
-		// currently selected button
 
 
 		void hideAllTabSelected();

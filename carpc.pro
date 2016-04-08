@@ -37,7 +37,6 @@ HEADERS  += mainwindow.h \
     ui_mainwindow.h \
     listviewmusicdelegate.h \
     ClassMusicDB.h \
-    Constants.h \
     ClassMusicPlayer.h \
     ClassSystemVolume.h
 

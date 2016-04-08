@@ -6,6 +6,8 @@
 #ifndef UI_MAINWINDOW_H
 #define UI_MAINWINDOW_H
 
+#include <QApplication>
+#include <QDesktopWidget>
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
@@ -17,6 +19,8 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
+#include <QPainter>
+#include <sstream>
 
 QT_BEGIN_NAMESPACE
 
@@ -31,6 +35,7 @@ class Ui_MainWindow
 		QLabel *labelTime;
 
 		QFrame *frameRightBar;
+		QFrame *frameRightBarLine;
 		QPushButton *buttonRBBack;
 		QPushButton *buttonRBHome;
 		QPushButton *buttonRBNowPlaying;
@@ -38,12 +43,31 @@ class Ui_MainWindow
 		// Home
 		QFrame *frameHome;
 		QPushButton *buttonQuit;
+
 		QPushButton *buttonMusic;
+		QLabel *labelMusic;
+		QFrame *lineMusic;
+
 		QPushButton *buttonContacts;
+		QLabel *labelContacts;
+		QFrame *lineContacts;
+
 		QPushButton *buttonMaps;
+		QLabel *labelMaps;
+		QFrame *lineMaps;
+
 		QPushButton *buttonCamera;
+		QLabel *labelCamera;
+		QFrame *lineCamera;
+
 		QPushButton *buttonPhone;
+		QLabel *labelPhone;
+		QFrame *linePhone;
+
 		QPushButton *buttonMessages;
+		QLabel *labelMessages;
+		QFrame *lineMessages;
+
 		QPushButton *buttonHome;
 
 		// Applications
@@ -51,14 +75,6 @@ class Ui_MainWindow
 		QFrame *framePhone;
 		QFrame *frameMaps;
 
-
-
-
-
-		QLabel *labelSelected0;
-		QLabel *labelSelected1;
-		QLabel *labelSelected2;
-		QLabel *labelSelected3;
 
 		QLabel *labelHome;
 
@@ -90,17 +106,26 @@ class Ui_MainWindow
 
 		void setupUi(QMainWindow *MainWindow)
 		{
+			int screenWidth = QApplication::desktop()->geometry().width();
+			int screenHeight = QApplication::desktop()->geometry().height();
+//			int screenWidth = 800, screenHeight=480; // test values
 			// -------------------------------------------------------------------------------------------------------------
 			// main container window
 			// -------------------------------------------------------------------------------------------------------------
 			if (MainWindow->objectName().isEmpty())
 				MainWindow->setObjectName(QStringLiteral("MainWindow"));
-			MainWindow->resize(800, 480);
-			MainWindow->setMinimumSize(QSize(800, 480));
-			MainWindow->setMaximumSize(QSize(800, 480));
+			MainWindow->resize(screenWidth, screenHeight);
+			MainWindow->setMinimumSize(QSize(screenWidth, screenHeight));
+			MainWindow->setMaximumSize(QSize(screenWidth, screenHeight));
+			std::ostringstream sstr;
+			// 1080p 32pt
+			sstr << "font-size: " << 0.02692*screenHeight << "pt;"
+				 << "text-transform: uppercase;";
+			std::string homePageLabelsStyle = sstr.str();
+
 
 			MainWindow->setStyleSheet(QLatin1String("#MainWindow {\n"
-													"	background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.4, stop:1 rgb(3,41,79), stop:2 rgb(66,123,164)); \n"
+													"	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.4, stop:0 rgb(3,41,79), stop:1 rgb(66,123,164)); \n"
 													"}\n"
 													"\n"
 													"@font-face {\n"
@@ -114,7 +139,7 @@ class Ui_MainWindow
 													"}\n"
 													"\n"
 													"#labelCurrentTrack {\n"
-													"	font-size: 37pt;\n"
+													"	;\n"
 													"}\n"
 													"\n"
 													"#labelCurrentArtistAlbum {\n"
@@ -124,11 +149,6 @@ class Ui_MainWindow
 													"#labelTime {\n"
 													"	font-size: 17pt;\n"
 													"}\n"
-													"\n"
-													"#labelSelected0, #labelSelected1, #labelSelected2, #labelSelected3 {\n"
-													"	background: url(./resources/icons/selected.png);\n"
-													"}\n"
-													"\n"
 													"\n"
 													"QPushButton {\n"
 													"	border: none;\n"
@@ -156,7 +176,7 @@ class Ui_MainWindow
 			// frameTopBar
 			frameTopBar = new QFrame(centralWidget);
 			frameTopBar->setObjectName(QStringLiteral("frameTopBar"));
-			frameTopBar->setGeometry(QRect(0, 0, 1280, 100));
+			frameTopBar->setGeometry(QRect(0, 0, screenWidth, 0.1*screenHeight));
 			frameTopBar->setFrameShape(QFrame::StyledPanel);
 			frameTopBar->setFrameShadow(QFrame::Plain);
 
@@ -164,7 +184,7 @@ class Ui_MainWindow
 			// labelTime
 			labelTime = new QLabel(frameTopBar);
 			labelTime->setObjectName(QStringLiteral("labelTime"));
-			labelTime->setGeometry(QRect(680, 20, 84, 25));
+			labelTime->setGeometry(QRect(0.85*screenWidth, 20, 84, 25));
 			labelTime->setAlignment(Qt::AlignRight);
 
 
@@ -174,22 +194,49 @@ class Ui_MainWindow
 			// Right Bar
 			// -------------------------------------------------------------------------------------------------------------
 
+			int frameRightBarWidth = 0.1*screenWidth;
+			int frameRightBarHeight = screenHeight;
 			// frameRightBar
 			frameRightBar = new QFrame(centralWidget);
 			frameRightBar->setObjectName(QStringLiteral("frameRightBar"));
-			frameRightBar->setGeometry(QRect(756, 0, 46, 480));
+			frameRightBar->setGeometry(QRect(0.9*screenWidth, 0, frameRightBarWidth, frameRightBarHeight));
 			frameRightBar->setFrameShape(QFrame::StyledPanel);
 			frameRightBar->setFrameShadow(QFrame::Plain);
 
+
+			// Right Bar Line
+			frameRightBarLine = new QFrame(centralWidget);
+			frameRightBarLine->setObjectName(QStringLiteral("frameRightBarLine"));
+			frameRightBarLine->setGeometry(QRect(0.9*screenWidth, 0.15*screenHeight, 3, 0.75*screenHeight));
+			frameRightBarLine->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			// buttonHome
+			buttonRBHome = new QPushButton(frameRightBar);
+			buttonRBHome->setObjectName(QStringLiteral("buttonRBHome"));
+			buttonRBHome->setGeometry(QRect(0.3*frameRightBarWidth, 0.27*screenHeight, 0.5*frameRightBarWidth, 0.05*screenHeight));
+			buttonRBHome->setFlat(true);
+			buttonRBHome->raise();
+//			buttonRBHome->setStyleSheet(QLatin1String("background-image: url(./resources/icons/home.png);\n"
+//													"background-repeat: no-repeat;\n"
+//													"background-position: center;"));
+			buttonRBHome->setStyleSheet(QLatin1String("background:red;"));
+
 			// buttonMusic
-//			buttonMusic = new QPushButton(frameHome);
-//			buttonMusic->setObjectName(QStringLiteral("buttonMusic"));
-//			buttonMusic->setGeometry(QRect(50, 0, 200, 91));
-//			buttonMusic->setFlat(true);
-//			buttonMusic->raise();
-//			buttonMusic->setStyleSheet(QLatin1String("background:red;"));
+			buttonRBNowPlaying = new QPushButton(frameRightBar);
+			buttonRBNowPlaying->setObjectName(QStringLiteral("buttonRBNowPlaying"));
+			buttonRBNowPlaying->setGeometry(QRect(0.3*frameRightBarWidth, 0.47*screenHeight, 0.5*frameRightBarWidth, 0.05*screenHeight));
+			buttonRBNowPlaying->setFlat(true);
+			buttonRBNowPlaying->raise();
+			buttonRBNowPlaying->setStyleSheet(QLatin1String("background:red;"));
 
 
+			// back button
+			buttonRBBack = new QPushButton(frameRightBar);
+			buttonRBBack->setObjectName(QStringLiteral("buttonRBBack"));
+			buttonRBBack->setGeometry(QRect(0.3*frameRightBarWidth, 0.67*screenHeight, 0.5*frameRightBarWidth, 0.05*screenHeight));
+			buttonRBBack->setFlat(true);
+			buttonRBBack->raise();
+			buttonRBBack->setStyleSheet(QLatin1String("background:red;"));
 
 
 
@@ -205,71 +252,163 @@ class Ui_MainWindow
 			frameHome = new QFrame(centralWidget);
 			frameHome->setObjectName(QStringLiteral("frameHome"));
 			frameHome->setEnabled(true);
-			frameHome->setGeometry(QRect(0, 110, 1280, 700));
+			frameHome->setGeometry(QRect(0, 0, screenWidth, screenHeight));
 			frameHome->setAutoFillBackground(false);
 			frameHome->setFrameShape(QFrame::StyledPanel);
 			frameHome->setFrameShadow(QFrame::Plain);
 
-
 			// buttonMusic
 			buttonMusic = new QPushButton(frameHome);
 			buttonMusic->setObjectName(QStringLiteral("buttonMusic"));
-			buttonMusic->setGeometry(QRect(50, 0, 100, 100));
+			buttonMusic->setGeometry(QRect(0.132*screenWidth, 0.151*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonMusic->setFlat(true);
 			buttonMusic->raise();
-//			buttonMusic->setStyleSheet(QLatin1String("background-image: url(./resources/icons/music.png);\n"
+//			buttonMusic->setStyleSheet(QLatin1String("background-image: url(./resources/icons/music.png); \n"
 //													 "background-repeat: no-repeat;\n"
 //													 "background-position: center;"));
-			buttonMusic->setStyleSheet(QLatin1String("background:red;"));
+			buttonMusic->setStyleSheet("background: rgb(255,71,1);");
+
+			lineMusic = new QFrame(frameHome);
+			lineMusic->setObjectName(QStringLiteral("lineMusic"));
+			lineMusic->setGeometry(QRect(0.132*screenWidth, 0.382*screenHeight, 0.121*screenWidth, 3));
+			lineMusic->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			labelMusic = new QLabel(frameHome);
+			labelMusic->setObjectName(QStringLiteral("labelMusic"));
+			labelMusic->setGeometry(QRect(0.132*screenWidth, 0.398*screenHeight, 0.121*screenWidth, 0.023*screenHeight));
+			labelMusic->setText("Music");
+			labelMusic->setAlignment(Qt::AlignCenter);
+			labelMusic->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+
 
 			// buttonNavigation
 			// buttonMaps
 			buttonMaps = new QPushButton(frameHome);
 			buttonMaps->setObjectName(QStringLiteral("buttonMaps"));
-			buttonMaps->setGeometry(QRect(280, 0, 100, 100));
+			buttonMaps->setGeometry(QRect(0.425*screenWidth, 0.151*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonMaps->setFlat(true);
 			buttonMaps->raise();
-			buttonMaps->setStyleSheet(QLatin1String("background-image: url(./resources/icons/maps.png);\n"
-													"background-repeat: no-repeat;\n"
-													"background-position: center;"));
+//			buttonMaps->setStyleSheet(QLatin1String("background-image: url(./resources/icons/maps.png);\n"
+//													"background-repeat: no-repeat;\n"
+//													"background-position: center;"));
+			buttonMaps->setStyleSheet(QLatin1String("background: rgb(0,158,231);"));
+
+			lineMaps = new QFrame(frameHome);
+			lineMaps->setObjectName(QStringLiteral("lineMaps"));
+			lineMaps->setGeometry(QRect(0.425*screenWidth, 0.382*screenHeight, 0.121*screenWidth, 3));
+			lineMaps->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			labelMaps = new QLabel(frameHome);
+			labelMaps->setObjectName(QStringLiteral("labelMaps"));
+			labelMaps->setGeometry(QRect(0.425*screenWidth, 0.398*screenHeight, 0.121*screenWidth, 0.023*screenHeight));
+			labelMaps->setText("Maps");
+			labelMaps->setAlignment(Qt::AlignCenter);
+			labelMaps->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+
+
+
 
 			// buttonContacts
 			buttonContacts = new QPushButton(frameHome);
 			buttonContacts->setObjectName(QStringLiteral("buttonContacts"));
-			buttonContacts->setGeometry(QRect(550, 0, 100, 100));
+			buttonContacts->setGeometry(QRect(0.715*screenWidth, 0.15*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonContacts->setFlat(true);
 			buttonContacts->raise();
-			buttonContacts->setStyleSheet(QLatin1String("background-image: url(./resources/icons/contacts.png);\n"
-													"background-repeat: no-repeat;\n"
-													"background-position: center;"));
+//			buttonContacts->setStyleSheet(QLatin1String("background-image: url(./resources/icons/contacts.png);\n"
+//													"background-repeat: no-repeat;\n"
+//													"background-position: center;"));
+			buttonContacts->setStyleSheet(QLatin1String("background: rgb(174,80,194);"));
+
+			lineContacts = new QFrame(frameHome);
+			lineContacts->setObjectName(QStringLiteral("lineContacts"));
+			lineContacts->setGeometry(QRect(0.715*screenWidth, 0.382*screenHeight, 0.121*screenWidth, 3));
+			lineContacts->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			labelContacts = new QLabel(frameHome);
+			labelContacts->setObjectName(QStringLiteral("labelContacts"));
+			labelContacts->setGeometry(QRect(0.715*screenWidth, 0.398*screenHeight, 0.121*screenWidth, 0.023*screenHeight));
+			labelContacts->setText("Contacts");
+			labelContacts->setAlignment(Qt::AlignCenter);
+			labelContacts->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+
+
+
 			// buttonCamera
 			buttonCamera = new QPushButton(frameHome);
-			buttonCamera->setObjectName(QStringLiteral("buttonMaps"));
-			buttonCamera->setGeometry(QRect(989, 0, 230, 111));
+			buttonCamera->setObjectName(QStringLiteral("buttonCamera"));
+			buttonCamera->setGeometry(QRect(0.132*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonCamera->setFlat(true);
 			buttonCamera->raise();
-			buttonCamera->setStyleSheet(QLatin1String("background-image: url(./resources/icons/camera.png);\n"
-													"background-repeat: no-repeat;\n"
-													"background-position: center;"));
+//			buttonCamera->setStyleSheet(QLatin1String("background-image: url(./resources/icons/camera.png);\n"
+//													"background-repeat: no-repeat;\n"
+//													"background-position: center;"));
+			buttonCamera->setStyleSheet(QLatin1String("background: rgb(255,142,2);"));
+
+
+			lineCamera = new QFrame(frameHome);
+			lineCamera->setObjectName(QStringLiteral("lineMaps"));
+			lineCamera->setGeometry(QRect(0.132*screenWidth, 0.774*screenHeight, 0.121*screenWidth, 3));
+			lineCamera->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			labelCamera = new QLabel(frameHome);
+			labelCamera->setObjectName(QStringLiteral("labelCamera"));
+			labelCamera->setGeometry(QRect(0.132*screenWidth, 0.794*screenHeight, 0.121*screenWidth, 0.023*screenHeight));
+			labelCamera->setText("Camera");
+			labelCamera->setAlignment(Qt::AlignCenter);
+			labelCamera->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+
+
 
 			// buttonPhone
 			buttonPhone = new QPushButton(frameHome);
 			buttonPhone->setObjectName(QStringLiteral("buttonPhone"));
-			buttonPhone->setGeometry(QRect(678, 0, 230, 111));
+			buttonPhone->setGeometry(QRect(0.425*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonPhone->setFlat(true);
 			buttonPhone->raise();
-			buttonPhone->setStyleSheet(QLatin1String("background-image: url(./resources/icons/phone.png);\n"
-													 "background-repeat: no-repeat;\n"
-													 "background-position: center;"));
+//			buttonPhone->setStyleSheet(QLatin1String("background-image: url(./resources/icons/phone.png);\n"
+//													 "background-repeat: no-repeat;\n"
+//													 "background-position: center;"));
+			buttonPhone->setStyleSheet(QLatin1String("background: rgb(3,167,2);"));
+
+			linePhone = new QFrame(frameHome);
+			linePhone->setObjectName(QStringLiteral("linePhone"));
+			linePhone->setGeometry(QRect(0.425*screenWidth, 0.774*screenHeight, 0.121*screenWidth, 3));
+			linePhone->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			labelPhone = new QLabel(frameHome);
+			labelPhone->setObjectName(QStringLiteral("labelPhone"));
+			labelPhone->setGeometry(QRect(0.425*screenWidth, 0.794*screenHeight, 0.121*screenWidth, 0.023*screenHeight));
+			labelPhone->setText("Phone");
+			labelPhone->setAlignment(Qt::AlignCenter);
+			labelPhone->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+
+
+
+
 			// buttonMessages
 			buttonMessages = new QPushButton(frameHome);
-			buttonMessages->setObjectName(QStringLiteral("buttonPhone"));
-			buttonMessages->setGeometry(QRect(678, 0, 230, 111));
+			buttonMessages->setObjectName(QStringLiteral("buttonMessages"));
+			buttonMessages->setGeometry(QRect(0.715*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonMessages->setFlat(true);
 			buttonMessages->raise();
-			buttonMessages->setStyleSheet(QLatin1String("background-image: url(./resources/icons/messages.png);\n"
-													 "background-repeat: no-repeat;\n"
-													 "background-position: center;"));
+//			buttonMessages->setStyleSheet(QLatin1String("background-image: url(./resources/icons/messages.png);\n"
+//													 "background-repeat: no-repeat;\n"
+//													 "background-position: center;"));
+			buttonMessages->setStyleSheet(QLatin1String("background: rgb(141,166,175);"));
+
+			lineMessages = new QFrame(frameHome);
+			lineMessages->setObjectName(QStringLiteral("lineMessages"));
+			lineMessages->setGeometry(QRect(0.715*screenWidth, 0.774*screenHeight, 0.121*screenWidth, 3));
+			lineMessages->setStyleSheet(QLatin1String("background: rgba(255,255,255, 30);"));
+
+			labelMessages = new QLabel(frameHome);
+			labelMessages->setObjectName(QStringLiteral("labelMessages"));
+			labelMessages->setGeometry(QRect(0.715*screenWidth, 0.794*screenHeight, 0.121*screenWidth, 0.023*screenHeight));
+			labelMessages->setText("Messages");
+			labelMessages->setAlignment(Qt::AlignCenter);
+			labelMessages->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+
+
 
 
 			// labelHome - temp
@@ -509,68 +648,6 @@ class Ui_MainWindow
 			frameBottomBar->setStyleSheet(QStringLiteral(""));
 			frameBottomBar->setFrameShape(QFrame::StyledPanel);
 			frameBottomBar->setFrameShadow(QFrame::Plain);
-
-
-
-
-
-			// labelSelected0 - home
-			labelSelected0 = new QLabel(frameBottomBar);
-			labelSelected0->setObjectName(QStringLiteral("labelSelected0"));
-			labelSelected0->setGeometry(QRect(58, 0, 230, 111));
-			labelSelected0->raise();
-
-
-			// buttonHome
-			buttonHome = new QPushButton(frameBottomBar);
-			buttonHome->setObjectName(QStringLiteral("buttonHome"));
-			buttonHome->setGeometry(QRect(58, 0, 230, 111));
-			buttonHome->setFlat(true);
-			buttonHome->raise();
-			buttonHome->setStyleSheet(QLatin1String("background-image: url(./resources/icons/home.png);\n"
-													"background-repeat: no-repeat;\n"
-													"background-position: center;"));
-
-
-
-
-
-			// labelSelected1 - music
-			labelSelected1 = new QLabel(frameBottomBar);
-			labelSelected1->setObjectName(QStringLiteral("labelSelected1"));
-			labelSelected1->setGeometry(QRect(368, 0, 230, 111));
-			labelSelected1->raise();
-
-
-
-
-
-
-
-
-
-
-
-			// labelSelected2 - phone
-			labelSelected2 = new QLabel(frameBottomBar);
-			labelSelected2->setObjectName(QStringLiteral("labelSelected2"));
-			labelSelected2->setGeometry(QRect(678, 0, 230, 111));
-			labelSelected2->raise();
-
-
-
-
-
-
-
-
-			// labelSelected3 - maps
-			labelSelected3 = new QLabel(frameBottomBar);
-			labelSelected3->setObjectName(QStringLiteral("labelSelected3"));
-			labelSelected3->setGeometry(QRect(989, 0, 230, 111));
-			labelSelected3->raise();
-
-
 
 
 

@@ -15,21 +15,19 @@ MainWindow::MainWindow(QWidget *parent) :
 	selectedFrame(0);
 	hideMusicButtons(); // this is the tab bar at the bottom in the music frame
 
-	// hide all selected tab labels then select home
-	selectedButton(0);
 
-
-	// labels
+	// labels for now playing
+	// setSongTags(album, artist, song)
 	setSongTags("", "", "");
 	ui->labelTime->setText(getCurrentTime().c_str());
 
 
 	// Create Song Model
+	// this is used in the now playing view
 	model = new QStandardItemModel;
 	musicDB.getArtists(model); // set artist
-	ui->listviewMusic->setModel(model);
-	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate);
-
+	ui->listviewMusic->setModel(model); // attach model to list
+	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate); // attach delegate to list
 
 	// Run Loop
 	// this timer will call
@@ -106,10 +104,9 @@ std::string getCurrentTime() {
 	return strstream.str();
 }
 
-void MainWindow :: on_buttonHome_released()
+void MainWindow :: on_buttonRBHome_released()
 {
 	selectedFrame(0); 	// 	frames
-	selectedButton(0); 	// 	selected tab bar label
 }
 
 
@@ -125,41 +122,17 @@ void MainWindow :: on_buttonMusic_released()
 {
 	// frames
 	selectedFrame(1);
-	hideMenuButtons();
-	showMusicButtons();
-
-	switch (currentView)
-	{
-		case 1:
-			selectedButton(1);
-			break;
-
-		case 2:
-			selectedButton(2);
-			break;
-
-		case 3:
-			selectedButton(3);
-			break;
-
-		default:
-			break;
-	}
 }
 
 void MainWindow :: on_buttonPhone_released()
 {
 	// frames
 	selectedFrame(2);
-
-	// selected tab bar label
-	selectedButton(2);
 }
 
 void MainWindow :: on_buttonMaps_released()
 {
 	selectedFrame(3); // frames
-	selectedButton(3); // selected tab bar label
 }
 
 void MainWindow :: on_buttonVolumeDown_released()
@@ -322,8 +295,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			else
 				musicDB.getAllAlbums(model);
 
-			hideAllTabSelected();
-			ui->labelSelected2->show();
+
 			currentView = 2;
 			break;
 
@@ -337,8 +309,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 				musicDB.getSongs(model, albumIDCur);
 			else
 				musicDB.getAllSongs(model, artistIDCur);
-			hideAllTabSelected();
-			ui->labelSelected3->show();
+
 			ui->listviewMusic->setViewMode(QListView::ListMode);
 			currentView = 3;
 			break;
@@ -382,24 +353,6 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 	}
 }
 
-// Hide All Tab Selected
-// Hide all Selected Labels
-void MainWindow :: hideAllTabSelected()
-{
-	ui->labelSelected0->hide();
-	ui->labelSelected1->hide();
-	ui->labelSelected2->hide();
-	ui->labelSelected3->hide();
-}
-
-void MainWindow :: hideMenuButtons()
-{
-	ui->buttonHome->hide();
-	ui->buttonMusic->hide();
-	ui->buttonMaps->hide();
-	ui->buttonPhone->hide();
-}
-
 void MainWindow :: showMenuButtons()
 {
 	ui->buttonHome->show();
@@ -425,55 +378,6 @@ void MainWindow :: hideMusicButtons()
 	ui->buttonSong->hide();
 }
 
-int MainWindow :: selectedButton(int selected)
-{
-	switch (selected)
-	{
-		case 0:
-			ui->labelSelected0->show();
-			ui->labelSelected1->hide();
-			ui->labelSelected2->hide();
-			ui->labelSelected3->hide();
-			break;
-
-		case 1:
-			ui->labelSelected0->hide();
-			ui->labelSelected1->show();
-			ui->labelSelected2->hide();
-			ui->labelSelected3->hide();
-			hideMenuButtons();
-			showMusicButtons();
-			break;
-
-		case 2:
-			ui->labelSelected0->hide();
-			ui->labelSelected1->hide();
-			ui->labelSelected2->show();
-			ui->labelSelected3->hide();
-			break;
-
-		case 3:
-			ui->labelSelected0->hide();
-			ui->labelSelected1->hide();
-			ui->labelSelected2->hide();
-			ui->labelSelected3->show();
-			break;
-
-		default:
-			if (ui->labelSelected0->isVisible())
-				selected = 0;
-			else if (ui->labelSelected1->isVisible())
-				selected = 1;
-			else if (ui->labelSelected2->isVisible())
-				selected = 2;
-			else if (ui->labelSelected3->isVisible())
-				selected = 3;
-			
-			break;
-	}
-
-	return selected;
-}
 
 int MainWindow :: selectedFrame(int selected)
 {
@@ -527,8 +431,6 @@ int MainWindow :: selectedFrame(int selected)
 
 void MainWindow::on_buttonBack_released()
 {
-	hideAllTabSelected();
-	ui->labelSelected1->show();
 	hideMusicButtons();
 	showMenuButtons();
 }
@@ -538,8 +440,6 @@ void MainWindow::on_buttonArtist_released()
 	currentView = 1;
 	model->clear();
 	musicDB.getArtists(model); // set artist
-	hideAllTabSelected();
-	ui->labelSelected1->show();
 }
 
 void MainWindow::on_buttonAlbum_released()
@@ -547,20 +447,15 @@ void MainWindow::on_buttonAlbum_released()
 	currentView = 2;
 	model->clear();
 	musicDB.getAlbums(model, artistIDCur);
-	hideAllTabSelected();
-	ui->labelSelected2->show();
-	
 }
 
 void MainWindow::on_buttonSong_released()
 {
 	currentView = 3;
-	std::cout 	<< albumIDCur 
+	std::cout	<< albumIDCur
 				<< std::endl;
 	model->clear();
 	musicDB.getSongs(model, albumIDCur);
-	hideAllTabSelected();
-	ui->labelSelected3->show();
 }
 
 

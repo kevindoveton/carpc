@@ -6,5 +6,10 @@
         <file>fonts/sanFrancisco/sanFranciscoThin.ttf</file>
         <file>fonts/sanFrancisco/sanFranciscoUltraLight.ttf</file>
         <file>icons/camera.png</file>
+        <file>icons/music.png</file>
+        <file>icons/contacts.png</file>
+        <file>icons/maps.png</file>
+        <file>icons/messages.png</file>
+        <file>icons/phone.png</file>
     </qresource>
 </RCC>

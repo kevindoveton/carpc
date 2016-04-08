@@ -277,15 +277,15 @@ class Ui_MainWindow
 			frameHome->setFrameShadow(QFrame::Plain);
 
 			// buttonMusic
+			QPixmap musicImage(":/resources/icons/music.png");
+			QIcon musicIcon(musicImage);
 			buttonMusic = new QPushButton(frameHome);
 			buttonMusic->setObjectName(QStringLiteral("buttonMusic"));
 			buttonMusic->setGeometry(QRect(0.132*screenWidth, 0.151*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonMusic->setFlat(true);
 			buttonMusic->raise();
-//			buttonMusic->setStyleSheet(QLatin1String("background-image: url(./resources/icons/music.png); \n"
-//													 "background-repeat: no-repeat;\n"
-//													 "background-position: center;"));
-			buttonMusic->setStyleSheet("background: rgb(255,71,1);");
+			buttonMusic->setIcon(musicIcon);
+			buttonMusic->setIconSize(buttonMusic->size());
 
 			lineMusic = new QFrame(frameHome);
 			lineMusic->setObjectName(QStringLiteral("lineMusic"));
@@ -303,15 +303,15 @@ class Ui_MainWindow
 
 			// buttonNavigation
 			// buttonMaps
+			QPixmap navigationImage(":/resources/icons/maps.png");
+			QIcon navigationIcon(navigationImage);
 			buttonMaps = new QPushButton(frameHome);
 			buttonMaps->setObjectName(QStringLiteral("buttonMaps"));
 			buttonMaps->setGeometry(QRect(0.425*screenWidth, 0.151*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonMaps->setFlat(true);
 			buttonMaps->raise();
-//			buttonMaps->setStyleSheet(QLatin1String("background-image: url(./resources/icons/maps.png);\n"
-//													"background-repeat: no-repeat;\n"
-//													"background-position: center;"));
-			buttonMaps->setStyleSheet(QLatin1String("background: rgb(0,158,231);"));
+			buttonMaps->setIcon(navigationIcon);
+			buttonMaps->setIconSize(buttonMaps->size());
 
 			lineMaps = new QFrame(frameHome);
 			lineMaps->setObjectName(QStringLiteral("lineMaps"));
@@ -330,15 +330,15 @@ class Ui_MainWindow
 
 
 			// buttonContacts
+			QPixmap contactsImage(":/resources/icons/contacts.png");
+			QIcon contactsIcon(contactsImage);
 			buttonContacts = new QPushButton(frameHome);
 			buttonContacts->setObjectName(QStringLiteral("buttonContacts"));
 			buttonContacts->setGeometry(QRect(0.715*screenWidth, 0.15*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonContacts->setFlat(true);
 			buttonContacts->raise();
-//			buttonContacts->setStyleSheet(QLatin1String("background-image: url(./resources/icons/contacts.png);\n"
-//													"background-repeat: no-repeat;\n"
-//													"background-position: center;"));
-			buttonContacts->setStyleSheet(QLatin1String("background: rgb(174,80,194);"));
+			buttonContacts->setIcon(contactsIcon);
+			buttonContacts->setIconSize(buttonContacts->size());
 
 			lineContacts = new QFrame(frameHome);
 			lineContacts->setObjectName(QStringLiteral("lineContacts"));
@@ -355,12 +355,15 @@ class Ui_MainWindow
 
 
 			// buttonCamera
+			QPixmap cameraImage(":/resources/icons/camera.png");
+			QIcon cameraIcon(cameraImage);
 			buttonCamera = new QPushButton(frameHome);
 			buttonCamera->setObjectName(QStringLiteral("buttonCamera"));
 			buttonCamera->setGeometry(QRect(0.132*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonCamera->setFlat(true);
 			buttonCamera->raise();
-			buttonCamera->setStyleSheet(QLatin1String("background: rgb(255,142,2);"));
+			buttonCamera->setIcon(cameraIcon);
+			buttonCamera->setIconSize(buttonCamera->size());
 
 
 			lineCamera = new QFrame(frameHome);
@@ -378,7 +381,7 @@ class Ui_MainWindow
 
 
 			// buttonPhone
-			QPixmap phoneImage(":/resources/icons/camera.png");
+			QPixmap phoneImage(":/resources/icons/phone.png");
 			QIcon phoneIcon(phoneImage);
 			buttonPhone = new QPushButton(frameHome);
 			buttonPhone->setObjectName(QStringLiteral("buttonPhone"));
@@ -387,7 +390,6 @@ class Ui_MainWindow
 			buttonPhone->raise();
 			buttonPhone->setIcon(phoneIcon);
 			buttonPhone->setIconSize(buttonPhone->size());
-//			buttonPhone->setStyleSheet(QLatin1String("background: rgb(3,167,2);"));
 
 			linePhone = new QFrame(frameHome);
 			linePhone->setObjectName(QStringLiteral("linePhone"));
@@ -405,15 +407,15 @@ class Ui_MainWindow
 
 
 			// buttonMessages
+			QPixmap messagesImage(":/resources/icons/messages.png");
+			QIcon messagesIcon(messagesImage);
 			buttonMessages = new QPushButton(frameHome);
 			buttonMessages->setObjectName(QStringLiteral("buttonMessages"));
 			buttonMessages->setGeometry(QRect(0.715*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
 			buttonMessages->setFlat(true);
 			buttonMessages->raise();
-//			buttonMessages->setStyleSheet(QLatin1String("background-image: url(./resources/icons/messages.png);\n"
-//													 "background-repeat: no-repeat;\n"
-//													 "background-position: center;"));
-			buttonMessages->setStyleSheet(QLatin1String("background: rgb(141,166,175);"));
+			buttonMessages->setIcon(messagesIcon);
+			buttonMessages->setIconSize(buttonMessages->size());
 
 			lineMessages = new QFrame(frameHome);
 			lineMessages->setObjectName(QStringLiteral("lineMessages"));

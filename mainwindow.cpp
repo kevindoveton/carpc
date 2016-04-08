@@ -302,8 +302,8 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 		case 2:
 			// going to the song view now
 			albumIDCur = index.sibling(index.row(), 1).data().toInt();
-			std::cout 	<< albumIDCur 
-						<< std::endl;
+//			std::cout 	<< albumIDCur
+//						<< std::endl;
 			model->clear();
 			if (albumIDCur != -1)
 				musicDB.getSongs(model, albumIDCur);
@@ -319,6 +319,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			ui->listviewMusic->setViewMode(QListView::ListMode);
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
+			std::cout << songIDCur;
 			SongData temp;
 
 			musicDB.getSongPath(songIDCur, temp);
@@ -365,17 +366,17 @@ void MainWindow :: showMenuButtons()
 void MainWindow :: showMusicButtons()
 {
 	ui->buttonBack->show();
-	ui->buttonArtist->show();
-	ui->buttonAlbum->show();
-	ui->buttonSong->show();
+	ui->buttonMusicArtist->show();
+	ui->buttonMusicAlbum->show();
+	ui->buttonMusicSong->show();
 }
 
 void MainWindow :: hideMusicButtons()
 {
 	ui->buttonBack->hide();
-	ui->buttonArtist->hide();
-	ui->buttonAlbum->hide();
-	ui->buttonSong->hide();
+	ui->buttonMusicArtist->hide();
+	ui->buttonMusicAlbum->hide();
+	ui->buttonMusicSong->hide();
 }
 
 

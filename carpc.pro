@@ -40,6 +40,7 @@ HEADERS  += mainwindow.h \
     ClassMusicPlayer.h \
     ClassSystemVolume.h
 
+RESOURCES += resources/resources.qrc
 
 #FORMS    += mainwindow.ui
 

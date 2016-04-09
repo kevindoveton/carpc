@@ -70,7 +70,7 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 			INNER JOIN songs ON library.songID = songs.songID \
 			INNER JOIN albums ON songs.albumID = albums.albumID \
 			INNER JOIN artists ON artists.artistID = albums.artistID \
-			WHERE songs.songID == 1");
+			WHERE songs.songID == ?");
 		query.bind(1, songID);
 
 		while (query.executeStep())

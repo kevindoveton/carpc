@@ -28,6 +28,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	musicDB.getArtists(model); // set artist
 	ui->listviewMusic->setModel(model); // attach model to list
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate); // attach delegate to list
+	ui->listviewMusic->setVerticalScrollMode(QListView::ScrollPerPixel);
+//	ui->listviewMusic->setSpacing(10);
 
 	// Run Loop
 	// this timer will call

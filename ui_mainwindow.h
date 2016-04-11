@@ -83,6 +83,7 @@ class Ui_MainWindow
 
 
 		QLabel *label_3;
+
 		QListView *listviewMusic;
 		QAbstractItemDelegate *listviewDelegate;
 
@@ -122,7 +123,12 @@ class Ui_MainWindow
 
 			int screenWidth = QApplication::desktop()->geometry().width();
 			int screenHeight = QApplication::desktop()->geometry().height();
-//			int screenWidth = 800, screenHeight = 480; // test values
+			//			int screenWidth = 800, screenHeight = 480; // test values
+
+
+
+
+
 			// -------------------------------------------------------------------------------------------------------------
 			// main container window
 			// -------------------------------------------------------------------------------------------------------------

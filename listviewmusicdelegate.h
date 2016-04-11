@@ -11,6 +11,7 @@
 #include <QFile>
 #include <QFontDatabase>
 #include <QDebug>
+#include <QApplication>
 
 class listViewMusicDelegate : public QAbstractItemDelegate
 {
@@ -18,38 +19,56 @@ class listViewMusicDelegate : public QAbstractItemDelegate
 		listViewMusicDelegate(QObject *parent=0) : QAbstractItemDelegate(parent){}
 		void paint ( QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index ) const
 		{
-			// this added a blue highlight when clicked
-//			if(option.state & QStyle::State_Selected){
-//				painter->fillRect(option.rect, option.palette.color(QPalette::Highlight));
-//			}
+			// get the image
+			// this uses the DecorationRole flag,
+			// index = 0
+			QImage ic = qvariant_cast<QImage>(index.data(Qt::DecorationRole));
 
-			// this created a nice little icon
-//			QIcon ic = QIcon(qvariant_cast<QPixmap>(index.data(Qt::DecorationRole)));
-			QPixmap ic = qvariant_cast<QPixmap>(index.data(Qt::DecorationRole));
+			// scale image so that at least width or height
+			// is equal to the size of the box
 			ic = ic.scaled(option.rect.width(), option.rect.height(), Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation);
 
+			// find the centre of the box and image
+			// set crop margins from those points
+			int imgWidthCentre = ic.width()/2;
+			int boxWidthCentre = option.rect.width()/2;
+			int cropWidth = imgWidthCentre-boxWidthCentre;
+
+			int imgHeightCentre = ic.height()/2;
+			int boxHeightCentre = option.rect.height()/2;
+			int cropHeight = imgHeightCentre - boxHeightCentre;
+
+			// crop the image so that it will be centered
+			// inside of the box
+			QImage icCrop = ic.copy(cropWidth, cropHeight, option.rect.width(), option.rect.height());
+
+			// painter draw image format:
+			// painter->drawImage(QRect(rectangle), QImage(image))
+			painter->drawImage(option.rect, icCrop);
+
+			// get the text
+			// this uses the DisplayRole flag
+			// index  = 0
 			QString txt = index.data(Qt::DisplayRole).toString();
 
-
-//			QRect r = option.rect.adjusted(10, -5, 0, 5);
-
-			// this paints the image as a full scale.. need to vcenter still
-			// fillRect(x, y, aspect ratio, transformation)
-			painter->fillRect(option.rect, ic);
-
-
-			// this created a nice little icon
-//			ic.paint(painter, r, Qt::AlignVCenter|Qt::AlignRight);
-
-			QRect r = option.rect.adjusted(0, 0, 0, -10); // add a little padding to the bottom of the image
+			// add a little padding to the bottom and left edge of the image
+			QRect textRect = option.rect.adjusted(+(option.rect.height()/40), 0, -(option.rect.height()/40), -(option.rect.height()/40) );
+			QRect boundingRect = option.rect;
+			// set the pen colour as white
 			QPen textPen(QColor("#FFFFFF"));
 			painter->setPen(textPen);
-			painter->drawText(r, Qt::AlignBottom|Qt::AlignLeft|Qt::TextWordWrap, txt, &r);
+
+			// draw the text, aligned bottom and left - padding is already taken care of
+			// painter->drawText(Qrect(textRectangle), Option|Option, QString(text), QRect(boundingRectangle);
+			painter->drawText(textRect, Qt::AlignBottom|Qt::AlignLeft|Qt::TextWordWrap, txt, &boundingRect);
 		}
 
 		QSize sizeHint ( const QStyleOptionViewItem & option, const QModelIndex & index ) const
 		{
-			return QSize(200, 200); // need to implement spacing?
+//			int x = 0.33*(QApplication::desktop()->geometry().width());
+//			int y = 0.33*(QApplication::desktop()->geometry().height());
+			int x = 200, y = 200;
+			return QSize(x, y); // need to implement spacing?
 			// will then be 410 && 165
 		}
 };

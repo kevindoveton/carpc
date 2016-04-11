@@ -7,6 +7,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QApplication>
+#include <QtGui>
 #include <QDesktopWidget>
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
@@ -106,7 +107,9 @@ class Ui_MainWindow
 		// Not used
 		QFrame *frameBottomBar;
 		QLabel *labelCurrentTrack;
-		QLabel *labelCurrentArtistAlbum;
+		QLabel *labelCurrentArtist;
+		QLabel *labelCurrentAlbum;
+		QImage *imageCurrentAlbum;
 		QPushButton *buttonMusicPlayPause;
 		QPushButton *buttonMusicNext;
 		QPushButton *buttonVolumeUp;
@@ -152,6 +155,27 @@ class Ui_MainWindow
 				 << "font-family: Avenir;"
 				 << "color: #FFFFFF";
 			std::string topBarLabelStyles = sstr.str();
+
+
+			// Now playing styles
+			sstr.str(std::string(""));
+			sstr << "font-size: " << 0.0592/2*screenHeight << "pt; \n"
+				 << "font-family: Avenir;\n"
+				 << "color: rgba(255,255,255,70);";
+			std::string labelNowPlayingArtistStyle = sstr.str();
+
+			sstr.str(std::string(""));
+			sstr << "font-size: " << 0.133333/2*screenHeight << "pt; \n"
+				 << "text-transform: uppercase; \n"
+				 << "font-family: Avenir;\n"
+				 << "color: rgb(255,255,255);";
+			std::string labelNowPlayingSongStyle = sstr.str();
+
+			sstr.str(std::string(""));
+			sstr << "font-size: " << 0.0592/2*screenHeight << "pt; \n"
+				 << "font-family: Avenir;\n"
+				 << "color: rgb(255,255,255);";
+			std::string labelNowPlayingAlbumStyle = sstr.str();
 
 			MainWindow->setStyleSheet(QLatin1String("#MainWindow {\n"
 													"	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0.4, stop:0 rgb(3,41,79), stop:1 rgb(66,123,164)); \n"
@@ -530,25 +554,40 @@ class Ui_MainWindow
 			frameNowPlaying->setFrameShape(QFrame::StyledPanel);
 			frameNowPlaying->setFrameShadow(QFrame::Plain);
 
+			// 0.06453
+			// width = 0.233
+
+			// 0.230
+			// height = 0.4148
+
+
+			// labelCurrentArtist
+			labelCurrentArtist = new QLabel(frameNowPlaying);
+			labelCurrentArtist->setObjectName(QStringLiteral("labelCurrentArtist"));
+			labelCurrentArtist->setGeometry(QRect(0.328*screenWidth, 0.326*screenHeight, 0.572*screenWidth, 0.05556*screenHeight));
+			labelCurrentArtist->setAlignment(Qt::AlignLeft|Qt::AlignBottom);
+			labelCurrentArtist->setStyleSheet(QString::fromStdString(labelNowPlayingArtistStyle));
+//			labelCurrentArtist->setVisible(false);
+
 			// labelCurrentTrack
 			labelCurrentTrack = new QLabel(frameNowPlaying);
 			labelCurrentTrack->setObjectName(QStringLiteral("labelCurrentTrack"));
-			labelCurrentTrack->setGeometry(QRect(0, 10, 681, 51));
-			labelCurrentTrack->setAlignment(Qt::AlignCenter);
+			labelCurrentTrack->setGeometry(QRect(0.328*screenWidth, 0.397*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelCurrentTrack->setAlignment(Qt::AlignLeft);
+			labelCurrentTrack->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
 //			labelCurrentTrack->setVisible(false);
 
+			// labelCurrentAlbum
+			labelCurrentAlbum = new QLabel(frameNowPlaying);
+			labelCurrentAlbum->setObjectName(QStringLiteral("labelCurrentAlbum"));
+			labelCurrentAlbum->setGeometry(QRect(0.328*screenWidth, 0.507*screenHeight, 0.572*screenWidth, 0.05556*screenHeight));
+			labelCurrentAlbum->setAlignment(Qt::AlignLeft);
+			labelCurrentAlbum->setStyleSheet(QString::fromStdString(labelNowPlayingAlbumStyle));
+//			labelCurrentAlbum->setVisible(false);
 
-
-
-
-			// labelCurrentArtistAlbum
-			labelCurrentArtistAlbum = new QLabel(frameNowPlaying);
-			labelCurrentArtistAlbum->setObjectName(QStringLiteral("labelCurrentArtistAlbum"));
-			labelCurrentArtistAlbum->setGeometry(QRect(0, 60, 681, 41));
-			labelCurrentArtistAlbum->setAlignment(Qt::AlignCenter);
-//			labelCurrentArtistAlbum->setVisible(false);
-
-
+			// imageCurrentAlbum
+//			labelCurrentAlbum->
+//			imageCurrentAlbum = new QImage();
 
 
 

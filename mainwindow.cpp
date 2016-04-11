@@ -29,7 +29,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->listviewMusic->setModel(model); // attach model to list
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate); // attach delegate to list
 	ui->listviewMusic->setVerticalScrollMode(QListView::ScrollPerPixel);
-//	ui->listviewMusic->setSpacing(10);
+	ui->listviewMusic->setGridSize(QSize(210,210));
+	qDebug() << ui->listviewMusic->gridSize();
 
 	// Run Loop
 	// this timer will call
@@ -276,7 +277,8 @@ void MainWindow :: setButtonPlayPauseText(int playStatus)
 void MainWindow :: setSongTags(std::string title, std::string album, std::string artist)
 {
 	ui->labelCurrentTrack->setText(title.c_str());
-	ui->labelCurrentArtistAlbum->setText((artist + " - " + album).c_str());
+	ui->labelCurrentArtist->setText(artist.c_str());
+	ui->labelCurrentAlbum->setText(album.c_str());
 }
 
 void MainWindow::on_buttonQuit_released()

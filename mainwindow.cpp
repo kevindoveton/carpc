@@ -13,8 +13,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	//  Set home frame for start up
 	selectedFrame(0);
-	hideMusicButtons(); // this is the tab bar at the bottom in the music frame
-
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -381,23 +379,6 @@ void MainWindow :: showMenuButtons()
 }
 
 
-void MainWindow :: showMusicButtons()
-{
-	ui->buttonBack->show();
-	ui->buttonMusicArtist->show();
-	ui->buttonMusicAlbum->show();
-	ui->buttonMusicSong->show();
-}
-
-void MainWindow :: hideMusicButtons()
-{
-	ui->buttonBack->hide();
-	ui->buttonMusicArtist->hide();
-	ui->buttonMusicAlbum->hide();
-	ui->buttonMusicSong->hide();
-}
-
-
 int MainWindow :: selectedFrame(int selected)
 {
 	switch (selected)
@@ -454,12 +435,12 @@ int MainWindow :: selectedFrame(int selected)
 
 void MainWindow::on_buttonBack_released()
 {
-	hideMusicButtons();
-	showMenuButtons();
+	// go to previous view
 }
 
 void MainWindow::on_buttonArtist_released()
 {
+	ui->listviewMusic->setViewMode(QListView::IconMode);
 	currentView = 1;
 	model->clear();
 	musicDB.getArtists(model); // set artist
@@ -467,6 +448,7 @@ void MainWindow::on_buttonArtist_released()
 
 void MainWindow::on_buttonAlbum_released()
 {
+	ui->listviewMusic->setViewMode(QListView::IconMode);
 	currentView = 2;
 	model->clear();
 	musicDB.getAlbums(model, artistIDCur);
@@ -474,6 +456,7 @@ void MainWindow::on_buttonAlbum_released()
 
 void MainWindow::on_buttonSong_released()
 {
+	ui->listviewMusic->setViewMode(QListView::ListMode);
 	currentView = 3;
 	std::cout	<< albumIDCur
 				<< std::endl;

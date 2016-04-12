@@ -147,9 +147,12 @@ class Ui_MainWindow
 
 			// 1080p 32pt
 			sstr << "font-size: " << 0.02692*screenHeight << "pt;\n"
-				 << "text-transform: uppercase;\n";
-			sstr << "font-family: Avenir;";
+				 << "text-transform: uppercase;\n"
+				 << "color: rgb(255,255,255);"
+				 << "font-family: Avenir;";
 			std::string homePageLabelsStyle = sstr.str();
+			sstr << "vertical-align: middle; \n"
+				 << "text-align: center;";
 			std::string musicPageButtonStyles = sstr.str();
 
 			sstr.str(std::string(""));
@@ -417,19 +420,6 @@ class Ui_MainWindow
 
 
 
-
-
-//			// label_3
-//			label_3 = new QLabel(frameMusic);
-//			label_3->setObjectName(QStringLiteral("label_3"));
-//			label_3->setGeometry(QRect(30, 40, 67, 21));
-//			label_3->setStyleSheet("Background: red;");
-//			label_3->setVisible(true);
-
-
-
-
-
 			// listViewMusic
 			listviewMusic = new QListView(frameMusic);
 			listviewMusic->setObjectName(QStringLiteral("listviewMusic"));
@@ -450,17 +440,18 @@ class Ui_MainWindow
 
 			// buttonPlaylists
 			buttonMusicPlaylists = new QPushButton(frameMusic);
-			buttonMusicPlaylists->setObjectName(QStringLiteral("buttonArtist"));
-			buttonMusicPlaylists->setGeometry(QRect(0.189*screenWidth, 0.0868*screenHeight, 0.0817*screenWidth,0.039*screenHeight));
+			buttonMusicPlaylists->setObjectName(QStringLiteral("buttonPlaylists"));
+			buttonMusicPlaylists->setGeometry(QRect(0.189*screenWidth, 0.0868*screenHeight, 0.1111*screenWidth,0.0407*screenHeight));
 			buttonMusicPlaylists->setFlat(true);
 			buttonMusicPlaylists->raise();
 			buttonMusicPlaylists->setText("Playlists");
 			buttonMusicPlaylists->setStyleSheet(QString::fromStdString(musicPageButtonStyles));
 
+
 			// buttonArtist
 			buttonMusicArtist = new QPushButton(frameMusic);
 			buttonMusicArtist->setObjectName(QStringLiteral("buttonArtist"));
-			buttonMusicArtist->setGeometry(QRect(368, 0, 230, 111));
+			buttonMusicArtist->setGeometry(QRect(0.296*screenWidth, 0.0868*screenHeight, 0.11111*screenWidth,0.0407*screenHeight));
 			buttonMusicArtist->setFlat(true);
 			buttonMusicArtist->raise();
 			buttonMusicArtist->setText("Artists");
@@ -469,7 +460,7 @@ class Ui_MainWindow
 			// buttonAlbum
 			buttonMusicAlbum = new QPushButton(frameMusic);
 			buttonMusicAlbum->setObjectName(QStringLiteral("buttonAlbum"));
-			buttonMusicAlbum->setGeometry(QRect(678, 0, 230, 111));
+			buttonMusicAlbum->setGeometry(QRect(0.424*screenWidth, 0.0868*screenHeight, 0.1111*screenWidth,0.0407*screenHeight));
 			buttonMusicAlbum->setFlat(true);
 			buttonMusicAlbum->raise();
 			buttonMusicAlbum->setText("Albums");
@@ -478,7 +469,7 @@ class Ui_MainWindow
 			// buttonSong
 			buttonMusicSong = new QPushButton(frameMusic);
 			buttonMusicSong->setObjectName(QStringLiteral("buttonSong"));
-			buttonMusicSong->setGeometry(QRect(989, 0, 230, 111));
+			buttonMusicSong->setGeometry(QRect(0.544*screenWidth, 0.0868*screenHeight, 0.1111*screenWidth,0.0407*screenHeight));
 			buttonMusicSong->setFlat(true);
 			buttonMusicSong->raise();
 			buttonMusicSong->setText("Songs");
@@ -594,7 +585,11 @@ class Ui_MainWindow
 			imageCurrentAlbum->setObjectName(QStringLiteral("imageCurrentAlbum"));
 			imageCurrentAlbum->setGeometry(QRect(0.06543*screenWidth, 0.230*screenHeight, 0.233*screenWidth, 0.4148*screenHeight));
 			imageCurrentAlbum->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);
-//			labelCurrentAlbum->setStyleSheet(QString::fromStdString(labelNowPlayingAlbumStyle));
+			QRect r = imageCurrentAlbum->rect();
+			QPainterPath path = QPainterPath(r.topLeft());
+			path.addRoundRect(r, 12);
+			QPolygon p = path.toFillPolygon().toPolygon();
+			imageCurrentAlbum->setMask(p);
 
 			// buttonMusicPlayPause
 			buttonMusicPlayPause = new QPushButton(frameNowPlaying);
@@ -721,7 +716,7 @@ class Ui_MainWindow
 			// This is technically part of the top bar
 			// but is only shown on the home page to
 			// avoid accidentally quitting the program
-			buttonQuit = new QPushButton(frameTopBar);
+			buttonQuit = new QPushButton(frameHome);
 			buttonQuit->setObjectName(QStringLiteral("buttonQuit"));
 			buttonQuit->setGeometry(QRect(0.0185*screenWidth, 0.0185*screenHeight, 0.1*screenWidth, 0.05*screenHeight));
 			buttonQuit->setStyleSheet(QString::fromStdString(topBarLabelStyles));

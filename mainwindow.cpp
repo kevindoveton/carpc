@@ -433,10 +433,7 @@ int MainWindow :: selectedFrame(int selected)
 
 
 
-void MainWindow::on_buttonBack_released()
-{
-	// go to previous view
-}
+
 
 void MainWindow::on_buttonArtist_released()
 {
@@ -451,7 +448,10 @@ void MainWindow::on_buttonAlbum_released()
 	ui->listviewMusic->setViewMode(QListView::IconMode);
 	currentView = 2;
 	model->clear();
-	musicDB.getAlbums(model, artistIDCur);
+	if (artistIDCur != -1)
+		musicDB.getAlbums(model, artistIDCur);
+	else
+		musicDB.getAllAlbums(model);
 }
 
 void MainWindow::on_buttonSong_released()
@@ -461,7 +461,10 @@ void MainWindow::on_buttonSong_released()
 	std::cout	<< albumIDCur
 				<< std::endl;
 	model->clear();
-	musicDB.getSongs(model, albumIDCur);
+	if (albumIDCur != -1)
+		musicDB.getSongs(model, albumIDCur);
+	else
+		musicDB.getAllSongs(model, albumIDCur);
 }
 
 void MainWindow::on_buttonRBNowPlaying_released()

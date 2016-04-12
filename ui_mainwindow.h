@@ -25,6 +25,7 @@
 #include <QFontDatabase>
 #include <QDebug>
 
+
 QT_BEGIN_NAMESPACE
 
 class Ui_MainWindow
@@ -93,7 +94,6 @@ class Ui_MainWindow
 		QLabel *label_5;
 
 
-		QPushButton *buttonBack;
 
 		// Music - Application
 		QPushButton *buttonMusicArtist;
@@ -212,6 +212,27 @@ class Ui_MainWindow
 
 
 
+
+
+
+			// -------------------------------------------------------------------------------------------------------------
+			// Top Bar
+			// -------------------------------------------------------------------------------------------------------------
+
+			// frameTopBar
+			frameTopBar = new QFrame(centralWidget);
+			frameTopBar->setObjectName(QStringLiteral("frameTopBar"));
+			frameTopBar->setGeometry(QRect(0, 0, screenWidth, 0.1*screenHeight));
+			frameTopBar->setFrameShape(QFrame::StyledPanel);
+			frameTopBar->setFrameShadow(QFrame::Plain);
+
+
+			// labelTime
+			labelTime = new QLabel(frameTopBar);
+			labelTime->setObjectName(QStringLiteral("labelTime"));
+			labelTime->setGeometry(QRect(0.85*screenWidth, 0.0185*screenHeight, 0.1*screenWidth, 0.05*screenHeight));
+			labelTime->setAlignment(Qt::AlignRight);
+			labelTime->setStyleSheet(QString::fromStdString(topBarLabelStyles));
 
 
 
@@ -389,11 +410,14 @@ class Ui_MainWindow
 
 
 
-			// labelHome - temp
-			labelHome = new QLabel(frameHome);
-			labelHome->setObjectName(QStringLiteral("labelHome"));
-			labelHome->setGeometry(QRect(10, 40, 67, 21));
-
+			// buttonQuit
+			// This is technically part of the top bar
+			// but is only shown on the home page to
+			// avoid accidentally quitting the program
+			buttonQuit = new QPushButton(frameHome);
+			buttonQuit->setObjectName(QStringLiteral("buttonQuit"));
+			buttonQuit->setGeometry(QRect(0.0185*screenWidth, 0.0185*screenHeight, 0.1*screenWidth, 0.05*screenHeight));
+			buttonQuit->setStyleSheet(QString::fromStdString(topBarLabelStyles));
 
 
 
@@ -671,15 +695,6 @@ class Ui_MainWindow
 
 
 
-			// buttonBack
-			buttonBack = new QPushButton(frameBottomBar);
-			buttonBack->setObjectName(QStringLiteral("buttonBack"));
-			buttonBack->setGeometry(QRect(58, 0, 230, 111));
-			buttonBack->setFlat(true);
-			buttonBack->raise();
-			buttonBack->setStyleSheet(QLatin1String("background-image: url(./resources/icons/back.png);\n"
-													"background-repeat: no-repeat;\n"
-													"background-position: center;"));
 
 
 
@@ -691,35 +706,8 @@ class Ui_MainWindow
 
 
 
-			// -------------------------------------------------------------------------------------------------------------
-			// Top Bar
-			// -------------------------------------------------------------------------------------------------------------
-
-			// frameTopBar
-			frameTopBar = new QFrame(centralWidget);
-			frameTopBar->setObjectName(QStringLiteral("frameTopBar"));
-			frameTopBar->setGeometry(QRect(0, 0, screenWidth, 0.1*screenHeight));
-			frameTopBar->setFrameShape(QFrame::StyledPanel);
-			frameTopBar->setFrameShadow(QFrame::Plain);
 
 
-			// labelTime
-			labelTime = new QLabel(frameTopBar);
-			labelTime->setObjectName(QStringLiteral("labelTime"));
-			labelTime->setGeometry(QRect(0.85*screenWidth, 0.0185*screenHeight, 0.1*screenWidth, 0.05*screenHeight));
-			labelTime->setAlignment(Qt::AlignRight);
-			labelTime->setStyleSheet(QString::fromStdString(topBarLabelStyles));
-
-
-
-			// buttonQuit
-			// This is technically part of the top bar
-			// but is only shown on the home page to
-			// avoid accidentally quitting the program
-			buttonQuit = new QPushButton(frameHome);
-			buttonQuit->setObjectName(QStringLiteral("buttonQuit"));
-			buttonQuit->setGeometry(QRect(0.0185*screenWidth, 0.0185*screenHeight, 0.1*screenWidth, 0.05*screenHeight));
-			buttonQuit->setStyleSheet(QString::fromStdString(topBarLabelStyles));
 
 
 

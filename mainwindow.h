@@ -131,10 +131,6 @@ class MainWindow : public QMainWindow
 		//musicTabBar
 		// --------------------------------------
 
-		void on_buttonBack_released();
-		// Switches tab bar to standard tab bar
-		// Selected label to music
-
 		void on_buttonArtist_released();
 		// Switches to artist view
 		// Selected label to artists
@@ -180,7 +176,7 @@ class MainWindow : public QMainWindow
 	private:
 		Ui::MainWindow *ui;
 
-		void setSongTags(std::string title, std::string album, std::string artist);
+		void setSongTags(std::string title, std::string album, std::string artist, std::string albumImagePath);
 		// set the song labels
 
 		void setButtonPlayPauseText(int playStatus);
@@ -216,9 +212,9 @@ class MainWindow : public QMainWindow
 		QStandardItemModel* model; // used for music
 		std::vector<SongData> upNext;
 		std::vector<SongData> recentlyPlayed;
-		int artistIDCur;
-		int albumIDCur;
-		int songIDCur;
+		int artistIDCur = -1;
+		int albumIDCur = -1;
+		int songIDCur = -1;
 
 		// Objects
 		MusicPlayer musicPlayer;

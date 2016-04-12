@@ -65,7 +65,8 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 
 		SQLite::Statement query(db, "SELECT songs.songID, songs.songName, albums.albumName, \
 			artists.artistName, library.bitRate, library.kind, library.lastPlayed, library.length, \
-			library.path, library.playCount, library.rating, library.sampleRate, library.skipCount \
+			library.path, library.playCount, library.rating, library.sampleRate, library.skipCount, \
+			albums.albumImagePath \
 			FROM `library` \
 			INNER JOIN songs ON library.songID = songs.songID \
 			INNER JOIN albums ON songs.albumID = albums.albumID \
@@ -90,11 +91,13 @@ void MusicDB :: getSongPath(int songID, SongData& currentSong)
 			int rating = query.getColumn(10); // library.rating
 			int sampleRate = query.getColumn(11); // library.sampleRate
 			int skipCount = query.getColumn(12); // library.skipCount
+
+			std::string albumImagePath = query.getColumn(13); // albums.albumImagePath
 			
 			/*for (int i = 0; i < 20; i++)
 				std::cout << "Column " << i << " " << query.getColumn(i) << std::endl*/;
 
-			currentSong.set(ID, artist, album, song, path, rating, playCount, skipCount, kind, bitRate, lastPlayed, sampleRate, length);
+			currentSong.set(ID, artist, album, song, path, rating, playCount, skipCount, kind, bitRate, lastPlayed, sampleRate, length, albumImagePath);
 			std::cout << currentSong.dump() << std::endl;
 		}
 
@@ -212,7 +215,7 @@ bool MusicDB :: getPlaylist(std::string path)
 		while (query.executeStep())
 		{
 			SongData temp;
-			temp.set(query.getColumn(0), query.getColumn(1), query.getColumn(2), query.getColumn(3), query.getColumn(4), query.getColumn(5), query.getColumn(6), query.getColumn(7), query.getColumn(8), query.getColumn(9), query.getColumn(10), query.getColumn(11), query.getColumn(12));
+			temp.set(query.getColumn(0), query.getColumn(1), query.getColumn(2), query.getColumn(3), query.getColumn(4), query.getColumn(5), query.getColumn(6), query.getColumn(7), query.getColumn(8), query.getColumn(9), query.getColumn(10), query.getColumn(11), query.getColumn(12), query.getColumn(13));
 //			musicDB.push_back(temp);
 		}
 	}

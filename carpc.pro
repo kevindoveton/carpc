@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui \
+    BluezQt
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,7 +23,8 @@ SOURCES += main.cpp\
     ClassMusicDB.cpp \
     ClassMusicPlayer.cpp \
     ClassSystemVolume.cpp \
-    ClassOfono.cpp
+    ClassOfono.cpp \
+    ClassBluez.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -40,7 +42,8 @@ HEADERS  += mainwindow.h \
     ClassMusicDB.h \
     ClassMusicPlayer.h \
     ClassSystemVolume.h \
-    ClassOfono.h
+    ClassOfono.h \
+    ClassBluez.h
 
 RESOURCES += resources/resources.qrc
 

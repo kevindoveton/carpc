@@ -13,12 +13,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	//  Set home frame for start up
 	selectedFrame(0);
-	hideMusicButtons(); // this is the tab bar at the bottom in the music frame
-
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
-	setSongTags("", "", "");
+	setSongTags("", "", "", "");
 	ui->labelTime->setText(getCurrentTime().c_str());
 
 
@@ -84,7 +82,7 @@ void MainWindow::runLoop()
 			// play new song
 			int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
 			setButtonPlayPauseText(playStatus);
-			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 		}
 	}
 	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassStatus, bad things happen if we dont do this
@@ -196,7 +194,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 	}
 
 	setButtonPlayPauseText(musicPlayer.currentBassStatus());
-	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 }
 
 void MainWindow :: on_buttonMusicNext_released()
@@ -220,12 +218,12 @@ void MainWindow :: on_buttonMusicNext_released()
 				if (!upNext.empty())
 				{
 					musicPlayer.playNewSong(upNext[0].getPath());
-					setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+					setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 				}
 				else
 				{
 					musicPlayer.stop();
-					setSongTags("","","");
+					setSongTags("", "", "", "");
 				}
 		}
 	}
@@ -239,7 +237,7 @@ void MainWindow :: on_buttonMusicPrevious_released()
 	recentlyPlayed.pop_back();
 	int playStatus = musicPlayer.playNewSong(upNext[0].getPath());
 	setButtonPlayPauseText(playStatus);
-	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 }
 
 void MainWindow :: setButtonPlayPauseText(int playStatus)
@@ -274,16 +272,19 @@ void MainWindow :: setButtonPlayPauseText(int playStatus)
 	}
 }
 
-void MainWindow :: setSongTags(std::string title, std::string album, std::string artist)
+void MainWindow :: setSongTags(std::string title, std::string album, std::string artist, std::string albumImagePath)
 {
-	QImage albumImageCrop = QImage(QImage("/home/kevindoveton/Desktop/build-carpc-Desktop-Debug/resources/music/cache/84dabde6-e474-48d2-bf75-883bdc7ca6b8-Advent Christmas EP, Vol. 2.jpg"));
+
+	QImage albumImageCrop = QImage(QString::fromStdString(albumImagePath));
 	albumImageCrop = albumImageCrop.scaled(ui->imageCurrentAlbum->width(), ui->imageCurrentAlbum->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
 	QPixmap albumImage = QPixmap::fromImage(albumImageCrop);
+	ui->imageCurrentAlbum->setPixmap(albumImage);
+
 
 	ui->labelCurrentTrack->setText(title.c_str());
 	ui->labelCurrentArtist->setText(artist.c_str());
 	ui->labelCurrentAlbum->setText(album.c_str());
-	ui->imageCurrentAlbum->setPixmap(albumImage);
+
 }
 
 void MainWindow::on_buttonQuit_released()
@@ -357,7 +358,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 				musicDB.shuffleAlbum(songIDCur, upNext);
 
 			setButtonPlayPauseText(1);
-			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist());
+			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 			std::cout 	<< upNext[0].getArtist()
 						<< std::endl;
 			break;
@@ -375,23 +376,6 @@ void MainWindow :: showMenuButtons()
 	ui->buttonMusic->show();
 	ui->buttonMaps->show();
 	ui->buttonPhone->show();
-}
-
-
-void MainWindow :: showMusicButtons()
-{
-	ui->buttonBack->show();
-	ui->buttonMusicArtist->show();
-	ui->buttonMusicAlbum->show();
-	ui->buttonMusicSong->show();
-}
-
-void MainWindow :: hideMusicButtons()
-{
-	ui->buttonBack->hide();
-	ui->buttonMusicArtist->hide();
-	ui->buttonMusicAlbum->hide();
-	ui->buttonMusicSong->hide();
 }
 
 
@@ -449,14 +433,11 @@ int MainWindow :: selectedFrame(int selected)
 
 
 
-void MainWindow::on_buttonBack_released()
-{
-	hideMusicButtons();
-	showMenuButtons();
-}
+
 
 void MainWindow::on_buttonArtist_released()
 {
+	ui->listviewMusic->setViewMode(QListView::IconMode);
 	currentView = 1;
 	model->clear();
 	musicDB.getArtists(model); // set artist
@@ -464,18 +445,26 @@ void MainWindow::on_buttonArtist_released()
 
 void MainWindow::on_buttonAlbum_released()
 {
+	ui->listviewMusic->setViewMode(QListView::IconMode);
 	currentView = 2;
 	model->clear();
-	musicDB.getAlbums(model, artistIDCur);
+	if (artistIDCur != -1)
+		musicDB.getAlbums(model, artistIDCur);
+	else
+		musicDB.getAllAlbums(model);
 }
 
 void MainWindow::on_buttonSong_released()
 {
+	ui->listviewMusic->setViewMode(QListView::ListMode);
 	currentView = 3;
 	std::cout	<< albumIDCur
 				<< std::endl;
 	model->clear();
-	musicDB.getSongs(model, albumIDCur);
+	if (albumIDCur != -1)
+		musicDB.getSongs(model, albumIDCur);
+	else
+		musicDB.getAllSongs(model, albumIDCur);
 }
 
 void MainWindow::on_buttonRBNowPlaying_released()

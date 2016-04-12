@@ -145,6 +145,11 @@ int SongData :: getLength()
 	return length;
 }
 
+std::string SongData :: getAlbumImagePath()
+{
+	return albumImagePath;
+}
+
 void SongData :: get(int& ID, std::string& ARTIST, std::string& ALBUM, std::string& SONG, std::string& PATH, int& RATING, int& PLAYCOUNT, int& SKIPCOUNT, std::string& KIND, int& BITRATE, std::string& LASTPLAYED, int& SAMPLERATE, int& LENGTH)
 {
 	// get the object
@@ -163,7 +168,7 @@ void SongData :: get(int& ID, std::string& ARTIST, std::string& ALBUM, std::stri
 	LENGTH = length;
 }
 
-void SongData :: set(int ID, std::string ARTIST, std::string ALBUM, std::string SONG, std::string PATH, int RATING, int PLAYCOUNT, int SKIPCOUNT, std::string KIND, int BITRATE, std::string LASTPLAYED, int SAMPLERATE, int LENGTH)
+void SongData :: set(int ID, std::string ARTIST, std::string ALBUM, std::string SONG, std::string PATH, int RATING, int PLAYCOUNT, int SKIPCOUNT, std::string KIND, int BITRATE, std::string LASTPLAYED, int SAMPLERATE, int LENGTH, std::string ALBUMIMAGEPATH)
 {
 	// set the object
 	id = ID;
@@ -179,6 +184,7 @@ void SongData :: set(int ID, std::string ARTIST, std::string ALBUM, std::string 
 	lastPlayed = LASTPLAYED;
 	sampleRate = SAMPLERATE;
 	length = LENGTH;
+	albumImagePath = ALBUMIMAGEPATH;
 }
 
 std::string SongData :: dump(std::string info)

@@ -66,9 +66,11 @@ class SongData
 
 		int getLength();
 
+		std::string getAlbumImagePath();
+
 		void get(int& ID, std::string& ARTIST, std::string& ALBUM, std::string& SONG, std::string& PATH, int& RATING, int& PLAYCOUNT, int& SKIPCOUNT, std::string& KIND, int& BITRATE, std::string& LASTPLAYED, int& SAMPLERATE, int& LENGTH);
 
-		void set(int ID, std::string ARTIST, std::string ALBUM, std::string SONG, std::string PATH, int RATING, int PLAYCOUNT, int SKIPCOUNT, std::string KIND, int BITRATE, std::string LASTPLAYED, int SAMPLERATE, int LENGTH);
+		void set(int ID, std::string ARTIST, std::string ALBUM, std::string SONG, std::string PATH, int RATING, int PLAYCOUNT, int SKIPCOUNT, std::string KIND, int BITRATE, std::string LASTPLAYED, int SAMPLERATE, int LENGTH, std::string ALBUMIMAGEPATH);
 
 		std::string dump(std::string info = "all");
 
@@ -86,6 +88,7 @@ class SongData
 		std::string lastPlayed; // this needs to be date time..
 		int sampleRate;
 		int length;
+		std::string albumImagePath;
 };
 
 #endif /* xmldata_cpp */

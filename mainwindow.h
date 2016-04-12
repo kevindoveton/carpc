@@ -180,7 +180,7 @@ class MainWindow : public QMainWindow
 	private:
 		Ui::MainWindow *ui;
 
-		void setSongTags(std::string title, std::string album, std::string artist);
+		void setSongTags(std::string title, std::string album, std::string artist, std::string albumImagePath);
 		// set the song labels
 
 		void setButtonPlayPauseText(int playStatus);

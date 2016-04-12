@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     libraries/SQLiteCpp/Transaction.cpp \
     ClassMusicDB.cpp \
     ClassMusicPlayer.cpp \
-    ClassSystemVolume.cpp
+    ClassSystemVolume.cpp \
+    ClassOfono.cpp
 
 
 HEADERS  += mainwindow.h \
@@ -38,7 +39,8 @@ HEADERS  += mainwindow.h \
     listviewmusicdelegate.h \
     ClassMusicDB.h \
     ClassMusicPlayer.h \
-    ClassSystemVolume.h
+    ClassSystemVolume.h \
+    ClassOfono.h
 
 RESOURCES += resources/resources.qrc
 

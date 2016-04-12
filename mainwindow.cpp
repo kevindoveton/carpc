@@ -276,9 +276,14 @@ void MainWindow :: setButtonPlayPauseText(int playStatus)
 
 void MainWindow :: setSongTags(std::string title, std::string album, std::string artist)
 {
+	QImage albumImageCrop = QImage(QImage("/home/kevindoveton/Desktop/build-carpc-Desktop-Debug/resources/music/cache/84dabde6-e474-48d2-bf75-883bdc7ca6b8-Advent Christmas EP, Vol. 2.jpg"));
+	albumImageCrop = albumImageCrop.scaled(ui->imageCurrentAlbum->width(), ui->imageCurrentAlbum->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
+	QPixmap albumImage = QPixmap::fromImage(albumImageCrop);
+
 	ui->labelCurrentTrack->setText(title.c_str());
 	ui->labelCurrentArtist->setText(artist.c_str());
 	ui->labelCurrentAlbum->setText(album.c_str());
+	ui->imageCurrentAlbum->setPixmap(albumImage);
 }
 
 void MainWindow::on_buttonQuit_released()

@@ -293,7 +293,13 @@ void MainWindow::on_buttonQuit_released()
 
 void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 {
-	ui->listviewMusic->setViewMode(QListView::IconMode);
+	// song view should be a list
+	// everything else should be icons
+	if (currentView == 3)
+		ui->listviewMusic->setViewMode(QListView::ListMode);
+	else 
+		ui->listviewMusic->setViewMode(QListView::IconMode);
+	
 	switch (currentView)
 	{
 		case 1:
@@ -326,7 +332,6 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 
 		case 3:
 		{
-			ui->listviewMusic->setViewMode(QListView::ListMode);
 			// selected a song
 			songIDCur = index.sibling(index.row(), 1).data().toInt();
 			std::cout << songIDCur;

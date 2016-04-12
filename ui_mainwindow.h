@@ -596,10 +596,9 @@ class Ui_MainWindow
 			// labelCurrentArtist
 			labelCurrentArtist = new QLabel(frameNowPlaying);
 			labelCurrentArtist->setObjectName(QStringLiteral("labelCurrentArtist"));
-			labelCurrentArtist->setGeometry(QRect(0.328*screenWidth, 0.326*screenHeight, 0.572*screenWidth, 0.05556*screenHeight));
+			labelCurrentArtist->setGeometry(QRect(0.328*screenWidth, 0.346*screenHeight, 0.572*screenWidth, 0.054*screenHeight));
 			labelCurrentArtist->setAlignment(Qt::AlignLeft|Qt::AlignBottom);
 			labelCurrentArtist->setStyleSheet(QString::fromStdString(labelNowPlayingArtistStyle));
-//			labelCurrentArtist->setVisible(false);
 
 			// labelCurrentTrack
 			labelCurrentTrack = new QLabel(frameNowPlaying);
@@ -607,7 +606,6 @@ class Ui_MainWindow
 			labelCurrentTrack->setGeometry(QRect(0.328*screenWidth, 0.397*screenHeight, 0.572*screenWidth, .101*screenHeight));
 			labelCurrentTrack->setAlignment(Qt::AlignLeft);
 			labelCurrentTrack->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
-//			labelCurrentTrack->setVisible(false);
 
 			// labelCurrentAlbum
 			labelCurrentAlbum = new QLabel(frameNowPlaying);
@@ -615,7 +613,6 @@ class Ui_MainWindow
 			labelCurrentAlbum->setGeometry(QRect(0.328*screenWidth, 0.507*screenHeight, 0.572*screenWidth, 0.05556*screenHeight));
 			labelCurrentAlbum->setAlignment(Qt::AlignLeft);
 			labelCurrentAlbum->setStyleSheet(QString::fromStdString(labelNowPlayingAlbumStyle));
-//			labelCurrentAlbum->setVisible(false);
 
 			// imageCurrentAlbum
 //			labelCurrentAlbum->
@@ -625,7 +622,7 @@ class Ui_MainWindow
 			imageCurrentAlbum->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);
 			QRect r = imageCurrentAlbum->rect();
 			QPainterPath path = QPainterPath(r.topLeft());
-			path.addRoundRect(r, 12);
+			path.addRoundRect(r, 6);
 			QPolygon p = path.toFillPolygon().toPolygon();
 			imageCurrentAlbum->setMask(p);
 
@@ -640,13 +637,13 @@ class Ui_MainWindow
 			boxNowPlayingBB->setObjectName(QStringLiteral("boxNowPlayingBB"));
 			// -2 from frameRightBarWidth because of frameRightBarLine
 			boxNowPlayingBB->setGeometry(QRect(0, 0.83425*screenHeight, screenWidth-frameRightBarWidth-2, 16575*screenHeight));
-			boxNowPlayingBB->setStyleSheet(QLatin1String("background: rgba(0, 0 ,0 , 30);"));
+			boxNowPlayingBB->setStyleSheet(QLatin1String("background: rgb(47, 76, 94);"));
 
 
 
 
 			// buttonNowPlayingPrevious
-			QPixmap bbNowPlayingPreviousImage(":/resources/icons/nowPlaying.png");
+			QPixmap bbNowPlayingPreviousImage(":/resources/icons/nowPlayingPrevious.png");
 			QIcon bbNowPlayingPreviousIcon(bbNowPlayingPreviousImage);
 			buttonNowPlayingPrevious = new QPushButton(frameNowPlaying);
 			buttonNowPlayingPrevious->setObjectName(QStringLiteral("buttonNowPlayingPrevious"));
@@ -657,7 +654,7 @@ class Ui_MainWindow
 
 
 			// buttonNowPlayingPlayPause
-			QPixmap bbNowPlayingPlayPauseImage(":/resources/icons/nowPlaying.png");
+			QPixmap bbNowPlayingPlayPauseImage(":/resources/icons/nowPlayingPause.png");
 			QIcon bbNowPlayingPlayPauseIcon(bbNowPlayingPlayPauseImage);
 			buttonMusicPlayPause = new QPushButton(frameNowPlaying);
 			buttonMusicPlayPause->setObjectName(QStringLiteral("buttonMusicPlayPause"));
@@ -673,7 +670,7 @@ class Ui_MainWindow
 
 
 			// buttonNowPlayingNext
-			QPixmap bbNowPlayingNextImage(":/resources/icons/nowPlaying.png");
+			QPixmap bbNowPlayingNextImage(":/resources/icons/nowPlayingNext.png");
 			QIcon bbNowPlayingNextIcon(bbNowPlayingPreviousImage);
 			buttonNowPlayingNext = new QPushButton(frameNowPlaying);
 			buttonNowPlayingNext->setObjectName(QStringLiteral("buttonNowPlayingNext"));
@@ -685,7 +682,7 @@ class Ui_MainWindow
 
 
 			// buttonNowPlayingFavourite
-			QPixmap bbNowPlayingFavouriteImage(":/resources/icons/nowPlaying.png");
+			QPixmap bbNowPlayingFavouriteImage(":/resources/icons/nowPlayingFavourite.png");
 			QIcon bbNowPlayingFavouriteIcon(bbNowPlayingFavouriteImage);
 			buttonNowPlayingFavourite = new QPushButton(frameNowPlaying);
 			buttonNowPlayingFavourite->setObjectName(QStringLiteral("buttonNowPlayingFavourite"));

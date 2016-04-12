@@ -14,5 +14,9 @@
         <file>icons/back.png</file>
         <file>icons/home.png</file>
         <file>icons/nowPlaying.png</file>
+        <file>icons/nowPlayingFavourite.png</file>
+        <file>icons/nowPlayingNext.png</file>
+        <file>icons/nowPlayingPause.png</file>
+        <file>icons/nowPlayingPrevious.png</file>
     </qresource>
 </RCC>

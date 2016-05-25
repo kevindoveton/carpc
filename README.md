@@ -1,13 +1,16 @@
-# carpc
+# CarPC #
 A Car PC project written in c++ and qt
 
 
-# Requires #
+## Requires ##
 Taglib - (pytaglib) python 
+
 Bass - un4seen (c++)
+
 Bluez-Qt - kde.org (QT wrapper)
 
 bluez - not yet implemented
+
 ofono - not yet implemented
 
 c++ 11

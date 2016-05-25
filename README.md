@@ -12,5 +12,8 @@ ofono - not yet implemented
 
 c++ 11
 
-## Kevin Doveton
-## 2015-2016
+
+## Contact ##
+Kevin Doveton
+
+2015-2016

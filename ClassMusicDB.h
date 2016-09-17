@@ -73,7 +73,7 @@ class MusicDB
 		void setRating(float rating, int songID);
 
 
-	private:
+	protected:
 		std::string DBPATH = "resources/music/musicLibrary.sqlite3";
 
 };

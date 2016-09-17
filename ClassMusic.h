@@ -74,7 +74,7 @@ class SongData
 
 		std::string dump(std::string info = "all");
 
-	private:
+	protected:
 		int id;
 		std::string artist;
 		std::string album;

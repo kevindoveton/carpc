@@ -23,6 +23,8 @@ class ClassOfono : public QObject
 //		~ClassOfono();
 
 		void dialNumber(QString number);
+		void hangup();
+
 };
 
 #endif // CLASSOFONO_H

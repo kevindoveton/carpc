@@ -39,6 +39,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	runLoopTimer->start(1000); // 1000ms = 1 seconds
 
 
+
 	// Set window to full screens
 	QMainWindow::showFullScreen();
 
@@ -130,6 +131,7 @@ void MainWindow :: on_buttonPhone_released()
 {
 	// frames
 	selectedFrame(2);
+	ofono.dialNumber("0405169218");
 }
 
 void MainWindow :: on_buttonMaps_released()

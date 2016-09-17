@@ -5,7 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui \
-    BluezQt
+    BluezQt \
+    dbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -23,8 +24,14 @@ SOURCES += main.cpp\
     ClassMusicDB.cpp \
     ClassMusicPlayer.cpp \
     ClassSystemVolume.cpp \
-    ClassOfono.cpp \
-    ClassBluez.cpp
+    dbus/OfonoCallVolume.cpp \
+    dbus/OfonoHandsFree.cpp \
+    dbus/OfonoModem.cpp \
+    dbus/OfonoNetworkRegistration.cpp \
+    dbus/OfonoSiri.cpp \
+    dbus/OfonoVoiceCallManager.cpp \
+    ClassOfono.cpp
+
 
 
 HEADERS  += mainwindow.h \
@@ -42,8 +49,14 @@ HEADERS  += mainwindow.h \
     ClassMusicDB.h \
     ClassMusicPlayer.h \
     ClassSystemVolume.h \
-    ClassOfono.h \
-    ClassBluez.h
+    dbus/OfonoCallVolume.h \
+    dbus/OfonoHandsFree.h \
+    dbus/OfonoModem.h \
+    dbus/OfonoNetworkRegistration.h \
+    dbus/OfonoSiri.h \
+    dbus/OfonoVoiceCallManager.h \
+    ClassOfono.h
+
 
 RESOURCES += resources/resources.qrc
 

@@ -38,7 +38,7 @@ public:
 public Q_SLOTS: // METHODS
     inline QDBusPendingReply<QDBusObjectPath> CreateMultiparty()
     {
-        QList<QVariant> argumentList;
+		QList<QVariant> argumentList;
         return asyncCallWithArgumentList(QStringLiteral("CreateMultiparty"), argumentList);
     }
 

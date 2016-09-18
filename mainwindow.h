@@ -221,7 +221,7 @@ class MainWindow : public QMainWindow
 		MusicPlayer musicPlayer;
 		MusicDB musicDB;
 		SystemVolume systemVolume;
-		ClassOfono ofono;
+		Ofono ofono;
 
 		// Maps
 

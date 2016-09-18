@@ -15,16 +15,26 @@
 
 #define MODEM_PATH "/hfp/org/bluez/hci0/dev_CC_20_E8_CA_93_FF"
 
-class ClassOfono : public QObject
+class Ofono : public QObject
 {
 	Q_OBJECT
 	public:
-		ClassOfono(QObject *parent = 0);
-//		~ClassOfono();
+		Ofono(QObject *parent = 0);
+
+		void setPowerOn();
+		void setPowerOff();
+		QString getPhoneNumber(QString id);
 
 		void dialNumber(QString number);
-		void hangup();
+		void answerCall(QString id);
+		void hangupCall(QString id);
+/*
+	signals:
+		void incomingCall(QString id);
 
+	slots:
+		void processIncomingCall(call)
+*/
 };
 
 #endif // CLASSOFONO_H

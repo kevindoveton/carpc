@@ -852,29 +852,7 @@ class Ui_MainWindow
 #endif // QT_NO_STATUSTIP
 
 			buttonQuit->setText(QApplication::translate("MainWindow", "quit", 0));
-			/*
-		buttonMusic->setText(QApplication::translate("MainWindow", "Music", 0));
-		buttonPhone->setText(QApplication::translate("MainWindow", "Phone", 0));
-		buttonMaps->setText(QApplication::translate("MainWindow", "Maps", 0));
-		buttonHome->setText(QApplication::translate("MainWindow", "Home", 0));
-		labelSelected0->setText(QApplication::translate("MainWindow", "labelSelected0", 0));
-		labelSelected1->setText(QApplication::translate("MainWindow", "labelSelected1", 0));
-		labelSelected2->setText(QApplication::translate("MainWindow", "labelSelected2", 0));
-		labelSelected3->setText(QApplication::translate("MainWindow", "labelSelected3", 0));
-		labelHome->setText(QApplication::translate("MainWindow", "home", 0));
 
-		labelTime->setText(QApplication::translate("MainWindow", "labelTime", 0));
-		label_3->setText(QApplication::translate("MainWindow", "music", 0));
-		label_4->setText(QApplication::translate("MainWindow", "phone", 0));
-		label_5->setText(QApplication::translate("MainWindow", "maps", 0));
-		labelCurrentTrack->setText(QApplication::translate("MainWindow", "labelCurrentTrack", 0));
-		labelCurrentArtistAlbum->setText(QApplication::translate("MainWindow", "labelCurrentArtistAlbum", 0));
-		buttonMusicPlayPause->setText(QApplication::translate("MainWindow", "Play/Pause", 0));
-		buttonMusicNext->setText(QApplication::translate("MainWindow", "Next", 0));
-		buttonVolumeUp->setText(QApplication::translate("MainWindow", "Volume Up", 0));
-		buttonVolumeDown->setText(QApplication::translate("MainWindow", "Volume Down", 0));
-		buttonMusicPrevious->setText(QApplication::translate("MainWindow", "Previous", 0));
-		*/
 		} // retranslateUi
 
 };

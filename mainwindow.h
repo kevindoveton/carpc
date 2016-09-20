@@ -165,6 +165,10 @@ class MainWindow : public QMainWindow
 		// -> song view -> play song
 
 
+		// --------------------------------------
+		// frameIncomingCall
+		// --------------------------------------
+		void incomingCall(QString &name, QString &number);
 
 		// --------------------------------------
 		// Loops
@@ -224,7 +228,7 @@ class MainWindow : public QMainWindow
 		MusicPlayer musicPlayer;
 		MusicDB musicDB;
 		SystemVolume systemVolume;
-		Ofono ofono;
+		Ofono *ofono = new Ofono();
 
 		// Maps
 

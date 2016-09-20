@@ -35,8 +35,8 @@ class Ofono : public QObject
 	protected:
 		QString _modemPath;
 
-//	signals:
-//		void incomingCall(QString id);
+	signals:
+		void incomingCall(QString name, QString number);
 
 	public slots:
 		void CallAdded(QDBusObjectPath &object, QVariantMap &values);

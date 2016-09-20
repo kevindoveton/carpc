@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
 	runLoopTimer->start(1000); // 1000ms = 1 seconds
 
-
+	connect(ofono, SIGNAL(incomingCall(QString, QString)), this, SLOT(incomingCall(QString, QString)));
 
 	// Set window to full screens
 	QMainWindow::showFullScreen();
@@ -397,6 +397,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->framePhone->hide();
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
 			break;
 
 		case 1:
@@ -405,6 +406,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->framePhone->hide();
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
 			break;
 
 		case 2:
@@ -413,6 +415,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->framePhone->show();
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
 			break;
 
 		case 3:
@@ -421,6 +424,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->framePhone->hide();
 			ui->frameMaps->show();
 			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
 			break;
 
 		case 4:
@@ -429,7 +433,16 @@ int MainWindow :: selectedFrame(int selected)
 			ui->framePhone->hide();
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
+			break;
 
+		case 5:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->show();
 			break;
 
 		default:
@@ -488,4 +501,12 @@ void MainWindow::on_buttonRBNowPlaying_released()
 {
 	hideAllCentreFrames();
 	ui->frameNowPlaying->show();
+}
+
+
+void MainWindow :: incomingCall(QString &name, QString &number)
+{
+	selectedFrame(5);
+	ui->labelPhoneNumber->text() = number;
+	ui->labelContactName->text() = name;
 }

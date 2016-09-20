@@ -3,6 +3,8 @@
 Ofono :: Ofono(QObject *parent)
 {
 	_modemPath = MODEM_PATH;
+	OrgOfonoVoiceCallManagerInterface *voicecallManager = new OrgOfonoVoiceCallManagerInterface("org.ofono", MODEM_PATH, QDBusConnection::systemBus());
+	connect(voicecallManager, SIGNAL(CallAdded(QDBusObjectPath,QVariantMap)), this, SLOT(CallAdded(QDBusObjectPath,QVariantMap)));
 }
 
 void Ofono :: setPowerOn()
@@ -34,6 +36,12 @@ void Ofono :: dialNumber(QString number)
 	ofono->Dial(number, "default");
 	qDebug() << "Dialing: " << number;
 }
+
+void Ofono :: CallAdded(QDBusObjectPath,QVariantMap)
+{
+	qDebug() << "call added";
+}
+
 
 //void Ofono :: answerCall(QString id)
 //{

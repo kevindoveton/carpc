@@ -34,13 +34,13 @@ class Ofono : public QObject
 
 	protected:
 		QString _modemPath;
-/*
-	signals:
-		void incomingCall(QString id);
 
-	slots:
-		void processIncomingCall(call)
-*/
+//	signals:
+//		void incomingCall(QString id);
+
+	public slots:
+		void CallAdded(QDBusObjectPath,QVariantMap);
+
 };
 
 #endif // CLASSOFONO_H

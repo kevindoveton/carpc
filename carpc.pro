@@ -31,7 +31,8 @@ SOURCES += main.cpp\
     dbus/OfonoSiri.cpp \
     dbus/OfonoVoiceCallManager.cpp \
     ClassOfono.cpp \
-    dbus/OfonoManager.cpp
+    dbus/OfonoManager.cpp \
+    dbus/OfonoVoiceCall.cpp
 
 
 
@@ -57,7 +58,8 @@ HEADERS  += mainwindow.h \
     dbus/OfonoSiri.h \
     dbus/OfonoVoiceCallManager.h \
     ClassOfono.h \
-    dbus/OfonoManager.h
+    dbus/OfonoManager.h \
+    dbus/OfonoVoiceCall.h
 
 
 RESOURCES += resources/resources.qrc

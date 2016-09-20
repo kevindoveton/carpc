@@ -1,0 +1,12431 @@
+Creating Session
+
+--- Select Phonebook PB ---
+
+
+--- GetSize ---
+
+Size = 186
+
+
+--- List vCard ---
+
+0.vcf : My Number
+3.vcf : Wes Brice
+4.vcf : Emily Johnston
+5.vcf : Niki Lochens
+6.vcf : Erin Taylor
+7.vcf : Denai Venhoek
+8.vcf : David Cottrell
+9.vcf : Janet Brice
+a.vcf : Tracey Mahood
+b.vcf : John Zoumis
+c.vcf : Ryan Scholar
+d.vcf : Nathan Bettcher
+e.vcf : Maddy Grey
+f.vcf : Nick Padyachee
+10.vcf : Production Office 1
+11.vcf : Emily Bland
+12.vcf : Alex Scez
+13.vcf : Jithin
+14.vcf : Alex Oswald
+15.vcf : Finn Martin
+16.vcf : Dee Apple
+17.vcf : Bethany Hersey
+18.vcf : Justin Smith
+19.vcf : Shannon Barrett
+1b.vcf : Olivia Perkendicular
+1c.vcf : James McCracken
+1d.vcf : Emma Collier
+1e.vcf : Roy Doveton
+1f.vcf : Helen Mahood
+20.vcf : Tim Freedman
+21.vcf : Sally Henderson
+22.vcf : Ben Gillard
+23.vcf : Anthony Bondarenko
+24.vcf : Jeremiah Morton
+25.vcf : Jake Symons
+26.vcf : Christine Haynes
+27.vcf : Mr Adams
+28.vcf : Janet Norman
+29.vcf : Catie Haynes
+2a.vcf : Daniela
+2b.vcf : Ashley School
+2c.vcf : Tennille Sawtell
+2d.vcf : Kevin Doveton
+2e.vcf : Alex Bellas
+2f.vcf : Chad Van Heerden
+30.vcf : John Haynes
+31.vcf : Dan Pisulak
+32.vcf : Mark Palmer
+33.vcf : Mike Bartholomaeus
+34.vcf : David West
+35.vcf : Nathan Boemia
+36.vcf : Annabel Jessica Darch
+37.vcf : Amelia Grace
+38.vcf : Joel Foster
+39.vcf : Chelsea Malcolm
+3a.vcf : Cherie Stonham
+3b.vcf : David Lee
+3c.vcf : Tom Daly
+3d.vcf : Stacey Donaldson
+3e.vcf : Matt Wever
+3f.vcf : Chelsea Ciracovitch
+40.vcf : Jill Daly
+41.vcf : Todd Purdy
+42.vcf : John S
+43.vcf : Shaun Haynes
+44.vcf : Adelaide Metro
+45.vcf : Max Lockett
+46.vcf : Maddy Jolly
+47.vcf : Esther Fong
+48.vcf : Wesley Doveton
+49.vcf : Lesley
+4a.vcf : Mum
+4b.vcf : Vinnie Miranda
+4c.vcf : Nicholas Sandford
+4d.vcf : Lachy
+4e.vcf : Jessie Beagley
+4f.vcf : Mrs Smith
+50.vcf : Abbi
+51.vcf : Holly Martin
+52.vcf : Ryan Matulick
+53.vcf : Corey Smith
+54.vcf : Chey Drew
+55.vcf : Mike Bonicurso
+56.vcf : Craig Venter
+57.vcf : Josh Bland
+58.vcf : Linda Beagley
+59.vcf : Jonathan David Bartholomaeus
+5a.vcf : Andrew Stonham
+5b.vcf : Sue Doveton
+5c.vcf : Adrian Cotterell
+5d.vcf : Jacob Crowden
+5e.vcf : Nick Bird
+5f.vcf : Braeden Pay
+60.vcf : Declan Smith
+61.vcf : Michael Wilson
+62.vcf : Melia Home
+63.vcf : Phil Brice
+64.vcf : Alex Daly
+65.vcf : Justin Smith
+66.vcf : Hannah Christensen
+67.vcf : Daniel Adie
+68.vcf : Gail Warren
+69.vcf : Molly Paine
+6a.vcf : Catherine Mwikya
+6b.vcf : Vanessa
+6c.vcf : Bradley Stonham
+6d.vcf : Isaac Jesse Johnson
+6e.vcf : Yen Yen Stender
+6f.vcf : Aaron Bird
+70.vcf : Rodney Bates
+71.vcf : Kiara Beth Chester
+72.vcf : Despina Lambos
+73.vcf : Sammy Grace Berry
+74.vcf : Amos Gaskin
+75.vcf : Aunty Ne
+76.vcf : Bianca Harrison
+77.vcf : Scott Wilson
+78.vcf : Lewis Daly
+79.vcf : Tim Hersey
+7a.vcf : Enrica McCracken
+7b.vcf : Samantha Doveton
+7c.vcf : Reece Calvert
+7d.vcf : Ally Boemia
+7e.vcf : Evernote Upload
+7f.vcf : Celina Yen
+80.vcf : Chris Dikih
+81.vcf : Shirley Lane
+82.vcf : Genet
+83.vcf : Ashleigh Van Heerden
+84.vcf : David Sawtell
+85.vcf : Emma Douglas
+86.vcf : Jess
+87.vcf : Lishie M Kearvell
+88.vcf : Charmaine
+89.vcf : Emily
+8a.vcf : Halima
+8b.vcf : Daniel Fontanarosa
+8c.vcf : Tanya Chesser
+8d.vcf : Rene Ashton
+8e.vcf : Rachel Lane🐱
+8f.vcf : Mrs Parsons
+90.vcf : Esther Rampling
+91.vcf : Jasmine Christensen
+92.vcf : Donald Impett
+93.vcf : Natalie Peterson
+94.vcf : Grace Schneider
+95.vcf : Raquel Chester
+96.vcf : Tim Lochens
+97.vcf : Apple Inc.
+98.vcf : Kalen Turner
+99.vcf : Chris Bartlet
+9a.vcf : Adrian Maxwell
+9b.vcf : Selina Ha
+9c.vcf : Kayleigh Doveton
+9d.vcf : Melanie Pink
+9e.vcf : Laura Enthoven
+9f.vcf : Kassie Pidd
+a0.vcf : Karan Varma
+a1.vcf : Sam Farley
+a2.vcf : Granny
+a3.vcf : Sasha Adele Negruk
+a4.vcf : Tom (Senior) Daly
+a5.vcf : Samuel David Chesser
+a6.vcf : Alex Baricz
+a7.vcf : Dominoes Pizza
+a8.vcf : Gemma Keating
+a9.vcf : Kate Brice
+aa.vcf : Emma Parsons
+ab.vcf : Lachy Donaldson
+ac.vcf : Nikhil Bechoo
+ad.vcf : Milan
+ae.vcf : Jody Bird
+af.vcf : Steph Kipirtoglou
+b0.vcf : Aunty Carol
+b1.vcf : Bill Vasilakis
+b2.vcf : Sean Milne
+b3.vcf : Dad
+b4.vcf : David Parsons
+b5.vcf : Cass Tompich
+b6.vcf : Matt Ralph
+b7.vcf : Blake Mccormick
+b8.vcf : Ian Doveton
+b9.vcf : Daniel Lane
+ba.vcf : David Wabnitz
+bb.vcf : Home
+Transfer created: /org/bluez/obex/client/session28/transfer679 (file /tmp/obex-client9Z98NY)
+Transfer created: /org/bluez/obex/client/session28/transfer680 (file /tmp/obex-clientJ498NY)
+Transfer created: /org/bluez/obex/client/session28/transfer681 (file /tmp/obex-client2Q48NY)
+Transfer created: /org/bluez/obex/client/session28/transfer682 (file /tmp/obex-clientSA38NY)
+Transfer created: /org/bluez/obex/client/session28/transfer683 (file /tmp/obex-clientMQ18NY)
+Transfer created: /org/bluez/obex/client/session28/transfer684 (file /tmp/obex-clientV718NY)
+Transfer created: /org/bluez/obex/client/session28/transfer685 (file /tmp/obex-client5Z08NY)
+Transfer created: /org/bluez/obex/client/session28/transfer686 (file /tmp/obex-clientSAY8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer687 (file /tmp/obex-clientKGV8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer688 (file /tmp/obex-clientKUT8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer689 (file /tmp/obex-clientOAU8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer690 (file /tmp/obex-client4AP8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer691 (file /tmp/obex-clientZNP8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer692 (file /tmp/obex-clientOHFBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer693 (file /tmp/obex-client5VFBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer694 (file /tmp/obex-clientSOEBOY)
+Transfer /org/bluez/obex/client/session28/transfer679 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:My Number
+
+N:My Number
+
+TEL;TYPE=CELL:+61410101557
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer695 (file /tmp/obex-clientO28AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer696 (file /tmp/obex-clientRH7AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer697 (file /tmp/obex-clientHV7AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer698 (file /tmp/obex-client4Z4AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer699 (file /tmp/obex-clientQ71AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer700 (file /tmp/obex-clientNM0AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer701 (file /tmp/obex-client3FZAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer702 (file /tmp/obex-client7WWAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer703 (file /tmp/obex-clientROVAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer704 (file /tmp/obex-client82TAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer705 (file /tmp/obex-client84QAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer706 (file /tmp/obex-clientIUPAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer707 (file /tmp/obex-clientL9PAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer708 (file /tmp/obex-clientT0OAOY)
+Transfer /org/bluez/obex/client/session28/transfer680 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Wes Brice
+
+N:Brice;Wes
+
+TEL;TYPE=CELL:+61405 736 136
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer709 (file /tmp/obex-client39LAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer710 (file /tmp/obex-clientDMGAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer711 (file /tmp/obex-client00GAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer712 (file /tmp/obex-clientMNFAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer713 (file /tmp/obex-clientFYDAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer714 (file /tmp/obex-clientPSCAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer715 (file /tmp/obex-clientF399NY)
+Transfer created: /org/bluez/obex/client/session28/transfer716 (file /tmp/obex-clientKL69NY)
+Transfer created: /org/bluez/obex/client/session28/transfer717 (file /tmp/obex-clientGY49NY)
+Transfer created: /org/bluez/obex/client/session28/transfer718 (file /tmp/obex-clientSR39NY)
+Transfer created: /org/bluez/obex/client/session28/transfer719 (file /tmp/obex-client2H29NY)
+Transfer /org/bluez/obex/client/session28/transfer681 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Johnston
+
+N:Johnston;Emily
+
+TEL;TYPE=CELL:0451151051
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer720 (file /tmp/obex-clientOUQCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer721 (file /tmp/obex-clientCBRCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer722 (file /tmp/obex-client94PCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer723 (file /tmp/obex-clientDBNCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer724 (file /tmp/obex-client31LCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer725 (file /tmp/obex-clientKEKCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer726 (file /tmp/obex-clientN5DCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer727 (file /tmp/obex-clientGGECOY)
+Transfer created: /org/bluez/obex/client/session28/transfer728 (file /tmp/obex-clientPTCCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer729 (file /tmp/obex-clientXPBCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer730 (file /tmp/obex-clientCX8BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer731 (file /tmp/obex-clientOT7BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer732 (file /tmp/obex-clientN67BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer733 (file /tmp/obex-clientYY6BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer734 (file /tmp/obex-clientRG5BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer735 (file /tmp/obex-clientYO2BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer736 (file /tmp/obex-clientZS1BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer737 (file /tmp/obex-clientGJ0BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer738 (file /tmp/obex-clientCRYBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer739 (file /tmp/obex-clientENSBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer740 (file /tmp/obex-clientWCRBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer741 (file /tmp/obex-clientA9NBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer742 (file /tmp/obex-clientJ2MBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer743 (file /tmp/obex-clientRGNBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer744 (file /tmp/obex-clientQCMBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer745 (file /tmp/obex-clientZKJBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer746 (file /tmp/obex-clientV2HBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer747 (file /tmp/obex-client7KGBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer748 (file /tmp/obex-clientGF8DOY)
+Transfer /org/bluez/obex/client/session28/transfer682 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Niki Lochens
+
+N:Lochens;Niki
+
+TEL;TYPE=CELL:+61433143222
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer749 (file /tmp/obex-client2Y4DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer750 (file /tmp/obex-client2Q3DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer751 (file /tmp/obex-clientGR2DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer752 (file /tmp/obex-clientWF1DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer753 (file /tmp/obex-clientZPYDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer754 (file /tmp/obex-clientDHVDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer755 (file /tmp/obex-clientFVTDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer756 (file /tmp/obex-client6NSDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer757 (file /tmp/obex-clientF2SDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer758 (file /tmp/obex-client6RNDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer759 (file /tmp/obex-clientM9LDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer760 (file /tmp/obex-client3MMDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer761 (file /tmp/obex-clientRGLDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer762 (file /tmp/obex-client4QIDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer763 (file /tmp/obex-clientOKHDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer764 (file /tmp/obex-clientVMEDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer765 (file /tmp/obex-clientZ3EDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer766 (file /tmp/obex-clientKGDDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer767 (file /tmp/obex-clientYV9COY)
+Transfer created: /org/bluez/obex/client/session28/transfer768 (file /tmp/obex-client609COY)
+Transfer /org/bluez/obex/client/session28/transfer683 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Erin Taylor
+
+N:Taylor;Erin
+
+TEL;TYPE=CELL:0421948353
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer769 (file /tmp/obex-client2T6COY)
+Transfer created: /org/bluez/obex/client/session28/transfer770 (file /tmp/obex-clientXP5COY)
+Transfer created: /org/bluez/obex/client/session28/transfer771 (file /tmp/obex-client3A1COY)
+Transfer created: /org/bluez/obex/client/session28/transfer772 (file /tmp/obex-client3SZCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer773 (file /tmp/obex-clientEJYCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer774 (file /tmp/obex-client43VCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer775 (file /tmp/obex-clientCYNFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer776 (file /tmp/obex-clientYBMFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer777 (file /tmp/obex-clientGHJFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer778 (file /tmp/obex-client4ZHFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer779 (file /tmp/obex-clientUVGFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer780 (file /tmp/obex-clientLYFFOY)
+Transfer /org/bluez/obex/client/session28/transfer684 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Denai Venhoek
+
+N:Venhoek;Denai
+
+TEL;TYPE=CELL:+61419213290
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer781 (file /tmp/obex-client3ZBFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer782 (file /tmp/obex-clientWN9EOY)
+Transfer created: /org/bluez/obex/client/session28/transfer783 (file /tmp/obex-clientJV6EOY)
+Transfer created: /org/bluez/obex/client/session28/transfer784 (file /tmp/obex-clientOC5EOY)
+Transfer created: /org/bluez/obex/client/session28/transfer785 (file /tmp/obex-client023EOY)
+Transfer created: /org/bluez/obex/client/session28/transfer786 (file /tmp/obex-clientIC4EOY)
+Transfer created: /org/bluez/obex/client/session28/transfer787 (file /tmp/obex-client9S2EOY)
+Transfer created: /org/bluez/obex/client/session28/transfer788 (file /tmp/obex-clientBXYEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer789 (file /tmp/obex-client49WEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer790 (file /tmp/obex-clientDLVEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer791 (file /tmp/obex-clientESSEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer792 (file /tmp/obex-client7HREOY)
+Transfer /org/bluez/obex/client/session28/transfer685 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Cottrell
+
+N:Cottrell;David
+
+TEL;TYPE=CELL:+61410 537 729
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer793 (file /tmp/obex-clientQVNEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer794 (file /tmp/obex-clientJNMEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer795 (file /tmp/obex-clientPDLEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer796 (file /tmp/obex-clientAXHEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer797 (file /tmp/obex-clientIBIEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer798 (file /tmp/obex-client74GEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer799 (file /tmp/obex-client3ADEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer800 (file /tmp/obex-clientPKDEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer801 (file /tmp/obex-clientFPAEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer802 (file /tmp/obex-clientB40GOY)
+Transfer created: /org/bluez/obex/client/session28/transfer803 (file /tmp/obex-clientFKYGOY)
+Transfer /org/bluez/obex/client/session28/transfer686 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Janet Brice
+
+N:Brice;Janet
+
+TEL;TYPE=CELL:+61401559379
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer804 (file /tmp/obex-clientIOXGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer805 (file /tmp/obex-clientOZUGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer806 (file /tmp/obex-clientP7RGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer807 (file /tmp/obex-clientHJSGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer808 (file /tmp/obex-clientHYPGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer809 (file /tmp/obex-clientZ4MGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer810 (file /tmp/obex-clientNVLGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer811 (file /tmp/obex-client73KGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer812 (file /tmp/obex-client8SGGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer813 (file /tmp/obex-clientNFFGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer814 (file /tmp/obex-client5TFGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer815 (file /tmp/obex-client0CCGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer816 (file /tmp/obex-clientLQCGOY)
+Transfer /org/bluez/obex/client/session28/transfer687 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tracey Mahood
+
+N:Mahood;Tracey
+
+TEL;TYPE=CELL:+61478937329
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer817 (file /tmp/obex-client6L4FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer818 (file /tmp/obex-clientJ04FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer819 (file /tmp/obex-client2P3FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer820 (file /tmp/obex-clientC31FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer821 (file /tmp/obex-client0BZFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer822 (file /tmp/obex-client73XFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer823 (file /tmp/obex-clientNFYFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer824 (file /tmp/obex-clientABXFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer825 (file /tmp/obex-clientM0SFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer826 (file /tmp/obex-clientLSRFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer827 (file /tmp/obex-client01QFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer828 (file /tmp/obex-clientQ8NFOY)
+Transfer /org/bluez/obex/client/session28/transfer688 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer829 (file /tmp/obex-client6KEIOY)
+Transfer created: /org/bluez/obex/client/session28/transfer830 (file /tmp/obex-clientRUDIOY)
+Transfer created: /org/bluez/obex/client/session28/transfer831 (file /tmp/obex-clientF2AIOY)
+Transfer created: /org/bluez/obex/client/session28/transfer832 (file /tmp/obex-clientOB8HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer833 (file /tmp/obex-clientTQ6HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer834 (file /tmp/obex-clientR46HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer835 (file /tmp/obex-clientYF5HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer836 (file /tmp/obex-clientEU1HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer837 (file /tmp/obex-clientFFYHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer838 (file /tmp/obex-clientL4XHOY)
+Transfer /org/bluez/obex/client/session28/transfer689 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ryan Scholar
+
+N:Scholar;Ryan
+
+TEL;TYPE=CELL:+61 478 419 633
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer839 (file /tmp/obex-client36QHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer840 (file /tmp/obex-clientS6OHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer841 (file /tmp/obex-clientHHJHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer842 (file /tmp/obex-clientIMFHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer843 (file /tmp/obex-clientSQGHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer844 (file /tmp/obex-clientX9FHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer845 (file /tmp/obex-clientMAEHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer846 (file /tmp/obex-clientKTDHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer847 (file /tmp/obex-clientYHCHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer848 (file /tmp/obex-clientB6BHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer849 (file /tmp/obex-clientBLDHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer850 (file /tmp/obex-clientYG7GOY)
+Transfer /org/bluez/obex/client/session28/transfer690 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nathan Bettcher
+
+N:Bettcher;Nathan
+
+TEL;TYPE=CELL:+61 422 813 663
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer851 (file /tmp/obex-clientZ9UJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer852 (file /tmp/obex-clientZ6TJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer853 (file /tmp/obex-clientRQTJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer854 (file /tmp/obex-clientXNRJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer855 (file /tmp/obex-client74MJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer856 (file /tmp/obex-client14KJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer857 (file /tmp/obex-clientWBMJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer858 (file /tmp/obex-clientUULJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer859 (file /tmp/obex-clientYWHJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer860 (file /tmp/obex-clientZ4IJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer861 (file /tmp/obex-client0NIJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer862 (file /tmp/obex-clientELGJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer863 (file /tmp/obex-client13GJOY)
+Transfer created: /org/bluez/obex/client/session28/transfer864 (file /tmp/obex-clientI7EJOY)
+Transfer /org/bluez/obex/client/session28/transfer691 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Maddy Grey
+
+N:Grey;Maddy
+
+TEL;TYPE=CELL:+61410155705
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer692 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nick Padyachee
+
+N:Padyachee;Nick
+
+TEL;TYPE=CELL:+61 432 991 402
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer693 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Production Office 1
+
+N:;Production Office 1
+
+TEL;TYPE=HOME:82082217
+
+TEL;TYPE=WORK:82082270
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer694 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Bland
+
+N:Bland;Emily
+
+TEL;TYPE=CELL:+61433515222
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer695 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Scez
+
+N:Scez;Alex
+
+TEL;TYPE=CELL:+61 405 057 500
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer696 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jithin
+
+N:;Jithin
+
+TEL:+61406955770
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer697 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Oswald
+
+N:Oswald;Alex
+
+TEL;TYPE=CELL:+61451410449
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer698 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Finn Martin
+
+N:Martin;Finn
+
+TEL:+61426299144
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer699 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dee Apple
+
+N:Apple;Dee
+
+TEL;TYPE=CELL:+61416 276 434
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer700 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bethany Hersey
+
+N:Hersey;Bethany
+
+TEL;TYPE=CELL:0406051206
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer701 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Justin Smith
+
+N:Smith;Justin
+
+TEL;TYPE=CELL:+61 415 183 358
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer702 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Shannon Barrett
+
+N:Barrett;Shannon
+
+TEL;TYPE=CELL:+61421 130 193
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer703 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Olivia Perkendicular
+
+N:Perkendicular;Olivia
+
+TEL;TYPE=CELL:0403864080
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer704 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer705 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emma Collier
+
+N:Collier;Emma
+
+TEL;TYPE=CELL:0450819497
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer706 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:+61438 684 892
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer707 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Helen Mahood
+
+N:Mahood;Helen
+
+TEL;TYPE=CELL:+61432353404
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer708 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Freedman
+
+N:Freedman;Tim
+
+TEL;TYPE=CELL:83463033
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer709 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sally Henderson
+
+N:Henderson;Sally
+
+TEL;TYPE=CELL:+61414443132
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer710 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ben Gillard
+
+N:Gillard;Ben
+
+TEL:
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer711 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Anthony Bondarenko
+
+N:Bondarenko;Anthony
+
+TEL;TYPE=CELL:+61 404 270 763
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer712 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jeremiah Morton
+
+N:Morton;Jeremiah
+
+TEL;TYPE=CELL:0457176555
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer713 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jake Symons
+
+N:Symons;Jake
+
+TEL;TYPE=CELL:0406 078 885
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer714 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Christine Haynes
+
+N:Haynes;Christine
+
+TEL;TYPE=CELL:0434917883
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer715 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mr Mr Adams
+
+N:Adams;;;Mr
+
+TEL;TYPE=CELL:+61437 486 204
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer716 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Janet Norman
+
+N:Norman;Janet
+
+TEL:
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer717 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Catie Haynes
+
+N:Haynes;Catie
+
+TEL;TYPE=CELL:+61432850842
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer718 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniela
+
+N:;Daniela
+
+TEL;TYPE=CELL:+61 421 784 630
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer719 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ashley School
+
+N:School;Ashley
+
+TEL;TYPE=CELL:+61467061874
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer720 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tennille Sawtell
+
+N:Sawtell;Tennille
+
+TEL;TYPE=CELL:0400 860 539
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer721 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kevin Doveton
+
+N:Doveton;Kevin
+
+TEL;TYPE=CELL:+61410101557
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer722 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Bellas
+
+N:Bellas;Alex
+
+TEL;TYPE=CELL:0400640620
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer723 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chad Van Heerden
+
+N:Van Heerden;Chad
+
+TEL;TYPE=CELL:042-134-3695
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer724 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Haynes
+
+N:Haynes;John
+
+TEL;TYPE=CELL:0403 796 351
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer725 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dan Pisulak
+
+N:Pisulak;Dan
+
+TEL;TYPE=CELL:+61 438 907 644
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer726 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mark Palmer
+
+N:Palmer;Mark
+
+TEL;TYPE=CELL:0422 884 579
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer727 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mike Bartholomaeus
+
+N:Bartholomaeus;Mike
+
+TEL;TYPE=CELL:+61433 145 304
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer728 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David West
+
+N:West;David
+
+TEL;TYPE=CELL:0423 015 456
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer729 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nathan Boemia
+
+N:Boemia;Nathan
+
+TEL;TYPE=CELL:+61 466 590 501
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer730 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Annabel Jessica Darch
+
+N:Darch;Annabel;Jessica
+
+TEL;TYPE=CELL:0427453162
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer731 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer732 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Joel Foster
+
+N:Foster;Joel
+
+TEL;TYPE=CELL:+61 413 606 422
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer733 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chelsea Malcolm
+
+N:Malcolm;Chelsea
+
+TEL;TYPE=CELL:0406023877
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer734 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Cherie Stonham
+
+N:Stonham;Cherie
+
+TEL;TYPE=CELL:0413 001 963
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer735 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Lee
+
+N:Lee;David
+
+TEL;TYPE=CELL:+61401218016
+
+TEL:+61 401 015 737
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer736 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tom Daly
+
+N:Daly;Tom
+
+TEL;TYPE=CELL:+61417 874 364
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer737 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Stacey Donaldson
+
+N:Donaldson;Stacey
+
+TEL;TYPE=CELL:0434588530
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer738 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Matt Wever
+
+N:Wever;Matt
+
+TEL;TYPE=HOME:0426819527
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer739 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chelsea Ciracovitch
+
+N:Ciracovitch;Chelsea
+
+TEL;TYPE=CELL:+61 420 637 442
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer740 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jill Daly
+
+N:Daly;Jill
+
+TEL;TYPE=CELL:+61404 678 635
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer741 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer742 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John S
+
+N:S;John
+
+TEL;TYPE=CELL:0438 390 302
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer743 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Shaun Haynes
+
+N:Haynes;Shaun
+
+TEL;TYPE=CELL:+61466 620 358
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer744 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Adelaide Metro
+
+N:Metro;Adelaide
+
+TEL;TYPE=CELL:83030849
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer745 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Max Lockett
+
+N:Lockett;Max
+
+TEL:043 343 0931
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer746 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Maddy Jolly
+
+N:Jolly;Maddy
+
+TEL;TYPE=CELL:0432 958 203
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer747 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Esther Fong
+
+N:Fong;Esther
+
+TEL;TYPE=CELL:0435633785
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer748 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Wesley Doveton
+
+N:Doveton;Wesley
+
+TEL;TYPE=HOME:(083)7934804
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer749 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lesley
+
+N:;Lesley
+
+TEL;TYPE=CELL:+61419811601
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer750 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mum
+
+N:;Mum
+
+TEL;TYPE=CELL:+27 (83) 4189074
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer751 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Vinnie Miranda
+
+N:Miranda;Vinnie
+
+TEL;TYPE=CELL:0430333370
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer752 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:+61 401 073 525
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer753 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lachy
+
+N:;Lachy
+
+TEL;TYPE=CELL:0425 886 840
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer754 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jessie Beagley
+
+N:Beagley;Jessie
+
+TEL;TYPE=CELL:+61403 680 264
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer755 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mrs Smith
+
+N:Smith;Mrs
+
+TEL;TYPE=CELL:0414 578 912
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer756 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Abbi
+
+N:;Abbi
+
+TEL;TYPE=CELL:+61415 698 599
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer757 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Holly Martin
+
+N:Martin;Holly
+
+TEL;TYPE=CELL:+61415991809
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer758 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ryan Matulick
+
+N:Matulick;Ryan
+
+TEL;TYPE=CELL:0422495406
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer759 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Corey Smith
+
+N:Smith;Corey
+
+TEL;TYPE=CELL:+61457139031
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer760 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chey Drew
+
+N:Drew;Chey
+
+TEL;TYPE=HOME:0405650396
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer761 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mike Bonicurso
+
+N:Bonicurso;Mike
+
+TEL;TYPE=CELL:+61418 823 533
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer762 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Craig Venter
+
+N:Venter;Craig
+
+TEL;TYPE=CELL:+27 (73) 7073550
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer763 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Josh Bland
+
+N:Bland;Josh
+
+TEL;TYPE=HOME:+61430 371 126
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer764 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Linda Beagley
+
+N:Beagley;Linda
+
+TEL;TYPE=CELL:0431247866
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer765 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jonathan David Bartholomaeus
+
+N:Bartholomaeus;Jonathan;David
+
+TEL;TYPE=CELL:+61415 393 638
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer766 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Andrew Stonham
+
+N:Stonham;Andrew
+
+TEL;TYPE=CELL:0416240733
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer767 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer768 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Adrian Cotterell
+
+N:Cotterell;Adrian
+
+TEL;TYPE=CELL:+61 421 483 103
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer769 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jacob Crowden
+
+N:Crowden;Jacob
+
+TEL;TYPE=CELL:+61 411 790 522
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer770 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nick Bird
+
+N:Bird;Nick
+
+TEL;TYPE=CELL:+61422106229
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer771 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Braeden Pay
+
+N:Pay;Braeden
+
+TEL;TYPE=CELL:+61404604158
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer772 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Declan Smith
+
+N:Smith;Declan
+
+TEL;TYPE=CELL:+61413951994
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer773 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Michael Wilson
+
+N:Wilson;Michael
+
+TEL;TYPE=CELL:0402025906
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer774 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Melia Home
+
+N:;Melia Home
+
+TEL;TYPE=HOME:8358 6162
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer775 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Phil Brice
+
+N:Brice;Phil
+
+TEL;TYPE=HOME:+61401 376 658
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer776 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Daly
+
+N:Daly;Alex
+
+TEL;TYPE=CELL:+61459 089 891
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer777 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Justin Smith
+
+N:Smith;Justin
+
+TEL;TYPE=CELL:+61 415 183 358
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer778 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Hannah Christensen
+
+N:Christensen;Hannah
+
+TEL;TYPE=CELL:0433 585 373
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer779 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Adie
+
+N:Adie;Daniel
+
+TEL;TYPE=HOME:+61466 570 577
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer780 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Gail Warren
+
+N:Warren;Gail
+
+TEL;TYPE=CELL:+61 447 699 093
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer781 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Molly Paine
+
+N:Paine;Molly
+
+TEL;TYPE=CELL:+61 458 775 058
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer782 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Catherine Mwikya
+
+N:Mwikya;Catherine
+
+TEL;TYPE=HOME:0434783499
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer783 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Vanessa
+
+N:;Vanessa
+
+TEL;TYPE=CELL:+61416649766
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer784 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bradley Stonham
+
+N:Stonham;Bradley
+
+TEL;TYPE=CELL:0413870092
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer785 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Isaac Jesse Johnson
+
+N:Johnson;Isaac;Jesse
+
+TEL;TYPE=CELL:0438816908
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer786 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Yen Yen Stender
+
+N:Stender;Yen Yen
+
+TEL;TYPE=CELL:+61 434 547 129
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer787 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Aaron Bird
+
+N:Bird;Aaron
+
+TEL;TYPE=CELL:+61431 364 779
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer788 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Rodney Bates
+
+N:Bates;Rodney
+
+TEL;TYPE=CELL:+61402 267 363
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer789 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kiara Beth Chester
+
+N:Chester;Kiara;Beth
+
+TEL;TYPE=CELL:+61401933872
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer790 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Despina Lambos
+
+N:Lambos;Despina
+
+TEL;TYPE=CELL:+61421922935
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer791 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sammy Grace Berry
+
+N:Berry;Sammy;Grace
+
+TEL;TYPE=CELL:0437 698 947
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer792 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amos Gaskin
+
+N:Gaskin;Amos
+
+TEL;TYPE=CELL:+61414938167
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer793 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Aunty Ne
+
+N:Ne;Aunty
+
+TEL;TYPE=CELL:+27824083930
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer794 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bianca Harrison
+
+N:Harrison;Bianca
+
+TEL;TYPE=CELL:0425325404
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer795 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Scott Wilson
+
+N:Wilson;Scott
+
+TEL;TYPE=CELL:0420512398
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer796 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lewis Daly
+
+N:Daly;Lewis
+
+TEL;TYPE=CELL:+61410 237 238
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer797 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Hersey
+
+N:Hersey;Tim
+
+TEL;TYPE=CELL:0424303934
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer798 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Enrica McCracken
+
+N:McCracken;Enrica
+
+TEL;TYPE=CELL:+61407200742
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer799 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:+61413 966 686
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer800 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Reece Calvert
+
+N:Calvert;Reece
+
+TEL;TYPE=CELL:+61488 125 999
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer801 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ally Boemia
+
+N:Boemia;Ally
+
+TEL;TYPE=CELL:+61423 480 055
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer802 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Evernote Upload
+
+N:Evernote Upload
+
+TEL:
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer803 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Celina Yen
+
+N:Yen;Celina
+
+TEL;TYPE=CELL:0431922178
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer804 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chris Dikih
+
+N:Dikih;Chris
+
+TEL;TYPE=CELL:0421007645
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer805 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Shirley Lane
+
+N:Lane;Shirley
+
+TEL;TYPE=CELL:0421 361 635
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer806 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Genet
+
+N:;Genet
+
+TEL;TYPE=CELL:0403558244
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer807 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ashleigh Van Heerden
+
+N:Van Heerden;Ashleigh
+
+TEL;TYPE=CELL:0434011708
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer808 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Sawtell
+
+N:Sawtell;David
+
+TEL;TYPE=CELL:0400 860 509
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer809 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emma Douglas
+
+N:Douglas;Emma
+
+TEL;TYPE=CELL:+61405222158
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer810 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jess
+
+N:;Jess
+
+TEL;TYPE=CELL:+61 400 278 399
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer811 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lishie M Kearvell
+
+N:Kearvell;Lishie;M
+
+TEL;TYPE=CELL:+61403911896
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer812 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Charmaine
+
+N:;Charmaine
+
+TEL;TYPE=HOME:0424546530
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer813 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily
+
+N:;Emily
+
+TEL;TYPE=CELL:+61432 093 010
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer814 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Halima
+
+N:;Halima
+
+TEL;TYPE=CELL:+61 469 834 626
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer815 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Fontanarosa
+
+N:Fontanarosa;Daniel
+
+TEL;TYPE=CELL:+61 438 991 960
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer816 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tanya Chesser
+
+N:Chesser;Tanya
+
+TEL;TYPE=CELL:+61407 393 879
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer817 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Rene Ashton
+
+N:Ashton;Rene
+
+TEL:
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer818 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Rachel Lane🐱
+
+N:Lane🐱;Rachel
+
+TEL;TYPE=CELL:+61404611051
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer819 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mrs Parsons
+
+N:Parsons;Mrs
+
+TEL;TYPE=HOME:0425 786 754
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer820 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Esther Rampling
+
+N:Rampling;Esther
+
+TEL;TYPE=HOME:0403205221
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer821 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jasmine Christensen
+
+N:Christensen;Jasmine
+
+TEL;TYPE=CELL:0424762604
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer822 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Donald Impett
+
+N:Impett;Donald
+
+TEL;TYPE=CELL:+61 403 267 514
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer823 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Natalie Peterson
+
+N:Peterson;Natalie
+
+TEL;TYPE=CELL:0412275735
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer824 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Grace Schneider
+
+N:Schneider;Grace
+
+TEL:
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer825 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Raquel Chester
+
+N:Chester;Raquel
+
+TEL;TYPE=CELL:+61 418 276 124
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer826 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer827 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Apple Inc.
+
+N:Apple Inc.
+
+TEL;TYPE=PREF:1-800-69-27753
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer828 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kalen Turner
+
+N:Turner;Kalen
+
+TEL;TYPE=CELL:0401 823 057
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer829 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chris Bartlet
+
+N:Bartlet;Chris
+
+TEL;TYPE=CELL:0450299529
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer830 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Adrian Maxwell
+
+N:Maxwell;Adrian
+
+TEL;TYPE=CELL:+61450934386
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer831 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Selina Ha
+
+N:Ha;Selina
+
+TEL;TYPE=CELL:+61414575574
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer832 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kayleigh Doveton
+
+N:Doveton;Kayleigh
+
+TEL;TYPE=CELL:+27(25)658146
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer833 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Melanie Pink
+
+N:Pink;Melanie
+
+TEL;TYPE=CELL:0409 816 562
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer834 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Laura Enthoven
+
+N:Enthoven;Laura
+
+TEL;TYPE=CELL:+61 400 445 660
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer835 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kassie Pidd
+
+N:Pidd;Kassie
+
+TEL;TYPE=CELL:+61407210089
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer836 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Karan Varma
+
+N:Varma;Karan
+
+TEL;TYPE=CELL:0414 468 272
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer837 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sam Farley
+
+N:Farley;Sam
+
+TEL;TYPE=CELL:+61 481 512 331
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer838 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Granny
+
+N:;Granny
+
+TEL;TYPE=CELL:+27 82 837 9463
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer839 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sasha Adele Negruk
+
+N:Negruk;Sasha;Adele
+
+TEL;TYPE=CELL:+61 422 177 976
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer840 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tom (Senior) Daly
+
+N:Daly;Tom (Senior)
+
+TEL;TYPE=CELL:0404 815 900
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer841 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samuel David Chesser
+
+N:Chesser;Samuel David
+
+TEL;TYPE=CELL:+61431 047 192
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer842 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Baricz
+
+N:Baricz;Alex
+
+TEL;TYPE=CELL:+61431 611 830
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer843 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dominoes Pizza
+
+N:Pizza;Dominoes
+
+TEL;TYPE=WORK:83075800
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer844 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Gemma Keating
+
+N:Keating;Gemma
+
+TEL;TYPE=CELL:0422 678 576
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer845 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kate Brice
+
+N:Brice;Kate
+
+TEL;TYPE=CELL:+61404715571
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer846 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emma Parsons
+
+N:Parsons;Emma
+
+TEL;TYPE=HOME:0403038322
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer847 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lachy Donaldson
+
+N:Donaldson;Lachy
+
+TEL;TYPE=CELL:0430394494
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer848 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nikhil Bechoo
+
+N:Bechoo;Nikhil
+
+TEL;TYPE=CELL:0403 093 425
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer849 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Milan
+
+N:;Milan
+
+TEL;TYPE=CELL:0416 267 107
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer850 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jody Bird
+
+N:Bird;Jody
+
+TEL;TYPE=CELL:+61 431 767 813
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer851 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Steph Kipirtoglou
+
+N:Kipirtoglou;Steph
+
+TEL:0402140666
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer852 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Aunty Carol
+
+N:;Aunty Carol
+
+TEL;TYPE=CELL:+27 83 406 8732
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer853 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bill Vasilakis
+
+N:Vasilakis;Bill
+
+TEL;TYPE=CELL:+61 401 690 956
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer854 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sean Milne
+
+N:Milne;Sean
+
+TEL;TYPE=CELL:0433481246
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer855 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dad
+
+N:;Dad
+
+TEL;TYPE=CELL:+277 8065 6193
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer856 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Parsons
+
+N:Parsons;David
+
+TEL;TYPE=CELL:0430 483 536
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer857 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Cass Tompich
+
+N:Tompich;Cass
+
+TEL;TYPE=CELL:0417854865
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer858 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Matt Ralph
+
+N:Ralph;Matt
+
+TEL;TYPE=CELL:0488236287
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer859 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Blake Mccormick
+
+N:Mccormick;Blake
+
+TEL;TYPE=CELL:0428666982
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer860 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420 377 844
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer861 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Lane
+
+N:Lane;Daniel
+
+TEL;TYPE=CELL:+61 421 359 623
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer862 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Wabnitz
+
+N:Wabnitz;David
+
+TEL;TYPE=CELL:0423 463 132
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer863 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Home
+
+N:;Home
+
+TEL:82483890
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer864 complete
+
+--- PullAll ---
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:My Number
+
+N:My Number
+
+TEL;TYPE=CELL:+61410101557
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Abbi
+
+N:;Abbi
+
+TEL;TYPE=CELL:+61415 698 599
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mr Mr Adams
+
+N:Adams;;;Mr
+
+TEL;TYPE=CELL:+61437 486 204
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Adie
+
+N:Adie;Daniel
+
+TEL;TYPE=HOME:+61466 570 577
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dee Apple
+
+N:Apple;Dee
+
+TEL;TYPE=CELL:+61416 276 434
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Apple Inc.
+
+N:Apple Inc.
+
+TEL;TYPE=PREF:1-800-69-27753
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Rene Ashton
+
+N:Ashton;Rene
+
+TEL:
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Aunty Carol
+
+N:;Aunty Carol
+
+TEL;TYPE=CELL:+27 83 406 8732
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Baricz
+
+N:Baricz;Alex
+
+TEL;TYPE=CELL:+61431 611 830
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Shannon Barrett
+
+N:Barrett;Shannon
+
+TEL;TYPE=CELL:+61421 130 193
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jonathan David Bartholomaeus
+
+N:Bartholomaeus;Jonathan;David
+
+TEL;TYPE=CELL:+61415 393 638
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mike Bartholomaeus
+
+N:Bartholomaeus;Mike
+
+TEL;TYPE=CELL:+61433 145 304
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chris Bartlet
+
+N:Bartlet;Chris
+
+TEL;TYPE=CELL:0450299529
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Rodney Bates
+
+N:Bates;Rodney
+
+TEL;TYPE=CELL:+61402 267 363
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jessie Beagley
+
+N:Beagley;Jessie
+
+TEL;TYPE=CELL:+61403 680 264
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Linda Beagley
+
+N:Beagley;Linda
+
+TEL;TYPE=CELL:0431247866
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nikhil Bechoo
+
+N:Bechoo;Nikhil
+
+TEL;TYPE=CELL:0403 093 425
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Bellas
+
+N:Bellas;Alex
+
+TEL;TYPE=CELL:0400640620
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sammy Grace Berry
+
+N:Berry;Sammy;Grace
+
+TEL;TYPE=CELL:0437 698 947
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nathan Bettcher
+
+N:Bettcher;Nathan
+
+TEL;TYPE=CELL:+61 422 813 663
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Aaron Bird
+
+N:Bird;Aaron
+
+TEL;TYPE=CELL:+61431 364 779
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jody Bird
+
+N:Bird;Jody
+
+TEL;TYPE=CELL:+61 431 767 813
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nick Bird
+
+N:Bird;Nick
+
+TEL;TYPE=CELL:+61422106229
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Bland
+
+N:Bland;Emily
+
+TEL;TYPE=CELL:+61433515222
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Josh Bland
+
+N:Bland;Josh
+
+TEL;TYPE=HOME:+61430 371 126
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ally Boemia
+
+N:Boemia;Ally
+
+TEL;TYPE=CELL:+61423 480 055
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nathan Boemia
+
+N:Boemia;Nathan
+
+TEL;TYPE=CELL:+61 466 590 501
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Anthony Bondarenko
+
+N:Bondarenko;Anthony
+
+TEL;TYPE=CELL:+61 404 270 763
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mike Bonicurso
+
+N:Bonicurso;Mike
+
+TEL;TYPE=CELL:+61418 823 533
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Janet Brice
+
+N:Brice;Janet
+
+TEL;TYPE=CELL:+61401559379
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kate Brice
+
+N:Brice;Kate
+
+TEL;TYPE=CELL:+61404715571
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Phil Brice
+
+N:Brice;Phil
+
+TEL;TYPE=HOME:+61401 376 658
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Wes Brice
+
+N:Brice;Wes
+
+TEL;TYPE=CELL:+61405 736 136
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Reece Calvert
+
+N:Calvert;Reece
+
+TEL;TYPE=CELL:+61488 125 999
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Charmaine
+
+N:;Charmaine
+
+TEL;TYPE=HOME:0424546530
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samuel David Chesser
+
+N:Chesser;Samuel David
+
+TEL;TYPE=CELL:+61431 047 192
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tanya Chesser
+
+N:Chesser;Tanya
+
+TEL;TYPE=CELL:+61407 393 879
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kiara Beth Chester
+
+N:Chester;Kiara;Beth
+
+TEL;TYPE=CELL:+61401933872
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Raquel Chester
+
+N:Chester;Raquel
+
+TEL;TYPE=CELL:+61 418 276 124
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Hannah Christensen
+
+N:Christensen;Hannah
+
+TEL;TYPE=CELL:0433 585 373
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jasmine Christensen
+
+N:Christensen;Jasmine
+
+TEL;TYPE=CELL:0424762604
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chelsea Ciracovitch
+
+N:Ciracovitch;Chelsea
+
+TEL;TYPE=CELL:+61 420 637 442
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emma Collier
+
+N:Collier;Emma
+
+TEL;TYPE=CELL:0450819497
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Adrian Cotterell
+
+N:Cotterell;Adrian
+
+TEL;TYPE=CELL:+61 421 483 103
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Cottrell
+
+N:Cottrell;David
+
+TEL;TYPE=CELL:+61410 537 729
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jacob Crowden
+
+N:Crowden;Jacob
+
+TEL;TYPE=CELL:+61 411 790 522
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dad
+
+N:;Dad
+
+TEL;TYPE=CELL:+277 8065 6193
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Daly
+
+N:Daly;Alex
+
+TEL;TYPE=CELL:+61459 089 891
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jill Daly
+
+N:Daly;Jill
+
+TEL;TYPE=CELL:+61404 678 635
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lewis Daly
+
+N:Daly;Lewis
+
+TEL;TYPE=CELL:+61410 237 238
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tom Daly
+
+N:Daly;Tom
+
+TEL;TYPE=CELL:+61417 874 364
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tom (Senior) Daly
+
+N:Daly;Tom (Senior)
+
+TEL;TYPE=CELL:0404 815 900
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniela
+
+N:;Daniela
+
+TEL;TYPE=CELL:+61 421 784 630
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Annabel Jessica Darch
+
+N:Darch;Annabel;Jessica
+
+TEL;TYPE=CELL:0427453162
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chris Dikih
+
+N:Dikih;Chris
+
+TEL;TYPE=CELL:0421007645
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lachy Donaldson
+
+N:Donaldson;Lachy
+
+TEL;TYPE=CELL:0430394494
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Stacey Donaldson
+
+N:Donaldson;Stacey
+
+TEL;TYPE=CELL:0434588530
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emma Douglas
+
+N:Douglas;Emma
+
+TEL;TYPE=CELL:+61405222158
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420 377 844
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kayleigh Doveton
+
+N:Doveton;Kayleigh
+
+TEL;TYPE=CELL:+27(25)658146
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kevin Doveton
+
+N:Doveton;Kevin
+
+TEL;TYPE=CELL:+61410101557
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:+61438 684 892
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:+61413 966 686
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Wesley Doveton
+
+N:Doveton;Wesley
+
+TEL;TYPE=HOME:(083)7934804
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chey Drew
+
+N:Drew;Chey
+
+TEL;TYPE=HOME:0405650396
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily
+
+N:;Emily
+
+TEL;TYPE=CELL:+61432 093 010
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Laura Enthoven
+
+N:Enthoven;Laura
+
+TEL;TYPE=CELL:+61 400 445 660
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Evernote Upload
+
+N:Evernote Upload
+
+TEL:
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sam Farley
+
+N:Farley;Sam
+
+TEL;TYPE=CELL:+61 481 512 331
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Esther Fong
+
+N:Fong;Esther
+
+TEL;TYPE=CELL:0435633785
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Fontanarosa
+
+N:Fontanarosa;Daniel
+
+TEL;TYPE=CELL:+61 438 991 960
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Joel Foster
+
+N:Foster;Joel
+
+TEL;TYPE=CELL:+61 413 606 422
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Freedman
+
+N:Freedman;Tim
+
+TEL;TYPE=CELL:83463033
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amos Gaskin
+
+N:Gaskin;Amos
+
+TEL;TYPE=CELL:+61414938167
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Genet
+
+N:;Genet
+
+TEL;TYPE=CELL:0403558244
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ben Gillard
+
+N:Gillard;Ben
+
+TEL:
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Granny
+
+N:;Granny
+
+TEL;TYPE=CELL:+27 82 837 9463
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Maddy Grey
+
+N:Grey;Maddy
+
+TEL;TYPE=CELL:+61410155705
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Selina Ha
+
+N:Ha;Selina
+
+TEL;TYPE=CELL:+61414575574
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Halima
+
+N:;Halima
+
+TEL;TYPE=CELL:+61 469 834 626
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bianca Harrison
+
+N:Harrison;Bianca
+
+TEL;TYPE=CELL:0425325404
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Catie Haynes
+
+N:Haynes;Catie
+
+TEL;TYPE=CELL:+61432850842
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Christine Haynes
+
+N:Haynes;Christine
+
+TEL;TYPE=CELL:0434917883
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Haynes
+
+N:Haynes;John
+
+TEL;TYPE=CELL:0403 796 351
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Shaun Haynes
+
+N:Haynes;Shaun
+
+TEL;TYPE=CELL:+61466 620 358
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sally Henderson
+
+N:Henderson;Sally
+
+TEL;TYPE=CELL:+61414443132
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bethany Hersey
+
+N:Hersey;Bethany
+
+TEL;TYPE=CELL:0406051206
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Hersey
+
+N:Hersey;Tim
+
+TEL;TYPE=CELL:0424303934
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Home
+
+N:;Home
+
+TEL:82483890
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Donald Impett
+
+N:Impett;Donald
+
+TEL;TYPE=CELL:+61 403 267 514
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jess
+
+N:;Jess
+
+TEL;TYPE=CELL:+61 400 278 399
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jithin
+
+N:;Jithin
+
+TEL:+61406955770
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Isaac Jesse Johnson
+
+N:Johnson;Isaac;Jesse
+
+TEL;TYPE=CELL:0438816908
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Johnston
+
+N:Johnston;Emily
+
+TEL;TYPE=CELL:0451151051
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Maddy Jolly
+
+N:Jolly;Maddy
+
+TEL;TYPE=CELL:0432 958 203
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lishie M Kearvell
+
+N:Kearvell;Lishie;M
+
+TEL;TYPE=CELL:+61403911896
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Gemma Keating
+
+N:Keating;Gemma
+
+TEL;TYPE=CELL:0422 678 576
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Steph Kipirtoglou
+
+N:Kipirtoglou;Steph
+
+TEL:0402140666
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lachy
+
+N:;Lachy
+
+TEL;TYPE=CELL:0425 886 840
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Despina Lambos
+
+N:Lambos;Despina
+
+TEL;TYPE=CELL:+61421922935
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Rachel Lane🐱
+
+N:Lane🐱;Rachel
+
+TEL;TYPE=CELL:+61404611051
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Lane
+
+N:Lane;Daniel
+
+TEL;TYPE=CELL:+61 421 359 623
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Shirley Lane
+
+N:Lane;Shirley
+
+TEL;TYPE=CELL:0421 361 635
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Lee
+
+N:Lee;David
+
+TEL;TYPE=CELL:+61401218016
+
+TEL:+61 401 015 737
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Lesley
+
+N:;Lesley
+
+TEL;TYPE=CELL:+61419811601
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Niki Lochens
+
+N:Lochens;Niki
+
+TEL;TYPE=CELL:+61433143222
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Max Lockett
+
+N:Lockett;Max
+
+TEL:043 343 0931
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Helen Mahood
+
+N:Mahood;Helen
+
+TEL;TYPE=CELL:+61432353404
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tracey Mahood
+
+N:Mahood;Tracey
+
+TEL;TYPE=CELL:+61478937329
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chelsea Malcolm
+
+N:Malcolm;Chelsea
+
+TEL;TYPE=CELL:0406023877
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Finn Martin
+
+N:Martin;Finn
+
+TEL:+61426299144
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Holly Martin
+
+N:Martin;Holly
+
+TEL;TYPE=CELL:+61415991809
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ryan Matulick
+
+N:Matulick;Ryan
+
+TEL;TYPE=CELL:0422495406
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Adrian Maxwell
+
+N:Maxwell;Adrian
+
+TEL;TYPE=CELL:+61450934386
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Blake Mccormick
+
+N:Mccormick;Blake
+
+TEL;TYPE=CELL:0428666982
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Enrica McCracken
+
+N:McCracken;Enrica
+
+TEL;TYPE=CELL:+61407200742
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Melia Home
+
+N:;Melia Home
+
+TEL;TYPE=HOME:8358 6162
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Adelaide Metro
+
+N:Metro;Adelaide
+
+TEL;TYPE=CELL:83030849
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Milan
+
+N:;Milan
+
+TEL;TYPE=CELL:0416 267 107
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sean Milne
+
+N:Milne;Sean
+
+TEL;TYPE=CELL:0433481246
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Vinnie Miranda
+
+N:Miranda;Vinnie
+
+TEL;TYPE=CELL:0430333370
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jeremiah Morton
+
+N:Morton;Jeremiah
+
+TEL;TYPE=CELL:0457176555
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mum
+
+N:;Mum
+
+TEL;TYPE=CELL:+27 (83) 4189074
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Catherine Mwikya
+
+N:Mwikya;Catherine
+
+TEL;TYPE=HOME:0434783499
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Aunty Ne
+
+N:Ne;Aunty
+
+TEL;TYPE=CELL:+27824083930
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sasha Adele Negruk
+
+N:Negruk;Sasha;Adele
+
+TEL;TYPE=CELL:+61 422 177 976
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Janet Norman
+
+N:Norman;Janet
+
+TEL:
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Oswald
+
+N:Oswald;Alex
+
+TEL;TYPE=CELL:+61451410449
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nick Padyachee
+
+N:Padyachee;Nick
+
+TEL;TYPE=CELL:+61 432 991 402
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Molly Paine
+
+N:Paine;Molly
+
+TEL;TYPE=CELL:+61 458 775 058
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mark Palmer
+
+N:Palmer;Mark
+
+TEL;TYPE=CELL:0422 884 579
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Parsons
+
+N:Parsons;David
+
+TEL;TYPE=CELL:0430 483 536
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emma Parsons
+
+N:Parsons;Emma
+
+TEL;TYPE=HOME:0403038322
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mrs Parsons
+
+N:Parsons;Mrs
+
+TEL;TYPE=HOME:0425 786 754
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Braeden Pay
+
+N:Pay;Braeden
+
+TEL;TYPE=CELL:+61404604158
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Olivia Perkendicular
+
+N:Perkendicular;Olivia
+
+TEL;TYPE=CELL:0403864080
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Natalie Peterson
+
+N:Peterson;Natalie
+
+TEL;TYPE=CELL:0412275735
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kassie Pidd
+
+N:Pidd;Kassie
+
+TEL;TYPE=CELL:+61407210089
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Melanie Pink
+
+N:Pink;Melanie
+
+TEL;TYPE=CELL:0409 816 562
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dan Pisulak
+
+N:Pisulak;Dan
+
+TEL;TYPE=CELL:+61 438 907 644
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Dominoes Pizza
+
+N:Pizza;Dominoes
+
+TEL;TYPE=WORK:83075800
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Production Office 1
+
+N:;Production Office 1
+
+TEL;TYPE=HOME:82082217
+
+TEL;TYPE=WORK:82082270
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Matt Ralph
+
+N:Ralph;Matt
+
+TEL;TYPE=CELL:0488236287
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Esther Rampling
+
+N:Rampling;Esther
+
+TEL;TYPE=HOME:0403205221
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John S
+
+N:S;John
+
+TEL;TYPE=CELL:0438 390 302
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:+61 401 073 525
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Sawtell
+
+N:Sawtell;David
+
+TEL;TYPE=CELL:0400 860 509
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tennille Sawtell
+
+N:Sawtell;Tennille
+
+TEL;TYPE=CELL:0400 860 539
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Alex Scez
+
+N:Scez;Alex
+
+TEL;TYPE=CELL:+61 405 057 500
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Grace Schneider
+
+N:Schneider;Grace
+
+TEL:
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ryan Scholar
+
+N:Scholar;Ryan
+
+TEL;TYPE=CELL:+61 478 419 633
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ashley School
+
+N:School;Ashley
+
+TEL;TYPE=CELL:+61467061874
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Corey Smith
+
+N:Smith;Corey
+
+TEL;TYPE=CELL:+61457139031
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Declan Smith
+
+N:Smith;Declan
+
+TEL;TYPE=CELL:+61413951994
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Justin Smith
+
+N:Smith;Justin
+
+TEL;TYPE=CELL:+61 415 183 358
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Justin Smith
+
+N:Smith;Justin
+
+TEL;TYPE=CELL:+61 415 183 358
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Mrs Smith
+
+N:Smith;Mrs
+
+TEL;TYPE=CELL:0414 578 912
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Yen Yen Stender
+
+N:Stender;Yen Yen
+
+TEL;TYPE=CELL:+61 434 547 129
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Andrew Stonham
+
+N:Stonham;Andrew
+
+TEL;TYPE=CELL:0416240733
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bradley Stonham
+
+N:Stonham;Bradley
+
+TEL;TYPE=CELL:0413870092
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Cherie Stonham
+
+N:Stonham;Cherie
+
+TEL;TYPE=CELL:0413 001 963
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jake Symons
+
+N:Symons;Jake
+
+TEL;TYPE=CELL:0406 078 885
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Erin Taylor
+
+N:Taylor;Erin
+
+TEL;TYPE=CELL:0421948353
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Cass Tompich
+
+N:Tompich;Cass
+
+TEL;TYPE=CELL:0417854865
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Kalen Turner
+
+N:Turner;Kalen
+
+TEL;TYPE=CELL:0401 823 057
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ashleigh Van Heerden
+
+N:Van Heerden;Ashleigh
+
+TEL;TYPE=CELL:0434011708
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Chad Van Heerden
+
+N:Van Heerden;Chad
+
+TEL;TYPE=CELL:042-134-3695
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Vanessa
+
+N:;Vanessa
+
+TEL;TYPE=CELL:+61416649766
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Karan Varma
+
+N:Varma;Karan
+
+TEL;TYPE=CELL:0414 468 272
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Bill Vasilakis
+
+N:Vasilakis;Bill
+
+TEL;TYPE=CELL:+61 401 690 956
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Denai Venhoek
+
+N:Venhoek;Denai
+
+TEL;TYPE=CELL:+61419213290
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Craig Venter
+
+N:Venter;Craig
+
+TEL;TYPE=CELL:+27 (73) 7073550
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David Wabnitz
+
+N:Wabnitz;David
+
+TEL;TYPE=CELL:0423 463 132
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Gail Warren
+
+N:Warren;Gail
+
+TEL;TYPE=CELL:+61 447 699 093
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:David West
+
+N:West;David
+
+TEL;TYPE=CELL:0423 015 456
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Matt Wever
+
+N:Wever;Matt
+
+TEL;TYPE=HOME:0426819527
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Michael Wilson
+
+N:Wilson;Michael
+
+TEL;TYPE=CELL:0402025906
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Scott Wilson
+
+N:Wilson;Scott
+
+TEL;TYPE=CELL:0420512398
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Celina Yen
+
+N:Yen;Celina
+
+TEL;TYPE=CELL:0431922178
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+END:VCARD
+
+
+--- Select Phonebook ICH ---
+
+
+--- GetSize ---
+
+Size = 51
+
+
+--- List vCard ---
+
+2.vcf : Sue Doveton
+3.vcf : Amelia Grace
+4.vcf : Tim Lochens
+5.vcf : Samantha Doveton
+6.vcf : John Zoumis
+7.vcf : Amelia Grace
+8.vcf : Amelia Grace
+9.vcf : Sue Doveton
+a.vcf : Sue Doveton
+b.vcf : Todd Purdy
+c.vcf : Emily Bland
+d.vcf : Sue Doveton
+e.vcf : Amelia Grace
+f.vcf : Amelia Grace
+10.vcf : Amelia Grace
+11.vcf : Amelia Grace
+12.vcf : Samantha Doveton
+13.vcf : Amelia Grace
+14.vcf : Amelia Grace
+15.vcf : Sue Doveton
+16.vcf : Amelia Grace
+17.vcf : Sue Doveton
+18.vcf : 0437263702
+19.vcf : Amelia Grace
+1a.vcf : Yen Yen Stender
+1b.vcf : Todd Purdy
+1c.vcf : Sue Doveton
+1d.vcf : Amelia Grace
+1e.vcf : Amelia Grace
+1f.vcf : Sue Doveton
+20.vcf : Sue Doveton
+21.vcf : Amelia Grace
+22.vcf : Daniel Lane
+23.vcf : Roy Doveton
+24.vcf : Todd Purdy
+25.vcf : Amelia Grace
+26.vcf : Sue Doveton
+27.vcf : Amelia Grace
+28.vcf : Amelia Grace
+29.vcf : Sue Doveton
+2a.vcf : James McCracken
+2b.vcf : Amelia Grace
+2c.vcf : Jithin
+2d.vcf : Amelia Grace
+2e.vcf : Amelia Grace
+2f.vcf : Sue Doveton
+30.vcf : Todd Purdy
+31.vcf : Amelia Grace
+32.vcf : Declan Smith
+33.vcf : Amelia Grace
+Transfer created: /org/bluez/obex/client/session28/transfer867 (file /tmp/obex-client34MEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer868 (file /tmp/obex-clientMPLEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer869 (file /tmp/obex-clientOAKEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer870 (file /tmp/obex-client6UJEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer871 (file /tmp/obex-clientPCGEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer872 (file /tmp/obex-clientA6CEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer873 (file /tmp/obex-clientRUCEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer874 (file /tmp/obex-clientF4DEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer875 (file /tmp/obex-clientUYDEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer876 (file /tmp/obex-client7QDEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer877 (file /tmp/obex-clientCKDEOY)
+Transfer created: /org/bluez/obex/client/session28/transfer878 (file /tmp/obex-client8T1GOY)
+Transfer created: /org/bluez/obex/client/session28/transfer879 (file /tmp/obex-clientLXYGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer880 (file /tmp/obex-clientE4WGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer881 (file /tmp/obex-client0XXGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer882 (file /tmp/obex-clientXRXGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer883 (file /tmp/obex-clientAKXGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer884 (file /tmp/obex-client6AXGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer885 (file /tmp/obex-clientNEUGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer886 (file /tmp/obex-clientCSQGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer887 (file /tmp/obex-clientW3QGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer888 (file /tmp/obex-clientBBOGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer889 (file /tmp/obex-clientPJLGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer890 (file /tmp/obex-client0SKGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer891 (file /tmp/obex-clientXJJGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer892 (file /tmp/obex-client7XHGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer893 (file /tmp/obex-clientZNDGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer894 (file /tmp/obex-clientPFCGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer895 (file /tmp/obex-clientSSCGOY)
+Transfer created: /org/bluez/obex/client/session28/transfer896 (file /tmp/obex-clientWS8FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer897 (file /tmp/obex-client6I7FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer898 (file /tmp/obex-clientIZ3FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer899 (file /tmp/obex-client1P2FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer900 (file /tmp/obex-clientH40FOY)
+Transfer created: /org/bluez/obex/client/session28/transfer901 (file /tmp/obex-clientGYZFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer902 (file /tmp/obex-clientT9ZFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer903 (file /tmp/obex-clientX8VFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer904 (file /tmp/obex-client8VUFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer905 (file /tmp/obex-clientIZRFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer906 (file /tmp/obex-clientR8RFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer907 (file /tmp/obex-clientK0QFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer908 (file /tmp/obex-clientF0OFOY)
+Transfer created: /org/bluez/obex/client/session28/transfer909 (file /tmp/obex-client70CIOY)
+Transfer created: /org/bluez/obex/client/session28/transfer910 (file /tmp/obex-client6OBIOY)
+Transfer created: /org/bluez/obex/client/session28/transfer911 (file /tmp/obex-clientTYBIOY)
+Transfer created: /org/bluez/obex/client/session28/transfer912 (file /tmp/obex-clientZE8HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer913 (file /tmp/obex-clientR05HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer914 (file /tmp/obex-clientI52HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer915 (file /tmp/obex-client860HOY)
+Transfer created: /org/bluez/obex/client/session28/transfer916 (file /tmp/obex-clientRFYHOY)
+Transfer created: /org/bluez/obex/client/session28/transfer917 (file /tmp/obex-client28WHOY)
+Transfer /org/bluez/obex/client/session28/transfer867 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160919T134404
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer868 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T181748
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer869 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T082545
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer870 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160915T145336
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer871 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160913T091515
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer872 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160912T161110
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer873 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T164743
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer874 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T113429
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer875 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160910T185806
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer876 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160909T145803
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer877 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Bland
+
+N:Bland;Emily
+
+TEL;TYPE=CELL:0433515222
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T161940
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer878 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T160627
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer879 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160906T215701
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer880 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160905T185116
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer881 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T211558
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer882 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T190355
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer883 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T125105
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer884 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160903T170622
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer885 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160902T184019
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer886 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160901T175757
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer887 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160831T164945
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer888 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T180831
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer889 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0437263702
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T160858
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer890 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T132736
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer891 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Yen Yen Stender
+
+N:Stender;Yen Yen
+
+TEL;TYPE=CELL:0434547129
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160829T184140
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer892 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:+61406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160828T075951
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer893 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160827T150537
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer894 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160826T212825
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer895 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160825T174535
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer896 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160823T093122
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer897 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T161548
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer898 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T094906
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer899 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Lane
+
+N:Lane;Daniel
+
+TEL;TYPE=CELL:0421359623
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T172758
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer900 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T145910
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer901 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T102341
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer902 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160820T190139
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer903 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160820T170741
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer904 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160819T150930
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer905 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160817T221157
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer906 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160815T221446
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer907 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160814T180822
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer908 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160814T164557
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer909 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jithin
+
+N:;Jithin
+
+TEL:0406955770
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160814T101501
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer910 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160813T135121
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer911 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160810T210307
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer912 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160810T170641
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer913 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160809T214949
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer914 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160809T183105
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer915 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Declan Smith
+
+N:Smith;Declan
+
+TEL;TYPE=CELL:0413951994
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160808T184940
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer916 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160807T150811
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer917 complete
+
+--- PullAll ---
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160920T152815
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160919T134404
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T181748
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T082545
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160915T145336
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160913T091515
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160912T161110
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T164743
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T113429
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160910T185806
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160909T145803
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Bland
+
+N:Bland;Emily
+
+TEL;TYPE=CELL:0433515222
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T161940
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T160627
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160906T215701
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160905T185116
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T211558
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T190355
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T125105
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160903T170622
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160902T184019
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160901T175757
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160831T164945
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T180831
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0437263702
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T160858
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T132736
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Yen Yen Stender
+
+N:Stender;Yen Yen
+
+TEL;TYPE=CELL:0434547129
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160829T184140
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:+61406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160828T075951
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160827T150537
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160826T212825
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160825T174535
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160823T093122
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T161548
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T094906
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Lane
+
+N:Lane;Daniel
+
+TEL;TYPE=CELL:0421359623
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T172758
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T145910
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T102341
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160820T190139
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160820T170741
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160819T150930
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160817T221157
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160815T221446
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160814T180822
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160814T164557
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jithin
+
+N:;Jithin
+
+TEL:0406955770
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160814T101501
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160813T135121
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160810T210307
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160810T170641
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160809T214949
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160809T183105
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Declan Smith
+
+N:Smith;Declan
+
+TEL;TYPE=CELL:0413951994
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160808T184940
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160807T150811
+
+END:VCARD
+
+
+--- Select Phonebook OCH ---
+
+
+--- GetSize ---
+
+Size = 59
+
+
+--- List vCard ---
+
+1.vcf : Home
+2.vcf : 131182
+3.vcf : 131182
+4.vcf : Amelia Grace
+5.vcf : Sue Doveton
+6.vcf : James McCracken
+7.vcf : Sue Doveton
+8.vcf : Sue Doveton
+9.vcf : James McCracken
+a.vcf : Sue Doveton
+b.vcf : Amelia Grace
+c.vcf : Sue Doveton
+d.vcf : James McCracken
+e.vcf : Amelia Grace
+f.vcf : Amelia Grace
+10.vcf : Amelia Grace
+11.vcf : Ian Doveton
+12.vcf : Amelia Grace
+13.vcf : Ian Doveton
+14.vcf : Amelia Grace
+15.vcf : James McCracken
+16.vcf : Samantha Doveton
+17.vcf : Sue Doveton
+18.vcf : Amelia Grace
+19.vcf : Todd Purdy
+1a.vcf : Tim Lochens
+1b.vcf : Todd Purdy
+1c.vcf : James McCracken
+1d.vcf : Sue Doveton
+1e.vcf : Nicholas Sandford
+1f.vcf : Amelia Grace
+20.vcf : 0884090000
+21.vcf : Amelia Grace
+22.vcf : Amelia Grace
+23.vcf : Todd Purdy
+24.vcf : 60627706182094
+25.vcf : James McCracken
+26.vcf : Sue Doveton
+27.vcf : Amelia Grace
+28.vcf : Amelia Grace
+29.vcf : Roy Doveton
+2a.vcf : Todd Purdy
+2b.vcf : Amelia Grace
+2c.vcf : Amelia Grace
+2d.vcf : Amelia Grace
+2e.vcf : Amelia Grace
+2f.vcf : Sue Doveton
+30.vcf : Amelia Grace
+31.vcf : Amelia Grace
+32.vcf : James McCracken
+33.vcf : Sue Doveton
+34.vcf : Amelia Grace
+35.vcf : Jithin
+36.vcf : Sue Doveton
+37.vcf : Sue Doveton
+38.vcf : Amelia Grace
+39.vcf : Todd Purdy
+3a.vcf : Sue Doveton
+3b.vcf : Amelia Grace
+Transfer created: /org/bluez/obex/client/session28/transfer920 (file /tmp/obex-client6CV9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer921 (file /tmp/obex-clientLZT9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer922 (file /tmp/obex-clientA6Q9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer923 (file /tmp/obex-clientY9N9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer924 (file /tmp/obex-client7NO9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer925 (file /tmp/obex-client6GN9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer926 (file /tmp/obex-client8UL9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer927 (file /tmp/obex-clientIGH9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer928 (file /tmp/obex-clientI7F9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer929 (file /tmp/obex-clientNPC9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer930 (file /tmp/obex-client1CB9NY)
+Transfer created: /org/bluez/obex/client/session28/transfer931 (file /tmp/obex-clientQU98NY)
+Transfer created: /org/bluez/obex/client/session28/transfer932 (file /tmp/obex-clientQM88NY)
+Transfer created: /org/bluez/obex/client/session28/transfer933 (file /tmp/obex-clientQX88NY)
+Transfer created: /org/bluez/obex/client/session28/transfer934 (file /tmp/obex-client9758NY)
+Transfer created: /org/bluez/obex/client/session28/transfer935 (file /tmp/obex-clientRA38NY)
+Transfer created: /org/bluez/obex/client/session28/transfer936 (file /tmp/obex-client5128NY)
+Transfer created: /org/bluez/obex/client/session28/transfer937 (file /tmp/obex-clientG0Y8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer938 (file /tmp/obex-clientSKX8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer939 (file /tmp/obex-client4MV8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer940 (file /tmp/obex-client91U8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer941 (file /tmp/obex-clientFBT8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer942 (file /tmp/obex-clientBDR8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer943 (file /tmp/obex-client4MO8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer944 (file /tmp/obex-client66FBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer945 (file /tmp/obex-client7BEBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer946 (file /tmp/obex-clientBOABOY)
+Transfer created: /org/bluez/obex/client/session28/transfer947 (file /tmp/obex-clientK78AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer948 (file /tmp/obex-clientHT4AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer949 (file /tmp/obex-client2J3AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer950 (file /tmp/obex-client9T1AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer951 (file /tmp/obex-clientBO0AOY)
+Transfer created: /org/bluez/obex/client/session28/transfer952 (file /tmp/obex-clientZSXAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer953 (file /tmp/obex-client1LWAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer954 (file /tmp/obex-client6XWAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer955 (file /tmp/obex-client5NVAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer956 (file /tmp/obex-clientL4TAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer957 (file /tmp/obex-clientDFPAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer958 (file /tmp/obex-clientMYNAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer959 (file /tmp/obex-clientWCMAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer960 (file /tmp/obex-client7BJAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer961 (file /tmp/obex-clientP3HAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer962 (file /tmp/obex-client5WGAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer963 (file /tmp/obex-client18GAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer964 (file /tmp/obex-clientC0FAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer965 (file /tmp/obex-clientSPCAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer966 (file /tmp/obex-clientRW99NY)
+Transfer created: /org/bluez/obex/client/session28/transfer967 (file /tmp/obex-clientWA99NY)
+Transfer created: /org/bluez/obex/client/session28/transfer968 (file /tmp/obex-client7649NY)
+Transfer created: /org/bluez/obex/client/session28/transfer969 (file /tmp/obex-client5V39NY)
+Transfer /org/bluez/obex/client/session28/transfer920 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Home
+
+N:;Home
+
+TEL:82483890
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T152225
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer970 (file /tmp/obex-clientPXTCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer971 (file /tmp/obex-clientHKSCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer972 (file /tmp/obex-clientVNMCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer973 (file /tmp/obex-clientMJICOY)
+Transfer created: /org/bluez/obex/client/session28/transfer974 (file /tmp/obex-clientSDHCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer975 (file /tmp/obex-client5EGCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer976 (file /tmp/obex-clientRQDCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer977 (file /tmp/obex-clientJ5CCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer978 (file /tmp/obex-clientXIBCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer979 (file /tmp/obex-clientC27BOY)
+Transfer /org/bluez/obex/client/session28/transfer921 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T113908
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer922 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160919T140106
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer923 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160918T181133
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer924 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T215600
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer925 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T202005
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer926 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T191659
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer927 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T185031
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer928 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T120622
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer929 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162837
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer930 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162821
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer931 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162756
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer932 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160915T214859
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer933 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160914T204412
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer934 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160912T183748
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer935 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160912T155311
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer936 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160911T212825
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer937 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160911T163646
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer938 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160909T215639
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer939 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160906T222101
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer940 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124928
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer941 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:+61413 966 686
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124837
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer942 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160903T212727
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer943 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160902T215657
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer944 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T182732
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer945 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T094204
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer946 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:+61406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T081219
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer947 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181531
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer948 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181503
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer949 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;DIALED:20160826T173412
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer950 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T211618
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer951 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0884090000
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T180822
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer952 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T173954
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer953 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160824T170326
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer954 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T204113
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer955 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:60627706182094
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T092230
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer956 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182910
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer957 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182813
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer958 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T180418
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer959 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T094430
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer960 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T094411
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer961 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160821T103739
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer962 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T213020
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer963 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T131350
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer964 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160819T150610
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer965 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160817T221037
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer966 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160817T092711
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer967 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160816T201119
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer968 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T213447
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer969 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T180808
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer970 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T174752
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer971 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T164824
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer972 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jithin
+
+N:;Jithin
+
+TEL:0406955770
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T101359
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer973 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160812T125906
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer974 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160810T170717
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer975 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160809T183026
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer976 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160809T182931
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer977 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160808T165936
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer978 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160807T163510
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer979 complete
+
+--- PullAll ---
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Home
+
+N:;Home
+
+TEL:82483890
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T152225
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T113908
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160919T140106
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160918T181133
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T215600
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T202005
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T191659
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T185031
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T120622
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162837
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162821
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162756
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160915T214859
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160914T204412
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160912T183748
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160912T155311
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160911T212825
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160911T163646
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160909T215639
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160906T222101
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124928
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:+61413 966 686
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124837
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160903T212727
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160902T215657
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T182732
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T094204
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:+61406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T081219
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181531
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181503
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;DIALED:20160826T173412
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T211618
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0884090000
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T180822
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T173954
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160824T170326
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T204113
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:60627706182094
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T092230
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182910
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182813
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T180418
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T094430
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T094411
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160821T103739
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T213020
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T131350
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160819T150610
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160817T221037
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160817T092711
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160816T201119
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T213447
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T180808
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T174752
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T164824
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Jithin
+
+N:;Jithin
+
+TEL:0406955770
+
+X-IRMC-CALL-DATETIME;DIALED:20160814T101359
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160812T125906
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160810T170717
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160809T183026
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160809T182931
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160808T165936
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160807T163510
+
+END:VCARD
+
+
+--- Select Phonebook MCH ---
+
+
+--- GetSize ---
+
+Size = 32
+
+
+--- List vCard ---
+
+5.vcf : Roy Doveton
+6.vcf : Amelia Grace
+7.vcf : Genet
+8.vcf : Sue Doveton
+9.vcf : James McCracken
+a.vcf : Nicholas Sandford
+b.vcf : Amelia Grace
+c.vcf : John Zoumis
+d.vcf : John Zoumis
+e.vcf : Amelia Grace
+f.vcf : Sue Doveton
+10.vcf : Tim Lochens
+11.vcf : Amelia Grace
+12.vcf : Sue Doveton
+13.vcf : Todd Purdy
+14.vcf : Todd Purdy
+15.vcf : Sam Farley
+16.vcf : Nicholas Sandford
+17.vcf : Amelia Grace
+18.vcf : Todd Purdy
+19.vcf : Amelia Grace
+1a.vcf : Nicholas Sandford
+1b.vcf : Amelia Grace
+1c.vcf : Sue Doveton
+1d.vcf : Todd Purdy
+1e.vcf : Sue Doveton
+1f.vcf : Todd Purdy
+20.vcf : Todd Purdy
+Transfer created: /org/bluez/obex/client/session28/transfer982 (file /tmp/obex-clientG8J6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer983 (file /tmp/obex-clientE2G6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer984 (file /tmp/obex-client67G6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer985 (file /tmp/obex-clientQZD6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer986 (file /tmp/obex-clientO7D6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer987 (file /tmp/obex-clientGSC6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer988 (file /tmp/obex-clientNBB6NY)
+Transfer created: /org/bluez/obex/client/session28/transfer989 (file /tmp/obex-clientRN95NY)
+Transfer created: /org/bluez/obex/client/session28/transfer990 (file /tmp/obex-clientQE85NY)
+Transfer created: /org/bluez/obex/client/session28/transfer991 (file /tmp/obex-clientJL55NY)
+Transfer created: /org/bluez/obex/client/session28/transfer992 (file /tmp/obex-client6E45NY)
+Transfer created: /org/bluez/obex/client/session28/transfer993 (file /tmp/obex-clientVR45NY)
+Transfer created: /org/bluez/obex/client/session28/transfer994 (file /tmp/obex-client7F35NY)
+Transfer created: /org/bluez/obex/client/session28/transfer995 (file /tmp/obex-clientLU15NY)
+Transfer created: /org/bluez/obex/client/session28/transfer996 (file /tmp/obex-clientE0Y5NY)
+Transfer created: /org/bluez/obex/client/session28/transfer997 (file /tmp/obex-clientESX5NY)
+Transfer created: /org/bluez/obex/client/session28/transfer998 (file /tmp/obex-clientLLW5NY)
+Transfer created: /org/bluez/obex/client/session28/transfer999 (file /tmp/obex-client6DK8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1000 (file /tmp/obex-clientH6I8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1001 (file /tmp/obex-clientCBH8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1002 (file /tmp/obex-clientVHE8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1003 (file /tmp/obex-clientN2C8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1004 (file /tmp/obex-clientZAB8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1005 (file /tmp/obex-client8KB8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1006 (file /tmp/obex-clientLDA8NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1007 (file /tmp/obex-clientQR87NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1008 (file /tmp/obex-clientTJ77NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1009 (file /tmp/obex-clientFQ47NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1010 (file /tmp/obex-clientGZ27NY)
+Transfer /org/bluez/obex/client/session28/transfer982 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T202325
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer983 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T133214
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer984 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Genet
+
+N:;Genet
+
+TEL;TYPE=CELL:0403558244
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T074417
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer985 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T185059
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer986 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T120502
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer987 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160916T165657
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer988 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160914T203722
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer989 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160913T105806
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer990 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T182518
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer991 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T085942
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer992 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160909T213944
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer993 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;MISSED:20160907T145918
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer994 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160904T211543
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer995 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160831T121802
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer996 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160830T132044
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer997 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160828T161927
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer998 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sam Farley
+
+N:Farley;Sam
+
+TEL;TYPE=CELL:0481512331
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T190743
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer999 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T173154
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1000 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160824T164703
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1001 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160821T103320
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1002 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160820T131310
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1003 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160819T140138
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1004 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160817T100152
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1005 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160817T091034
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1006 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160812T142224
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1007 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160812T140949
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1008 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160812T110951
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1009 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160809T181913
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1010 complete
+
+--- PullAll ---
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T154613
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T152312
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T120741
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T120624
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T202325
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T133214
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Genet
+
+N:;Genet
+
+TEL;TYPE=CELL:0403558244
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T074417
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T185059
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T120502
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160916T165657
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160914T203722
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160913T105806
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T182518
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T085942
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160909T213944
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;MISSED:20160907T145918
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160904T211543
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160831T121802
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160830T132044
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160828T161927
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sam Farley
+
+N:Farley;Sam
+
+TEL;TYPE=CELL:0481512331
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T190743
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T173154
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160824T164703
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160821T103320
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160820T131310
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160819T140138
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160817T100152
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160817T091034
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160812T142224
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160812T140949
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160812T110951
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160809T181913
+
+END:VCARD
+
+
+--- Select Phonebook CCH ---
+
+
+--- GetSize ---
+
+Size = 100
+
+
+--- List vCard ---
+
+4.vcf : Home
+7.vcf : 131182
+8.vcf : 131182
+9.vcf : Sue Doveton
+a.vcf : Roy Doveton
+b.vcf : Amelia Grace
+c.vcf : Amelia Grace
+d.vcf : Tim Lochens
+e.vcf : Genet
+f.vcf : Sue Doveton
+10.vcf : James McCracken
+11.vcf : Sue Doveton
+12.vcf : Sue Doveton
+13.vcf : Sue Doveton
+14.vcf : James McCracken
+15.vcf : James McCracken
+16.vcf : Nicholas Sandford
+17.vcf : Sue Doveton
+18.vcf : Amelia Grace
+19.vcf : Sue Doveton
+1a.vcf : James McCracken
+1b.vcf : Samantha Doveton
+1c.vcf : Amelia Grace
+1d.vcf : Amelia Grace
+1e.vcf : John Zoumis
+1f.vcf : John Zoumis
+20.vcf : Amelia Grace
+21.vcf : John Zoumis
+22.vcf : Amelia Grace
+23.vcf : Amelia Grace
+24.vcf : Ian Doveton
+25.vcf : Amelia Grace
+26.vcf : Sue Doveton
+27.vcf : Sue Doveton
+28.vcf : Ian Doveton
+29.vcf : Sue Doveton
+2a.vcf : Todd Purdy
+2b.vcf : Emily Bland
+2c.vcf : Sue Doveton
+2d.vcf : Tim Lochens
+2e.vcf : Amelia Grace
+2f.vcf : Amelia Grace
+30.vcf : Amelia Grace
+31.vcf : Amelia Grace
+32.vcf : Amelia Grace
+33.vcf : Samantha Doveton
+34.vcf : James McCracken
+35.vcf : Samantha Doveton
+36.vcf : Sue Doveton
+37.vcf : Amelia Grace
+38.vcf : Amelia Grace
+39.vcf : Sue Doveton
+3a.vcf : Amelia Grace
+3b.vcf : Sue Doveton
+3c.vcf : Sue Doveton
+3d.vcf : 0437263702
+3e.vcf : Amelia Grace
+3f.vcf : Todd Purdy
+40.vcf : Yen Yen Stender
+41.vcf : Todd Purdy
+42.vcf : Todd Purdy
+43.vcf : Tim Lochens
+44.vcf : Todd Purdy
+45.vcf : James McCracken
+46.vcf : Sue Doveton
+47.vcf : Amelia Grace
+48.vcf : Sam Farley
+49.vcf : Nicholas Sandford
+4a.vcf : Nicholas Sandford
+4b.vcf : Amelia Grace
+4c.vcf : 0884090000
+4d.vcf : Amelia Grace
+4e.vcf : Amelia Grace
+4f.vcf : Amelia Grace
+50.vcf : Todd Purdy
+51.vcf : Sue Doveton
+52.vcf : 60627706182094
+53.vcf : James McCracken
+54.vcf : Sue Doveton
+55.vcf : Amelia Grace
+56.vcf : Sue Doveton
+57.vcf : Amelia Grace
+58.vcf : Roy Doveton
+59.vcf : Daniel Lane
+5a.vcf : Roy Doveton
+5b.vcf : Todd Purdy
+5c.vcf : Todd Purdy
+5d.vcf : Todd Purdy
+5e.vcf : Amelia Grace
+5f.vcf : Sue Doveton
+60.vcf : Amelia Grace
+61.vcf : Amelia Grace
+62.vcf : Amelia Grace
+63.vcf : Nicholas Sandford
+64.vcf : Amelia Grace
+Transfer created: /org/bluez/obex/client/session28/transfer1013 (file /tmp/obex-clientB1ZAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1014 (file /tmp/obex-clientQNUAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1015 (file /tmp/obex-clientQYSAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1016 (file /tmp/obex-clientDLRAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1017 (file /tmp/obex-clientJ8PAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1018 (file /tmp/obex-clientJHQAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1019 (file /tmp/obex-clientQ4OAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1020 (file /tmp/obex-client2QNAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1021 (file /tmp/obex-clientLAMAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1022 (file /tmp/obex-clientFGJAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1023 (file /tmp/obex-clientG9HAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1024 (file /tmp/obex-clientYQIAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1025 (file /tmp/obex-clientGGHAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1026 (file /tmp/obex-clientDOEAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1027 (file /tmp/obex-clientM7CAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1028 (file /tmp/obex-clientI1BAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1029 (file /tmp/obex-clientYGCAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1030 (file /tmp/obex-clientYABAOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1031 (file /tmp/obex-clientEK89NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1032 (file /tmp/obex-clientFD79NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1033 (file /tmp/obex-clientSX59NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1034 (file /tmp/obex-clientQD69NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1035 (file /tmp/obex-clientYK39NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1036 (file /tmp/obex-clientIG29NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1037 (file /tmp/obex-clientGU29NY)
+Transfer created: /org/bluez/obex/client/session28/transfer1038 (file /tmp/obex-client0UUCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1039 (file /tmp/obex-clientSZRCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1040 (file /tmp/obex-clientFLQCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1041 (file /tmp/obex-clientXFPCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1042 (file /tmp/obex-client3UPCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1043 (file /tmp/obex-clientKQOCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1044 (file /tmp/obex-clientRYLCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1045 (file /tmp/obex-clientPRKCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1046 (file /tmp/obex-clientFAJCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1047 (file /tmp/obex-client0NJCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1048 (file /tmp/obex-clientLXGCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1049 (file /tmp/obex-clientURFCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1050 (file /tmp/obex-clientU6FCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1051 (file /tmp/obex-client0TECOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1052 (file /tmp/obex-clientPFDCOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1053 (file /tmp/obex-clientVPACOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1054 (file /tmp/obex-clientJJ9BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1055 (file /tmp/obex-clientJZ9BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1056 (file /tmp/obex-clientSS8BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1057 (file /tmp/obex-clientY15BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1058 (file /tmp/obex-clientPL4BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1059 (file /tmp/obex-client8E3BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1060 (file /tmp/obex-clientWS3BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1061 (file /tmp/obex-client9M2BOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1062 (file /tmp/obex-clientZXZBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1063 (file /tmp/obex-clientCRYBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1064 (file /tmp/obex-clientCTYBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1065 (file /tmp/obex-clientUDXBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1066 (file /tmp/obex-clientS8VBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1067 (file /tmp/obex-clientDHTBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1068 (file /tmp/obex-clientTCSBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1069 (file /tmp/obex-clientQQSBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1070 (file /tmp/obex-clientRIRBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1071 (file /tmp/obex-clientDIOBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1072 (file /tmp/obex-clientWCNBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1073 (file /tmp/obex-clientTQNBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1074 (file /tmp/obex-clientZKMBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1075 (file /tmp/obex-client3SJBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1076 (file /tmp/obex-clientBEIBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1077 (file /tmp/obex-client3VGBOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1078 (file /tmp/obex-clientET8DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1079 (file /tmp/obex-clientE68DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1080 (file /tmp/obex-clientN07DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1081 (file /tmp/obex-clientE94DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1082 (file /tmp/obex-clientO03DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1083 (file /tmp/obex-clientHK2DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1084 (file /tmp/obex-client3Y2DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1085 (file /tmp/obex-clientGS1DOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1086 (file /tmp/obex-client02YDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1087 (file /tmp/obex-client1GZDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1088 (file /tmp/obex-clientBCYDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1089 (file /tmp/obex-clientA2WDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1090 (file /tmp/obex-clientS4TDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1091 (file /tmp/obex-clientUXSDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1092 (file /tmp/obex-clientDDTDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1093 (file /tmp/obex-client96RDOY)
+Transfer /org/bluez/obex/client/session28/transfer1013 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Home
+
+N:;Home
+
+TEL:82483890
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T152225
+
+END:VCARD
+
+Transfer created: /org/bluez/obex/client/session28/transfer1094 (file /tmp/obex-client34PDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1095 (file /tmp/obex-client7IODOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1096 (file /tmp/obex-client0CNDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1097 (file /tmp/obex-clientRIKDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1098 (file /tmp/obex-clientTCJDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1099 (file /tmp/obex-clientKRJDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1100 (file /tmp/obex-clientDJIDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1101 (file /tmp/obex-client02GDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1102 (file /tmp/obex-clientCCEDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1103 (file /tmp/obex-clientC4CDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1104 (file /tmp/obex-clientUKDDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1105 (file /tmp/obex-clientJCCDOY)
+Transfer created: /org/bluez/obex/client/session28/transfer1106 (file /tmp/obex-clientJN9COY)
+Transfer created: /org/bluez/obex/client/session28/transfer1107 (file /tmp/obex-clientWB8COY)
+Transfer created: /org/bluez/obex/client/session28/transfer1108 (file /tmp/obex-clientU06COY)
+Transfer /org/bluez/obex/client/session28/transfer1014 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T113908
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1015 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160919T140106
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1016 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160919T134404
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1017 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T202325
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1018 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T181748
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1019 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T133214
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1020 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T082545
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1021 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Genet
+
+N:;Genet
+
+TEL;TYPE=CELL:0403558244
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T074417
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1022 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T215600
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1023 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T202005
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1024 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T191659
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1025 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T185059
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1026 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T185031
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1027 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T120622
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1028 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T120502
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1029 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160916T165657
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1030 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162837
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1031 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162821
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1032 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162756
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1033 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160915T214859
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1034 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160915T145336
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1035 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160914T204412
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1036 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160914T203722
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1037 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160913T105806
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1038 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160913T091515
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1039 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160912T183748
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1040 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T182518
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1041 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160912T161110
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1042 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T085942
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1043 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160911T212825
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1044 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T164743
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1045 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T113429
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1046 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160910T185806
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1047 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160909T215639
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1048 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160909T213944
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1049 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160909T145803
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1050 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Bland
+
+N:Bland;Emily
+
+TEL;TYPE=CELL:0433515222
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T161940
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1051 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T160627
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1052 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;MISSED:20160907T145918
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1053 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160906T222101
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1054 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160905T185116
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1055 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T211558
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1056 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160904T211543
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1057 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T190355
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1058 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T125105
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1059 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124928
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1060 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:+61413 966 686
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124837
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1061 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160903T212727
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1062 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160903T170622
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1063 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160902T215657
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1064 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160901T175757
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1065 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160831T164945
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1066 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160831T121802
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1067 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T180831
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1068 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0437263702
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T160858
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1069 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T132736
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1070 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160830T132044
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1071 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Yen Yen Stender
+
+N:Stender;Yen Yen
+
+TEL;TYPE=CELL:0434547129
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160829T184140
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1072 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T182732
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1073 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160828T161927
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1074 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T094204
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1075 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:+61406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T081219
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1076 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181531
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1077 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181503
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1078 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160826T212825
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1079 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sam Farley
+
+N:Farley;Sam
+
+TEL;TYPE=CELL:0481512331
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T190743
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1080 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;DIALED:20160826T173412
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1081 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T173154
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1082 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T211618
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1083 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0884090000
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T180822
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1084 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160825T174535
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1085 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160824T170326
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1086 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160824T164703
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1087 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T204113
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1088 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160823T093122
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1089 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:60627706182094
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T092230
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1090 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182910
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1091 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182813
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1092 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T180418
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1093 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T161548
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1094 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T094906
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1095 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T094411
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1096 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Lane
+
+N:Lane;Daniel
+
+TEL;TYPE=CELL:0421359623
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T172758
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1097 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T145910
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1098 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160821T103739
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1099 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160821T103320
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1100 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T102341
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1101 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T213020
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1102 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160820T170741
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1103 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T131350
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1104 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160820T131310
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1105 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160819T150930
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1106 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160819T140138
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1107 complete
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160817T221157
+
+END:VCARD
+
+Transfer /org/bluez/obex/client/session28/transfer1108 complete
+
+--- PullAll ---
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T154613
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160920T152815
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T152312
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Home
+
+N:;Home
+
+TEL:82483890
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T152225
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T120741
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:
+
+X-IRMC-CALL-DATETIME;MISSED:20160920T120624
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160920T113908
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:131182
+
+X-IRMC-CALL-DATETIME;DIALED:20160919T140106
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160919T134404
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T202325
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T181748
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T133214
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160918T082545
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Genet
+
+N:;Genet
+
+TEL;TYPE=CELL:0403558244
+
+X-IRMC-CALL-DATETIME;MISSED:20160918T074417
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T215600
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T202005
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T191659
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T185059
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T185031
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160917T120622
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:0401187029
+
+X-IRMC-CALL-DATETIME;MISSED:20160917T120502
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160916T165657
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162837
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162821
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160916T162756
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160915T214859
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160915T145336
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160914T204412
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160914T203722
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160913T105806
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160913T091515
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160912T183748
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:John Zoumis
+
+N:Zoumis;John
+
+TEL;TYPE=HOME:0403655853
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T182518
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160912T161110
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160912T085942
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160911T212825
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T164743
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160911T113429
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160910T185806
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Ian Doveton
+
+N:Doveton;Ian
+
+TEL;TYPE=CELL:+61420377844
+
+X-IRMC-CALL-DATETIME;DIALED:20160909T215639
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160909T213944
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160909T145803
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Emily Bland
+
+N:Bland;Emily
+
+TEL;TYPE=CELL:0433515222
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T161940
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160908T160627
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;MISSED:20160907T145918
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160906T222101
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160905T185116
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T211558
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160904T211543
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T190355
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:0413966686
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160904T125105
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124928
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Samantha Doveton
+
+N:Doveton;Samantha
+
+TEL;TYPE=CELL:+61413 966 686
+
+X-IRMC-CALL-DATETIME;DIALED:20160904T124837
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160903T212727
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160903T170622
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160902T215657
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160901T175757
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160831T164945
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;MISSED:20160831T121802
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T180831
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0437263702
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T160858
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160830T132736
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160830T132044
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Yen Yen Stender
+
+N:Stender;Yen Yen
+
+TEL;TYPE=CELL:0434547129
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160829T184140
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T182732
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160828T161927
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Tim Lochens
+
+N:Lochens;Tim
+
+TEL;TYPE=CELL:0416163369
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T094204
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:+61406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160828T081219
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181531
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160827T181503
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160826T212825
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sam Farley
+
+N:Farley;Sam
+
+TEL;TYPE=CELL:0481512331
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T190743
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;DIALED:20160826T173412
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160826T173154
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T211618
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:0884090000
+
+X-IRMC-CALL-DATETIME;DIALED:20160825T180822
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160825T174535
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160824T170326
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160824T164703
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T204113
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160823T093122
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:
+
+N:
+
+TEL:60627706182094
+
+X-IRMC-CALL-DATETIME;DIALED:20160823T092230
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:James McCracken
+
+N:McCracken;James
+
+TEL;TYPE=CELL:+61401187029
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182910
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:+61405169218
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T182813
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:+61433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T180418
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T161548
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160822T094906
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;DIALED:20160822T094411
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Daniel Lane
+
+N:Lane;Daniel
+
+TEL;TYPE=CELL:0421359623
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T172758
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Roy Doveton
+
+N:Doveton;Roy
+
+TEL;TYPE=CELL:0438684892
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T145910
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;DIALED:20160821T103739
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;MISSED:20160821T103320
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Todd Purdy
+
+N:Purdy;Todd
+
+TEL;TYPE=CELL:0406588851
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160821T102341
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T213020
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Sue Doveton
+
+N:Doveton;Sue
+
+TEL;TYPE=CELL:0405169218
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160820T170741
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;DIALED:20160820T131350
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;MISSED:20160820T131310
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160819T150930
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Nicholas Sandford
+
+N:Sandford;Nicholas
+
+TEL;TYPE=CELL:0401073525
+
+X-IRMC-CALL-DATETIME;MISSED:20160819T140138
+
+END:VCARD
+
+BEGIN:VCARD
+
+VERSION:3.0
+
+FN:Amelia Grace
+
+N:Grace;Amelia
+
+TEL;TYPE=CELL:0433185809
+
+X-IRMC-CALL-DATETIME;RECEIVED:20160817T221157
+
+END:VCARD
+
+
+--- Select Phonebook SPD ---
+

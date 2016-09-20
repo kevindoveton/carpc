@@ -14,7 +14,7 @@
 #include "dbus/OfonoManager.h"
 
 
-#define MODEM_PATH "/hfp/org/bluez/hci0/dev_CC_20_E8_CA_93_FF"
+#define MODEM_PATH "/hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA"
 
 class Ofono : public QObject
 {
@@ -39,7 +39,8 @@ class Ofono : public QObject
 //		void incomingCall(QString id);
 
 	public slots:
-		void CallAdded(QDBusObjectPath,QVariantMap);
+		void CallAdded(QDBusObjectPath &object, QVariantMap &values);
+		void CallRemoved(QDBusObjectPath &object);
 
 };
 

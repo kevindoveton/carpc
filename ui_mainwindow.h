@@ -68,9 +68,9 @@ class Ui_MainWindow
 		QLabel *labelPhone;
 		QFrame *linePhone;
 
-		QPushButton *buttonMessages;
-		QLabel *labelMessages;
-		QFrame *lineMessages;
+		QPushButton *buttonAirplay;
+		QLabel *labelAirplay;
+		QFrame *lineAirplay;
 
 		QPushButton *buttonHome;
 
@@ -118,7 +118,6 @@ class Ui_MainWindow
 
 
 		// Not used
-		QFrame *frameBottomBar;
 
 		QPushButton *buttonMusicPlayPause;
 		QPushButton *buttonMusicNext;
@@ -398,28 +397,28 @@ class Ui_MainWindow
 
 
 
-			// buttonMessages
-			QPixmap messagesImage(":/resources/icons/messages.png");
-			QIcon messagesIcon(messagesImage);
-			buttonMessages = new QPushButton(frameHome);
-			buttonMessages->setObjectName(QStringLiteral("buttonMessages"));
-			buttonMessages->setGeometry(QRect(0.715*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
-			buttonMessages->setFlat(true);
-			buttonMessages->raise();
-			buttonMessages->setIcon(messagesIcon);
-			buttonMessages->setIconSize(buttonMessages->size());
+			// buttonAirplay
+			QPixmap airplayImage(":/resources/icons/messages.png");
+			QIcon airplayIcon(airplayImage);
+			buttonAirplay = new QPushButton(frameHome);
+			buttonAirplay->setObjectName(QStringLiteral("buttonAirplay"));
+			buttonAirplay->setGeometry(QRect(0.715*screenWidth, 0.541*screenHeight, 0.121*screenWidth, 0.216*screenHeight));
+			buttonAirplay->setFlat(true);
+			buttonAirplay->raise();
+			buttonAirplay->setIcon(airplayIcon);
+			buttonAirplay->setIconSize(buttonAirplay->size());
 
-			lineMessages = new QFrame(frameHome);
-			lineMessages->setObjectName(QStringLiteral("lineMessages"));
-			lineMessages->setGeometry(QRect(0.715*screenWidth, 0.774*screenHeight, 0.121*screenWidth, lineHeight));
-			lineMessages->setStyleSheet(lineStyles);
+			lineAirplay = new QFrame(frameHome);
+			lineAirplay->setObjectName(QStringLiteral("lineAirplay"));
+			lineAirplay->setGeometry(QRect(0.715*screenWidth, 0.774*screenHeight, 0.121*screenWidth, lineHeight));
+			lineAirplay->setStyleSheet(lineStyles);
 
-			labelMessages = new QLabel(frameHome);
-			labelMessages->setObjectName(QStringLiteral("labelMessages"));
-			labelMessages->setGeometry(QRect(0.715*screenWidth, 0.794*screenHeight, 0.121*screenWidth, 0.028*screenHeight));
-			labelMessages->setText("Messages");
-			labelMessages->setAlignment(Qt::AlignCenter);
-			labelMessages->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
+			labelAirplay = new QLabel(frameHome);
+			labelAirplay->setObjectName(QStringLiteral("labelAirplay"));
+			labelAirplay->setGeometry(QRect(0.715*screenWidth, 0.794*screenHeight, 0.121*screenWidth, 0.028*screenHeight));
+			labelAirplay->setText("Airplay");
+			labelAirplay->setAlignment(Qt::AlignCenter);
+			labelAirplay->setStyleSheet(QString::fromStdString(homePageLabelsStyle));
 
 
 
@@ -528,7 +527,7 @@ class Ui_MainWindow
 			framePhone = new QFrame(centralWidget);
 			framePhone->setObjectName(QStringLiteral("framePhone"));
 			framePhone->setEnabled(true);
-			framePhone->setGeometry(QRect(-1, 110, 1281, 481));
+			framePhone->setGeometry(QRect(0, 0, .9*screenWidth, screenHeight));
 			framePhone->setAutoFillBackground(false);
 			framePhone->setFrameShape(QFrame::StyledPanel);
 			framePhone->setFrameShadow(QFrame::Plain);
@@ -541,6 +540,7 @@ class Ui_MainWindow
 			label_4 = new QLabel(framePhone);
 			label_4->setObjectName(QStringLiteral("label_4"));
 			label_4->setGeometry(QRect(20, 30, 67, 21));
+			label_4->setText("phone");
 
 
 
@@ -615,7 +615,6 @@ class Ui_MainWindow
 			labelCurrentAlbum->setStyleSheet(QString::fromStdString(labelNowPlayingAlbumStyle));
 
 			// imageCurrentAlbum
-//			labelCurrentAlbum->
 			imageCurrentAlbum = new QLabel(frameNowPlaying);
 			imageCurrentAlbum->setObjectName(QStringLiteral("imageCurrentAlbum"));
 			imageCurrentAlbum->setGeometry(QRect(0.06543*screenWidth, 0.230*screenHeight, 0.233*screenWidth, 0.4148*screenHeight));
@@ -671,7 +670,7 @@ class Ui_MainWindow
 
 			// buttonNowPlayingNext
 			QPixmap bbNowPlayingNextImage(":/resources/icons/nowPlayingNext.png");
-			QIcon bbNowPlayingNextIcon(bbNowPlayingPreviousImage);
+			QIcon bbNowPlayingNextIcon(bbNowPlayingNextImage);
 			buttonNowPlayingNext = new QPushButton(frameNowPlaying);
 			buttonNowPlayingNext->setObjectName(QStringLiteral("buttonNowPlayingNext"));
 			buttonNowPlayingNext->setGeometry(QRect(0.7796*screenWidth, 0.875*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
@@ -747,18 +746,6 @@ class Ui_MainWindow
 
 
 
-			// -------------------------------------------------------------------------------------------------------------
-			// Bottom tab bar
-			// -------------------------------------------------------------------------------------------------------------
-
-
-			// frameBottomBar
-			frameBottomBar = new QFrame(centralWidget);
-			frameBottomBar->setObjectName(QStringLiteral("frameBottomBar"));
-			frameBottomBar->setGeometry(QRect(0, 610, 1281, 111));
-			frameBottomBar->setStyleSheet(QStringLiteral(""));
-			frameBottomBar->setFrameShape(QFrame::StyledPanel);
-			frameBottomBar->setFrameShadow(QFrame::Plain);
 
 
 

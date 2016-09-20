@@ -131,13 +131,19 @@ void MainWindow :: on_buttonPhone_released()
 {
 	// frames
 	selectedFrame(2);
-	ofono.dialNumber("0405169218");
 }
 
 void MainWindow :: on_buttonMaps_released()
 {
 	selectedFrame(3); // frames
 }
+
+void MainWindow :: on_buttonAirplay_released()
+{
+	selectedFrame(4);
+	musicPlayer.pause();
+}
+
 
 void MainWindow :: on_buttonVolumeDown_released()
 {
@@ -415,6 +421,15 @@ int MainWindow :: selectedFrame(int selected)
 			ui->framePhone->hide();
 			ui->frameMaps->show();
 			ui->frameNowPlaying->hide();
+			break;
+
+		case 4:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
+
 			break;
 
 		default:

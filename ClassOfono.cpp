@@ -2,19 +2,25 @@
 
 Ofono :: Ofono(QObject *parent)
 {
-
+	_modemPath = MODEM_PATH;
 }
 
 void Ofono :: setPowerOn()
 {
-	OrgOfonoModemInterface *ofono = new OrgOfonoModemInterface("org.ofono", MODEM_PATH, QDBusConnection::systemBus());
+	OrgOfonoModemInterface *ofono = new OrgOfonoModemInterface("org.ofono", _modemPath, QDBusConnection::systemBus());
 	ofono->SetProperty("Powered", QDBusVariant(bool(true)));
 }
 
 void Ofono :: setPowerOff()
 {
-	OrgOfonoModemInterface *ofono = new OrgOfonoModemInterface("org.ofono", MODEM_PATH, QDBusConnection::systemBus());
+	OrgOfonoModemInterface *ofono = new OrgOfonoModemInterface("org.ofono", _modemPath, QDBusConnection::systemBus());
 	ofono->SetProperty("Powered", QDBusVariant(bool(false)));
+}
+
+void Ofono :: listModems()
+{
+//	OrgOfonoManagerInterface *ofono = new OrgOfonoManagerInterface("org.ofono", "/", QDBusConnection::systemBus());
+//	qDebug() << ofono->GetModems();
 }
 
 QString Ofono :: getPhoneNumber(QString id)

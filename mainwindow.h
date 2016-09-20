@@ -126,6 +126,7 @@ class MainWindow : public QMainWindow
 		// Switches to maps frame
 		// Switches selected label to map
 
+		void on_buttonAirplay_released();
 
 
 		// --------------------------------------
@@ -173,6 +174,8 @@ class MainWindow : public QMainWindow
 		// general run loop
 		// checks time
 		// checks music
+
+//		void call();
 
 	private:
 		Ui::MainWindow *ui;

@@ -11,6 +11,7 @@
 #include "dbus/OfonoNetworkRegistration.h"
 #include "dbus/OfonoSiri.h"
 #include "dbus/OfonoVoiceCallManager.h"
+#include "dbus/OfonoManager.h"
 
 
 #define MODEM_PATH "/hfp/org/bluez/hci0/dev_CC_20_E8_CA_93_FF"
@@ -24,10 +25,15 @@ class Ofono : public QObject
 		void setPowerOn();
 		void setPowerOff();
 		QString getPhoneNumber(QString id);
+		void listModems();
 
 		void dialNumber(QString number);
 		void answerCall(QString id);
 		void hangupCall(QString id);
+
+
+	protected:
+		QString _modemPath;
 /*
 	signals:
 		void incomingCall(QString id);

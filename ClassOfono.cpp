@@ -4,8 +4,8 @@ Ofono :: Ofono(QObject *parent)
 {
 	_modemPath = MODEM_PATH;
 	OrgOfonoVoiceCallManagerInterface *voicecallManager = new OrgOfonoVoiceCallManagerInterface("org.ofono", MODEM_PATH, QDBusConnection::systemBus());
-	connect(voicecallManager, SIGNAL(CallAdded(QDBusObjectPath,QVariantMap)), this, SLOT(CallAdded(QDBusObjectPath,QVariantMap)));
-	connect(voicecallManager, SIGNAL(CallRemoved(QDBusObjectPath)), this, SLOT(CallRemoved(QDBusObjectPath)));
+	connect(voicecallManager, SIGNAL(CallAdded(QDBusObjectPath, QVariantMap)), this, SLOT(CallAdded(const QDBusObjectPath, const QVariantMap)));
+	connect(voicecallManager, SIGNAL(CallRemoved(QDBusObjectPath)), this, SLOT(CallRemoved(const QDBusObjectPath)));
 }
 
 void Ofono :: setPowerOn()
@@ -38,13 +38,16 @@ void Ofono :: dialNumber(QString number)
 	qDebug() << "Dialing: " << number;
 }
 
-void Ofono :: CallAdded(QDBusObjectPath &object, QVariantMap &values)
+void Ofono :: CallAdded(const QDBusObjectPath &object, const QVariantMap &values)
 {
 	qDebug() << "call added";
-	emit incomingCall("name", "number");
+	qDebug() << values;
+	QString name = values["Name"].toString();
+	QString number = values["LineIdentification"].toString();
+	emit incomingCall(name, number);
 }
 
-void Ofono :: CallRemoved(QDBusObjectPath &object)
+void Ofono :: CallRemoved(const QDBusObjectPath &object)
 {
 	qDebug() << "call removed";
 }

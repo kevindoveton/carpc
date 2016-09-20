@@ -39,8 +39,8 @@ class Ofono : public QObject
 		void incomingCall(QString name, QString number);
 
 	public slots:
-		void CallAdded(QDBusObjectPath &object, QVariantMap &values);
-		void CallRemoved(QDBusObjectPath &object);
+		void CallAdded(const QDBusObjectPath &object, const QVariantMap &values);
+		void CallRemoved(const QDBusObjectPath &object);
 
 };
 

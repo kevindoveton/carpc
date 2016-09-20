@@ -504,9 +504,9 @@ void MainWindow::on_buttonRBNowPlaying_released()
 }
 
 
-void MainWindow :: incomingCall(QString &name, QString &number)
+void MainWindow :: incomingCall(QString name, QString number)
 {
 	selectedFrame(5);
-	ui->labelPhoneNumber->text() = number;
-	ui->labelContactName->text() = name;
+	ui->labelPhoneNumber->setText(number);
+	ui->labelContactName->setText(name);
 }

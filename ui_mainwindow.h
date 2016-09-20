@@ -756,14 +756,14 @@ class Ui_MainWindow
 
 			labelContactName = new QLabel(frameCallReceived);
 			labelContactName->setObjectName(QStringLiteral("labelContactName"));
-			labelContactName->setGeometry(QRect(0.328*screenWidth, 0.397*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelContactName->setGeometry(QRect(0.328*screenWidth, 0.3*screenHeight, 0.572*screenWidth, .101*screenHeight));
 			labelContactName->setAlignment(Qt::AlignLeft);
 			labelContactName->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
 
 
 			labelPhoneNumber = new QLabel(frameCallReceived);
 			labelPhoneNumber->setObjectName(QStringLiteral("labelPhoneNumber"));
-			labelPhoneNumber->setGeometry(QRect(0.328*screenWidth, 0.397*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelPhoneNumber->setGeometry(QRect(0.328*screenWidth, 0.5*screenHeight, 0.572*screenWidth, .101*screenHeight));
 			labelPhoneNumber->setAlignment(Qt::AlignLeft);
 			labelPhoneNumber->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
 

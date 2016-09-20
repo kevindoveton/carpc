@@ -168,7 +168,7 @@ class MainWindow : public QMainWindow
 		// --------------------------------------
 		// frameIncomingCall
 		// --------------------------------------
-		void incomingCall(QString &name, QString &number);
+		void incomingCall(QString name, QString number);
 
 		// --------------------------------------
 		// Loops

@@ -12,8 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 	//  Set home frame for start up
-	selectedFrame(5);
-//	emit incomingCall("Kevin Doveton", "0405169218");
+//	selectedFrame(5);
+	emit incomingCall("Kevin Doveton", "0433185809");
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -215,7 +215,7 @@ void MainWindow :: on_buttonMusicNext_released()
 
 	if (musicPlayer.currentBassStatus() == 0)
 	{
-		musicDB.shuffleAll(-1, upNext);4148
+		musicDB.shuffleAll(-1, upNext);
 		musicPlayer.playNewSong(upNext[0].getPath());
 	}
 	else
@@ -508,14 +508,16 @@ void MainWindow::on_buttonRBNowPlaying_released()
 void MainWindow :: incomingCall(QString name, QString number)
 {
 	selectedFrame(5);
+
 	// image
-	QByteArray b64Image = QByteArray::fromBase64(""); // this will be found using the contact database
-	QImage callerImageCrop = QImage::fromData(b64Image, "JPG");
+	QByteArray b64Image = contactDB.getPictureFromNumber(number);
+	QImage callerImageCrop;
+	callerImageCrop.loadFromData(QByteArray::fromBase64(b64Image));
 	callerImageCrop = callerImageCrop.scaled(ui->imageCaller->width(), ui->imageCaller->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
 	QPixmap pixmapCallerImage = QPixmap::fromImage(callerImageCrop);
 	ui->imageCaller->setPixmap(pixmapCallerImage);
 
 	// labels
 	ui->labelPhoneNumber->setText(number);
-	ui->labelContactName->setText(name); // this will also probably be found using db
+	ui->labelContactName->setText(contactDB.getNameFromNumber(number)); // this will also probably be found using db
 }

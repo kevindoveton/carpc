@@ -786,7 +786,7 @@ class Ui_MainWindow
 
 			imageCaller = new QLabel(frameCallReceived);
 			imageCaller->setObjectName(QStringLiteral("imageCaller"));
-			imageCaller->setGeometry(QRect(0.06543*screenWidth, 0.230*screenHeight, 0.233*screenWidth, 0.4148*screenHeight));
+			imageCaller->setGeometry(QRect(0.06543*screenWidth, 0.15*screenHeight, 0.233*screenWidth, 0.7*screenHeight));
 			imageCaller->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);
 			QRect rectImageCaller = imageCaller->rect();
 			QPainterPath pathImageCaller = QPainterPath(rectImageCaller.topLeft());

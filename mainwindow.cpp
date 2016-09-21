@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	//  Set home frame for start up
 	selectedFrame(0);
+	emit incomingCall("Kevin Doveton", "0405169218");
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -507,6 +508,14 @@ void MainWindow::on_buttonRBNowPlaying_released()
 void MainWindow :: incomingCall(QString name, QString number)
 {
 	selectedFrame(5);
+	// image
+	QString b64Image = ""; // this will be found using the contact database
+	QImage callerImageCrop = QImage(b64Image);
+	callerImageCrop = callerImageCrop.scaled(ui->imageCaller->width(), ui->imageCaller->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
+	QPixmap pixmapCallerImage = QPixmap::fromImage(callerImageCrop);
+	ui->imageCaller->setPixmap(pixmapCallerImage);
+
+	// labels
 	ui->labelPhoneNumber->setText(number);
-	ui->labelContactName->setText(name);
+	ui->labelContactName->setText(name); // this will also probably be found using db
 }

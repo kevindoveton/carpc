@@ -58,12 +58,12 @@ void Ofono :: CallRemoved(const QDBusObjectPath &object)
 
 void Ofono :: answerCall(QString id)
 {
-	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnction::systemBus());
+	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnection::systemBus());
 	voicecall.Answer();
 }
 
 void Ofono :: hangupCall(QString id)
 {
-	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnction::systemBus());
+	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnection::systemBus());
 	voicecall.Hangup();
 }

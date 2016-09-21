@@ -122,6 +122,7 @@ class Ui_MainWindow
 		QLabel *labelPhoneNumber;
 		QPushButton *buttonCallAccept;
 		QPushButton *buttonCallDecline;
+		QLabel *imageCaller;
 
 		// Not used
 
@@ -756,21 +757,21 @@ class Ui_MainWindow
 
 			labelContactName = new QLabel(frameCallReceived);
 			labelContactName->setObjectName(QStringLiteral("labelContactName"));
-			labelContactName->setGeometry(QRect(0.328*screenWidth, 0.3*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelContactName->setGeometry(QRect(0.328*screenWidth, 0.397*screenHeight, 0.572*screenWidth, .101*screenHeight));
 			labelContactName->setAlignment(Qt::AlignLeft);
 			labelContactName->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
 
 
 			labelPhoneNumber = new QLabel(frameCallReceived);
 			labelPhoneNumber->setObjectName(QStringLiteral("labelPhoneNumber"));
-			labelPhoneNumber->setGeometry(QRect(0.328*screenWidth, 0.5*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelPhoneNumber->setGeometry(QRect(0.328*screenWidth, 0.346*screenHeight, 0.572*screenWidth, .101*screenHeight));
 			labelPhoneNumber->setAlignment(Qt::AlignLeft);
-			labelPhoneNumber->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
+			labelPhoneNumber->setStyleSheet(QString::fromStdString(labelNowPlayingArtistStyle));
 
 
 			buttonCallAccept = new QPushButton(frameCallReceived);
 			buttonCallAccept->setObjectName(QStringLiteral("buttonCallAccept"));
-			buttonCallAccept->setGeometry(QRect(0.3*screenWidth, 0.5*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
+			buttonCallAccept->setGeometry(QRect(0.3*screenWidth, 0.8*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonCallAccept->setFlat(true);
 			buttonCallAccept->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
 														"background-repeat: no-repeat;"));
@@ -778,12 +779,20 @@ class Ui_MainWindow
 
 			buttonCallDecline = new QPushButton(frameCallReceived);
 			buttonCallDecline->setObjectName(QStringLiteral("buttonCallDecline"));
-			buttonCallDecline->setGeometry(QRect(0.5*screenWidth, 0.5*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
+			buttonCallDecline->setGeometry(QRect(0.8*screenWidth, 0.8*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonCallDecline->setFlat(true);
 			buttonCallDecline->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volDown.png);\n"
 														"background-repeat: no-repeat;"));
 
-
+			imageCaller = new QLabel(frameCallReceived);
+			imageCaller->setObjectName(QStringLiteral("imageCaller"));
+			imageCaller->setGeometry(QRect(0.06543*screenWidth, 0.230*screenHeight, 0.233*screenWidth, 0.4148*screenHeight));
+			imageCaller->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);
+			QRect rectImageCaller = imageCaller->rect();
+			QPainterPath pathImageCaller = QPainterPath(rectImageCaller.topLeft());
+			pathImageCaller.addRoundRect(rectImageCaller, 6);
+			QPolygon polyImageCaller = pathImageCaller.toFillPolygon().toPolygon();
+			imageCaller->setMask(polyImageCaller );
 
 
 

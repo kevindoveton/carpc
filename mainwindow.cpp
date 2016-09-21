@@ -12,8 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 	//  Set home frame for start up
-	selectedFrame(0);
-	emit incomingCall("Kevin Doveton", "0405169218");
+	selectedFrame(5);
+//	emit incomingCall("Kevin Doveton", "0405169218");
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -215,7 +215,7 @@ void MainWindow :: on_buttonMusicNext_released()
 
 	if (musicPlayer.currentBassStatus() == 0)
 	{
-		musicDB.shuffleAll(-1, upNext);
+		musicDB.shuffleAll(-1, upNext);4148
 		musicPlayer.playNewSong(upNext[0].getPath());
 	}
 	else
@@ -509,8 +509,8 @@ void MainWindow :: incomingCall(QString name, QString number)
 {
 	selectedFrame(5);
 	// image
-	QString b64Image = ""; // this will be found using the contact database
-	QImage callerImageCrop = QImage(b64Image);
+	QByteArray b64Image = QByteArray::fromBase64(""); // this will be found using the contact database
+	QImage callerImageCrop = QImage::fromData(b64Image, "JPG");
 	callerImageCrop = callerImageCrop.scaled(ui->imageCaller->width(), ui->imageCaller->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
 	QPixmap pixmapCallerImage = QPixmap::fromImage(callerImageCrop);
 	ui->imageCaller->setPixmap(pixmapCallerImage);

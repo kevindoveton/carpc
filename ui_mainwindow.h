@@ -771,7 +771,7 @@ class Ui_MainWindow
 
 			buttonCallAccept = new QPushButton(frameCallReceived);
 			buttonCallAccept->setObjectName(QStringLiteral("buttonCallAccept"));
-			buttonCallAccept->setGeometry(QRect(0.3*screenWidth, 0.8*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
+			buttonCallAccept->setGeometry(QRect(0.3*screenWidth, 0.6*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonCallAccept->setFlat(true);
 			buttonCallAccept->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
 														"background-repeat: no-repeat;"));
@@ -779,7 +779,7 @@ class Ui_MainWindow
 
 			buttonCallDecline = new QPushButton(frameCallReceived);
 			buttonCallDecline->setObjectName(QStringLiteral("buttonCallDecline"));
-			buttonCallDecline->setGeometry(QRect(0.8*screenWidth, 0.8*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
+			buttonCallDecline->setGeometry(QRect(0.6*screenWidth, 0.6*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonCallDecline->setFlat(true);
 			buttonCallDecline->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volDown.png);\n"
 														"background-repeat: no-repeat;"));

@@ -31,8 +31,6 @@ class Ofono : public QObject
 		void listModems();
 
 		void dialNumber(QString number);
-		void answerCall(QString id);
-		void hangupCall(QString id);
 
 
 	protected:

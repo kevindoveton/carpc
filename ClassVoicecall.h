@@ -14,6 +14,8 @@ public:
 
 	QString getState();
 
+	void Hangup();
+	void Answer();
 //signals:
 
 public slots:
@@ -21,6 +23,8 @@ public slots:
 
 protected:
 	QString _state;
+	QDBusObjectPath _object;
+	OrgOfonoVoiceCallInterface *call;
 };
 
 #endif // VOICECALL_H

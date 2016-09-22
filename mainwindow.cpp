@@ -12,8 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 	//  Set home frame for start up
-	selectedFrame(6);
-	emit incomingCall("0433185809");
+	selectedFrame(0);
+//	emit incomingCall("0433185809");
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -146,7 +146,7 @@ void MainWindow :: on_buttonAirplay_released()
 }
 
 
-void MainWindow :: on_buttonVolumeDown_released()
+void MainWindow :: on_buttonNowPlayingVolumeDown_released()
 {
 	// lower the volume by a percentage..
 	std :: cout << "Volume Down"
@@ -162,7 +162,7 @@ void MainWindow :: on_buttonVolumeDown_released()
 				<< std::endl;
 }
 
-void MainWindow :: on_buttonVolumeUp_released()
+void MainWindow :: on_buttonNowPlayingVolumeUp_released()
 {
 	// increase the volume by a percentage
 	std :: cout << "Volume Up"
@@ -515,6 +515,7 @@ void MainWindow::on_buttonAlbum_released()
 void MainWindow::on_buttonSong_released()
 {
 	ui->listviewMusic->setViewMode(QListView::ListMode);
+
 	currentView = 3;
 	std::cout	<< albumIDCur
 				<< std::endl;

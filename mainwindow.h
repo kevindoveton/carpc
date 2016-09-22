@@ -65,13 +65,13 @@ class MainWindow : public QMainWindow
 		// frameTopBar
 		// --------------------------------------
 
-		void on_buttonVolumeUp_released(); 
+		void on_buttonNowPlayingVolumeUp_released();
 		// --------------------------------------
 		// TODO
 		// Volume up in top frame
 		// Turns volume up by 5%
 
-		void on_buttonVolumeDown_released();
+		void on_buttonNowPlayingVolumeDown_released();
 		// --------------------------------------
 		// TODO
 		// Volume down in top frame

@@ -148,8 +148,8 @@ class Ui_MainWindow
 		void setupUi(QMainWindow *MainWindow)
 		{
 			// Screen Dimensions
-			int screenWidth = QApplication::desktop()->geometry().width(); int screenHeight = QApplication::desktop()->geometry().height();
-//			int screenWidth = 800, screenHeight = 480; // test values
+//			int screenWidth = QApplication::desktop()->geometry().width(); int screenHeight = QApplication::desktop()->geometry().height();
+			int screenWidth = 800, screenHeight = 480; // test values
 
 
 			// Fonts

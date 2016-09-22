@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QtDBus>
+#include <QDebug>
 #include "dbus/OfonoVoiceCall.h"
 
 class Voicecall : public QObject
@@ -15,6 +16,9 @@ public:
 
 public slots:
 	void PropertyChanged(const QString &name, const QDBusVariant &value);
+
+protected:
+	QString _state;
 };
 
 #endif // VOICECALL_H

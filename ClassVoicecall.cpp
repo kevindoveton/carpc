@@ -8,5 +8,7 @@ Voicecall :: Voicecall(QDBusObjectPath *object, QObject *parent)
 
 void  Voicecall :: PropertyChanged(const QString &name, const QDBusVariant &value)
 {
-
+	if (name == "State")
+		qDebug() << value.variant();
+//		_state = value;
 }

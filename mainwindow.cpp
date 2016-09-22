@@ -39,7 +39,11 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
 	runLoopTimer->start(1000); // 1000ms = 1 seconds
 
+	// incoming call connection
 	connect(ofono, SIGNAL(incomingCall(QString)), this, SLOT(incomingCall(QString)));
+
+	// outgoing call connection
+//	connect(ofono)
 
 	// Set window to full screens
 	QMainWindow::showFullScreen();

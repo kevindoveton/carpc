@@ -12,3 +12,8 @@ void  Voicecall :: PropertyChanged(const QString &name, const QDBusVariant &valu
 		qDebug() << value.variant();
 //		_state = value;
 }
+
+QString Voicecall :: getState()
+{
+	return _state;
+}

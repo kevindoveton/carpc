@@ -12,6 +12,8 @@ class Voicecall : public QObject
 public:
 	Voicecall(QDBusObjectPath object, QObject *parent = 0);
 
+	QString getState();
+
 //signals:
 
 public slots:

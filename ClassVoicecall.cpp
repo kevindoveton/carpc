@@ -1,8 +1,8 @@
 #include "ClassVoicecall.h"
 
-Voicecall :: Voicecall(QDBusObjectPath *object, QObject *parent)
+Voicecall :: Voicecall(QDBusObjectPath object, QObject *parent)
 {
-	OrgOfonoVoiceCallInterface *call = new OrgOfonoVoiceCallInterface("org.ofono", object->path(), QDBusConnection::systemBus());
+	OrgOfonoVoiceCallInterface *call = new OrgOfonoVoiceCallInterface("org.ofono", object.path(), QDBusConnection::systemBus());
 	connect(call, SIGNAL(PropertyChanged(QString,QDBusVariant)), this, SLOT(PropertyChanged(QString,QDBusVariant)));
 }
 

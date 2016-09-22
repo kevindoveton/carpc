@@ -10,7 +10,7 @@ class Voicecall : public QObject
 {
 	Q_OBJECT
 public:
-	Voicecall(QDBusObjectPath *object, QObject *parent = 0);
+	Voicecall(QDBusObjectPath object, QObject *parent = 0);
 
 //signals:
 

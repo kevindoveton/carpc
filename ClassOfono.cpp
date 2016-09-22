@@ -50,6 +50,7 @@ void Ofono :: CallAdded(const QDBusObjectPath &object, const QVariantMap &values
 	if (type == "incoming")
 	{
 		emit incomingCall(number);
+		Voicecall *voicecall = new Voicecall(object);
 	}
 //	if (type == "dialing")
 

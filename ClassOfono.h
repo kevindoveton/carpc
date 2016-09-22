@@ -14,6 +14,8 @@
 #include "dbus/OfonoManager.h"
 #include "dbus/OfonoVoiceCall.h"
 
+#include "ClassVoicecall.h"
+
 
 #define MODEM_PATH "/hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA"
 

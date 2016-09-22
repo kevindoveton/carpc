@@ -115,6 +115,8 @@ class Ui_MainWindow
 		QPushButton *buttonNowPlayingFavourite;
 		QPushButton *buttonNowPlayingShuffle;
 		QPushButton *buttonNowPlayingRepeat;
+		QPushButton *buttonNowPlayingVolumeUp;
+		QPushButton *buttonNowPlayingVolumeDown;
 
 		// Phone Call Received
 		QFrame *frameCallReceived;
@@ -135,11 +137,11 @@ class Ui_MainWindow
 
 		// Not used
 
-		QPushButton *buttonMusicPlayPause;
-		QPushButton *buttonMusicNext;
-		QPushButton *buttonVolumeUp;
-		QPushButton *buttonVolumeDown;
-		QPushButton *buttonMusicPrevious;
+//		QPushButton *buttonMusicPlayPause;
+//		QPushButton *buttonMusicNext;
+//		QPushButton *buttonVolumeUp;
+//		QPushButton *buttonVolumeDown;
+//		QPushButton *buttonMusicPrevious;
 
 		void setupTopBarFrame();
 
@@ -671,12 +673,12 @@ class Ui_MainWindow
 			// buttonNowPlayingPlayPause
 			QPixmap bbNowPlayingPlayPauseImage(":/resources/icons/nowPlayingPause.png");
 			QIcon bbNowPlayingPlayPauseIcon(bbNowPlayingPlayPauseImage);
-			buttonMusicPlayPause = new QPushButton(frameNowPlaying);
-			buttonMusicPlayPause->setObjectName(QStringLiteral("buttonMusicPlayPause"));
-			buttonMusicPlayPause->setGeometry(QRect(0.613*screenWidth, 0.8638*screenHeight, 0.05989*screenWidth, .105*screenHeight));
-			buttonMusicPlayPause->setFlat(true);
-			buttonMusicPlayPause->setIcon(bbNowPlayingPlayPauseIcon);
-			buttonMusicPlayPause->setIconSize(buttonMusicPlayPause->size());
+			buttonNowPlayingPlayPause = new QPushButton(frameNowPlaying);
+			buttonNowPlayingPlayPause->setObjectName(QStringLiteral("buttonNowPlayingPlayPause"));
+			buttonNowPlayingPlayPause->setGeometry(QRect(0.613*screenWidth, 0.8638*screenHeight, 0.05989*screenWidth, .105*screenHeight));
+			buttonNowPlayingPlayPause->setFlat(true);
+			buttonNowPlayingPlayPause->setIcon(bbNowPlayingPlayPauseIcon);
+			buttonNowPlayingPlayPause->setIconSize(buttonNowPlayingPlayPause->size());
 
 
 
@@ -731,11 +733,11 @@ class Ui_MainWindow
 
 
 			// buttonVolumeUp
-			buttonVolumeUp = new QPushButton(frameNowPlaying);
-			buttonVolumeUp->setObjectName(QStringLiteral("buttonVolumeUp"));
-			buttonVolumeUp->setGeometry(QRect(1190, 30, 65, 65));
-			buttonVolumeUp->setFlat(true);
-			buttonVolumeUp->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
+			buttonNowPlayingVolumeUp = new QPushButton(frameNowPlaying);
+			buttonNowPlayingVolumeUp->setObjectName(QStringLiteral("buttonNowPlayingVolumeUp"));
+			buttonNowPlayingVolumeUp->setGeometry(QRect(1190, 30, 65, 65));
+			buttonNowPlayingVolumeUp->setFlat(true);
+			buttonNowPlayingVolumeUp->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
 														"background-repeat: no-repeat;"));
 //			buttonVolumeUp->setVisible(false);
 
@@ -744,11 +746,11 @@ class Ui_MainWindow
 
 
 			// buttonVolumeDown
-			buttonVolumeDown = new QPushButton(frameNowPlaying);
-			buttonVolumeDown->setObjectName(QStringLiteral("buttonVolumeDown"));
-			buttonVolumeDown->setGeometry(QRect(710, 30, 65, 65));
-			buttonVolumeDown->setFlat(true);
-			buttonVolumeDown->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volDown.png);\n"
+			buttonNowPlayingVolumeDown = new QPushButton(frameNowPlaying);
+			buttonNowPlayingVolumeDown->setObjectName(QStringLiteral("buttonNowPlayingVolumeDown"));
+			buttonNowPlayingVolumeDown->setGeometry(QRect(710, 30, 65, 65));
+			buttonNowPlayingVolumeDown->setFlat(true);
+			buttonNowPlayingVolumeDown->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volDown.png);\n"
 														  "background-repeat: no-repeat;"));
 //			buttonVolumeDown->setVisible(false);
 

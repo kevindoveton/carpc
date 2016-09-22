@@ -48,7 +48,9 @@ void Ofono :: CallAdded(const QDBusObjectPath &object, const QVariantMap &values
 		number = "No Caller ID";
 
 	if (type == "incoming")
+	{
 		emit incomingCall(number);
+	}
 //	if (type == "dialing")
 
 }

@@ -47,3 +47,4 @@ class Ofono : public QObject
 };
 
 #endif // CLASSOFONO_H
+

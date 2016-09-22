@@ -6,6 +6,7 @@ Ofono :: Ofono(QObject *parent)
 	OrgOfonoVoiceCallManagerInterface *voicecallManager = new OrgOfonoVoiceCallManagerInterface("org.ofono", _modemPath, QDBusConnection::systemBus());
 	connect(voicecallManager, SIGNAL(CallAdded(QDBusObjectPath, QVariantMap)), this, SLOT(CallAdded(const QDBusObjectPath, const QVariantMap)));
 	connect(voicecallManager, SIGNAL(CallRemoved(QDBusObjectPath)), this, SLOT(CallRemoved(const QDBusObjectPath)));
+	connect(voicecallManager, SIGNAL(PropertyChanged(QString, QDBusVariant)), this, SLOT(CallPropertyChanged(const QString, const QDBusVariant)));
 }
 
 void Ofono :: setPowerOn()
@@ -67,4 +68,10 @@ void Ofono :: hangupCall(QString id)
 {
 	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnection::systemBus());
 	voicecall.Hangup();
+}
+
+void Ofono :: CallPropertyChanged(const QString &name, const QDBusVariant &value)
+{
+	qDebug() << name;
+//	qDebug() << value;
 }

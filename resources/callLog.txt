@@ -1,0 +1,14 @@
+Received signal from :1.148, path /hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA, interface org.ofono.VoiceCallManager, member CallAdded
+  Arguments: [ObjectPath: /hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA/voicecall01], [Argument: a{sv} {"State" = [Variant(QString): "incoming"], "LineIdentification" = [Variant(QString): ""], "Name" = [Variant(QString): ""], "Multiparty" = [Variant(bool): false], "RemoteHeld" = [Variant(bool): false], "RemoteMultiparty" = [Variant(bool): false], "Emergency" = [Variant(bool): false]}]
+
+
+Received signal from :1.148, path /hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA/voicecall01, interface org.ofono.VoiceCall, member PropertyChanged
+  Arguments: "State", [Variant(QString): "active"]
+
+
+Received signal from :1.148, path /hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA/voicecall01, interface org.ofono.VoiceCall, member PropertyChanged
+  Arguments: "StartTime", [Variant(QString): "2016-09-22T22:27:32+0930"]
+
+
+Received signal from :1.148, path /hfp/org/bluez/hci0/dev_8C_8E_F2_C8_ED_FA/voicecall01, interface org.ofono.VoiceCall, member PropertyChanged
+  Arguments: "State", [Variant(QString): "disconnected"]

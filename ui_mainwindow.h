@@ -124,6 +124,15 @@ class Ui_MainWindow
 		QPushButton *buttonCallDecline;
 		QLabel *imageCaller;
 
+		// Phone Call
+		QFrame *frameCallPresent;
+		QLabel *labelCallContactName;
+		QLabel *labelCallPhoneNumber;
+		QLabel *labelCallTimer;
+		QLabel *labelCallStatus;
+		QPushButton *buttonCallHangup;
+		QLabel *imageCallPresentCaller;
+
 		// Not used
 
 		QPushButton *buttonMusicPlayPause;
@@ -797,11 +806,61 @@ class Ui_MainWindow
 
 
 
+			// Phone Call
+
+			QLabel *imageCallPresentCaller;
+
+			frameCallPresent = new QFrame(centralWidget);
+			frameCallPresent->setObjectName(QStringLiteral("frameCallPresent"));
+			frameCallPresent->setEnabled(true);
+			frameCallPresent->setGeometry(QRect(0, 0, screenWidth, screenHeight));
+			frameCallPresent->setAutoFillBackground(false);
+			frameCallPresent->setFrameShape(QFrame::StyledPanel);
+			frameCallPresent->setFrameShadow(QFrame::Plain);
 
 
+			labelCallContactName = new QLabel(frameCallPresent);
+			labelCallContactName->setObjectName(QStringLiteral("labelCallContactName"));
+			labelCallContactName->setGeometry(QRect(0.328*screenWidth, 0.397*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelCallContactName->setAlignment(Qt::AlignLeft);
+			labelCallContactName->setStyleSheet(QString::fromStdString(labelNowPlayingSongStyle));
 
 
+			labelCallPhoneNumber = new QLabel(frameCallPresent);
+			labelCallPhoneNumber->setObjectName(QStringLiteral("labelCallPhoneNumber"));
+			labelCallPhoneNumber->setGeometry(QRect(0.328*screenWidth, 0.346*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelCallPhoneNumber->setAlignment(Qt::AlignLeft);
+			labelCallPhoneNumber->setStyleSheet(QString::fromStdString(labelNowPlayingArtistStyle));
 
+			labelCallTimer = new QLabel(frameCallPresent);
+			labelCallTimer->setObjectName(QStringLiteral("labelCallTimer"));
+			labelCallTimer->setGeometry(QRect(0.328*screenWidth, 0.346*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelCallTimer->setAlignment(Qt::AlignLeft);
+			labelCallTimer->setStyleSheet(QString::fromStdString(labelNowPlayingArtistStyle));
+
+			labelCallStatus = new QLabel(frameCallPresent);
+			labelCallStatus->setObjectName(QStringLiteral("labelCallStatus"));
+			labelCallStatus->setGeometry(QRect(0.328*screenWidth, 0.346*screenHeight, 0.572*screenWidth, .101*screenHeight));
+			labelCallStatus->setAlignment(Qt::AlignLeft);
+			labelCallStatus->setStyleSheet(QString::fromStdString(labelNowPlayingArtistStyle));
+
+
+			buttonCallHangup = new QPushButton(frameCallPresent);
+			buttonCallHangup->setObjectName(QStringLiteral("buttonCallHangup"));
+			buttonCallHangup->setGeometry(QRect(0.3*screenWidth, 0.6*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
+			buttonCallHangup->setFlat(true);
+			buttonCallHangup->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
+														"background-repeat: no-repeat;"));
+
+			imageCallPresentCaller = new QLabel(frameCallReceived);
+			imageCallPresentCaller->setObjectName(QStringLiteral("imageCaller"));
+			imageCallPresentCaller->setGeometry(QRect(0.06543*screenWidth, 0.15*screenHeight, 0.233*screenWidth, 0.7*screenHeight));
+			imageCallPresentCaller->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);
+			QRect rectImageCallPresentCaller = imageCallPresentCaller->rect();
+			QPainterPath pathImageCallPresentCaller = QPainterPath(rectImageCaller.topLeft());
+			pathImageCallPresentCaller.addRoundRect(rectImageCaller, 6);
+			QPolygon polyImageCallPresentCaller = pathImageCallPresentCaller.toFillPolygon().toPolygon();
+			imageCallPresentCaller->setMask(polyImageCallPresentCaller);
 
 
 

@@ -399,6 +399,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 1:
@@ -408,6 +409,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 2:
@@ -417,6 +419,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 3:
@@ -426,6 +429,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->show();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 4:
@@ -435,6 +439,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 5:
@@ -444,6 +449,17 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->show();
+			ui->frameCallPresent->hide();
+			break;
+
+		case 6:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
+			ui->frameCallPresent->show();
 			break;
 
 		default:

@@ -45,6 +45,7 @@
 #include "listviewmusicdelegate.h"				// listviewMusic Delegate
 #include "ClassMusicPlayer.h"
 #include "ClassOfono.h"
+#include "ClassContactDB.h"
 
 
 namespace Ui {
@@ -229,6 +230,7 @@ class MainWindow : public QMainWindow
 		MusicDB musicDB;
 		SystemVolume systemVolume;
 		Ofono *ofono = new Ofono();
+		ContactDB contactDB;
 
 		// Maps
 

@@ -44,7 +44,12 @@ void Ofono :: CallAdded(const QDBusObjectPath &object, const QVariantMap &values
 	qDebug() << values;
 	QString type = values["State"].toString();
 	QString name = values["Name"].toString();
+	if (name == "")
+		name = "Unknown";
 	QString number = values["LineIdentification"].toString();
+	if (number == "")
+		number = "No Caller ID";
+
 	if (type == "incoming")
 		emit incomingCall(name, number);
 //	if (type == "dialing")
@@ -56,14 +61,14 @@ void Ofono :: CallRemoved(const QDBusObjectPath &object)
 	qDebug() << "call removed";
 }
 
-//void Ofono :: answerCall(QString id)
-//{
-//	OrgOfonoVoiceCallManagerInterface voicecall("org.ofono", id, QDBusConnction::systemBus());
-//	voicecall.Answer();
-//}
+void Ofono :: answerCall(QString id)
+{
+	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnection::systemBus());
+	voicecall.Answer();
+}
 
-//void Ofono :: hangupCall(QString id)
-//{
-//	OrgOfonoVoiceCallManagerInterface voicecall("org.ofono", id, QDBusConnction::systemBus());
-//	voicecall.Hangup();
-//}
+void Ofono :: hangupCall(QString id)
+{
+	OrgOfonoVoiceCallInterface voicecall("org.ofono", id, QDBusConnection::systemBus());
+	voicecall.Hangup();
+}

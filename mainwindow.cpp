@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	//  Set home frame for start up
 	selectedFrame(0);
+//	emit incomingCall("Kevin Doveton", "0433185809");
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -250,18 +251,21 @@ void MainWindow :: on_buttonMusicPrevious_released()
 
 void MainWindow :: setButtonPlayPauseText(int playStatus)
 {
+	// Play
+	QPixmap pauseImage(":/resources/icons/nowPlayingPause.png");
+	QIcon pauseIcon(pauseImage);
+	QPixmap playImage(":/resources/icons/nowPlaying.png");
+	QIcon playIcon(playImage);
 	switch (playStatus)
 	{
 		case 0:
-			//            ui->buttonMusicPlayPause->setText("Play");
-			ui->buttonMusicPlayPause->setStyleSheet("background-image: url(./resources/icons/play.png);"
-													"background-repeat: no-repeat;");
+
+			ui->buttonNowPlayingPlayPause->setIcon(pauseIcon);
 			break;
 
 		case 1:
-			//            ui->buttonMusicPlayPause->setText("Pause");
-			ui->buttonMusicPlayPause->setStyleSheet("background-image: url(./resources/icons/pause.png);"
-													"background-repeat: no-repeat;");
+			// Pause
+			ui->buttonNowPlayingPlayPause->setIcon(playIcon);
 			break;
 
 		case 2:
@@ -269,9 +273,8 @@ void MainWindow :: setButtonPlayPauseText(int playStatus)
 			break;
 
 		case 3:
-			//            ui->buttonMusicPlayPause->setText("Play");
-			ui->buttonMusicPlayPause->setStyleSheet("background-image: url(./resources/icons/play.png);"
-													"background-repeat: no-repeat;");
+			// Play
+			ui->buttonNowPlayingPlayPause->setIcon(playIcon);
 			break;
 
 		default:
@@ -367,8 +370,7 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
-			std::cout 	<< upNext[0].getArtist()
-						<< std::endl;
+			selectedFrame(7);
 			break;
 		}
 
@@ -398,6 +400,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 1:
@@ -407,6 +410,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 2:
@@ -416,6 +420,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 3:
@@ -425,6 +430,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->show();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 4:
@@ -434,6 +440,7 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		case 5:
@@ -443,6 +450,27 @@ int MainWindow :: selectedFrame(int selected)
 			ui->frameMaps->hide();
 			ui->frameNowPlaying->hide();
 			ui->frameCallReceived->show();
+			ui->frameCallPresent->hide();
+			break;
+
+		case 6:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			ui->frameNowPlaying->hide();
+			ui->frameCallReceived->hide();
+			ui->frameCallPresent->show();
+			break;
+
+		case 7:
+			ui->frameHome->hide();
+			ui->frameMusic->hide();
+			ui->framePhone->hide();
+			ui->frameMaps->hide();
+			ui->frameNowPlaying->show();
+			ui->frameCallReceived->hide();
+			ui->frameCallPresent->hide();
 			break;
 
 		default:
@@ -507,6 +535,15 @@ void MainWindow::on_buttonRBNowPlaying_released()
 void MainWindow :: incomingCall(QString name, QString number)
 {
 	selectedFrame(5);
+
+	// image
+	QImage callerImageCrop;
+	callerImageCrop.loadFromData(QByteArray::fromBase64(contactDB.getPictureFromNumber(number)));
+	callerImageCrop = callerImageCrop.scaled(ui->imageCaller->width(), ui->imageCaller->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
+	QPixmap pixmapCallerImage = QPixmap::fromImage(callerImageCrop);
+	ui->imageCaller->setPixmap(pixmapCallerImage);
+
+	// labels
 	ui->labelPhoneNumber->setText(number);
-	ui->labelContactName->setText(name);
+	ui->labelContactName->setText(contactDB.getNameFromNumber(number));
 }

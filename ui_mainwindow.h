@@ -859,7 +859,7 @@ class Ui_MainWindow
 			imageCallPresentCaller->setGeometry(QRect(0.06543*screenWidth, 0.15*screenHeight, 0.233*screenWidth, 0.7*screenHeight));
 			imageCallPresentCaller->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);
 			QRect rectImageCallPresentCaller = imageCallPresentCaller->rect();
-			QPainterPath pathImageCallPresentCaller = QPainterPath(rectImageCaller.topLeft());
+			QPainterPath pathImageCallPresentCaller = QPainterPath(rectImageCallPresentCaller.topLeft());
 			pathImageCallPresentCaller.addRoundRect(rectImageCaller, 6);
 			QPolygon polyImageCallPresentCaller = pathImageCallPresentCaller.toFillPolygon().toPolygon();
 			imageCallPresentCaller->setMask(polyImageCallPresentCaller);

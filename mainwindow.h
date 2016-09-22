@@ -77,7 +77,7 @@ class MainWindow : public QMainWindow
 		// Volume down in top frame
 		// Turns volume down by 5%
 
-		void on_buttonMusicPlayPause_released();
+		void on_buttonNowPlayingPlayPause_released();
 		// Play/Pause button top frame
 		// Swaps image from play/pause
 		// Play/Pause music
@@ -85,7 +85,7 @@ class MainWindow : public QMainWindow
 		// TODO
 		// Plays random song if nothing selected 
 
-		void on_buttonMusicNext_released();
+		void on_buttonNowPlayingNext_released();
 		// Next button in top frame
 		// Removes current song from upNext and
 		// places in recentlyPlayed
@@ -94,7 +94,7 @@ class MainWindow : public QMainWindow
 		// TODO
 		// Error check // no song next
 
-		void on_buttonMusicPrevious_released();
+		void on_buttonNowPlayingPrevious_released();
 		// Previous button in top frame
 		// Removes current song from upNext and
 		// places in recentlyPlayed
@@ -169,7 +169,7 @@ class MainWindow : public QMainWindow
 		// --------------------------------------
 		// frameIncomingCall
 		// --------------------------------------
-		void incomingCall(QString name, QString number);
+		void incomingCall(QString number);
 
 		// --------------------------------------
 		// Loops

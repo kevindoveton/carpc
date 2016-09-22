@@ -12,8 +12,8 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 	//  Set home frame for start up
-	selectedFrame(0);
-//	emit incomingCall("Kevin Doveton", "0433185809");
+	selectedFrame(6);
+	emit incomingCall("0433185809");
 
 	// labels for now playing
 	// setSongTags(album, artist, song)
@@ -39,7 +39,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	connect(runLoopTimer, SIGNAL(timeout()), this, SLOT(runLoop()));
 	runLoopTimer->start(1000); // 1000ms = 1 seconds
 
-	connect(ofono, SIGNAL(incomingCall(QString, QString)), this, SLOT(incomingCall(QString, QString)));
+	connect(ofono, SIGNAL(incomingCall(QString)), this, SLOT(incomingCall(QString)));
 
 	// Set window to full screens
 	QMainWindow::showFullScreen();
@@ -179,7 +179,7 @@ void MainWindow :: on_buttonVolumeUp_released()
 
 }
 
-void MainWindow :: on_buttonMusicPlayPause_released()
+void MainWindow :: on_buttonNowPlayingPlayPause_released()
 {
 
 	switch (musicPlayer.currentBassStatus())
@@ -206,7 +206,7 @@ void MainWindow :: on_buttonMusicPlayPause_released()
 	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 }
 
-void MainWindow :: on_buttonMusicNext_released()
+void MainWindow :: on_buttonNowPlayingNext_released()
 {
 	// Update skipcount
 	std::cout << "SkipCount: " << upNext[0].getSkipCount() << std::endl;
@@ -240,7 +240,7 @@ void MainWindow :: on_buttonMusicNext_released()
 	setButtonPlayPauseText(musicPlayer.currentBassStatus());
 }
 
-void MainWindow :: on_buttonMusicPrevious_released()
+void MainWindow :: on_buttonNowPlayingPrevious_released()
 {
 	upNext.insert(upNext.begin(), recentlyPlayed.back());
 	recentlyPlayed.pop_back();
@@ -254,18 +254,18 @@ void MainWindow :: setButtonPlayPauseText(int playStatus)
 	// Play
 	QPixmap pauseImage(":/resources/icons/nowPlayingPause.png");
 	QIcon pauseIcon(pauseImage);
-	QPixmap playImage(":/resources/icons/nowPlaying.png");
+	QPixmap playImage(":/resources/icons/nowPlayingPlay.png");
 	QIcon playIcon(playImage);
 	switch (playStatus)
 	{
 		case 0:
-
-			ui->buttonNowPlayingPlayPause->setIcon(pauseIcon);
+			// Play
+			ui->buttonNowPlayingPlayPause->setIcon(playIcon);
 			break;
 
 		case 1:
 			// Pause
-			ui->buttonNowPlayingPlayPause->setIcon(playIcon);
+			ui->buttonNowPlayingPlayPause->setIcon(pauseIcon);
 			break;
 
 		case 2:
@@ -532,7 +532,7 @@ void MainWindow::on_buttonRBNowPlaying_released()
 }
 
 
-void MainWindow :: incomingCall(QString name, QString number)
+void MainWindow :: incomingCall(QString number)
 {
 	selectedFrame(5);
 
@@ -544,6 +544,14 @@ void MainWindow :: incomingCall(QString name, QString number)
 	ui->imageCaller->setPixmap(pixmapCallerImage);
 
 	// labels
-	ui->labelPhoneNumber->setText(number);
-	ui->labelContactName->setText(contactDB.getNameFromNumber(number));
+	if (contactDB.getNameFromNumber(number) == "")
+	{
+		ui->labelContactName->setText(number);
+		ui->labelPhoneNumber->setText("");
+	}
+	else
+	{
+		ui->labelPhoneNumber->setText(number);
+		ui->labelContactName->setText(contactDB.getNameFromNumber(number));
+	}
 }

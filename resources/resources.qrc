@@ -18,5 +18,6 @@
         <file>icons/nowPlayingNext.png</file>
         <file>icons/nowPlayingPause.png</file>
         <file>icons/nowPlayingPrevious.png</file>
+        <file>icons/nowPlayingPlay.png</file>
     </qresource>
 </RCC>

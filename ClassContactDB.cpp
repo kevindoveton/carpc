@@ -74,12 +74,14 @@ QString ContactDB :: getNameFromNumber(QString number)
 	{
 		SQLite::Database db(DBPATH);
 
-		SQLite::Statement query(db, "SELECT photo FROM contacts WHERE mobileNumber == ?");
+		SQLite::Statement query(db, "SELECT firstName, lastName FROM contacts WHERE mobileNumber == ?");
 		query.bind(1, number.toStdString());
 
 		while (query.executeStep())
 		{
-			name = query.getColumn(0).getText();
+			QString firstName = query.getColumn(0).getText();
+			QString lastName = query.getColumn(1).getText();
+			name = firstName + " " + lastName;
 		}
 	}
 
@@ -104,12 +106,14 @@ QString ContactDB :: getNameFromNumber(QString number)
 		{
 			SQLite::Database db(DBPATH);
 
-			SQLite::Statement query(db, "SELECT firstName FROM contacts WHERE mobileNumber == ?");
+			SQLite::Statement query(db, "SELECT firstName, lastName FROM contacts WHERE mobileNumber == ?");
 			query.bind(1, number.toStdString());
 
 			while (query.executeStep())
 			{
-				name = query.getColumn(0).getText();
+				QString firstName = query.getColumn(0).getText();
+				QString lastName = query.getColumn(1).getText();
+				name = firstName + " " + lastName;
 			}
 		}
 

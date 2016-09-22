@@ -40,18 +40,14 @@ void Ofono :: dialNumber(QString number)
 
 void Ofono :: CallAdded(const QDBusObjectPath &object, const QVariantMap &values)
 {
-	qDebug() << "call added";
-	qDebug() << values;
 	QString type = values["State"].toString();
-	QString name = values["Name"].toString();
-	if (name == "")
-		name = "Unknown";
+
 	QString number = values["LineIdentification"].toString();
 	if (number == "")
 		number = "No Caller ID";
 
 	if (type == "incoming")
-		emit incomingCall(name, number);
+		emit incomingCall(number);
 //	if (type == "dialing")
 
 }

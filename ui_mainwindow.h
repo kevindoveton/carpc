@@ -76,7 +76,7 @@ class Ui_MainWindow
 
 		// Applications
 		QFrame *frameMusic;
-		QFrame *framePhone;
+
 		QFrame *frameMaps;
 
 
@@ -89,9 +89,16 @@ class Ui_MainWindow
 		QListView *listviewMusic;
 		QAbstractItemDelegate *listviewDelegate;
 
-		QLabel *label_4;
+
 
 		QLabel *label_5;
+
+		// Phone - Application
+		QFrame *framePhone;
+		QLabel *labelPhoneFavourites;
+		QLabel *labelPhoneContacts;
+		QLabel *labelPhoneRecent;
+
 
 
 
@@ -135,21 +142,14 @@ class Ui_MainWindow
 		QPushButton *buttonCallHangup;
 		QLabel *imageCallPresentCaller;
 
-		// Not used
-
-//		QPushButton *buttonMusicPlayPause;
-//		QPushButton *buttonMusicNext;
-//		QPushButton *buttonVolumeUp;
-//		QPushButton *buttonVolumeDown;
-//		QPushButton *buttonMusicPrevious;
 
 		void setupTopBarFrame();
 
 		void setupUi(QMainWindow *MainWindow)
 		{
 			// Screen Dimensions
-//			int screenWidth = QApplication::desktop()->geometry().width(); int screenHeight = QApplication::desktop()->geometry().height();
-			int screenWidth = 800, screenHeight = 480; // test values
+			int screenWidth = QApplication::desktop()->geometry().width(); int screenHeight = QApplication::desktop()->geometry().height();
+//			int screenWidth = 800, screenHeight = 480; // test values
 
 
 			// Fonts
@@ -550,20 +550,20 @@ class Ui_MainWindow
 			framePhone->setFrameShape(QFrame::StyledPanel);
 			framePhone->setFrameShadow(QFrame::Plain);
 
+			labelPhoneFavourites = new QLabel(framePhone);
+			labelPhoneFavourites->setObjectName(QStringLiteral("labelPhoneFavourites"));
+			labelPhoneFavourites->setGeometry(QRect(0.189*screenWidth, 0.1*screenHeight, 0.1111*screenWidth,0.0407*screenHeight));
+			labelPhoneFavourites->setText("Favourites");
 
+			labelPhoneContacts = new QLabel(framePhone);
+			labelPhoneContacts->setObjectName(QStringLiteral("labelPhoneContacts"));
+			labelPhoneContacts->setGeometry(QRect(0.5*screenWidth, 0.1*screenHeight, 0.1111*screenWidth,0.0407*screenHeight));
+			labelPhoneContacts->setText("Contacts");
 
-
-
-			// label_4 - placeholder..
-			label_4 = new QLabel(framePhone);
-			label_4->setObjectName(QStringLiteral("label_4"));
-			label_4->setGeometry(QRect(20, 30, 67, 21));
-			label_4->setText("phone");
-
-
-
-
-
+			labelPhoneRecent = new QLabel(framePhone);
+			labelPhoneRecent->setObjectName(QStringLiteral("labelPhoneRecent"));
+			labelPhoneRecent->setGeometry(QRect(0.7*screenWidth, 0.1*screenHeight, 0.1111*screenWidth,0.0407*screenHeight));
+			labelPhoneRecent->setText("History");
 
 
 
@@ -735,7 +735,7 @@ class Ui_MainWindow
 			// buttonVolumeUp
 			buttonNowPlayingVolumeUp = new QPushButton(frameNowPlaying);
 			buttonNowPlayingVolumeUp->setObjectName(QStringLiteral("buttonNowPlayingVolumeUp"));
-			buttonNowPlayingVolumeUp->setGeometry(QRect(1190, 30, 65, 65));
+			buttonNowPlayingVolumeUp->setGeometry(QRect(0.073*screenWidth, 0.1*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonNowPlayingVolumeUp->setFlat(true);
 			buttonNowPlayingVolumeUp->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
 														"background-repeat: no-repeat;"));
@@ -748,7 +748,7 @@ class Ui_MainWindow
 			// buttonVolumeDown
 			buttonNowPlayingVolumeDown = new QPushButton(frameNowPlaying);
 			buttonNowPlayingVolumeDown->setObjectName(QStringLiteral("buttonNowPlayingVolumeDown"));
-			buttonNowPlayingVolumeDown->setGeometry(QRect(710, 30, 65, 65));
+			buttonNowPlayingVolumeDown->setGeometry(QRect(0.5*screenWidth, 0.1*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonNowPlayingVolumeDown->setFlat(true);
 			buttonNowPlayingVolumeDown->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volDown.png);\n"
 														  "background-repeat: no-repeat;"));
@@ -810,7 +810,7 @@ class Ui_MainWindow
 
 			// Phone Call
 
-			QLabel *imageCallPresentCaller;
+
 
 			frameCallPresent = new QFrame(centralWidget);
 			frameCallPresent->setObjectName(QStringLiteral("frameCallPresent"));
@@ -849,12 +849,12 @@ class Ui_MainWindow
 
 			buttonCallHangup = new QPushButton(frameCallPresent);
 			buttonCallHangup->setObjectName(QStringLiteral("buttonCallHangup"));
-			buttonCallHangup->setGeometry(QRect(0.3*screenWidth, 0.6*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
+			buttonCallHangup->setGeometry(QRect(0.6*screenWidth, 0.6*screenHeight, 0.04747*screenWidth, 0.0833*screenHeight));
 			buttonCallHangup->setFlat(true);
 			buttonCallHangup->setStyleSheet(QLatin1String("background-image: url(./resources/icons/volUp.png);\n"
 														"background-repeat: no-repeat;"));
 
-			imageCallPresentCaller = new QLabel(frameCallReceived);
+			imageCallPresentCaller = new QLabel(frameCallPresent);
 			imageCallPresentCaller->setObjectName(QStringLiteral("imageCaller"));
 			imageCallPresentCaller->setGeometry(QRect(0.06543*screenWidth, 0.15*screenHeight, 0.233*screenWidth, 0.7*screenHeight));
 			imageCallPresentCaller->setAlignment(Qt::AlignCenter|Qt::AlignVCenter);

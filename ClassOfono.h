@@ -27,11 +27,8 @@ class Ofono : public QObject
 
 		void setPowerOn();
 		void setPowerOff();
-		QString getPhoneNumber(QString id);
 		void listModems();
-
 		void dialNumber(QString number);
-
 
 	protected:
 		QString _modemPath;
@@ -42,8 +39,6 @@ class Ofono : public QObject
 	public slots:
 		void CallAdded(const QDBusObjectPath &object, const QVariantMap &values);
 		void CallRemoved(const QDBusObjectPath &object);
-		void CallPropertyChanged(const QString &name, const QDBusVariant &value);
-
 };
 
 #endif // CLASSOFONO_H

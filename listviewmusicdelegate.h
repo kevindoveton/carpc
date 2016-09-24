@@ -65,8 +65,8 @@ class listViewMusicDelegate : public QAbstractItemDelegate
 
 		QSize sizeHint ( const QStyleOptionViewItem & option, const QModelIndex & index ) const
 		{
-//			int x = 0.33*(QApplication::desktop()->geometry().width());
-//			int y = 0.33*(QApplication::desktop()->geometry().height());
+//			int x = 0.25*(QApplication::desktop()->geometry().width());
+//			int y = 0.25*(QApplication::desktop()->geometry().height());
 			int x = 200, y = 200;
 			return QSize(x, y); // need to implement spacing?
 			// will then be 410 && 165

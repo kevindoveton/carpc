@@ -27,11 +27,6 @@ void Ofono :: listModems()
 //	qDebug() << ofono->GetModems();
 }
 
-QString Ofono :: getPhoneNumber(QString id)
-{
-
-}
-
 void Ofono :: dialNumber(QString number)
 {
 	OrgOfonoVoiceCallManagerInterface *ofono = new OrgOfonoVoiceCallManagerInterface("org.ofono", _modemPath, QDBusConnection::systemBus());
@@ -53,17 +48,9 @@ void Ofono :: CallAdded(const QDBusObjectPath &object, const QVariantMap &values
 	}
 	Voicecall *voicecall = new Voicecall(object);
 
-//	if (type == "dialing")
-
 }
 
 void Ofono :: CallRemoved(const QDBusObjectPath &object)
 {
 	qDebug() << "call removed";
-}
-
-void Ofono :: CallPropertyChanged(const QString &name, const QDBusVariant &value)
-{
-	qDebug() << name;
-//	qDebug() << value;
 }

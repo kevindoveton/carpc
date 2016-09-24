@@ -13,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	//  Set home frame for start up
 	selectedFrame(0);
-//	emit incomingCall("0433185809");
+//	selectedFrame(6);
 
 	// labels for now playing
 	// setSongTags(album, artist, song)

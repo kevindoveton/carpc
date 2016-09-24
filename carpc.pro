@@ -6,7 +6,8 @@
 
 QT       += core gui \
     BluezQt \
-    dbus
+    dbus    \
+    opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -34,7 +35,8 @@ SOURCES += main.cpp\
     dbus/OfonoManager.cpp \
     dbus/OfonoVoiceCall.cpp \
     ClassContactDB.cpp \
-    ClassVoicecall.cpp
+    ClassVoicecall.cpp \
+    mapwindow.cpp
 
 
 
@@ -63,7 +65,8 @@ HEADERS  += mainwindow.h \
     dbus/OfonoManager.h \
     dbus/OfonoVoiceCall.h \
     ClassContactDB.h \
-    ClassVoicecall.h
+    ClassVoicecall.h \
+    mapwindow.hpp
 
 
 RESOURCES += resources/resources.qrc
@@ -91,3 +94,8 @@ unix: PKGCONFIG += alsa
 unix: PKGCONFIG += taglib
 #unix: PKGCONFIG += tinyxml
 unix: PKGCONFIG += sqlite3
+
+unix:!macx: LIBS += -L$$PWD/libraries/qmapbox/ -lqmapboxgl
+
+INCLUDEPATH += $$PWD/libraries/qmapbox/include
+DEPENDPATH += $$PWD/libraries/qmapbox/include

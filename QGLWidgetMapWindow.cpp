@@ -35,17 +35,12 @@ MapWindow::MapWindow(QObject *parent)
 
 
 
-	QFile geojson(":/resources/mapbox/testRoute.json");
-	geojson.open(QIODevice::ReadOnly);
-	QJsonDocument jsonDoc = QJsonDocument::fromJson(geojson.readAll());
-	QJsonObject jsonObj = jsonDoc.object();
-	qDebug() << "json";
-	qDebug() << jsonObj["routes"].toArray()[0].toObject()["geometry"];
-	qDebug() << "harry";
+
 	// The data source for the route line and markers
 	QVariantMap routeSource;
-	routeSource["type"] = "polyline";
-	routeSource["data"] = geojson.readAll();
+	routeSource["type"] = "geojson";
+//	routeSource["data"] = "|axsEmtllYb@MZKTAT@LBLBHDHDDBLHHNRj@Ld@`AdDVt@Tj@Rd@TXX^TR^X\\RFBJDn@Rj@FLBB?f@?XA|BEbBGpDKfGQp@CxDK|DK~BIhACvGShAClAExAEzCIb@CtDKVAnHSnCIH?DATATA`CGbDKrCKb@A`DKtCKd@ArDMdDKf@AfEO~CKv@CpBGdDK|CKV?PAHAhAEfEMPAT?NAz@Ct@ARA^AfEMvEOnCIB?FA~AEhK_@jCEvFQnIUx@AnBGzBIvCG`DKhAA~@E~CGb@AZ?f@BpANjD`@`Gj@dAJdBPl@H|BVvANhALdD\\D@TBP@`Eb@dFj@pANt@HF?p@DZAL?TARCb@In@UtDqAdAc@lDwAxCgApIcDpBw@xCiA~Bu@~Bu@z@a@|CsA|@[|Bq@^MXIDAHAV?F?^?x@@d@@b@?~B@tCBbEDT?\\?dA@xB@l@BnD?J?tAAlA@~Fl@D@L@`@BH@jBN~@HfADlA@l@CnEK`K[pNi@nNa@v@CT?FAH?RAv\\eA~@EXA~BE`BGlAGhAAf@?n@@f@Df@Dx@Lj@Nb@Nx@\\l@\\j@\\d@\\h@h@hApAhBvCnB`DRZVZXXZXn@d@n@ZXJZHd@LVDt@Hl@@~@Ap@If@Kj@O^QbAg@b@[b@a@Z[nCqDZc@f@e@LM^U`@Qt@Y^I^Gt@E`@@H@PBB?N@L@z@HT@tBA~BGrBIbDInDMnAEpBCz@EbDKHArAEpGSP?nCI`@Cj@Eb@K`@Id@Sx@e@t@m@~E{DzAqAhA}@ZOHGh@Wh@K\\IVCr@EF?JAXAXAtIU|HYJ?X?BA@?@?P?JAhAAxCKdCI~BG|CKr@E`@CfEIB?XA";
+	routeSource["data"] = ""
 	m_map.addSource("routeSource", routeSource);
 }
 

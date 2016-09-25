@@ -13,7 +13,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 	// setup mapdata class
 	mapData = new MapData(qgetenv("MAPBOX_ACCESS_TOKEN"));
-	mapData->addressToCoordinates("31 Anaconda Drive, North Haven");
 
 	//  Set home frame for start up
 	selectedFrame(0);
@@ -32,7 +31,6 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate); // attach delegate to list
 	ui->listviewMusic->setVerticalScrollMode(QListView::ScrollPerPixel);
 	ui->listviewMusic->setGridSize(QSize(210,210));
-	qDebug() << ui->listviewMusic->gridSize();
 
 	// Run Loop
 	// this timer will call

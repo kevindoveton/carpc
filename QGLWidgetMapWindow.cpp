@@ -1,4 +1,4 @@
-#include "qwidgetglmapwindow.h"
+#include "QGLWidgetMapWindow.h"
 
 #include <QApplication>
 #include <QColor>

@@ -19,5 +19,7 @@
         <file>icons/nowPlayingPause.png</file>
         <file>icons/nowPlayingPrevious.png</file>
         <file>icons/nowPlayingPlay.png</file>
+        <file>mapbox/dark.json</file>
+        <file>mapbox/light.json</file>
     </qresource>
 </RCC>

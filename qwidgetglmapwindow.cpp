@@ -21,7 +21,9 @@ MapWindow::MapWindow(const QMapboxGLSettings &settings, QObject *parent)
 	// Set default location to 31 Anaconda Drive, North Haven.
 	m_map.setCoordinateZoom(QMapbox::Coordinate(-34.7958563, 138.4881648), 15);
 
-	QFile lightStyle("resources/mapbox/light.json");
+	QFile lightStyle(":/resources/mapbox/dark.json");
+	if (!lightStyle.open(QIODevice::ReadOnly | QIODevice::Text))
+		return;
 	QByteArray style = lightStyle.readAll();
 //	QString styleUrl = qgetenv("MAPBOX_STYLE_URL");
 	m_map.setStyleJson(QString(style));

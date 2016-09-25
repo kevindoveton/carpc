@@ -22,8 +22,6 @@ protected slots:
 	void animationFinished();
 
 private:
-	void changeStyle();
-
 	// QGLWidget implementation.
 	void keyPressEvent(QKeyEvent *ev) final;
 	void mousePressEvent(QMouseEvent *ev) final;

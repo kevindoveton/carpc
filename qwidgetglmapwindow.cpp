@@ -34,6 +34,7 @@ MapWindow::MapWindow(const QMapboxGLSettings &settings, QObject *parent)
 }
 
 
+
 void MapWindow::animationFinished()
 {
 	qDebug() << "Animation ticks/s: " <<  m_animationTicks / static_cast<float>(kAnimationDuration) * 1000.;
@@ -47,30 +48,14 @@ void MapWindow::animationValueChanged()
 	m_animationTicks++;
 }
 
-void MapWindow::changeStyle()
-{
-	static uint8_t currentStyleIndex;
 
-	auto& styles = QMapbox::defaultStyles();
-
-	m_map.setStyleUrl(styles[currentStyleIndex].first);
-	setWindowTitle(QString("Mapbox GL: ") + styles[currentStyleIndex].second);
-
-	if (++currentStyleIndex == styles.size()) {
-		currentStyleIndex = 0;
-	}
-
-	m_sourceAdded = false;
-}
 
 void MapWindow::keyPressEvent(QKeyEvent *ev)
 {
 	static const QMapbox::TransitionOptions transition { 300, {} };
 
 	switch (ev->key()) {
-	case Qt::Key_S:
-		changeStyle();
-		break;
+
 	case Qt::Key_L: {
 			if (m_sourceAdded) {
 				return;
@@ -209,11 +194,11 @@ void MapWindow::mousePressEvent(QMouseEvent *ev)
 	m_lastPos = ev->localPos();
 #endif
 
-	if (ev->type() == QEvent::MouseButtonPress) {
-		if (ev->buttons() == (Qt::LeftButton | Qt::RightButton)) {
-			changeStyle();
-		}
-	}
+//	if (ev->type() == QEvent::MouseButtonPress) {
+//		if (ev->buttons() == (Qt::LeftButton | Qt::RightButton)) {
+
+//		}
+//	}
 
 	if (ev->type() == QEvent::MouseButtonDblClick) {
 		if (ev->buttons() == Qt::LeftButton) {

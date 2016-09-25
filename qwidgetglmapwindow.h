@@ -15,13 +15,17 @@ class MapWindow : public QGLWidget
 	Q_OBJECT
 
 public:
-	MapWindow(const QMapboxGLSettings &, QObject *parent = nullptr);
+	MapWindow(QObject *parent = nullptr);
+	void setLightStyle();
+	void setDarkStyle();
+	void construct(QMapboxGLSettings settings);
 
 protected slots:
 	void animationValueChanged();
 	void animationFinished();
 
 private:
+	QMapboxGLSettings _settings;
 	// QGLWidget implementation.
 	void keyPressEvent(QKeyEvent *ev) final;
 	void mousePressEvent(QMouseEvent *ev) final;
@@ -42,6 +46,8 @@ private:
 	unsigned m_frameDraws = 0;
 
 	bool m_sourceAdded = false;
+
+
 };
 
 #endif // QWIDGETGLMAPWINDOW_H

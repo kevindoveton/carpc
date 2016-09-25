@@ -581,13 +581,8 @@ class Ui_MainWindow
 			frameMaps->setFrameShape(QFrame::StyledPanel);
 			frameMaps->setFrameShadow(QFrame::Plain);
 
-			QMapboxGLSettings settings;
-			settings.setCacheDatabasePath("mbgl-cache.db");
-			settings.setCacheDatabaseMaximumSize(20 * 1024 * 1024);
-			settings.setAccessToken(qgetenv("MAPBOX_ACCESS_TOKEN"));
-			auto& styles = QMapbox::defaultStyles();
 
-			map = new MapWindow(settings, frameMaps);
+			map = new MapWindow(frameMaps);
 			map->resize(frameMaps->size());
 			map->setParent(frameMaps);
 

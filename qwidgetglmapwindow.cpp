@@ -11,27 +11,30 @@
 
 int kAnimationDuration = 10000;
 
-MapWindow::MapWindow(const QMapboxGLSettings &settings, QObject *parent)
-	: m_map(parent, settings)
+MapWindow::MapWindow(QObject *parent)
+	: m_map(parent, _settings)
 	, m_bearingAnimation(&m_map, "bearing")
 	, m_zoomAnimation(&m_map, "zoom")
 {
+	_settings.setCacheDatabasePath("mbgl-cache.db");
+	_settings.setCacheDatabaseMaximumSize(20 * 1024 * 1024);
+	_settings.setAccessToken(qgetenv("MAPBOX_ACCESS_TOKEN"));
 	connect(&m_map, SIGNAL(needsRendering()), this, SLOT(updateGL()));
 
 	// Set default location to 31 Anaconda Drive, North Haven.
 	m_map.setCoordinateZoom(QMapbox::Coordinate(-34.7958563, 138.4881648), 15);
 
-	QFile lightStyle(":/resources/mapbox/dark.json");
+	QFile lightStyle(":/resources/mapbox/light.json");
 	if (!lightStyle.open(QIODevice::ReadOnly | QIODevice::Text))
 		return;
 	QByteArray style = lightStyle.readAll();
-//	QString styleUrl = qgetenv("MAPBOX_STYLE_URL");
 	m_map.setStyleJson(QString(style));
 
 	connect(&m_zoomAnimation, SIGNAL(finished()), this, SLOT(animationFinished()));
 	connect(&m_zoomAnimation, SIGNAL(valueChanged(const QVariant&)), this, SLOT(animationValueChanged()));
 
 }
+
 
 
 

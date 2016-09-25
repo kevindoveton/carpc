@@ -5,6 +5,9 @@
 #include <QGLWidget>
 #include <QMapboxGL>
 #include <QPropertyAnimation>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <QJsonObject>
 
 class QKeyEvent;
 class QMouseEvent;

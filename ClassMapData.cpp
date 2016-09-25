@@ -23,7 +23,7 @@ void MapData :: coordinatesToAddress(QString x, QString y)
 
 void MapData :: coordinatesToAddress(QMapbox::Coordinate coordinates)
 {
-	coordinatesToAddress(coordinates.first, coordinates.second);
+//	coordinatesToAddress(QString(coordinates.first), QString(coordinates.second));
 }
 
 void MapData :: handleData()

@@ -33,6 +33,20 @@ MapWindow::MapWindow(QObject *parent)
 	connect(&m_zoomAnimation, SIGNAL(finished()), this, SLOT(animationFinished()));
 	connect(&m_zoomAnimation, SIGNAL(valueChanged(const QVariant&)), this, SLOT(animationValueChanged()));
 
+
+
+	QFile geojson(":/resources/mapbox/testRoute.json");
+	geojson.open(QIODevice::ReadOnly);
+	QJsonDocument jsonDoc = QJsonDocument::fromJson(geojson.readAll());
+	QJsonObject jsonObj = jsonDoc.object();
+	qDebug() << "json";
+	qDebug() << jsonObj["routes"].toArray()[0].toObject()["geometry"];
+	qDebug() << "harry";
+	// The data source for the route line and markers
+	QVariantMap routeSource;
+	routeSource["type"] = "polyline";
+	routeSource["data"] = geojson.readAll();
+	m_map.addSource("routeSource", routeSource);
 }
 
 
@@ -59,16 +73,16 @@ void MapWindow::keyPressEvent(QKeyEvent *ev)
 
 	switch (ev->key()) {
 
-	case Qt::Key_L: {
+	case Qt::Key_A: {
 			if (m_sourceAdded) {
 				return;
 			}
 
 			m_sourceAdded = true;
 
-			QFile geojson(":source.geojson");
+			QFile geojson(":mapbox/testRoute.json");
 			geojson.open(QIODevice::ReadOnly);
-
+			qDebug() << "add route";
 			// The data source for the route line and markers
 			QVariantMap routeSource;
 			routeSource["type"] = "geojson";

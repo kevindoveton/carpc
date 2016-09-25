@@ -21,5 +21,6 @@
         <file>icons/nowPlayingPlay.png</file>
         <file>mapbox/dark.json</file>
         <file>mapbox/light.json</file>
+        <file>mapbox/testRoute.json</file>
     </qresource>
 </RCC>

@@ -24,7 +24,7 @@
 #include <sstream>
 #include <QFontDatabase>
 #include <QDebug>
-#include "qwidgetglmapwindow.h"
+#include "QGLWidgetMapWindow.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -79,6 +79,8 @@ class Ui_MainWindow
 
 		QFrame *frameMaps;
 		MapWindow *map;
+		QLineEdit *mapAddress;
+
 
 		QLabel *labelHome;
 
@@ -585,6 +587,9 @@ class Ui_MainWindow
 			map = new MapWindow(frameMaps);
 			map->resize(frameMaps->size());
 			map->setParent(frameMaps);
+
+//			mapAddress = new QLineEdit();
+
 
 			// -------------------------------------------------------------------------------------------------------------
 			// Now Playing Page

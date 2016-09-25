@@ -4,10 +4,11 @@
 #
 #-------------------------------------------------
 
-QT       += core gui \
+QT  += core gui \
     BluezQt \
     dbus    \
-    opengl
+    opengl  \
+    network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -36,7 +37,8 @@ SOURCES += main.cpp\
     dbus/OfonoVoiceCall.cpp \
     ClassContactDB.cpp \
     ClassVoicecall.cpp \
-    qwidgetglmapwindow.cpp
+    ClassMapData.cpp \
+    QGLWidgetMapWindow.cpp
 
 
 
@@ -66,7 +68,8 @@ HEADERS  += mainwindow.h \
     dbus/OfonoVoiceCall.h \
     ClassContactDB.h \
     ClassVoicecall.h \
-    qwidgetglmapwindow.h
+    ClassMapData.h \
+    QGLWidgetMapWindow.h
 
 
 RESOURCES += resources/resources.qrc

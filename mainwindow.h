@@ -46,7 +46,7 @@
 #include "ClassMusicPlayer.h"
 #include "ClassOfono.h"
 #include "ClassContactDB.h"
-
+#include "ClassMapData.h"
 
 namespace Ui {
 	class MainWindow;
@@ -231,7 +231,7 @@ class MainWindow : public QMainWindow
 		SystemVolume systemVolume;
 		Ofono *ofono = new Ofono();
 		ContactDB contactDB;
-
+		MapData *mapData;
 		// Maps
 
 };

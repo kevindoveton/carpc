@@ -11,9 +11,12 @@ MainWindow::MainWindow(QWidget *parent) :
 {
 	ui->setupUi(this);
 
+	// setup mapdata class
+	mapData = new MapData(qgetenv("MAPBOX_ACCESS_TOKEN"));
+	mapData->addressToCoordinates("31 Anaconda Drive, North Haven");
+
 	//  Set home frame for start up
 	selectedFrame(0);
-//	selectedFrame(6);
 
 	// labels for now playing
 	// setSongTags(album, artist, song)

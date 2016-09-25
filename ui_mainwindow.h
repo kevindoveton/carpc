@@ -24,7 +24,7 @@
 #include <sstream>
 #include <QFontDatabase>
 #include <QDebug>
-
+#include "qwidgetglmapwindow.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -78,7 +78,7 @@ class Ui_MainWindow
 		QFrame *frameMusic;
 
 		QFrame *frameMaps;
-
+		MapWindow *map;
 
 		QLabel *labelHome;
 
@@ -576,20 +576,20 @@ class Ui_MainWindow
 			frameMaps = new QFrame(centralWidget);
 			frameMaps->setObjectName(QStringLiteral("frameMaps"));
 			frameMaps->setEnabled(true);
-			frameMaps->setGeometry(QRect(-1, 110, 1281, 481));
+			frameMaps->setGeometry(QRect(0, 0, screenWidth, screenHeight));
 			frameMaps->setAutoFillBackground(false);
 			frameMaps->setFrameShape(QFrame::StyledPanel);
 			frameMaps->setFrameShadow(QFrame::Plain);
 
+			QMapboxGLSettings settings;
+			settings.setCacheDatabasePath("mbgl-cache.db");
+			settings.setCacheDatabaseMaximumSize(20 * 1024 * 1024);
+			settings.setAccessToken(qgetenv("MAPBOX_ACCESS_TOKEN"));
+			auto& styles = QMapbox::defaultStyles();
 
-
-
-
-			// label_5 - this is a placeholder
-			label_5 = new QLabel(frameMaps);
-			label_5->setObjectName(QStringLiteral("label_5"));
-			label_5->setGeometry(QRect(30, 30, 67, 21));
-
+			map = new MapWindow(settings, frameMaps);
+			map->resize(frameMaps->size());
+			map->setParent(frameMaps);
 
 			// -------------------------------------------------------------------------------------------------------------
 			// Now Playing Page

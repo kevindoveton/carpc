@@ -10,7 +10,6 @@
 #include "ui_mainwindow.h"
 #include <stdlib.h> // setenv
 
-#include "mapwindow.hpp"
 
 int main(int argc, char *argv[])
 {
@@ -23,16 +22,16 @@ int main(int argc, char *argv[])
 	BASS_Init(-1,44100,0,0,0);
 
 	// Main Window
-//	MainWindow w;
-//	w.show();
-	QMapboxGLSettings settings;
-	settings.setCacheDatabasePath("mbgl-cache.db");
-	settings.setCacheDatabaseMaximumSize(20 * 1024 * 1024);
+	MainWindow w;
+	w.show();
+//	QMapboxGLSettings settings;
+//	settings.setCacheDatabasePath("mbgl-cache.db");
+//	settings.setCacheDatabaseMaximumSize(20 * 1024 * 1024);
 
-	MapWindow window(settings);
+//	MapWindow window(settings);
 
-	window.resize(800, 600);
-	window.show();
+//	window.resize(800, 600);
+//	window.show();
 
 	return a.exec();
 }

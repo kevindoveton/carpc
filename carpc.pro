@@ -36,7 +36,7 @@ SOURCES += main.cpp\
     dbus/OfonoVoiceCall.cpp \
     ClassContactDB.cpp \
     ClassVoicecall.cpp \
-    mapwindow.cpp
+    qwidgetglmapwindow.cpp
 
 
 
@@ -66,7 +66,7 @@ HEADERS  += mainwindow.h \
     dbus/OfonoVoiceCall.h \
     ClassContactDB.h \
     ClassVoicecall.h \
-    mapwindow.hpp
+    qwidgetglmapwindow.h
 
 
 RESOURCES += resources/resources.qrc

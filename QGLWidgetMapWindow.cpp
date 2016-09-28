@@ -9,14 +9,11 @@
 
 int kAnimationDuration = 10000;
 
-MapWindow::MapWindow(QObject *parent)
-	: m_map(parent, _settings)
+MapWindow::MapWindow(QMapboxGLSettings settings, QObject *parent)
+	: m_map(parent, settings)
 	, m_bearingAnimation(&m_map, "bearing")
 	, m_zoomAnimation(&m_map, "zoom")
 {
-	_settings.setCacheDatabasePath("mbgl-cache.db");
-	_settings.setCacheDatabaseMaximumSize(20 * 1024 * 1024);
-	_settings.setAccessToken(qgetenv("MAPBOX_ACCESS_TOKEN"));
 	connect(&m_map, SIGNAL(needsRendering()), this, SLOT(updateGL()));
 
 	// Set default location to 31 Anaconda Drive, North Haven.
@@ -34,50 +31,21 @@ MapWindow::MapWindow(QObject *parent)
 
 
 
+
+}
+
+
+void MapWindow :: addRoute()
+{
 	// The data source for the route line and markers
+	QFile geojson(":/resources/mapbox/testRoute3.json");
+	if (!geojson.open(QIODevice::ReadOnly | QIODevice::Text))
+		return;
+	QByteArray data = geojson.readAll();
 	QVariantMap routeSource;
 	routeSource["type"] = "geojson";
-	routeSource["data"] = "{ {\"type\": \"Feature\", \"properties\" : { \"name\" : \"route\" }, \"geometry\": {\
-						  \"coordinates\": [\
-							[\
-							  138.488198,\
-							  -34.795344\
-							],\
-							[\
-							  138.488716,\
-							  -34.795368\
-							],\
-							[\
-							  138.489599,\
-							  -34.795347\
-							],\
-							[\
-							  138.489746,\
-							  -34.795343\
-							],\
-							[\
-							  138.489807,\
-							  -34.795316\
-							],\
-							[\
-							  138.489904,\
-							  -34.795251\
-							]\
-						  ],\
-						  \"type\": \"LineString\"\
-						}}}\"";
+	routeSource["data"] = QString(data);
 	m_map.addSource("routeSource", routeSource);
-	// The route case, painted before the route
-	QVariantMap routeCase;
-	routeCase["id"] = "routeCase";
-	routeCase["type"] = "line";
-	routeCase["source"] = "routeSource";
-	m_map.addLayer(routeCase);
-
-	m_map.setPaintProperty("routeCase", "line-color", QColor("white"));
-	m_map.setPaintProperty("routeCase", "line-width", 20.0);
-	m_map.setLayoutProperty("routeCase", "line-join", "round");
-	m_map.setLayoutProperty("routeCase", "line-cap", "round");
 
 	// The route, painted on top of the route case
 	QVariantMap route;
@@ -86,14 +54,11 @@ MapWindow::MapWindow(QObject *parent)
 	route["source"] = "routeSource";
 	m_map.addLayer(route);
 
-	m_map.setPaintProperty("route", "line-color", QColor("blue"));
+	m_map.setPaintProperty("route", "line-color", QColor(255,0,0));
 	m_map.setPaintProperty("route", "line-width", 8.0);
 	m_map.setLayoutProperty("route", "line-join", "round");
 	m_map.setLayoutProperty("route", "line-cap", "round");
-
-
 }
-
 
 
 

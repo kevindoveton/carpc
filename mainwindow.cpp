@@ -142,6 +142,7 @@ void MainWindow :: on_buttonPhone_released()
 void MainWindow :: on_buttonMaps_released()
 {
 	selectedFrame(3); // frames
+	ui->map->addRoute();
 }
 
 void MainWindow :: on_buttonAirplay_released()

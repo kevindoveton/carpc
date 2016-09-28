@@ -22,5 +22,6 @@
         <file>mapbox/dark.json</file>
         <file>mapbox/light.json</file>
         <file>mapbox/testRoute.json</file>
+        <file>mapbox/testRoute3.json</file>
     </qresource>
 </RCC>

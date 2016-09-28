@@ -1,12 +1,9 @@
-{
-  "type": "FeatureCollection",
-  "features": [
+
     {
       "type": "Feature",
-      "properties": {
-        "name": "route"
-      },
+      "properties": {},
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
             138.489904,
@@ -52,9 +49,7 @@
             138.491583,
             -34.795599
           ]
-        ],
-        "type": "LineString"
+        ]
       }
     }
-  ]
-}
+ 

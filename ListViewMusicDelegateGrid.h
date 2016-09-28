@@ -3,8 +3,8 @@
 // Copyright 2015
 // --------------------------
 
-#ifndef LISTVIEWMUSICDELEGATE_H
-#define LISTVIEWMUSICDELEGATE_H
+#ifndef LISTVIEWMUSICDELEGATEGRID_H
+#define LISTVIEWMUSICDELEGATEGRID_H
 #include <QListView>
 #include <QItemDelegate>
 #include <QPainter>
@@ -13,10 +13,10 @@
 #include <QDebug>
 #include <QApplication>
 
-class listViewMusicDelegate : public QAbstractItemDelegate
+class listViewMusicDelegateGrid : public QAbstractItemDelegate
 {
 	public:
-		listViewMusicDelegate(QObject *parent=0) : QAbstractItemDelegate(parent){}
+		listViewMusicDelegateGrid(QObject *parent=0) : QAbstractItemDelegate(parent){}
 		void paint ( QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index ) const
 		{
 			// get the image
@@ -65,12 +65,10 @@ class listViewMusicDelegate : public QAbstractItemDelegate
 
 		QSize sizeHint ( const QStyleOptionViewItem & option, const QModelIndex & index ) const
 		{
-//			int x = 0.25*(QApplication::desktop()->geometry().width());
-//			int y = 0.25*(QApplication::desktop()->geometry().height());
-			int x = 200, y = 200;
-			return QSize(x, y); // need to implement spacing?
-			// will then be 410 && 165
+			int x = option.rect.width()*0.95;
+			int y = option.rect.height()*0.95;
+			return QSize(x, y);
 		}
 };
 
-#endif // LISTVIEWMUSICDELEGATE_H
+#endif // LISTVIEWMUSICDELEGATEGRID_H

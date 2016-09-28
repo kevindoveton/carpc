@@ -8,7 +8,8 @@ QT  += core gui \
     BluezQt \
     dbus    \
     opengl  \
-    network
+    network \
+    multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -38,7 +39,8 @@ SOURCES += main.cpp\
     ClassContactDB.cpp \
     ClassVoicecall.cpp \
     ClassMapData.cpp \
-    QGLWidgetMapWindow.cpp
+    QGLWidgetMapWindow.cpp \
+    ClassAudioPlayerQT.cpp
 
 
 
@@ -53,7 +55,6 @@ HEADERS  += mainwindow.h \
     libraries/SQLiteCpp/Transaction.h \
     ClassMusic.h \
     ui_mainwindow.h \
-    listviewmusicdelegate.h \
     ClassMusicDB.h \
     ClassMusicPlayer.h \
     ClassSystemVolume.h \
@@ -69,7 +70,10 @@ HEADERS  += mainwindow.h \
     ClassContactDB.h \
     ClassVoicecall.h \
     ClassMapData.h \
-    QGLWidgetMapWindow.h
+    QGLWidgetMapWindow.h \
+    ListViewMusicDelegateGrid.h \
+    ListViewMusicDelegateList.h \
+    ClassAudioPlayerQT.h
 
 
 RESOURCES += resources/resources.qrc

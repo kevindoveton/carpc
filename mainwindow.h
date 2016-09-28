@@ -25,6 +25,8 @@
 
 // GUI
 #include "ui_mainwindow.h"						// Main Form
+#include "ListViewMusicDelegateGrid.h"				// listviewMusic Delegate
+#include "ListViewMusicDelegateList.h"
 
 
 // Music
@@ -42,7 +44,6 @@
 #include "ClassMusic.h"							// Song Data
 #include "ClassSystemVolume.h"
 #include "ClassMusicDB.h"
-#include "listviewmusicdelegate.h"				// listviewMusic Delegate
 #include "ClassMusicPlayer.h"
 #include "ClassOfono.h"
 #include "ClassContactDB.h"

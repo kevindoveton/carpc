@@ -28,9 +28,9 @@ MainWindow::MainWindow(QWidget *parent) :
 	model = new QStandardItemModel;
 	musicDB.getArtists(model); // set artist
 	ui->listviewMusic->setModel(model); // attach model to list
-	ui->listviewMusic->setItemDelegate(new listViewMusicDelegate); // attach delegate to list
+	ui->listviewMusic->setItemDelegate(new listViewMusicDelegateGrid); // attach delegate to list
 	ui->listviewMusic->setVerticalScrollMode(QListView::ScrollPerPixel);
-	ui->listviewMusic->setGridSize(QSize(210,210));
+	ui->listviewMusic->setGridSize(QSize(ui->listviewMusic->width()*0.32, ui->listviewMusic->width()*0.32));
 
 	// Run Loop
 	// this timer will call
@@ -154,35 +154,12 @@ void MainWindow :: on_buttonAirplay_released()
 
 void MainWindow :: on_buttonNowPlayingVolumeDown_released()
 {
-	// lower the volume by a percentage..
-	std :: cout << "Volume Down"
-				<< std :: endl;
-
-	if (systemVolume.getCurrentVolume() >= 0 + systemVolume.VOLUMECHANGE) // check that we won't go below minimum volume
-		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() - systemVolume.VOLUMECHANGE);
-	else
-		systemVolume.setMasterVolume(0);
-
-	std::cout	<< "Current Volume: "
-				<< systemVolume.getCurrentVolume()
-				<< std::endl;
+	systemVolume.decreaseVolume();
 }
 
 void MainWindow :: on_buttonNowPlayingVolumeUp_released()
 {
-	// increase the volume by a percentage
-	std :: cout << "Volume Up"
-				<< std :: endl;
-
-	if (systemVolume.getCurrentVolume() <= 100 - systemVolume.VOLUMECHANGE) // check that we don't go above the max volume
-		systemVolume.setMasterVolume(systemVolume.getCurrentVolume() + systemVolume.VOLUMECHANGE);
-	else
-		systemVolume.setMasterVolume(100);
-
-	std::cout	<< "Current Volume: "
-				<< systemVolume.getCurrentVolume()
-				<< std::endl;
-
+	systemVolume.increaseVolume();
 }
 
 void MainWindow :: on_buttonNowPlayingPlayPause_released()
@@ -310,14 +287,7 @@ void MainWindow::on_buttonQuit_released()
 }
 
 void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
-{
-	// song view should be a list
-	// everything else should be icons
-	if (currentView == 3)
-		ui->listviewMusic->setViewMode(QListView::ListMode);
-	else 
-		ui->listviewMusic->setViewMode(QListView::IconMode);
-	
+{	
 	switch (currentView)
 	{
 		case 1:
@@ -344,7 +314,6 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 			else
 				musicDB.getAllSongs(model, artistIDCur);
 
-			ui->listviewMusic->setViewMode(QListView::ListMode);
 			currentView = 3;
 			break;
 
@@ -376,13 +345,27 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 
 			setButtonPlayPauseText(1);
 			setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
-			selectedFrame(7);
+			selectedFrame(7); // go to now playing frame
 			break;
 		}
 
 		default:
 			break;
 
+	}
+	// song view should be a list
+	// everything else should be icons
+	if (currentView == 3)
+	{
+		ui->listviewMusic->setGridSize(QSize(ui->listviewMusic->width(), ui->listviewMusic->height()*0.2));
+		ui->listviewMusic->setViewMode(QListView::ListMode);
+		ui->listviewMusic->setItemDelegate(new listViewMusicDelegateList);
+	}
+	else
+	{
+		ui->listviewMusic->setItemDelegate(new listViewMusicDelegateGrid);
+		ui->listviewMusic->setGridSize(QSize(ui->listviewMusic->width()*0.32, ui->listviewMusic->width()*0.32));
+		ui->listviewMusic->setViewMode(QListView::IconMode);
 	}
 }
 

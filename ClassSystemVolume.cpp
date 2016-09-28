@@ -1,6 +1,6 @@
 #include "ClassSystemVolume.h"
 
-void SystemVolume::setMasterVolume(long volume)
+void SystemVolume :: setMasterVolume(long volume)
 {
 	long min, max;
 	snd_mixer_t *handle;
@@ -24,7 +24,7 @@ void SystemVolume::setMasterVolume(long volume)
 	snd_mixer_close(handle);
 }
 
-long SystemVolume::getCurrentVolume()
+long SystemVolume :: getCurrentVolume()
 {
 	long min, max;
 	long volume = 0;
@@ -49,14 +49,31 @@ long SystemVolume::getCurrentVolume()
 
 	snd_mixer_close(handle);
 
-
-//	float fvolume = (volume/(float)max)*100;
-//	std::cout << fvolume << std::endl
-//			  << volume << std::endl
-//			  << max << std::endl
-//			  << min
-//			  << std::endl;
-
-
 	return long(((((float)volume/(float)max)*(100))+0.5));
+}
+
+long SystemVolume :: increaseVolume()
+{
+	long newVolume = 0;
+
+	if (getCurrentVolume() >= 0 + _VOLUMECHANGE) // check that we won't go below minimum volume
+		newVolume = getCurrentVolume() - _VOLUMECHANGE;
+	else
+		newVolume = 0;
+
+	setMasterVolume(newVolume);
+	return newVolume;
+}
+
+long SystemVolume :: decreaseVolume()
+{
+	long newVolume = 0;
+
+	if (getCurrentVolume() <= 100 - _VOLUMECHANGE) // check that we don't go above the max volume
+		newVolume = getCurrentVolume() + _VOLUMECHANGE;
+	else
+		newVolume = 100;
+
+	setMasterVolume(newVolume);
+	return newVolume;
 }

@@ -45,6 +45,7 @@
 #include "ClassSystemVolume.h"
 #include "ClassMusicDB.h"
 #include "ClassMusicPlayer.h"
+#include "ClassAudioPlayerQT.h"
 #include "ClassOfono.h"
 #include "ClassContactDB.h"
 #include "ClassMapData.h"
@@ -233,6 +234,7 @@ class MainWindow : public QMainWindow
 		Ofono *ofono = new Ofono();
 		ContactDB contactDB;
 		MapData *mapData;
+		AudioPlayerQT audioPlayer;
 		// Maps
 
 };

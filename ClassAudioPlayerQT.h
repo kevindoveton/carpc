@@ -3,11 +3,15 @@
 
 #include <QtMultimedia>
 #include <QMediaContent>
-
-class ClassAudioPlayerQT
+#include <QAudioOutput>
+#include <QFile>
+#include <QIODevice>
+#include <QAudioFormat>
+#include <QAudioDeviceInfo>
+class AudioPlayerQT
 {
 	public:
-		ClassAudioPlayerQT();
+		AudioPlayerQT();
 		int playNewSong(std::string songPath);
 		// play a new song
 		// requires path to song including extension
@@ -31,6 +35,7 @@ class ClassAudioPlayerQT
 	protected:
 		QMediaPlayer *player;
 		QMediaContent mediaContent;
+		QAudioOutput *audio;
 };
 
 #endif // CLASSAUDIOPLAYERQT_H

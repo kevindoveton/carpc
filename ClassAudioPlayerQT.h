@@ -8,11 +8,14 @@
 #include <QIODevice>
 #include <QAudioFormat>
 #include <QAudioDeviceInfo>
-class AudioPlayerQT
+#include <QDebug>
+#include <QObject>
+class AudioPlayerQT : QObject
 {
+	Q_OBJECT
 	public:
 		AudioPlayerQT();
-		int playNewSong(std::string songPath);
+//		int playNewSong(std::string songPath);
 		// play a new song
 		// requires path to song including extension
 		// returns current status
@@ -31,10 +34,12 @@ class AudioPlayerQT
 		// Stop current song
 		// Alias for BASS_ChannelPause(handle)
 		// Returns current status
+	protected slots:
+		void handleStateChange(QAudio::State state);
 
 	protected:
-		QMediaPlayer *player;
-		QMediaContent mediaContent;
+		QAudioDeviceInfo deviceInfo;
+		QFile file;
 		QAudioOutput *audio;
 };
 

@@ -4,8 +4,8 @@
 #
 #-------------------------------------------------
 
-QT  += core gui \
-    BluezQt \
+QT  += core \
+    gui     \
     dbus    \
     opengl  \
     network \

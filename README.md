@@ -5,13 +5,11 @@ A Car PC project written in c++ and qt
 ## Requires ##
 Taglib - (pytaglib) python 
 
-Bass - un4seen (c++)
+Bass - un4seen (c++) (depreciated as of 91a959d)
 
-Bluez-Qt - kde.org (QT wrapper)
+bluez
 
-bluez - not yet implemented
-
-ofono - not yet implemented
+ofono
 
 c++ 11
 

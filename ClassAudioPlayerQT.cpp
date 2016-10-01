@@ -3,31 +3,6 @@
 AudioPlayerQT :: AudioPlayerQT()
 {
 	deviceInfo = QAudioDeviceInfo::defaultOutputDevice();
-	qDebug() << "file";
-	file.setFileName("/tmp/shairport-sync-pipe");
-	file.open(QIODevice::ReadOnly);
-
-	qDebug () << "opened";
-	QAudioFormat format;
-	format.setSampleRate(44100);
-	format.setChannelCount(2);
-	format.setCodec("audio/pcm");
-	format.setSampleSize(16);
-	format.setByteOrder(QAudioFormat::LittleEndian);
-	format.setSampleType(QAudioFormat::SignedInt);
-	qDebug() << "open audio";
-	QAudioDeviceInfo info(QAudioDeviceInfo::defaultOutputDevice());
-	if (!info.isFormatSupported(format))
-		qWarning() << "Output format not supported";
-	qDebug() << "opened";
-	qDebug() << "new device";
-	audio = new QAudioOutput(deviceInfo, format, this);
-//	audio->setBufferSize(44100);
-	audio->setNotifyInterval(50);
-	connect(audio, SIGNAL(stateChanged(QAudio::State)), this, SLOT(handleStateChange(QAudio::State)));
-	qDebug() << "about to start";
-	audio->start(&file);
-	qDebug() << "started";
 }
 
 void AudioPlayerQT :: handleStateChange(QAudio::State state)
@@ -54,4 +29,32 @@ void AudioPlayerQT :: handleStateChange(QAudio::State state)
 				qWarning() << "Error" + audio->error();
 			break;
 	}
+}
+
+void AudioPlayerQT :: startAirplay()
+{
+	// read the pipe
+	file.setFileName("/tmp/shairport-sync-pipe");
+	file.open(QIODevice::ReadOnly);
+
+
+
+	// set the audio format
+	// https://github.com/mikebrady/shairport-sync/issues/126
+	// Playing raw data 'stdin' : Signed 16 bit Little Endian, Rate 44100 Hz, Stereo
+	QAudioFormat format;
+	format.setSampleRate(44100); // rate
+	format.setChannelCount(2); // stereo
+	format.setCodec("audio/pcm"); // raw
+	format.setSampleSize(16); // 16 bit
+	format.setByteOrder(QAudioFormat::LittleEndian);
+	format.setSampleType(QAudioFormat::SignedInt);
+
+	// check format is supported
+	if (!deviceInfo.isFormatSupported(format))
+		qWarning() << "Output format not supported";
+
+	audio = new QAudioOutput(deviceInfo, format, this);
+	connect(audio, SIGNAL(stateChanged(QAudio::State)), this, SLOT(handleStateChange(QAudio::State)));
+	audio->start(&file);
 }

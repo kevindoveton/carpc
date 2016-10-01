@@ -34,6 +34,9 @@ class AudioPlayerQT : QObject
 		// Stop current song
 		// Alias for BASS_ChannelPause(handle)
 		// Returns current status
+
+		void startAirplay();
+
 	protected slots:
 		void handleStateChange(QAudio::State state);
 

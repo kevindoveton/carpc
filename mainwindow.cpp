@@ -74,7 +74,7 @@ void MainWindow::runLoop()
 	// check if song has finished played
 	// probably not the best way.. this will play a song as soon as you push the stop button
 	// could possibly add a stopped variable? not that we even have a stop button
-	if ((musicPlayer.currentBassStatus() == 0) && (musicPlayer.getOldBassStatus() == 1)) // song was playing and is now stopped
+	/*if ((musicPlayer.currentBassStatus() == 0) && (musicPlayer.getOldBassStatus() == 1)) // song was playing and is now stopped
 	{
 		if (musicPlayer.playing())
 		{
@@ -93,7 +93,7 @@ void MainWindow::runLoop()
 		}
 	}
 	musicPlayer.setOldBassStatus(musicPlayer.currentBassStatus()); // update oldBassStatus, bad things happen if we dont do this
-	
+	*/
 }
 
 
@@ -165,27 +165,27 @@ void MainWindow :: on_buttonNowPlayingVolumeUp_released()
 void MainWindow :: on_buttonNowPlayingPlayPause_released()
 {
 
-	switch (musicPlayer.currentBassStatus())
-	{
-		case 0:
-			musicDB.shuffleAll(-1, upNext);
-			musicPlayer.playNewSong(upNext[0].getPath());
-			break;
+//	switch (musicPlayer.currentBassStatus())
+//	{
+//		case 0:
+//			musicDB.shuffleAll(-1, upNext);
+//			musicPlayer.playNewSong(upNext[0].getPath());
+//			break;
 
-		case 1:
-			musicPlayer.pause();
-			break;
+//		case 1:
+//			musicPlayer.pause();
+//			break;
 
-		case 3:
-			musicPlayer.resume();
-			break;
+//		case 3:
+//			musicPlayer.resume();
+//			break;
 
-		default:
-			break;
+//		default:
+//			break;
 
-	}
+//	}
 
-	setButtonPlayPauseText(musicPlayer.currentBassStatus());
+//	setButtonPlayPauseText(musicPlayer.currentBassStatus());
 	setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
 }
 
@@ -196,31 +196,31 @@ void MainWindow :: on_buttonNowPlayingNext_released()
 	upNext[0].setSkipCount(upNext[0].getSkipCount() + 1);
 	musicDB.setSkipCount(upNext[0].getSkipCount(), upNext[0].getID());
 
-	if (musicPlayer.currentBassStatus() == 0)
-	{
-		musicDB.shuffleAll(-1, upNext);
-		musicPlayer.playNewSong(upNext[0].getPath());
-	}
-	else
-	{
-		if (!upNext.empty())
-		{
-			recentlyPlayed.push_back(upNext[0]);
-			upNext.erase(upNext.begin());
-				if (!upNext.empty())
-				{
-					musicPlayer.playNewSong(upNext[0].getPath());
-					setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
-				}
-				else
-				{
-					musicPlayer.stop();
-					setSongTags("", "", "", "");
-				}
-		}
-	}
+//	if (musicPlayer.currentBassStatus() == 0)
+//	{
+//		musicDB.shuffleAll(-1, upNext);
+//		musicPlayer.playNewSong(upNext[0].getPath());
+//	}
+//	else
+//	{
+//		if (!upNext.empty())
+//		{
+//			recentlyPlayed.push_back(upNext[0]);
+//			upNext.erase(upNext.begin());
+//				if (!upNext.empty())
+//				{
+//					musicPlayer.playNewSong(upNext[0].getPath());
+//					setSongTags(upNext[0].getTitle(), upNext[0].getAlbum(), upNext[0].getArtist(), upNext[0].getAlbumImagePath());
+//				}
+//				else
+//				{
+//					musicPlayer.stop();
+//					setSongTags("", "", "", "");
+//				}
+//		}
+//	}
 
-	setButtonPlayPauseText(musicPlayer.currentBassStatus());
+//	setButtonPlayPauseText(musicPlayer.currentBassStatus());
 }
 
 void MainWindow :: on_buttonNowPlayingPrevious_released()

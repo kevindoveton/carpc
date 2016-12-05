@@ -40,7 +40,8 @@ SOURCES += main.cpp\
     ClassVoicecall.cpp \
     ClassMapData.cpp \
     QGLWidgetMapWindow.cpp \
-    ClassAudioPlayerQT.cpp
+    ClassAudioPlayerQT.cpp \
+    ClassAirplay.cpp
 
 
 
@@ -73,7 +74,8 @@ HEADERS  += mainwindow.h \
     QGLWidgetMapWindow.h \
     ListViewMusicDelegateGrid.h \
     ListViewMusicDelegateList.h \
-    ClassAudioPlayerQT.h
+    ClassAudioPlayerQT.h \
+    ClassAirplay.h
 
 
 RESOURCES += resources/resources.qrc

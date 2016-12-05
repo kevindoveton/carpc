@@ -228,7 +228,7 @@ class MainWindow : public QMainWindow
 		int songIDCur = -1;
 
 		// Objects
-		MusicPlayer musicPlayer;
+		AudioPlayerQT musicPlayer;
 		MusicDB musicDB;
 		SystemVolume systemVolume;
 		Ofono *ofono = new Ofono();

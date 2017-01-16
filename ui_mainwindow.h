@@ -256,8 +256,7 @@ class Ui_MainWindow
 			frameTopBar = new QFrame(centralWidget);
 			frameTopBar->setObjectName(QStringLiteral("frameTopBar"));
 			frameTopBar->setGeometry(QRect(0, 0, screenWidth, 0.1*screenHeight));
-			frameTopBar->setFrameShape(QFrame::StyledPanel);
-			frameTopBar->setFrameShadow(QFrame::Plain);
+			frameTopBar->setFrameShape(QFrame::NoFrame);
 
 
 			// labelTime
@@ -286,8 +285,8 @@ class Ui_MainWindow
 			frameHome->setEnabled(true);
 			frameHome->setGeometry(QRect(0, 0, screenWidth, screenHeight));
 			frameHome->setAutoFillBackground(false);
-			frameHome->setFrameShape(QFrame::StyledPanel);
-			frameHome->setFrameShadow(QFrame::Plain);
+			frameHome->setFrameShape(QFrame::NoFrame);
+
 
 			// buttonMusic
 			QPixmap musicImage(":/resources/icons/music.png");
@@ -472,9 +471,7 @@ class Ui_MainWindow
 			frameMusic->setEnabled(true);
 			frameMusic->setGeometry(QRect(0, 0, .9*screenWidth, screenHeight));
 			frameMusic->setAutoFillBackground(false);
-			frameMusic->setFrameShape(QFrame::StyledPanel);
-			frameMusic->setFrameShadow(QFrame::Plain);
-
+			frameMusic->setFrameShape(QFrame::NoFrame);
 
 
 			// listViewMusic
@@ -549,8 +546,7 @@ class Ui_MainWindow
 			framePhone->setEnabled(true);
 			framePhone->setGeometry(QRect(0, 0, .9*screenWidth, screenHeight));
 			framePhone->setAutoFillBackground(false);
-			framePhone->setFrameShape(QFrame::StyledPanel);
-			framePhone->setFrameShadow(QFrame::Plain);
+			framePhone->setFrameShape(QFrame::NoFrame);
 
 			labelPhoneFavourites = new QLabel(framePhone);
 			labelPhoneFavourites->setObjectName(QStringLiteral("labelPhoneFavourites"));
@@ -580,8 +576,7 @@ class Ui_MainWindow
 			frameMaps->setEnabled(true);
 			frameMaps->setGeometry(QRect(0, 0, screenWidth, screenHeight));
 			frameMaps->setAutoFillBackground(false);
-			frameMaps->setFrameShape(QFrame::StyledPanel);
-			frameMaps->setFrameShadow(QFrame::Plain);
+			frameMaps->setFrameShape(QFrame::NoFrame);
 
 			QMapboxGLSettings settings;
 			settings.setCacheDatabasePath("mbsl-cache.db");
@@ -605,8 +600,7 @@ class Ui_MainWindow
 			frameNowPlaying->setEnabled(true);
 			frameNowPlaying->setGeometry(QRect(0, 0, screenWidth, screenHeight));
 			frameNowPlaying->setAutoFillBackground(false);
-			frameNowPlaying->setFrameShape(QFrame::StyledPanel);
-			frameNowPlaying->setFrameShadow(QFrame::Plain);
+			frameNowPlaying->setFrameShape(QFrame::NoFrame);
 
 			// 0.06453
 			// width = 0.233
@@ -821,8 +815,7 @@ class Ui_MainWindow
 			frameCallPresent->setEnabled(true);
 			frameCallPresent->setGeometry(QRect(0, 0, screenWidth, screenHeight));
 			frameCallPresent->setAutoFillBackground(false);
-			frameCallPresent->setFrameShape(QFrame::StyledPanel);
-			frameCallPresent->setFrameShadow(QFrame::Plain);
+			frameCallPresent->setFrameShape(QFrame::NoFrame);
 
 
 			labelCallContactName = new QLabel(frameCallPresent);
@@ -892,8 +885,8 @@ class Ui_MainWindow
 			frameRightBar = new QFrame(centralWidget);
 			frameRightBar->setObjectName(QStringLiteral("frameRightBar"));
 			frameRightBar->setGeometry(QRect(0.946875*screenWidth, 0, frameRightBarWidth, frameRightBarHeight));
-			frameRightBar->setFrameShape(QFrame::StyledPanel);
-			frameRightBar->setFrameShadow(QFrame::Plain);
+			frameRightBar->setFrameShape(QFrame::NoFrame);
+
 
 
 			// Right Bar Line

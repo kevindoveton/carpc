@@ -80,8 +80,6 @@ HEADERS  += mainwindow.h \
 
 RESOURCES += resources/resources.qrc
 
-#FORMS    += mainwindow.ui
-
 
 # bass support
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/libraries/bass/release/ -lbass
@@ -101,7 +99,6 @@ OUTPUT +=Console
 unix: CONFIG += link_pkgconfig
 unix: PKGCONFIG += alsa
 unix: PKGCONFIG += taglib
-#unix: PKGCONFIG += tinyxml
 unix: PKGCONFIG += sqlite3
 
 unix:!macx: LIBS += -L$$PWD/libraries/qmapbox/ -lqmapboxgl

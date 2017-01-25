@@ -1,6 +1,6 @@
 // --------------------------
 // Kevin Doveton
-// Copyright 2015
+// Copyright 2015 - 2017
 // --------------------------
 
 #include "mainwindow.h"
@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
 	ui->setupUi(this);
 
 	// setup mapdata class
-	mapData = new MapData(qgetenv("MAPBOX_ACCESS_TOKEN"));
+	mapData = new MapData(qgetenv("MAPBOX_ACCESS_TOKEN")); // api token should be set as environment token
 
 	//  Set home frame for start up
 	selectedFrame(0);
@@ -270,7 +270,7 @@ void MainWindow :: setSongTags(std::string title, std::string album, std::string
 {
 
 	QImage albumImageCrop = QImage(QString::fromStdString(albumImagePath));
-	albumImageCrop = albumImageCrop.scaled(ui->imageCurrentAlbum->width(), ui->imageCurrentAlbum->height(), Qt::KeepAspectRatioByExpanding ,Qt::SmoothTransformation);
+	albumImageCrop = albumImageCrop.scaled(ui->imageCurrentAlbum->width(), ui->imageCurrentAlbum->height(), Qt::KeepAspectRatioByExpanding, Qt::SmoothTransformation);
 	QPixmap albumImage = QPixmap::fromImage(albumImageCrop);
 	ui->imageCurrentAlbum->setPixmap(albumImage);
 
@@ -306,8 +306,6 @@ void MainWindow :: on_listviewMusic_clicked(const QModelIndex &index)
 		case 2:
 			// going to the song view now
 			albumIDCur = index.sibling(index.row(), 1).data().toInt();
-//			std::cout 	<< albumIDCur
-//						<< std::endl;
 			model->clear();
 			if (albumIDCur != -1)
 				musicDB.getSongs(model, albumIDCur);
